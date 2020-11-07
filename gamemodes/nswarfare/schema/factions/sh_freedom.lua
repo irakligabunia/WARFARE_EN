@@ -1,5 +1,5 @@
-FACTION.name = "Свобода"
-FACTION.desc = "Свобода — одна из сильнейших группировок Зоны."
+FACTION.name = "Freedom"
+FACTION.desc = "Freedom — A group of anarchists that became one of the strongest factions of the Zone."
 FACTION.color = Color(154, 205, 50)
 FACTION.models = {
 	"models/hdmodels/kek1ch/stalker_freedom1a.mdl"
