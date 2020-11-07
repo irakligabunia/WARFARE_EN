@@ -1,5 +1,5 @@
-﻿FACTION.name = "Ученые"
-FACTION.desc = "Ученые — совокупность научных групп, действующих на территории Зоны."
+﻿FACTION.name = "Ecologists"
+FACTION.desc = "Ecologists — Scientists hired by Ukraine's goverment."
 FACTION.color = Color(255, 255, 0)
 FACTION.isDefault = false
 FACTION.isPublic = true
