@@ -1,5 +1,5 @@
-﻿FACTION.name = "Бандиты"
-FACTION.desc = "Бандиты — уголовники и преступники, пришедшие в Зону."
+﻿FACTION.name = "Bandits"
+FACTION.desc = "Bandits - The outlaws of the Zone"
 FACTION.color = Color(30, 30, 30)
 FACTION.models = {
 	"models/hdmodels/kek1ch/bandit1a_mask.mdl",
