@@ -30,7 +30,7 @@ if (CLIENT) then
 			return
 		end
 
-		local tx, ty = nut.util.drawText("Потерян в", ScrW()/2, ScrH()/2.2, Color(255, 140, 0, aprg2 * 255), 1, 1, "DeadBigFontForSafe", aprg2 * 255)
-		local tx, ty = nut.util.drawText("Зоне...", ScrW()/2, ScrH()/1.9, Color(255, 140, 0, aprg2 * 255), 1, 1, "DeadBigFontForSafe", aprg2 * 255)
+		local tx, ty = nut.util.drawText("Lost to the", ScrW()/2, ScrH()/2.2, Color(255, 140, 0, aprg2 * 255), 1, 1, "DeadBigFontForSafe", aprg2 * 255)
+		local tx, ty = nut.util.drawText("Zone...", ScrW()/2, ScrH()/1.9, Color(255, 140, 0, aprg2 * 255), 1, 1, "DeadBigFontForSafe", aprg2 * 255)
 	end
 end
