@@ -1,4 +1,4 @@
-FACTION.name = "Администратор"
+FACTION.name = "Administration"
 FACTION.desc = ""
 FACTION.color = Color(237, 179, 97)
 FACTION.isDefault = false
