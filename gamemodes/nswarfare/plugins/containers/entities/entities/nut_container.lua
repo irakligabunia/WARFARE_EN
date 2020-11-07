@@ -1,7 +1,7 @@
 local PLUGIN = PLUGIN
 
 ENT.Type = "anim"
-ENT.PrintName = "Тайник"
+ENT.PrintName = "Stash"
 ENT.Category = "Warfare ENT"
 ENT.Spawnable = false
 
