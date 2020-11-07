@@ -34,7 +34,7 @@ local function paintDPanel(s, w, h)
 	surface.SetDrawColor(Color( 0, 0, 0, 235))
 	surface.DrawOutlinedRect(ScrW() * 0.008, ScrH() * 0.21, ScrW() * 0.1735, ScrH() * 0.334)
 
-	draw.DrawText("Выбор группировки", "Roh20", ScrW() * 0.0135, ScrH() * 0.208, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT)
+	draw.DrawText("Select Faction", "Roh20", ScrW() * 0.0135, ScrH() * 0.208, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT)
 
 	surface.SetDrawColor(Color( 0, 0, 0, 220))
 	surface.DrawRect(ScrW() * 0.01, ScrH() * 0.468, ScrW() * 0.1675, ScrH() * 0.037)
@@ -266,7 +266,7 @@ function PANEL:Init()
 		surface.SetDrawColor(0, 0, 0, 240)  
 		surface.DrawRect(0, 0, w, h) 
 
-		draw.DrawText("0.451 Бета версия ", "Roh20", ScrW() * 0.005, ScrH() * 0.001, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT )
+		draw.DrawText("0.451 Beta Version ", "Roh20", ScrW() * 0.005, ScrH() * 0.001, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT )
 	end
 
 	local buttonW, buttonH = self.scrW * 0.2, self.scrH * 0.035
@@ -290,12 +290,12 @@ function PANEL:Init()
 		end
 
 		local PaintButtonsLeft = {}
-		PaintButtonsLeft["Войти в Зону"] = {Icon = "kek1ch/menu/play_menu_icon.png", PosX = ScrW()*0.0155, PosY = ScrH()*0.024}
-		PaintButtonsLeft["Загрузить игру"] = {Icon = "kek1ch/menu/save_menu_icon.png", PosX = ScrW()*0.0155, PosY = ScrH()*0.024}
-		PaintButtonsLeft["Настройки"] = {Icon = "kek1ch/menu/settings_menu_icon.png", PosX = ScrW()*0.0155, PosY = ScrH()*0.024}
-		PaintButtonsLeft["Вернуться в игру"] = {Icon = "kek1ch/menu/goback_menu_icon.png", PosX = ScrW()*0.0155, PosY = ScrH()*0.024}
-		PaintButtonsLeft["Назад"] = {Icon = "kek1ch/menu/goback_menu_icon.png", PosX = ScrW()*0.0155, PosY = ScrH()*0.024}
-		PaintButtonsLeft["Покинуть сервер"] = {Icon = "kek1ch/menu/exit_menu_icon.png", PosX = ScrW()*0.0155, PosY = ScrH()*0.024}
+		PaintButtonsLeft["Enter the Zone"] = {Icon = "kek1ch/menu/play_menu_icon.png", PosX = ScrW()*0.0155, PosY = ScrH()*0.024}
+		PaintButtonsLeft["Select Character"] = {Icon = "kek1ch/menu/save_menu_icon.png", PosX = ScrW()*0.0155, PosY = ScrH()*0.024}
+		PaintButtonsLeft["Settings"] = {Icon = "kek1ch/menu/settings_menu_icon.png", PosX = ScrW()*0.0155, PosY = ScrH()*0.024}
+		PaintButtonsLeft["Return to game"] = {Icon = "kek1ch/menu/goback_menu_icon.png", PosX = ScrW()*0.0155, PosY = ScrH()*0.024}
+		PaintButtonsLeft["Back"] = {Icon = "kek1ch/menu/goback_menu_icon.png", PosX = ScrW()*0.0155, PosY = ScrH()*0.024}
+		PaintButtonsLeft["Disconnect"] = {Icon = "kek1ch/menu/exit_menu_icon.png", PosX = ScrW()*0.0155, PosY = ScrH()*0.024}
 
 		for k, v in ipairs(nut.characters) do
 			local character = nut.char.loaded[v]
@@ -373,7 +373,7 @@ function PANEL:Init()
 	"Неумеха", "Неудачник", "Небрежный", "Черный", "Нарцисс", "Мятый", "Мутный", "Мрачный", "Местный", "Мертвый", "Мертвец", "Малыш", "Лютый", "Любимчик", "Косой", "Фантом",
 	"Упырь", "Туз", "Опер"}
 
-	local Desc = "Мужчина среднего роста, на вид лет 25, особо ничем не выделяется, но что-то в нем точно есть... Или нет?"
+	local Desc = "A average stalker, donning the Loner faction patch with their face resembling of a classic Eastern European male."
 
 	function CreateMainButtons()
 		local count = 0
