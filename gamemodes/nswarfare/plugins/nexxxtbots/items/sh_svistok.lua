@@ -1,5 +1,5 @@
-﻿ITEM.name = "Медальон Призыва"
-ITEM.desc = "Позволяет призывать компаньона \n\nХАРАКТЕРИСТИКИ: \n-высокая ценность \n-не выпадает"
+﻿ITEM.name = "Companion Whistle"
+ITEM.desc = "A whistle used for recalling companions, does not drop on death."
 ITEM.price = 92642 
 ITEM.exRender = false
 ITEM.weight = 0.09
@@ -30,7 +30,7 @@ function ITEM:onCanBeTransfered(oldInventory, newInventory)
 end
 
 ITEM.functions.Use = {
-	name = "позвать компаньона",
+	name = "Whistle",
 	onRun = function(item)
 		local client = item.player
 		local data = {}
