@@ -1,6 +1,6 @@
 ENT.Type 			= "anim"
 
-ENT.PrintName = "Металлический сейф"
+ENT.PrintName = "Metal safe"
 ENT.Category 		= "Warfare ENT"
 
 ENT.Spawnable			= true
