@@ -1,5 +1,5 @@
-﻿ITEM.name = "Налобный фонарик"
-ITEM.desc = "Фонарь с креплением на голову. Пригодится сталкеру, которого ночь застала в дороге; с другой стороны, может привлечь чье-то нежелательное внимаение. \n\nХАРАКТЕРИСТИКИ: \n-технологическое приспособление \n-умеренное потребление энергии"
+﻿ITEM.name = "Headlight"
+ITEM.desc = "A flashlight that can be attached to a helmet"
 ITEM.category = "misc"
 ITEM.price = 5048
 ITEM.exRender = false
