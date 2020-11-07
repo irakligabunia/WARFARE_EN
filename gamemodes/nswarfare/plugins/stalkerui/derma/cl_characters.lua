@@ -17,13 +17,13 @@ local function paintDPanel(s, w, h)
 	surface.SetDrawColor(Color( 30, 30, 30, 50))
 	surface.DrawOutlinedRect(ScrW() * 0, ScrH() * 0, ScrW() * 0.4, ScrH() * 0.033)
 
-	draw.DrawText("Создание персонажа", "Roh20", ScrW() * 0.008, ScrH() * 0.003, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT )
+	draw.DrawText("Character Creation", "Roh20", ScrW() * 0.008, ScrH() * 0.003, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT )
 
-	draw.DrawText("Группировка «"..urfaction.name.."»" or "Группировка «Одиночки»", "Roh20", ScrW() * 0.39, ScrH() * 0.003, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT )
+	draw.DrawText("Faction «"..urfaction.name.."»" or "Группировка «Одиночки»", "Roh20", ScrW() * 0.39, ScrH() * 0.003, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT )
 
-	draw.DrawText("Имя персонажа", "Roh20", ScrW() * 0.008, ScrH() * 0.04, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT )
-	draw.DrawText("Описание персонажа", "Roh20", ScrW() * 0.008, ScrH() * 0.09, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT )
-	draw.DrawText("Модель персонажа", "Roh20", ScrW() * 0.008, ScrH() * 0.137, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT )
+	draw.DrawText("Full Name", "Roh20", ScrW() * 0.008, ScrH() * 0.04, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT )
+	draw.DrawText("Physical Description", "Roh20", ScrW() * 0.008, ScrH() * 0.09, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT )
+	draw.DrawText("Model", "Roh20", ScrW() * 0.008, ScrH() * 0.137, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT )
 
 	surface.SetDrawColor( 0, 33, 55, 160)
 	surface.DrawRect(ScrW() * 0.008, ScrH() * 0.21, ScrW() * 0.1735, ScrH() * 0.024)
@@ -250,7 +250,7 @@ function PANEL:Init()
 		surface.DrawTexturedRect(ScrW()*0.01, ScrH()*0.023, ScrW()*0.036, ScrH()*0.065)
 
 		local x, y = ScrW() * 0.0445, ScrH() * 0.245 --позиция текста по x, больше влезает вертикально
-		local lines = nut.util.wrapText("Внимание! Это бета версия сборки DMA Warfare, прездазначенная для тестирования. Она не отображает финального качества продукта. Спасибо за понимание и поддержу. Удачи!", ScrW() * 0.515, "Roh25")
+		local lines = nut.util.wrapText("Server is in the BETA phase, expect bugs and make sure to report them on the discord-Good luck.", ScrW() * 0.515, "Roh25")
 		for i = 1, #lines do
 			y = ScrW() * 0 + (i * 18)
 			nut.util.drawText(lines[i], x, y, Color(0, 0, 0), ScrW() * 0, ScrH() * 0, "Roh20", TEXT_ALIGN_CENTER) --позиция, не ебу
@@ -416,7 +416,7 @@ function PANEL:Init()
 						characterFrame.models = characterFrame:Add("DComboBox")
 						characterFrame.models:SetSize(ScrW() * 0.1735, ScrH() * 0.025)
 						characterFrame.models:SetPos(ScrW() * 0.008, ScrH() * 0.164)
-						characterFrame.models:SetValue( "Выберите модель" )
+						characterFrame.models:SetValue( "Select Model" )
 						characterFrame.models:SetFont("Roh20")
 
 						function characterFrame.models:Paint( w, h )
@@ -666,7 +666,7 @@ function PANEL:Init()
 						characterFrame.choosecr:SetTextColor(color_white)
 						characterFrame.choosecr:SetExpensiveShadow(1, Color(0, 0, 0, 100))
 						characterFrame.choosecr:SetFont("Roh20")
-						characterFrame.choosecr:SetText("Применить")
+						characterFrame.choosecr:SetText("Select")
 						characterFrame.choosecr.Paint = BPaint
 						characterFrame.choosecr.DoClick = function(client)
 							characterFrame:Remove()
@@ -722,7 +722,7 @@ function PANEL:Init()
 										surface.SetDrawColor(Color( 30, 30, 30, 50))
 										surface.DrawOutlinedRect(ScrW() * 0, ScrH() * 0, ScrW() * 0.26, ScrH() * 0.033) --шапка
 
-										draw.DrawText("Загрузка игры", "Roh20", ScrW() * 0.005, ScrH() * 0.003, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT ) --надпись шапки
+										draw.DrawText("Load Character", "Roh20", ScrW() * 0.005, ScrH() * 0.003, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT ) --надпись шапки
 
 										surface.SetDrawColor(Color( 138, 149, 151, 100))
 										surface.DrawLine(ScrW() * 0.009, ScrH() * 0.0325, ScrW() * 0.2, ScrH() * 0.0325)
@@ -733,7 +733,7 @@ function PANEL:Init()
 										surface.SetDrawColor(Color( 0, 0, 0, 200))
 										surface.DrawRect(ScrW() * 0.009, ScrH() * 0.08, ScrW() * 0.2, ScrH() * 0.3) --основная панель крафта 145
 
-										draw.DrawText("Список персонажей", "Roh20", ScrW() * 0.015, ScrH() * 0.055, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT ) --надпись шапки
+										draw.DrawText("Character List", "Roh20", ScrW() * 0.015, ScrH() * 0.055, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT ) --надпись шапки
 
 										surface.SetDrawColor( Color(125, 105, 0, 100) )
 										surface.SetMaterial( Material("lgh/circle_gradient.png") )
@@ -831,7 +831,7 @@ function PANEL:Init()
 									characterFrame.choose:SetTextColor(color_white)
 									characterFrame.choose:SetExpensiveShadow(1, Color(0, 0, 0, 100))
 									characterFrame.choose:SetFont("Roh20")
-									characterFrame.choose:SetText("Выбрать")
+									characterFrame.choose:SetText("Select")
 									characterFrame.choose.Paint = BPaint
 									characterFrame.choose.DoClick = function(s)
 										LocalPlayer():ConCommand("stopsound")
@@ -876,7 +876,7 @@ function PANEL:Init()
 									characterFrame.delete:SetTextColor(color_white)
 									characterFrame.delete:SetExpensiveShadow(1, Color(0, 0, 0, 100))
 									characterFrame.delete:SetFont("Roh20")
-									characterFrame.delete:SetText("Удалить")
+									characterFrame.delete:SetText("Delete")
 									characterFrame.delete.Paint = BPaint
 									characterFrame.delete.DoClick = function(s)
 										if (TempId) then
@@ -896,7 +896,7 @@ function PANEL:Init()
 									characterFrame.close:SetTextColor(color_white)
 									characterFrame.close:SetExpensiveShadow(1, Color(0, 0, 0, 100))
 									characterFrame.close:SetFont("Roh20")
-									characterFrame.close:SetText("Закрыть")
+									characterFrame.close:SetText("Close")
 									characterFrame.close.Paint = BPaint
 									characterFrame.close.DoClick = function(s)
 										characterFrame:Remove()
@@ -915,7 +915,7 @@ function PANEL:Init()
 					characterFrame.closecr:SetTextColor(color_white)
 					characterFrame.closecr:SetExpensiveShadow(1, Color(0, 0, 0, 100))
 					characterFrame.closecr:SetFont("Roh20")
-					characterFrame.closecr:SetText("Закрыть")
+					characterFrame.closecr:SetText("Close")
 					characterFrame.closecr.Paint = BPaint
 					characterFrame.closecr.DoClick = function(s)
 						characterFrame:Remove()
@@ -945,7 +945,7 @@ function PANEL:Init()
 						surface.SetDrawColor(Color( 30, 30, 30, 50))
 						surface.DrawOutlinedRect(ScrW() * 0, ScrH() * 0, ScrW() * 0.26, ScrH() * 0.033) --шапка
 
-						draw.DrawText("Загрузка игры", "Roh20", ScrW() * 0.005, ScrH() * 0.003, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT ) --надпись шапки
+						draw.DrawText("Load Character", "Roh20", ScrW() * 0.005, ScrH() * 0.003, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT ) --надпись шапки
 
 						surface.SetDrawColor(Color( 138, 149, 151, 100))
 						surface.DrawLine(ScrW() * 0.009, ScrH() * 0.0325, ScrW() * 0.2, ScrH() * 0.0325)
@@ -956,7 +956,7 @@ function PANEL:Init()
 						surface.SetDrawColor(Color( 0, 0, 0, 200))
 						surface.DrawRect(ScrW() * 0.009, ScrH() * 0.08, ScrW() * 0.2, ScrH() * 0.3) --основная панель крафта 145
 
-						draw.DrawText("Список персонажей", "Roh20", ScrW() * 0.015, ScrH() * 0.055, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT ) --надпись шапки
+						draw.DrawText("Character List", "Roh20", ScrW() * 0.015, ScrH() * 0.055, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT ) --надпись шапки
 
 						surface.SetDrawColor( Color(125, 105, 0, 100) )
 						surface.SetMaterial( Material("lgh/circle_gradient.png") )
@@ -1053,7 +1053,7 @@ function PANEL:Init()
 					characterFrame.choose:SetTextColor(color_white)
 					characterFrame.choose:SetExpensiveShadow(1, Color(0, 0, 0, 100))
 					characterFrame.choose:SetFont("Roh20")
-					characterFrame.choose:SetText("Выбрать")
+					characterFrame.choose:SetText("Select")
 					characterFrame.choose.Paint = BPaint
 					characterFrame.choose.DoClick = function(s)
 						if (TempId) then
@@ -1102,7 +1102,7 @@ function PANEL:Init()
 					characterFrame.delete:SetTextColor(color_white)
 					characterFrame.delete:SetExpensiveShadow(1, Color(0, 0, 0, 100))
 					characterFrame.delete:SetFont("Roh20")
-					characterFrame.delete:SetText("Удалить")
+					characterFrame.delete:SetText("Delete")
 					characterFrame.delete.Paint = BPaint
 					characterFrame.delete.DoClick = function(s)
 						if (TempId) then
@@ -1122,7 +1122,7 @@ function PANEL:Init()
 					characterFrame.close:SetTextColor(color_white)
 					characterFrame.close:SetExpensiveShadow(1, Color(0, 0, 0, 100))
 					characterFrame.close:SetFont("Roh20")
-					characterFrame.close:SetText("Закрыть")
+					characterFrame.close:SetText("Close")
 					characterFrame.close.Paint = BPaint
 					characterFrame.close.DoClick = function(s)
 						characterFrame:Remove()
@@ -1134,12 +1134,12 @@ function PANEL:Init()
 			end)
 		end
 
-		AddLabel("Настройки", function()
+		AddLabel("Settings", function()
 		end)
 
 		local char = LocalPlayer().getChar and LocalPlayer():getChar()
 
-		AddLabel(!char and "Покинуть сервер" or "Вернуться в игру", function()
+		AddLabel(!char and "Disconnect" or "Return", function()
 			if (!char) then
 				RunConsoleCommand("disconnect")
 				return
