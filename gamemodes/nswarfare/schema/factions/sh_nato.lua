@@ -1,4 +1,4 @@
-FACTION.name = "Миротворцы"
+FACTION.name = "Peacekeepers"
 FACTION.desc = ""
 FACTION.color = Color(89, 53, 31)
 FACTION.models = {
