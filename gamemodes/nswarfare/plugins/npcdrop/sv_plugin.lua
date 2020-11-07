@@ -1,6 +1,6 @@
 ﻿local PLUGIN = PLUGIN
 
---[[PLUGIN.itemDrops = {
+PLUGIN.itemDrops = {
 	drop = {
 		{items = {"food_ruchkasamodrochka8"}, chance = 55, class = "npc_mutant_boar"},
 		{items = {"food_ruchkasamodrochka7"}, chance = 55, class = "npc_bloods"},
