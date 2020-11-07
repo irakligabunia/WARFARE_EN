@@ -1,6 +1,6 @@
 AddCSLuaFile()
 ENT.Base            = "base_nextbot"
-ENT.PrintName = "Крыса"
+ENT.PrintName = "Rat"
 ENT.Author = "Kek1ch x WickedRabbit"
 ENT.Category = "Warfare NPC"
 ENT.Spawnable = true
