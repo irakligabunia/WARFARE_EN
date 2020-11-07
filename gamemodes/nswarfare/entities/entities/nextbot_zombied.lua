@@ -1,6 +1,6 @@
 AddCSLuaFile()
 ENT.Base            = "base_nextbot"
-ENT.PrintName = "Зомбированные"
+ENT.PrintName = "Zombified Stalker"
 ENT.Author = "Kek1ch"
 ENT.Category = "Warfare NPC"
 ENT.Spawnable = true
