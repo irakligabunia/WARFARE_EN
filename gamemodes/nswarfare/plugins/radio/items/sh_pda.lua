@@ -1,4 +1,4 @@
-﻿ITEM.name = "ПДА"
+﻿ITEM.name = "PDA"
 ITEM.price = 1853
 ITEM.weight = 0.05
 
