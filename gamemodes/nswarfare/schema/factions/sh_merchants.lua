@@ -1,4 +1,4 @@
-FACTION.name = "Торговцы"
+FACTION.name = "Traders"
 FACTION.desc = ""
 FACTION.color = Color(255, 255, 0)
 FACTION.models = {
