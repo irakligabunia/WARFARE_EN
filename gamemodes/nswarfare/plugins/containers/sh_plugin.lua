@@ -18,28 +18,28 @@ nut.command.add("getlock", {
 						client:getChar():getInv():add("lock", 1, data)
 						data["lockedid"] = nil
 						target:setNetVar("doorData", data)
-						client:notify("Замок снят!")		
+						client:notify("Lock removed!")		
 					else
-						client:notify("На двери нет замка!")
+						client:notify("There's no lock on the door!")
 					end
 				else
-					client:notify("Дверь должна быть открытой, чтобы снять с нее замок!")
+					client:notify("Door must be unlocked to put a lock!")
 				end
 			else
 				if not target:getNetVar("locked", false) then
 					if (target:getNetVar("lockedid")) then
 						client:getChar():getInv():add("lock", 1, data)
 						target:setNetVar("lockedid", nil)
-						client:notify("Замок снят!")
+						client:notify("Lock removed!")
 					else
-						client:notify("На контейнере нет замка!")
+						client:notify("No lock on the container!")
 					end
 				else
-					client:notify("Контейнер должен быть открытым, чтобы снять с него замок!")
+					client:notify("Container must be open to place a lock!")
 				end
 			end
 		else
-			client:notify("Вы должны смотреть на дверь или контейнер!")
+			client:notify(!Test")
 		end
 	end
 })
@@ -183,7 +183,7 @@ if (CLIENT) then
 				surface.SetDrawColor(Color( 30, 30, 30, 90))
 				surface.DrawOutlinedRect(ScrW() * 0, ScrH() * 0, ScrW() * 0.41, ScrH() * 0.033) --шапка
 
-				draw.DrawText("Инвентарь", "Roh20", ScrW() * 0.005, ScrH() * 0.003, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT )
+				draw.DrawText("Inventory", "Roh20", ScrW() * 0.005, ScrH() * 0.003, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT )
 
 				surface.SetDrawColor(Color( 138, 149, 151, 60))
 				surface.DrawLine(ScrW() * 0.018, ScrH() * 0.0325, ScrW() * 0.29, ScrH() * 0.0325)
@@ -191,7 +191,7 @@ if (CLIENT) then
 				surface.SetDrawColor(Color(  0, 33, 55, 210))
 				surface.DrawRect(ScrW() * 0.017, ScrH() * 0.059, ScrW() * 0.2715, ScrH() * 0.027) --верхняя панель крафта
 
-				draw.DrawText("Тайник", "Roh20", ScrW() * 0.02, ScrH() * 0.06, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT )
+				draw.DrawText("Stash", "Roh20", ScrW() * 0.02, ScrH() * 0.06, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT )
 
 				surface.SetDrawColor(Color( 0, 0, 0, 255))
 				surface.DrawOutlinedRect(ScrW() * 0.0165, ScrH() * 0.059, ScrW() * 0.273, ScrH() * 0.53) --обводка модели игрока
@@ -256,10 +256,10 @@ if (CLIENT) then
 				netstream.Start("EntGiveMoney", entity, value)
 				entry:SetValue(0)
 			elseif value <= 0 then
-				nut.util.notify("Вы ввели недействительное значение!")
+				nut.util.notify("Invalid input!")
 				entry:SetValue(0)
 			else
-				nut.util.notify("У вас нет таких денег!")
+				nut.util.notify("You don't have enough money!")
 				entry:SetValue(0)
 			end		
 		end
@@ -267,7 +267,7 @@ if (CLIENT) then
 		local transfer = nut.gui.inv1:Add("DButton")
 		transfer:SetSize( ScrW() * 0.095, ScrH() * 0.0325)
 		transfer:SetPos(ScrW() * 0.1937, ScrH() * 0.608)
-		transfer:SetText("Положить")
+		transfer:SetText("Place")
 		transfer:SetFont("Roh20")
 		transfer:SetTextColor(Color(211, 211, 211)) 
 		function transfer:Paint( w, h )
@@ -301,10 +301,10 @@ if (CLIENT) then
 				netstream.Start("EntGiveMoney", entity, value)
 				entry:SetValue(0)
 			elseif value <= 0 then
-				nut.util.notify("Вы ввели недействительное значение!")
+				nut.util.notify("Invalid Input!")
 				entry:SetValue(0)
 			else
-				nut.util.notify("У вас нет таких денег!")
+				nut.util.notify("You don't have enough money!")
 				entry:SetValue(0)
 			end						
 		end
@@ -328,10 +328,10 @@ if (CLIENT) then
 				netstream.Start("GiveMoney", value)
 				entry1:SetValue(0)
 			elseif value <= 0 then
-				nut.util.notify("Вы ввели недействительное значение!")
+				nut.util.notify("Bad input!")
 				entry1:SetValue(0)
 			else
-				nut.util.notify("Здесь нет таких денег!")
+				nut.util.notify("You don't have enough money!")
 				entry1:SetValue(0)
 			end			
 		end
@@ -363,7 +363,7 @@ if (CLIENT) then
 				surface.DrawOutlinedRect(0, 0, w, h)
 			end
 		end
-		transfer1:SetText("Снять")
+		transfer1:SetText("Place")
 
 		transfer1.DoClick = function()
 			local value = tonumber(entry1:GetValue()) or 0
@@ -373,10 +373,10 @@ if (CLIENT) then
 				netstream.Start("GiveMoney", value)
 				entry1:SetValue(0)
 			elseif value <= 0 then
-				nut.util.notify("Вы ввели недействительное значение!")
+				nut.util.notify("Invalid Input!")
 				entry1:SetValue(0)
 			else
-				nut.util.notify("Здесь нет таких денег!")
+				nut.util.notify("There's not enough money left!")
 				entry1:SetValue(0)
 			end						
 			print("Я блядь ахуеваю")
