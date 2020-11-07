@@ -1,5 +1,5 @@
-﻿ITEM.name = "Веревка"
-ITEM.desc = "Около 10 метров хорошей веревки, которая может послужить многим целям, особенно в таком месте, как Зона Отчуждения. \n-повсеместное применение \n-используется для обезоруживание стаолкера \n\nИнвентарь игрока можно осмотреть с помощью команды /charsearch \nЗапрещено отбираться именные вещи"
+﻿ITEM.name = "Elastic Zipties"
+ITEM.desc = "A elastic pair of zipties, mainly used for incapicating a human being."
 ITEM.price = 759
 ITEM.exRender = false
 
