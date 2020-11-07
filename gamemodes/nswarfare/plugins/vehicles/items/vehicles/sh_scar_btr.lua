@@ -1,4 +1,4 @@
-﻿ITEM.name = "БТР-70"
+﻿ITEM.name = "BTR-70"
 ITEM.physDesc = ""
 ITEM.maxGas = 3000
 ITEM.price = 1200000
