@@ -35,12 +35,6 @@ nut.command.add("findallflags", {
 nut.util.include("sh_config.lua")
 nut.util.includeDir("hooks")
 
-nut.flag.add("Y", "Доступ к Q-меню")
-nut.flag.add("F", "Флаг на /plytransfer и /charsetname ")
-nut.flag.add("M", "Флаг на /itemclean")
-nut.flag.add("L", "Флаг на невыпадение вещей")
-nut.flag.add("P", "Доступ к редактору PAC3")
-nut.flag.add("O", "Флаг создателя")
 
 nut.currency.set("", "RU", "RU")
 
@@ -61,18 +55,3 @@ game.AddAmmoType( { name = "57x28", dmgtype = DMG_BULLET } )
 game.AddAmmoType( { name = "bolt", dmgtype = DMG_BULLET } )
 game.AddAmmoType( { name = "gaus", dmgtype = DMG_BULLET } )
 game.AddAmmoType( { name = "vog", dmgtype = DMG_BULLET } )
-
-hook.Add("PrePACEditorOpen", "FlagCheck", function( client )
-	if not client:getChar():hasFlags("P") then
-		return false
-	end
-end)
-
-
-if (CLIENT) then
-	hook.Add( "SpawnMenuOpen", "FlagCheckPET", function()
-		if not LocalPlayer():getChar():hasFlags("Y") and not IsValid(LocalPlayer():getChar()) then
-			return false
-		end
-	end)
-end
