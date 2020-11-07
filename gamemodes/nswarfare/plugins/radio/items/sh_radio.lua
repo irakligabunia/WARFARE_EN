@@ -1,5 +1,5 @@
-﻿ITEM.name = "Рация Walkie talkie"
-ITEM.desc = "Дисплей разбит. Вроде как имеются следы от зубов какого-то мутанта."
+﻿ITEM.name = "Handheld Radio"
+ITEM.desc = "A seemingly broken radio, maybe you can get it working."
 ITEM.price = 1289
 ITEM.weight = 0.42
 ITEM.exRender = false
