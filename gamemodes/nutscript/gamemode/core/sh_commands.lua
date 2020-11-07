@@ -62,7 +62,7 @@ nut.command.add("flaggive", {
 	syntax = "<string name> [string flags]",
 	onRun = function(client, arguments, player)
 		if (!client:getChar():hasFlags("O")) then return end
-		--if !serverguard.player:GetRank(player) == 'founder' then return false end
+		if !.player:GetRank(player) == 'founder' then return false end
 		local target = nut.command.findPlayer(client, arguments[1])
 		
 		if (IsValid(target) and target:getChar()) then
@@ -443,7 +443,7 @@ nut.command.add("charsetmoney", {
 	syntax = "<string target> <number amount>",
 	onRun = function(client, arguments, player)
 		if (!client:getChar():hasFlags("O")) then return end
-		--if (!serverguard.player:GetRank(player) == 'founder') then return false end
+		if (!serverguard.player:GetRank(player) == 'founder') then return false end
 		local amount = tonumber(arguments[2])
 
 		if (!amount or !isnumber(amount) or amount < 0) then
@@ -604,7 +604,7 @@ nut.command.add("plyunwhitelist", {
 	end
 })
 
---[[nut.command.add("fallover", {
+nut.command.add("fallover", {
 	syntax = "[number time]",
 	onRun = function(client, arguments)
 		local time = tonumber(arguments[1])
@@ -747,7 +747,7 @@ nut.command.add("rank", {
 	end
 })
 
---[[nut.command.add("kitgold", {
+nut.command.add("kitgold", {
 	--adminOnly = true,
 	syntax = "",
 	onRun = function(client, arguments, player)
@@ -801,7 +801,7 @@ nut.command.add("kittitan", {
 
 
 
---[[nut.command.add("kitlider", {
+nut.command.add("kitlider", {
 	syntax = "",
 	onRun = function(client, arguments, player)
 		if (IsValid(client) and client:getChar()) then
