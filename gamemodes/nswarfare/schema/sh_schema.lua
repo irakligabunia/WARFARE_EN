@@ -1,6 +1,6 @@
-﻿SCHEMA.name = "DarkRP"
+﻿SCHEMA.name = "Warfare"
 SCHEMA.author = "Kek1ch"
-SCHEMA.desc = "DarkRP"
+SCHEMA.desc = "Warfare"
 SCHEMA.IncludeFilesTable = {"sh_config.lua"} 
 
 nut.command.add("getpos", {
