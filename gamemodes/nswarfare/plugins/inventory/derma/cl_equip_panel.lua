@@ -32,7 +32,7 @@ function PANEL:Paint(w, h)
 	surface.SetDrawColor(Color( 30, 30, 30, 190))
 	surface.DrawOutlinedRect(0, 0, w, h) --обводка основной панеи
 
-	draw.DrawText("Экипировка", "Roh20", ScrW() * 0.005, ScrH() * 0.003, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT ) --надпись шапки
+	draw.DrawText("Equipment", "Roh20", ScrW() * 0.005, ScrH() * 0.003, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT ) --надпись шапки
 
 	surface.SetDrawColor(0, 0, 0, 210)
 	surface.DrawRect(ScrW() * 0.104, ScrH() * 0.22, ScrW() * 0.097, ScrH() * 0.036) --верхняя альфа панелька
@@ -40,9 +40,9 @@ function PANEL:Paint(w, h)
 	surface.SetDrawColor(0, 0, 0, 210)
 	surface.DrawRect(ScrW() * 0.094, ScrH() * 0.2525, ScrW() * 0.12, ScrH() * 0.036) --нижняя альфа панелька
 
-	draw.DrawText("Не доступно", "Roh25", ScrW() * 0.151, ScrH() * 0.223, Color(255, 255, 255, 210), TEXT_ALIGN_CENTER ) --верхняя альфа надпись
+	draw.DrawText("NO ACCESS", "Roh25", ScrW() * 0.151, ScrH() * 0.223, Color(255, 255, 255, 210), TEXT_ALIGN_CENTER ) --верхняя альфа надпись
 
-	draw.DrawText("В альфа версии", "Roh25", ScrW() * 0.15, ScrH() * 0.2535, Color(255, 255, 255, 210), TEXT_ALIGN_CENTER ) --нижняя альфа надпись
+	draw.DrawText("BETA VERSION", "Roh25", ScrW() * 0.15, ScrH() * 0.2535, Color(255, 255, 255, 210), TEXT_ALIGN_CENTER ) --нижняя альфа надпись
 end
 
 vgui.Register("equipment_panel", PANEL, "DFrame")
