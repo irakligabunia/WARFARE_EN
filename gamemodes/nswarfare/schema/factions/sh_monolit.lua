@@ -1,5 +1,5 @@
-﻿FACTION.name = "Монолит"
-FACTION.desc = "Монолит — группировка, аналогичная, по сути, религиозной секте."
+﻿FACTION.name = "Monolith"
+FACTION.desc = "Monolith — A group of cultists, the most well armed and feared factions in the Zone."
 FACTION.color = Color(230, 230, 250)
 FACTION.isDefault = false
 FACTION.isPublic = true
