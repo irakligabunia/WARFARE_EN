@@ -1,6 +1,6 @@
 PLUGIN.name = "NightVision"
 PLUGIN.author = "CaptJack92a x Neon"
-PLUGIN.desc = "Adds a simple wearable item that toggles on a night vision mode, да ваще пиздец."
+PLUGIN.desc = "Adds a simple wearable item that toggles on a night vision mode"
 
 nut.util.include("sv_plugin.lua")
 
