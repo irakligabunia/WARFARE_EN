@@ -27,7 +27,7 @@ nut.command.add("itemclean", {
 		for k, v in pairs( ents.FindByClass( "nut_item_death" ) ) do
 			v:Remove()
 		end
-		client:notify("Очистка карты завершена")
+		client:notify("Cleanup complete")
 	end
 })
 
