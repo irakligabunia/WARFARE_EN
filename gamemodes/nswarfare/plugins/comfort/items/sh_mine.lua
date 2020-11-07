@@ -1,5 +1,5 @@
-﻿ITEM.name = "Заряд РС-15"
-ITEM.desc = "Самодельное взрывное устройство, полученное из различных химических веществ, забитых в контейнер с металлическими шариками и со сломанным электрическим воспламенителем. Активируется автоматически. \n\nХАРАКТЕРИСТИКИ: \n-взрывоопасно \n-военное изделие \n\nДля активации необходимо выложить"
+﻿ITEM.name = "Shaped Charge PC-15"
+ITEM.desc = "A handmade IED, labeled ,,Shaped Charge, PC-15 250lb''. You shouldn't play around with this."
 ITEM.category = "Комфорт"
 ITEM.price = 6940
 ITEM.exRender = false
@@ -15,7 +15,7 @@ ITEM.iconCam = {
 }
 
 ITEM.functions.Use = { 
-	name = "установить",
+	name = "Use",
 	icon = "icon16/cup.png", 
 	onRun = function(item) 
 		local client = item.player
