@@ -1,5 +1,5 @@
-﻿FACTION.name = "Военные"
-FACTION.desc = "Военные — солдаты регулярных боевых частей армии Украины."
+﻿FACTION.name = "Military of Ukraine"
+FACTION.desc = "UKM — Servicemen of UKM, specifically trained to fight in the Zone."
 FACTION.color = Color(0, 100, 0)
 FACTION.isDefault = false
 FACTION.isPublic = true
