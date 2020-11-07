@@ -379,7 +379,7 @@ if (CLIENT) then
 				nut.util.notify("There's not enough money left!")
 				entry1:SetValue(0)
 			end						
-			print("Я блядь ахуеваю")
+			--print("Я блядь ахуеваю")
 		end
 	end)
 end
