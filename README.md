@@ -1,4 +1,5 @@
 # WARFARE_EN
-a english version of DMA WARFARE
-all credit goes to данил акабенко (kek1ch)
+# server developed by kek1ch and stalkerino
+# translated by creatrix and stalkerino
+
 #11/07/2020
