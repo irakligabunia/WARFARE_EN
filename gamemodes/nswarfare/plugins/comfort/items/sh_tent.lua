@@ -1,5 +1,5 @@
-﻿ITEM.name = "Палатка"
-ITEM.desc = "Брезентовая палатка является широко известным временным сооружение, способным предоставить укрытие от ветра, дождя или пыли. Используемый материал был подвергнут огнеупорной водоотталкивающей и противогнилостной пропитками. \n\nХАРАКТЕРИСТИКИ: \n-повсеместное применение \n-восстанавливает здоровье \n-для установки требуется: матрас, два синтетических каната, лопата"
+﻿ITEM.name = "Tent"
+ITEM.desc = "A tent, coming with a entrenching tool, a sleeping bag and other essentials for having a good night of sleep."
 ITEM.category = "Комфорт"
 ITEM.price = 13500
 ITEM.exRender = false
@@ -21,7 +21,7 @@ local NeedItems = {
 }
 
 ITEM.functions.use = { 
-	name = "установить палатку",
+	name = "Place Tent",
 	onRun = function(item)
 		local client = item.player
 		local data = {}
