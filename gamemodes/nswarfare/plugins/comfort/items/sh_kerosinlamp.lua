@@ -1,5 +1,5 @@
-﻿ITEM.name = "Керосиновая лампа"
-ITEM.desc = "Керосиновая малпа из-за своих больших размеров не пользуется особой популярностью среди сталкеров, но достаточно удобна и практична в качестве статичного источника освещения в лагере. \n\nХАРАКТЕРИСТИКИ: \n-технологическое приспособление \n-не требует заправки"
+﻿ITEM.name = "Kerosine Lamp"
+ITEM.desc = "A lamp of kerosine, not needing any refilling although seems to be comfortable to stand near it."
 ITEM.price = 678
 ITEM.exRender = false
 ITEM.weight = 1.33
@@ -14,7 +14,7 @@ ITEM.iconCam = {
 }
 
 ITEM.functions.use = { 
-	name = "поставить",
+	name = "Place",
 	onRun = function(item)
 		local client = item.player
 		local data = {}
