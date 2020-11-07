@@ -1,5 +1,5 @@
-﻿ITEM.name = "Профессиональный набор для ремонта брони"
-ITEM.desc = "Этот тяжелый металлический ящик содержит все, что необходимо, чтобы починить любое, даже самое поврежденное снаряжение. \n\nХАРАКТЕРИСТИКИ: \n-технологическое приспособление \n-высококачественное иделие \n-высокая ценность"
+﻿ITEM.name = "Armor Repair Kit"
+ITEM.desc = "A professionaly made repairing kit for armor"
 ITEM.category = "Прочее"
 ITEM.exRender = false
 ITEM.price = 20690
