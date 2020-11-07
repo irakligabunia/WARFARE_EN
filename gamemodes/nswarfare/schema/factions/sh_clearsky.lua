@@ -1,5 +1,5 @@
-﻿FACTION.name = "Чистое Небо"
-FACTION.desc = "Чистое небо — исследователи явлений Зоны, малоизвестный клан, затерянный где-то на Болотах."
+﻿FACTION.name = "Clear Sky"
+FACTION.desc = "Clear Sky — Scientists of the Zone."
 FACTION.color = Color(0, 255, 255)
 FACTION.isDefault = false
 FACTION.isPublic = false
