@@ -1,4 +1,4 @@
-ITEM.name = "Записка"
+ITEM.name = "Note"
 ITEM.price = 129
 ITEM.permit = "Мусор"
 ITEM.weight = 0.01
@@ -13,7 +13,7 @@ ITEM.iconCam = {
 }
 
 ITEM.functions.Write = {
-	name = "прочитать",
+	name = "Read",
 	icon = "icon16/font.png",
 	onRun = function(item)	
 	local canwrite = true
