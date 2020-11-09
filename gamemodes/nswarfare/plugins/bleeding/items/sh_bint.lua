@@ -1,5 +1,5 @@
-﻿ITEM.name = "Бинт"
-ITEM.desc = "Аспетический бинт для остановки кровотечения и предотвращения попадания в рану инфекции. При обычном кровотечении позволяет перевязать рану, при артериальном - перетянуть артерию. \n\nХАРАКТЕРИСТИКИ: \n-изделие первой помощи"
+﻿ITEM.name = "Cloth Bandage"
+ITEM.desc = "A cloth bandage, looking to be handcrafted. Often used for bandaging wounds and stopping bleedings"
 ITEM.category = "Медицина"
 ITEM.price = 520
 ITEM.weight = 0.14
