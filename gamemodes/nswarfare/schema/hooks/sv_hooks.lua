@@ -92,9 +92,9 @@ function SCHEMA:OnCharCreated(client, character)
 	client:setNetVar("rep", character:getData("rep", 0))
 
 	if character:getInv() then		
-		--character:getInv():add("pda", 1, {})
+		character:getInv():add("pda", 1, {})
 		character:getInv():add("knife", 1, {})
-		--[[character:getInv():add("pm", 1, {})
+		character:getInv():add("pm", 1, {})
 		character:getInv():add("tinderbox", 1, {})
 		character:getInv():add("tinderboxfuel", 1, {})
 		character:getInv():add("blow", 1, {})
