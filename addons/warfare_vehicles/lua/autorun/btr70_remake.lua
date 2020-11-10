@@ -6,7 +6,7 @@ local V = {
 			Information = "",
 			Model = "models/kek1ch/btr70/btr70_remake.mdl",
 			
-			--[[	Btr70Seats	 = { 	
+				Btr70Seats	 = { 	
 		P1 = { Pos = Vector(-30.0,-30.0,72.0), Ang = Angle(0,90,0) },
 		P2 = { Pos = Vector(-30.0,-0.0,72.0), Ang = Angle(0,90,0) },
 		
