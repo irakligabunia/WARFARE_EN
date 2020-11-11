@@ -13,8 +13,7 @@ ITEM.iconCam = {
 	fov = 2
 }
 
---[[function ITEM:getDesc()
-	local str
+function ITEM:getDesc()
 	if (!self.entity or !IsValid(self.entity)) then
 		str = "A Pager that allows you to send a signal to other characters in distance.\nPower: %s\nFrequency: %s"
 		return Format(str, (self:getData("power") and "On" or "Off"), self:getData("freq", "000.0"))
