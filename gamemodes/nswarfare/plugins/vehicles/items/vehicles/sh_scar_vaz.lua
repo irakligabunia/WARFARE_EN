@@ -1,4 +1,4 @@
-﻿ITEM.name = "ВАЗ-2121"
+﻿ITEM.name = "VAZ-2121"
 ITEM.physDesc = ""
 ITEM.maxGas = 1000
 ITEM.price = 219080
