@@ -1,4 +1,4 @@
-﻿ITEM.name = "УАЗИК"
+﻿ITEM.name = "UAZ"
 ITEM.physDesc = ""
 ITEM.maxGas = 1500
 ITEM.price = 598990
