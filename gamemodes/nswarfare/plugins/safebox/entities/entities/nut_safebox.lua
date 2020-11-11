@@ -1,7 +1,7 @@
 AddCSLuaFile()
 
 ENT.Type = "anim"
-ENT.PrintName = "Сейф"
+ENT.PrintName = "Safe"
 ENT.Category = "Warfare ENT"
 ENT.Spawnable = true
 ENT.AdminOnly = true
