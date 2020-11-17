@@ -17,13 +17,13 @@ local function paintDPanel(s, w, h)
 	surface.SetDrawColor(Color( 30, 30, 30, 50))
 	surface.DrawOutlinedRect(ScrW() * 0, ScrH() * 0, ScrW() * 0.4, ScrH() * 0.033)
 
-	draw.DrawText("Создание персонажа", "Roh20", ScrW() * 0.008, ScrH() * 0.003, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT )
+	draw.DrawText("Character Creation", "Roh20", ScrW() * 0.008, ScrH() * 0.003, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT )
 
-	draw.DrawText("Группировка «"..urfaction.name.."»" or "Группировка «Одиночки»", "Roh20", ScrW() * 0.39, ScrH() * 0.003, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT )
+	draw.DrawText("Faction «"..urfaction.name.."»" or "Faction «Loners»", "Roh20", ScrW() * 0.39, ScrH() * 0.003, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT )
 
-	draw.DrawText("Имя персонажа", "Roh20", ScrW() * 0.008, ScrH() * 0.04, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT )
-	draw.DrawText("Описание персонажа", "Roh20", ScrW() * 0.008, ScrH() * 0.09, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT )
-	draw.DrawText("Модель персонажа", "Roh20", ScrW() * 0.008, ScrH() * 0.137, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT )
+	draw.DrawText("Character Name", "Roh20", ScrW() * 0.008, ScrH() * 0.04, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT )
+	draw.DrawText("Physical Description", "Roh20", ScrW() * 0.008, ScrH() * 0.09, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT )
+	draw.DrawText("Character Model", "Roh20", ScrW() * 0.008, ScrH() * 0.137, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT )
 
 	surface.SetDrawColor( 0, 33, 55, 160)
 	surface.DrawRect(ScrW() * 0.008, ScrH() * 0.21, ScrW() * 0.1735, ScrH() * 0.024)
@@ -34,7 +34,7 @@ local function paintDPanel(s, w, h)
 	surface.SetDrawColor(Color( 0, 0, 0, 235))
 	surface.DrawOutlinedRect(ScrW() * 0.008, ScrH() * 0.21, ScrW() * 0.1735, ScrH() * 0.334)
 
-	draw.DrawText("Выбор группировки", "Roh20", ScrW() * 0.0135, ScrH() * 0.208, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT)
+	draw.DrawText("Faction Selection", "Roh20", ScrW() * 0.0135, ScrH() * 0.208, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT)
 
 	surface.SetDrawColor(Color( 0, 0, 0, 220))
 	surface.DrawRect(ScrW() * 0.01, ScrH() * 0.468, ScrW() * 0.1675, ScrH() * 0.037)
@@ -250,7 +250,7 @@ function PANEL:Init()
 		surface.DrawTexturedRect(ScrW()*0.01, ScrH()*0.023, ScrW()*0.036, ScrH()*0.065)
 
 		local x, y = ScrW() * 0.0445, ScrH() * 0.245 --позиция текста по x, больше влезает вертикально
-		local lines = nut.util.wrapText("Внимание! Это бета версия сборки DMA Warfare, прездазначенная для тестирования. Она не отображает финального качества продукта. Спасибо за понимание и поддержу. Удачи!", ScrW() * 0.515, "Roh25")
+		local lines = nut.util.wrapText("BETA VERSION OF WARFARE_EN, MAKE SURE TO REPORT BUGS TO THE CODE MONKIES", ScrW() * 0.515, "Roh25")
 		for i = 1, #lines do
 			y = ScrW() * 0 + (i * 18)
 			nut.util.drawText(lines[i], x, y, Color(0, 0, 0), ScrW() * 0, ScrH() * 0, "Roh20", TEXT_ALIGN_CENTER) --позиция, не ебу
@@ -266,7 +266,7 @@ function PANEL:Init()
 		surface.SetDrawColor(0, 0, 0, 240)  
 		surface.DrawRect(0, 0, w, h) 
 
-		draw.DrawText("0.451 Бета версия ", "Roh20", ScrW() * 0.005, ScrH() * 0.001, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT )
+		draw.DrawText("0.451 beta version ", "Roh20", ScrW() * 0.005, ScrH() * 0.001, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT )
 	end
 
 	local buttonW, buttonH = self.scrW * 0.2, self.scrH * 0.035
@@ -290,12 +290,12 @@ function PANEL:Init()
 		end
 
 		local PaintButtonsLeft = {}
-		PaintButtonsLeft["Войти в Зону"] = {Icon = "kek1ch/menu/play_menu_icon.png", PosX = ScrW()*0.0155, PosY = ScrH()*0.024}
-		PaintButtonsLeft["Загрузить игру"] = {Icon = "kek1ch/menu/save_menu_icon.png", PosX = ScrW()*0.0155, PosY = ScrH()*0.024}
-		PaintButtonsLeft["Настройки"] = {Icon = "kek1ch/menu/settings_menu_icon.png", PosX = ScrW()*0.0155, PosY = ScrH()*0.024}
-		PaintButtonsLeft["Вернуться в игру"] = {Icon = "kek1ch/menu/goback_menu_icon.png", PosX = ScrW()*0.0155, PosY = ScrH()*0.024}
-		PaintButtonsLeft["Назад"] = {Icon = "kek1ch/menu/goback_menu_icon.png", PosX = ScrW()*0.0155, PosY = ScrH()*0.024}
-		PaintButtonsLeft["Покинуть сервер"] = {Icon = "kek1ch/menu/exit_menu_icon.png", PosX = ScrW()*0.0155, PosY = ScrH()*0.024}
+		PaintButtonsLeft["Enter the Zone"] = {Icon = "kek1ch/menu/play_menu_icon.png", PosX = ScrW()*0.0155, PosY = ScrH()*0.024}
+		PaintButtonsLeft["Load the game"] = {Icon = "kek1ch/menu/save_menu_icon.png", PosX = ScrW()*0.0155, PosY = ScrH()*0.024}
+		PaintButtonsLeft["Settings"] = {Icon = "kek1ch/menu/settings_menu_icon.png", PosX = ScrW()*0.0155, PosY = ScrH()*0.024}
+		PaintButtonsLeft["Return to game"] = {Icon = "kek1ch/menu/goback_menu_icon.png", PosX = ScrW()*0.0155, PosY = ScrH()*0.024}
+		PaintButtonsLeft["Back"] = {Icon = "kek1ch/menu/goback_menu_icon.png", PosX = ScrW()*0.0155, PosY = ScrH()*0.024}
+		PaintButtonsLeft["Disconnect"] = {Icon = "kek1ch/menu/exit_menu_icon.png", PosX = ScrW()*0.0155, PosY = ScrH()*0.024}
 
 		for k, v in ipairs(nut.characters) do
 			local character = nut.char.loaded[v]
@@ -373,7 +373,7 @@ function PANEL:Init()
 	"Неумеха", "Неудачник", "Небрежный", "Черный", "Нарцисс", "Мятый", "Мутный", "Мрачный", "Местный", "Мертвый", "Мертвец", "Малыш", "Лютый", "Любимчик", "Косой", "Фантом",
 	"Упырь", "Туз", "Опер"}
 
-	local Desc = "Мужчина среднего роста, на вид лет 25, особо ничем не выделяется, но что-то в нем точно есть... Или нет?"
+	local Desc = "A average stalker in the Zone, looking like a newbie with no special features."
 
 	function CreateMainButtons()
 		local count = 0
