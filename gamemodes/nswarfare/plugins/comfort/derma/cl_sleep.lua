@@ -11,7 +11,7 @@ function PANEL:Init()
 	self:ShowCloseButton( false )
 	self:SetDraggable( false )
 
-	--[[local buttonWimg, buttonHimg = self.scrW * 0.45, self.scrH * 0.15
+	local buttonWimg, buttonHimg = self.scrW * 0.45, self.scrH * 0.15
 	local buttonXimg, buttonYimg = (self.scrW * 0.25) - (buttonWimg * 0.5), self.scrH * 0.035
 
 	self.sleepimg = self:Add( "DImage" )
@@ -52,7 +52,7 @@ function PANEL:Init()
 	self.hmsleep:SetMin( 0 )
 	self.hmsleep:SetMax( 12 )
 	self.hmsleep:SetDecimals( 0 )
-	--self.hmsleep:SetConVar( "sleep_char_value" )
+	self.hmsleep:SetConVar( "sleep_char_value" )
 	self.hmsleep:SetValue(6)
 
  
@@ -92,7 +92,7 @@ function PANEL:Init()
 		surface.SetMaterial(material) 
 		surface.DrawTexturedRect(0, 0, w, h) 
 
-		draw.DrawText("Выбранное значение: "..math.Round(self.hmsleep:GetValue()).." секунд(ы)", "dobi4ikxyecockft1234444", third1Xyes, third1Yyes, Color(211, 211, 211), TEXT_ALIGN_RIGHT )
+		draw.DrawText("Selected Time: "..math.Round(self.hmsleep:GetValue()).." Second(s)", "dobi4ikxyecockft1234444", third1Xyes, third1Yyes, Color(211, 211, 211), TEXT_ALIGN_RIGHT )
 
 		surface.SetDrawColor(255, 255, 255, 100) 
 		surface.SetMaterial(Material("daui/sleep_kek_v3.png")) 
@@ -105,7 +105,7 @@ function PANEL:Init()
 	
 	self.exitsleep = self:Add("DButton")
 	function self.exitsleep:Paint(w,h)
-		--[[if self:IsDown() then 
+		if self:IsDown() then 
 			local material = Material("daui/but_pressf.png") 
 			surface.SetDrawColor(color_white) 
 			surface.SetMaterial(material) 
@@ -117,7 +117,7 @@ function PANEL:Init()
 		end
 	end
 	self.exitsleep:SetDisabled(false)
-	self.exitsleep:SetText(L("Отменить"))
+	self.exitsleep:SetText(L("Cancel"))
 	self.exitsleep:SetFont("dobi4ikxyecockft1234444")
 	self.exitsleep:SetTextColor(color_white)
 	self.exitsleep:SetSize(buttonWno, buttonHno)	
