@@ -1,5 +1,5 @@
 ENT.Type = "anim"
-ENT.PrintName = "Talker"
+ENT.PrintName = "Vendor"
 ENT.Category = "NutScript"
 ENT.Spawnable = true
 ENT.AdminOnly = true
@@ -21,8 +21,8 @@ function ENT:Initialize()
 		self.factions = {}
 		self.classes = {}
 
-		self:setNetVar("name", "Вова Вист")
-		self:setNetVar("desc", "Одиночки")
+		self:setNetVar("name", "Vendor-EX")
+		self:setNetVar("desc", "EXAMPLE")
 		self:setNetVar("anim", "idle_0_idle_1")
 		self:setNetVar("sound", "")
 
