@@ -3,7 +3,7 @@
 DEFINE_BASECLASS( "base_anim" )
 
 ENT.Type = "anim"
-ENT.PrintName = "Радио"
+ENT.PrintName = "Radio"
 ENT.Category = "Warfare ENT"
 ENT.Spawnable = true
 --ENT.RenderGroup = RENDERGROUP_BOTH
