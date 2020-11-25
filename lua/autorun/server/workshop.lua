@@ -18,6 +18,3 @@ resource.AddWorkshop ( "207739713" ) --Nutscript Content
 resource.AddWorkshop ( "841066734" ) --Talk Icons
 resource.AddWorkshop ( "1536251090" ) --Anomalies
 resource.AddWorkshop ( "1525218777" ) --VFire
-
-resource.AddWorkshop ( "1083199879" ) --Autodonate
-
