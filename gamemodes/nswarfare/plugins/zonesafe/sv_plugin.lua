@@ -2,7 +2,7 @@ local PLUGIN = PLUGIN
 
 
 function PLUGIN:PlayerSpawn(client)
-	print("Тест")
+	print("маму ебал")
 	PrintTable(PLUGIN.areaTable)
 end
 
