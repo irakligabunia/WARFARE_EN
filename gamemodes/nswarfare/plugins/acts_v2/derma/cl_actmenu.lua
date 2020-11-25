@@ -80,7 +80,7 @@ function PANEL:Init()
 	self.button_a:Dock(TOP)
 	self.button_a:DockMargin(3, 3, 3, 0)
 	self.button_a:SetTall(ScrH() * 0.032)
-	self.button_a:SetText("Сидеть на земле #1")
+	self.button_a:SetText("Sitting on ground #1")
 	self.button_a:SetFont("Dma6")
 	self.button_a:SetTextColor(Color(255, 255, 255, 210))
 	self.button_a.Paint = PaintButtons
