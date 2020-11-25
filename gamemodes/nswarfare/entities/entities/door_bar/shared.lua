@@ -2,7 +2,7 @@ ENT.Type 		= "anim"
 ENT.Base 		= "wick_base" 
 ENT.Category 		= "STRP" 
  
-ENT.PrintName	= "Дверь в бар"
+ENT.PrintName	= "Door to the bar."
 ENT.Author		= "WickedRabbit" 
 ENT.Contact		= "" 
  
