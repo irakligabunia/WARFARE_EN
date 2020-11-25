@@ -1,7 +1,7 @@
 ﻿AddCSLuaFile()
 
 ENT.Type = "anim"
-ENT.PrintName = "Деревянный ящик"
+ENT.PrintName = "Wooden box"
 ENT.Author = "Spenser&Kek1ch"
 ENT.Spawnable = true
 ENT.AdminOnly = true
