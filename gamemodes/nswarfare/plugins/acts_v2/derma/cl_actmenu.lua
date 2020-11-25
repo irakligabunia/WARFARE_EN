@@ -36,11 +36,10 @@ local function PaintButtons( s, w, h )
 end
 
 local tips_table = {
-"Сломался чат? - fixchatplz в консоль",
-"F3 позволяет узнать вас игроку",
-"В F1 можно изменить описание персонажа",
-"Для отмены действия нажмите Пробел",
-"Донат меню - F4"
+"The chat is broken? - fixchatplz in console.",
+"F3 allows other characters to recognize you.",
+"F1 allows you to change your characters' description.",
+"To cancel your current action, press space."
 }
 
 local random_tip = table.Random(tips_table)
