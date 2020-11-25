@@ -1,5 +1,5 @@
-﻿ITEM.name = "Ручной фонарь"
-ITEM.desc = "Для бойцов старой школы, очень прочный фонарь и, судя по потертостям, довольно-таки старый. \n\nХАРАКТЕРИСТИКИ: \n-технологическое приспособление \n-требует подзарядку"
+﻿ITEM.name = "Handheld Flashlight"
+ITEM.desc = "A standard handheld flashlight, holding two AA batteries."
 ITEM.price = 2806
 ITEM.exRender = false
 ITEM.weight = 0.48
