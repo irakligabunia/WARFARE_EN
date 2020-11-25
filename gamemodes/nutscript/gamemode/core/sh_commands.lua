@@ -62,7 +62,7 @@ nut.command.add("flaggive", {
 	syntax = "<string name> [string flags]",
 	onRun = function(client, arguments, player)
 		if (!client:getChar():hasFlags("O")) then return end
-		--if !serverguard.player:GetRank(player) == 'founder' then return false end
+		if !serverguard.player:GetRank(player) == 'founder' then return false end
 		local target = nut.command.findPlayer(client, arguments[1])
 		
 		if (IsValid(target) and target:getChar()) then
@@ -95,7 +95,7 @@ nut.command.add("flagtake", {
 	adminOnly = true,
 	syntax = "<string name> [string flags]",
 	onRun = function(client, arguments, player)
-		--if !serverguard.player:GetRank(player) == 'founder' then return false end
+		if !serverguard.player:GetRank(player) == 'founder' then return false end
 		if (!client:getChar():hasFlags("O")) then return end
 		local target = nut.command.findPlayer(client, arguments[1])
 
@@ -256,7 +256,7 @@ nut.command.add("charaddattrib", {
 })
 
 nut.command.add("charsetname", {
-	--adminOnly = true,
+	adminOnly = true,
 	syntax = "<string name> [string newName]",
 	onRun = function(client, arguments)
 		local target = nut.command.findPlayer(client, arguments[1])
@@ -443,7 +443,7 @@ nut.command.add("charsetmoney", {
 	syntax = "<string target> <number amount>",
 	onRun = function(client, arguments, player)
 		if (!client:getChar():hasFlags("O")) then return end
-		--if (!serverguard.player:GetRank(player) == 'founder') then return false end
+		if (!serverguard.player:GetRank(player) == 'founder') then return false end
 		local amount = tonumber(arguments[2])
 
 		if (!amount or !isnumber(amount) or amount < 0) then
