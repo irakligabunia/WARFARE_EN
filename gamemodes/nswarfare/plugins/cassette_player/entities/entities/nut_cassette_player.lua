@@ -1,7 +1,7 @@
 AddCSLuaFile()
 
 ENT.Type = "anim"
-ENT.PrintName = "Проигрыватель"
+ENT.PrintName = "Media Player"
 ENT.Category = "Warfare ENT"
 ENT.Spawnable = true
 ENT.AdminOnly = true
