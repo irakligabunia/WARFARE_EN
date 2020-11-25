@@ -2,7 +2,7 @@ ENT.Type 		= "anim"
 ENT.Base 		= "wick_base" 
 ENT.Category 		= "STRP" 
  
-ENT.PrintName	= "Проходи не задерживайся(Сидящий)"
+ENT.PrintName	= "Don't just stand there, come in!(sitting)"
 ENT.Author		= "WickedRabbit" 
 ENT.Contact		= "" 
  
