@@ -1,5 +1,5 @@
-﻿ITEM.name = "Керосиновая лампа"
-ITEM.desc = "Керосиновая малпа из-за своих больших размеров не пользуется особой популярностью среди сталкеров, но достаточно удобна и практична в качестве статичного источника освещения в лагере. \n\nХАРАКТЕРИСТИКИ: \n-технологическое приспособление \n-не требует заправки"
+﻿ITEM.name = "Kerosine Lamp"
+ITEM.desc = "A placeable Kerosine Lamp coming with a camping kit, refueled using low grade fuel"
 ITEM.price = 678
 ITEM.exRender = false
 ITEM.weight = 1.33
