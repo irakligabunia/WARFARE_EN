@@ -1,6 +1,6 @@
-ITEM.name = "Топливо для зажигалки (133 мл осталось)"
+ITEM.name = "Lighter fuel (133ml)"
 ITEM.price = 797
-ITEM.desc = "От пустой зажигалки мало пользы. Опытные сталкеры никогда не забывают заправить свои зажигалки и взять еще топлива с собой, особенно, при подготовке к большой ходке. Топливо для зажигалок ценится относительно дешево. \n\nХАРАКТЕРИСТИКИ: \n-используется для заполнение зажигалок топливом"
+ITEM.desc = "There's little use for an empty lighter. Experienced stalkers never forget to fill up their lighters and take more fuel with them, especially when preparing for a big walk. Lighter fuel is relatively cheap. \n\nATTRIBUTES: \n-Used to fill lighters with fuel"
 ITEM.tinderboxAmount = 5
 ITEM.exRender = false
 ITEM.weight = 0.07
