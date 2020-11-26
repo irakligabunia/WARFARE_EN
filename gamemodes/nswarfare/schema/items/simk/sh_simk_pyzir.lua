@@ -1,6 +1,6 @@
-﻿ITEM.name = "СИМК с «Пузырем»"
-ITEM.desc = "Артефакт представляет собой несколько полых образований органической природы, соединённых между собой. Выделяет газообразное вещество, способное нейтрализовать химические или токсичные частицы в организме человека. Ввиду высокой эффективности пользуется огромным спросом, но и обладает многочисленными отрицательными свойствами. \n\nХАРАКТЕРИСТИКИ: \n-технологическое приспособление \n-высокая ценность \n-не требует подзарядки \n-максимальная вместимость - 1 \n-состояние: заполнен (содержит артефакт «Пузырь»)"
-ITEM.category = "СИМК"
+﻿ITEM.name = "Artefact Case (Bubble)"
+ITEM.desc = "The artifact is a few hollow formations of organic nature connected to each other. It secretes a gaseous substance capable of neutralizing chemical or toxic particles in the human body. Due to its high efficiency, it is in great demand, but also has numerous negative properties. \n\nХАРАКТЕРИСТИКИ: \n-технологическое приспособление \n-высокая ценность \n-не требует подзарядки \n-максимальная вместимость - 1 \n-состояние: заполнен (содержит артефакт «Пузырь»)"
+ITEM.category = "SIMK"
 ITEM.price = 26752
 ITEM.exRender = false
 ITEM.weight = 2.31
@@ -15,7 +15,7 @@ ITEM.iconCam = {
 }
 
 ITEM.functions.Use = {
-	name = "использовать",
+	name = "use",
 	icon = "icon16/cup.png",
 	onRun = function(item)
 		local client = item.player
