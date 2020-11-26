@@ -103,9 +103,9 @@ function SCHEMA:OnCharCreated(client, character)
 
 	character:setData("act_table", {"Sitting on ground #1", "Sitting on ground #2", "Stand with arms crossed",
 	"Squat", "Lean against the wall", "Scan anomaly #1", "Weapons' on shoulder", "Push up", 
-	"Hostage", "Squatting", "Sit", "Lean against the table #1", "Lean against the wall #2", 
-	"Lean against the table #2", "Стоять смирно", "Отдать честь", "Гоп стоп", "Поднять руки", "Приветствовать", 
-	"Требовать убрать оружие"})
+	"Hostage", "Crouch", "Sit", "Lean against the table #1", "Lean against the wall #1", 
+	"Lean against the table #2", "Attention", "Salute", "Gop stop", "Surrender", "Wave", 
+	"Ask to lower weapon"})
 
 	if (client:Team() == FACTION_MONOLIT) then
 		table.Add(client:getChar():getData("act_table"), {"Trance"})
@@ -124,10 +124,8 @@ local tabe_patch = {
 [FACTION_MERCENARIES] = "pmerc",
 [FACTION_MILITARY] = "pmilitary",
 [FACTION_RAIDERS] = "pbandit",
-[FACTION_RENEGAT] = "prenegat",
 [FACTION_FREEDOM] = "pfreedom",
 [FACTION_NATO] = "pnato",
-[FACTION_LASTDAY] = "plastday",
 [FACTION_DUTY] = "pdolg",
 [FACTION_CLEARSKY] = "pclearsky",
 [FACTION_MONOLIT] = "ploner"
