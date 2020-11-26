@@ -1,9 +1,9 @@
 ﻿ITEM.name = "Fort-12"
-ITEM.desc = "Пистолет украинского производства, предназначенный в основном для вооружения правоохранительных органов и силовых структур. Обладает лучшими по сравнению с ПМ точносью боя, приемистостью и емкостью магазина. \n\nБоеприпасы 9х18"
+ITEM.desc = "A Ukrainian-made pistol designed mainly for arming law enforcement agencies. An exact comparison with the PM's damage, reliability and store capacity. \n\nAmmunition 9х18"
 ITEM.price = 4665
 ITEM.class = "weapon_cop_fort"
 ITEM.weaponCategory = "2"
-ITEM.category = "Оружие"
+ITEM.category = "Weapon"
 ITEM.exRender = false
 ITEM.weight = 0.81
 
