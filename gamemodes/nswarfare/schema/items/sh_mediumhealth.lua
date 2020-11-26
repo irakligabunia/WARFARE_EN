@@ -1,5 +1,5 @@
-﻿ITEM.name = "Аптечка первой помощи"
-ITEM.category = "Одноразовый медицинский комплект общего назначения. Удобен для оказания первой помощи при травмах, небольших ранах, химических и термических ожогах, а так же различного рода отравлениях. Восстанавливает 43 здоровья \n\nХАРАКТЕРИСТИКИ: \n-повсеместное применение \n-медленное испольщование (полевой набор)"
+﻿ITEM.name = "First Aid Kit"
+ITEM.category = "A one-time general medical kit. It is convenient for first aid for injuries, small wounds, chemical and thermal burns, as well as various types of poisoning. Restores 43 health \n\nATTRIBUTES: \n-Widespread use \n-Long term"
 ITEM.price = 1140
 ITEM.exRender = false
 ITEM.weight = 0.24
