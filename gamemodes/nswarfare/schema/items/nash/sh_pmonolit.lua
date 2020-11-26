@@ -1,6 +1,6 @@
-﻿ITEM.name = "Нашивка «Монолита»"
-ITEM.desc = "Группировка, скорее напоминающая религиозную секту. Ее члены верят, что в центре Зоны покоится эволюционный кристалл неземного происхождения - Монолит. \n\nХАРАКТЕРИСТИКИ: \n-личная вещь \n-высокая ценность"
-ITEM.category = "Нашивки"
+﻿ITEM.name = "Monolith Patch"
+ITEM.desc = "A patch of the Monolith faction"
+ITEM.category = "Patch"
 ITEM.price = 2202
 ITEM.exRender = false
 ITEM.weight = 0.02
