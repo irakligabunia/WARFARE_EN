@@ -1,6 +1,6 @@
-﻿ITEM.name = "СИМК с «Огненным шаром»"
-ITEM.desc = "«Огненный шар» — часто использующийся сталкерами артефакт из-за его способности поддерживать приемлемую температуру в радиусе пяти метров. Однако у торговцев спросом похвастаться не может. Он образуется в высокотемпературных средах, но каким образом — никто ещё не выяснил. Образуется в аномалиях типа Жарка. \n\nХАРАКТЕРИСТИКИ: \n-технологическое приспособление \n-высокая ценность \n-не требует подзарядки \n-максимальная вместимость - 1 \n-состояние: заполнен (содержит артефакт «Огненный шар»)"
-ITEM.category = "СИМК"
+﻿ITEM.name = "Artefact (Fireball)"
+ITEM.desc = "The Fireball is a artifact often used by stalkers because of its ability to maintain an acceptable temperature within a five-metre radius. However, traders can not boast of demand. It is formed in high-temperature environments, but how - no one has yet found out. It is formed in anomalies such as Heat. \n\nХАРАКТЕРИСТИКИ: \n-технологическое приспособление \n-высокая ценность \n-не требует подзарядки \n-максимальная вместимость - 1 \n-состояние: заполнен (содержит артефакт «Огненный шар»)"
+ITEM.category = "SIMK"
 ITEM.price = 17900
 ITEM.exRender = false
 ITEM.weight = 3.65
@@ -15,7 +15,7 @@ ITEM.iconCam = {
 }
 
 ITEM.functions.Use = {
-	name = "использовать",
+	name = "use",
 	icon = "icon16/cup.png",
 	onRun = function(item)
 		local client = item.player
