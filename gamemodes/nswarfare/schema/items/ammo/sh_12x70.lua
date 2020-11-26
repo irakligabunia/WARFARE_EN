@@ -1,8 +1,8 @@
-ITEM.name = "Патроны 12x70"
+ITEM.name = "12x70 Rounds"
 ITEM.ammo = "12x70"
 ITEM.ammoAmount = 60
-ITEM.desc = "Коробка с патронами калибра 12x70"
-ITEM.category = "Патроны"
+ITEM.desc = "Box with 60 rounds of 12x70"
+ITEM.category = "Ammunition"
 ITEM.price = 1200
 ITEM.exRender = false
 
