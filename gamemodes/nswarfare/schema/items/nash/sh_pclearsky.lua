@@ -1,6 +1,6 @@
-ITEM.name = "Нашивка «Чистого Неба»"
-ITEM.desc = "Исследователи проявлений Зоны, малоизвестный клан, затерянный где-то в болотах. Достоверно никто не знает, какова их численность, чем они занимаются и какие цели приследуют. \n\nХАРАКТЕРИСТИКИ: \n-личная вещь \n-высокая ценность"
-ITEM.category = "Нашивки"
+ITEM.name = "Clear Sky Patch"
+ITEM.desc = "A patch of the Clear Sky faction"
+ITEM.category = "Patch"
 ITEM.price = 2202
 ITEM.exRender = false
 ITEM.weight = 0.02
