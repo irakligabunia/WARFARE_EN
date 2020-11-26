@@ -1,22 +1,16 @@
 local relations_allies_f = {}
-relations_allies_f["Loners"] = {allies = {"Loners", "Duty", "Freedom", "Clear Sky", "Ecologists", "Traders", "Миротворцы", "Последний День", "Стервятники"}}
+relations_allies_f["Loners"] = {allies = {"Loners", "Duty", "Freedom", "Clear Sky", "Ecologists", "Traders"}}
 relations_allies_f["Bandits"] = {allies = {"Bandits", "Freedom", "Mercenaries"}}
-relations_allies_f["Duty"] = {allies = {"Duty", "Freedom", "Ecologists", "Military", "Clear Sky", "Traders", "Миротворцы", "Стервятники"}}
-relations_allies_f["Freedom"] = {allies = {"Freedom", "Loners", "Ecologists", "Bandits", "Mercenaries", "Traders", "Clear Sky", "Стервятники"}}
+relations_allies_f["Duty"] = {allies = {"Duty", "Freedom", "Ecologists", "Military", "Clear Sky", "Traders"}}
+relations_allies_f["Freedom"] = {allies = {"Freedom", "Loners", "Ecologists", "Bandits", "Mercenaries", "Traders", "Clear Sky"}}
 relations_allies_f["Monolith"] = {allies = {"Monolith", "Zombified"}}
 relations_allies_f["Zombified"] = {allies = {"Monolith", "Zombified"}}
-relations_allies_f["Renegades"] = {allies = {"Renegades"}}
-relations_allies_f["Military"] = {allies = {"Ecologists", "Military", "Duty", "Миротворцы"}}
+relations_allies_f["Military"] = {allies = {"Ecologists", "Military", "Duty"}}
 relations_allies_f["Mercenaries"] = {allies = {"Mercenaries", "Freedom", "Bandits"}}
-relations_allies_f["Sin"] = {allies = {"Sin", "Послединй День", "Стервятники"}}
-relations_allies_f["Ecologists"] = {allies = {"Ecologists", "Military", "Loners", "Duty", "Миротворцы", "Последний День", "Clear Sky", "Стервятники"}}
-relations_allies_f["Миротворцы"] = {allies = {"Миротворцы", "Ecologists", "Military", "Loners", "Duty", "Clear Sky", "Traders", "Стервятники"}}
-relations_allies_f["Последний День"] = {allies = {"Последний День", "Ecologists", "Freedom", "Mercenaries", "Loners", "Sin", "Стервятники"}}
-relations_allies_f["Clear Sky"] = {allies = {"Clear Sky", "Loners", "Duty", "Freedom", "Traders", "Миротворцы", "Ecologists", "Стервятники"}}
-relations_allies_f["Traders"] = {allies = {"Traders", "Loners", "Duty", "Freedom", "Миротворцы", "Clear Sky", "Ecologists", "Стервятники"}}
-relations_allies_f["Стервятники"] = {allies = {"Стервятники", "Traders", "Loners", "Duty", "Freedom", "Миротворцы", "Clear Sky", "Sin", "Ecologists", "Последний День"}}
+relations_allies_f["Ecologists"] = {allies = {"Ecologists", "Military", "Loners", "Duty", "Clear Sky"}}
+relations_allies_f["Clear Sky"] = {allies = {"Clear Sky", "Loners", "Duty", "Freedom", "Traders","Ecologists"}}
+relations_allies_f["Traders"] = {allies = {"Traders", "Loners", "Duty", "Freedom", "Clear Sky", "Ecologists"}}
 relations_allies_f["Администратор"] = {allies = {"Администратор"}}
-relations_allies_f["Mир"] = {allies = {"Mир"}}
 
 local RandomRenegatModel = {
 	"models/spenser/kek1ch/renegat_kek1ch_kurtka.mdl",
