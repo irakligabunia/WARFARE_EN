@@ -1,9 +1,9 @@
-﻿ITEM.name = "ПКМ"
-ITEM.desc = "Ручной пулемёт, несмотря на свою высокую массу и низкую точность боя, нашел себе применение и в Зоне. Используется в основном для борьбы с превосходящим по силе противником или при зачистке логов мутантов. \n\nБоеприпасы 7,62х54"
+﻿ITEM.name = "PKM"
+ITEM.desc = "This hand-held machine gun, despite its high mass and low combat accuracy, has found its use in the zone. It is used mainly to fight a superior enemy or to clean up the lairs of mutants. \n\nAmmunition 7,62х54"
 ITEM.price = 77745
 ITEM.class = "weapon_cop_pkm"
 ITEM.weaponCategory = "1"
-ITEM.category = "Оружие"
+ITEM.category = "Weapon"
 ITEM.exRender = false
 ITEM.weight = 11.50
 
