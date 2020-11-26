@@ -1,2 +1,2 @@
-ATTRIBUTE.name = "Базовый комплект экипировки"
-ATTRIBUTE.desc = "Простая кожанная куртка и обрез старого дробовика - самый минимум, для защиты себя от окружающей действительности. Похлопав по карманам, можно обнаружить тряпичную маску, ручной фонарик и пачку сигарет - негусто, но все равно лучше, чем ничего."
+ATTRIBUTE.name = "Basic kit"
+ATTRIBUTE.desc = "A simple leather jacket and an old sawed-off shotgun - the minimum to protect yourself from the surrounding reality. After patting your pockets, you can find a rag mask, a hand-held flashlight and a pack of cigarettes - not much, but still better than nothing."
