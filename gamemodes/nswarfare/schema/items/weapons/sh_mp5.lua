@@ -1,9 +1,9 @@
 ﻿ITEM.name = "MP5A3"
-ITEM.desc = "Очень популярен на задворках Зоны как надёжное, дешёвое и лёгкое в обращении оружие. \n\nБоеприпасы 9x19."
+ITEM.desc = "Very popular due to the conditions of the Zone. Reliable, cheap and easy-to-handle. \n\nAmmunition 9x19."
 ITEM.price = 21784
 ITEM.class = "weapon_cop_mp5"
 ITEM.weaponCategory = "1"
-ITEM.category = "Оружие"
+ITEM.category = "Weapon"
 ITEM.exRender = false
 ITEM.model = "models/wick/weapons/stalker/stcopwep/w_mp5_model_stcop.mdl"
 ITEM.width = 3
