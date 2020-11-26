@@ -1,7 +1,7 @@
 ITEM.name = "Bolts"
 ITEM.ammo = "bolt"
 ITEM.ammoAmount = 90
-ITEM.desc = "A collection of 90 bolts"
+ITEM.desc = "A collection of 90 bolts."
 ITEM.category = "Ammunition"
 ITEM.price = 116
 ITEM.exRender = false
