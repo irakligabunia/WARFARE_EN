@@ -1,2 +1,2 @@
-ATTRIBUTE.name = "Навык: Свинцовый рюкзак"
-ATTRIBUTE.desc = "Дары Зоны притягательны, но крайне опасны. Не так давно Вам достался особый рюкзак, который должен нейтрализовать часть их радиационного излучения. Пришло самое время испытать его в деле."
+ATTRIBUTE.name = "Attribute: Lead Backpack"
+ATTRIBUTE.desc = "The gifts of the zone are attractive, but extremely dangerous. Not so long ago you got a special backpack, which should neutralize some of their radiation. It's time to put it in action."
