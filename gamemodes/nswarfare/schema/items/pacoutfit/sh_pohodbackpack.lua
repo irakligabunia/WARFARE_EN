@@ -1,5 +1,5 @@
-﻿ITEM.name = "Походный рюкзак"
-ITEM.desc = "Обычный рюкзак со множеством подсумков и отделений, при помощи которого переносится снаряжение, личные вещи, продукты и охотничьи принадлежности. Одно из первых обязательных приобретений сталкера-новичка. \n\nХАРАКТЕРИСТИКИ: \n-элемент экипировки"
+﻿ITEM.name = "Hiking Backpack"
+ITEM.desc = "A regular backpack with many pouches and compartments, with the help of which carries equipment, personal belongings, products and hunting accessories. One of the first mandatory acquisitions of a rookie stalker. \n\nХАРАКТЕРИСТИКИ: \n-элемент экипировки"
 ITEM.uniqueID = "pohodbackpack"
 ITEM.outfit = ITEM.uniqueID
 ITEM.outfitCategory = "backpack"
