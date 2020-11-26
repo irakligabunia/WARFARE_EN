@@ -1,2 +1,2 @@
-ATTRIBUTE.name = "Навык: Твердая рука"
-ATTRIBUTE.desc = "В каком бы состоянии и условиях вы не находились, будь то эмоциональное потрясение, дикое похмелье или небольшое землятрясение во время поездки на общественном транспорте - ваша рука никогда не дрогнет. Свое оружие вы держите так крепкоЮ что оставляете после себя вмятины на цевье и прикладе."
+ATTRIBUTE.name = "Attribute: Iron Hand"
+ATTRIBUTE.desc = "Whatever condition and conditions you are in, whether it's emotional shock, wild hangovers or a slight earthquake while on public transport - your hand never flinches. Its weapon you hold so hard that you leave behind a dent on the forehead."
