@@ -1,5 +1,5 @@
-﻿ITEM.name = "Шлем «Сфера 09»"
-ITEM.desc = "Современный высококачественный шлем, использующийся штурмовыми отрядами военных. Состоит из кевларовой каски, противогаза ПМК и прибора ночного виденья. Так же существует версия шлема без противогаза, не пользующаяся популярностью ни у военных, ни у сталкеров. \n\nХАРАКТЕРИСТИКИ: \n-бронированный шлем с системой фильтрации воздуха и ПНВ \n-удобность: низкая \n-используется при: ремонте снаряжения (+18)"
+﻿ITEM.name = "Sphere-09 Helmet"
+ITEM.desc = "A modern high-quality helmet used by military assault units. It consists of a Kevlar helmet, a PMC gas mask and a night vision device. There is also a version of the helmet without a gas mask, which is not popular with either the military or stalkers. \n\nХАРАКТЕРИСТИКИ: \n-бронированный шлем с системой фильтрации воздуха и ПНВ \n-удобность: низкая \n-используется при: ремонте снаряжения (+18)"
 ITEM.exRender = false
 ITEM.weight = 3.21
 
