@@ -1,5 +1,5 @@
-﻿ITEM.name = "Первенство «Новичка»"
-ITEM.desc = "Награда за достижение ранга. Выдается, если текущий ранг более 50. Для преобразования в капитал - необходимо использовать. \n\nХАРАКТЕРИСТИКИ: \n-выоская стоимость"
+﻿ITEM.name = "Rookie Medal"
+ITEM.desc = "The award for achieving the rookie rank. Issued if the current rank is more than 50. \n\nATTRIBUTES: \n-value"
 ITEM.price = 1000
 ITEM.weight = 0.02
 ITEM.exRender = false
