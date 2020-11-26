@@ -1,9 +1,9 @@
-﻿ITEM.name = "Детектор «Отклик»"
-ITEM.desc = "Cамый примитивный вид детектора аномальной активности. При помощи него можно находить только самые распространенные артефакты. \n\nХАРАКТЕРИСТИКИ: \n-технологическое приспособление \n-не требует подзарядки"
+﻿ITEM.name = "'Echo' Detector"
+ITEM.desc = "The most primitive type of any artefact detector. It can only find the most common artifacts. \n\nATTRIBUTES: \n-Techonological device \n-Doesn't require recharging"
 ITEM.price = 9412
 ITEM.class = "weapon_cop_echo"
 ITEM.weaponCategory = "detector"
-ITEM.category = "Оружие"
+ITEM.category = "Weapon"
 ITEM.exRender = false
 ITEM.weight = 0.44
 
