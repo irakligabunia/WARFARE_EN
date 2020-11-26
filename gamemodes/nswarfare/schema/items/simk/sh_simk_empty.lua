@@ -1,6 +1,6 @@
-﻿ITEM.name = "СИМК с «Пустышкой»"
-ITEM.desc = "«Пустышка» состоит из двух дисков голубоватого цвета, связанных между собой полупрозрачным материалом неизвестной природы. Этот странный артефакт считался лишенным каких-либо полезных свойств в течение длительного времени. Лишь недавно было обнаружено, что он обеспечивает весь высокий уровень защиты от пси-воздействий, частично поглощая их. \n\nХАРАКТЕРИСТИКИ: \n-технологическое приспособление \n-высокая ценность \n-не требует подзарядки \n-максимальная вместимость - 1 \n-состояние: заполнен (содержит артефакт «Пустышка»)"
-ITEM.category = "СИМК"
+﻿ITEM.name = "Artefact Case (Empty)"
+ITEM.desc = "'Empty' consists of two discs of bluish color, connected by a translucent material of unknown nature. This strange artifact was considered devoid of any useful properties for a long time. Only recently has it been discovered that it provides a very high level of protection against psi-influences, partially absorbing them. \n\nХАРАКТЕРИСТИКИ: \n-технологическое приспособление \n-высокая ценность \n-не требует подзарядки \n-максимальная вместимость - 1 \n-состояние: заполнен (содержит артефакт «Пустышка»)"
+ITEM.category = "SIMK"
 ITEM.price = 16752
 ITEM.exRender = false
 
@@ -14,7 +14,7 @@ ITEM.iconCam = {
 }
 
 ITEM.functions.Use = {
-	name = "использовать",
+	name = "use",
 	icon = "icon16/cup.png",
 	onRun = function(item)
 		local client = item.player
