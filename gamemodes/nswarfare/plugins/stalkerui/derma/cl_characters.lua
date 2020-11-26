@@ -224,7 +224,7 @@ function PANEL:Init()
 	self.vkbutton:SetPos(ScrW() * 0.915, ScrH() * 0.006)
 	self.vkbutton:SetText("")
 	self.vkbutton.DoClick = function(client)
-		gui.OpenURL("https://vk.com/cocrpstalker")
+		gui.OpenURL("https://vk.com/stalkerino10")
 	end
 
 	function self.vkbutton:Paint(w,h)
@@ -304,7 +304,6 @@ function PANEL:Init()
 
 		function label:Paint(w,h)
 			surface.SetDrawColor(Color(255, 255, 255, 255))
-			surface.SetMaterial(Material(PaintButtonsLeft[label:GetText()].Icon))
 			surface.DrawTexturedRect(ScrW()*0.0045, ScrH()*0.0043, ScrW()*0.0155, ScrH()*0.024)
 		end
 
@@ -351,7 +350,7 @@ function PANEL:Init()
 	end
 
 	local function CreateReturnButton()
-		AddLabel("Назад", function()
+		AddLabel("Back", function()
 			for k, v in pairs(self.fadePanels) do
 				if (IsValid(v)) then
 					v:AlphaTo(0, 0.25, 0, function()
@@ -386,7 +385,7 @@ function PANEL:Init()
 
 		local maxChars = hook.Run("GetMaxPlayerCharacter", LocalPlayer()) or nut.config.get("maxChars", 5)
 		if (count > 0 and #nut.characters < maxChars and hook.Run("ShouldMenuButtonShow", "create") != false) then
-			AddLabel("Войти в Зону", function()
+			AddLabel("Enter the zone", function()
 				for k, v in SortedPairs(nut.faction.teams) do
 					if not IsValid(characterFrame) then
 
@@ -416,7 +415,7 @@ function PANEL:Init()
 						characterFrame.models = characterFrame:Add("DComboBox")
 						characterFrame.models:SetSize(ScrW() * 0.1735, ScrH() * 0.025)
 						characterFrame.models:SetPos(ScrW() * 0.008, ScrH() * 0.164)
-						characterFrame.models:SetValue( "Выберите модель" )
+						characterFrame.models:SetValue( "Select the model" )
 						characterFrame.models:SetFont("Roh20")
 
 						function characterFrame.models:Paint( w, h )
@@ -702,7 +701,7 @@ function PANEL:Init()
 						--self.fadePanels[#self.fadePanels + 1] = AttribsFrame
 
 						if (#nut.characters == 1) then
-							AddLabel("Загрузить игру", function()
+							AddLabel("Load the server", function()
 								if not IsValid(characterFrame) then --не робит
 									local characterFrame = self:Add("DPanel")
 									characterFrame:SetAlpha(0)
@@ -722,7 +721,7 @@ function PANEL:Init()
 										surface.SetDrawColor(Color( 30, 30, 30, 50))
 										surface.DrawOutlinedRect(ScrW() * 0, ScrH() * 0, ScrW() * 0.26, ScrH() * 0.033) --шапка
 
-										draw.DrawText("Загрузка игры", "Roh20", ScrW() * 0.005, ScrH() * 0.003, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT ) --надпись шапки
+										draw.DrawText("Loading", "Roh20", ScrW() * 0.005, ScrH() * 0.003, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT ) --надпись шапки
 
 										surface.SetDrawColor(Color( 138, 149, 151, 100))
 										surface.DrawLine(ScrW() * 0.009, ScrH() * 0.0325, ScrW() * 0.2, ScrH() * 0.0325)
@@ -733,7 +732,7 @@ function PANEL:Init()
 										surface.SetDrawColor(Color( 0, 0, 0, 200))
 										surface.DrawRect(ScrW() * 0.009, ScrH() * 0.08, ScrW() * 0.2, ScrH() * 0.3) --основная панель крафта 145
 
-										draw.DrawText("Список персонажей", "Roh20", ScrW() * 0.015, ScrH() * 0.055, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT ) --надпись шапки
+										draw.DrawText("Character list", "Roh20", ScrW() * 0.015, ScrH() * 0.055, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT ) --надпись шапки
 
 										surface.SetDrawColor( Color(125, 105, 0, 100) )
 										surface.SetMaterial( Material("lgh/circle_gradient.png") )
@@ -831,7 +830,7 @@ function PANEL:Init()
 									characterFrame.choose:SetTextColor(color_white)
 									characterFrame.choose:SetExpensiveShadow(1, Color(0, 0, 0, 100))
 									characterFrame.choose:SetFont("Roh20")
-									characterFrame.choose:SetText("Выбрать")
+									characterFrame.choose:SetText("Select")
 									characterFrame.choose.Paint = BPaint
 									characterFrame.choose.DoClick = function(s)
 										LocalPlayer():ConCommand("stopsound")
@@ -876,7 +875,7 @@ function PANEL:Init()
 									characterFrame.delete:SetTextColor(color_white)
 									characterFrame.delete:SetExpensiveShadow(1, Color(0, 0, 0, 100))
 									characterFrame.delete:SetFont("Roh20")
-									characterFrame.delete:SetText("Удалить")
+									characterFrame.delete:SetText("Delete")
 									characterFrame.delete.Paint = BPaint
 									characterFrame.delete.DoClick = function(s)
 										if (TempId) then
@@ -896,7 +895,7 @@ function PANEL:Init()
 									characterFrame.close:SetTextColor(color_white)
 									characterFrame.close:SetExpensiveShadow(1, Color(0, 0, 0, 100))
 									characterFrame.close:SetFont("Roh20")
-									characterFrame.close:SetText("Закрыть")
+									characterFrame.close:SetText("Close")
 									characterFrame.close.Paint = BPaint
 									characterFrame.close.DoClick = function(s)
 										characterFrame:Remove()
@@ -915,7 +914,7 @@ function PANEL:Init()
 					characterFrame.closecr:SetTextColor(color_white)
 					characterFrame.closecr:SetExpensiveShadow(1, Color(0, 0, 0, 100))
 					characterFrame.closecr:SetFont("Roh20")
-					characterFrame.closecr:SetText("Закрыть")
+					characterFrame.closecr:SetText("Close")
 					characterFrame.closecr.Paint = BPaint
 					characterFrame.closecr.DoClick = function(s)
 						characterFrame:Remove()
@@ -925,7 +924,7 @@ function PANEL:Init()
 		end
 
 		if (#nut.characters > 0 and hook.Run("ShouldMenuButtonShow", "load") != false) then
-			AddLabel("Загрузить игру", function()
+			AddLabel("Load the server", function()
 				if not IsValid(characterFrame) then --не робит
 					local characterFrame = self:Add("DPanel")
 					characterFrame:SetAlpha(0)
@@ -945,7 +944,7 @@ function PANEL:Init()
 						surface.SetDrawColor(Color( 30, 30, 30, 50))
 						surface.DrawOutlinedRect(ScrW() * 0, ScrH() * 0, ScrW() * 0.26, ScrH() * 0.033) --шапка
 
-						draw.DrawText("Загрузка игры", "Roh20", ScrW() * 0.005, ScrH() * 0.003, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT ) --надпись шапки
+						draw.DrawText("Loading", "Roh20", ScrW() * 0.005, ScrH() * 0.003, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT ) --надпись шапки
 
 						surface.SetDrawColor(Color( 138, 149, 151, 100))
 						surface.DrawLine(ScrW() * 0.009, ScrH() * 0.0325, ScrW() * 0.2, ScrH() * 0.0325)
@@ -956,7 +955,7 @@ function PANEL:Init()
 						surface.SetDrawColor(Color( 0, 0, 0, 200))
 						surface.DrawRect(ScrW() * 0.009, ScrH() * 0.08, ScrW() * 0.2, ScrH() * 0.3) --основная панель крафта 145
 
-						draw.DrawText("Список персонажей", "Roh20", ScrW() * 0.015, ScrH() * 0.055, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT ) --надпись шапки
+						draw.DrawText("Character list", "Roh20", ScrW() * 0.015, ScrH() * 0.055, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT ) --надпись шапки
 
 						surface.SetDrawColor( Color(125, 105, 0, 100) )
 						surface.SetMaterial( Material("lgh/circle_gradient.png") )
@@ -1053,7 +1052,7 @@ function PANEL:Init()
 					characterFrame.choose:SetTextColor(color_white)
 					characterFrame.choose:SetExpensiveShadow(1, Color(0, 0, 0, 100))
 					characterFrame.choose:SetFont("Roh20")
-					characterFrame.choose:SetText("Выбрать")
+					characterFrame.choose:SetText("Select")
 					characterFrame.choose.Paint = BPaint
 					characterFrame.choose.DoClick = function(s)
 						if (TempId) then
@@ -1102,7 +1101,7 @@ function PANEL:Init()
 					characterFrame.delete:SetTextColor(color_white)
 					characterFrame.delete:SetExpensiveShadow(1, Color(0, 0, 0, 100))
 					characterFrame.delete:SetFont("Roh20")
-					characterFrame.delete:SetText("Удалить")
+					characterFrame.delete:SetText("Delete")
 					characterFrame.delete.Paint = BPaint
 					characterFrame.delete.DoClick = function(s)
 						if (TempId) then
@@ -1122,7 +1121,7 @@ function PANEL:Init()
 					characterFrame.close:SetTextColor(color_white)
 					characterFrame.close:SetExpensiveShadow(1, Color(0, 0, 0, 100))
 					characterFrame.close:SetFont("Roh20")
-					characterFrame.close:SetText("Закрыть")
+					characterFrame.close:SetText("Close")
 					characterFrame.close.Paint = BPaint
 					characterFrame.close.DoClick = function(s)
 						characterFrame:Remove()
@@ -1134,12 +1133,12 @@ function PANEL:Init()
 			end)
 		end
 
-		AddLabel("Настройки", function()
+		AddLabel("Settings", function()
 		end)
 
 		local char = LocalPlayer().getChar and LocalPlayer():getChar()
 
-		AddLabel(!char and "Покинуть сервер" or "Вернуться в игру", function()
+		AddLabel(!char and "Disconnect" or "Return to game", function()
 			if (!char) then
 				RunConsoleCommand("disconnect")
 				return
