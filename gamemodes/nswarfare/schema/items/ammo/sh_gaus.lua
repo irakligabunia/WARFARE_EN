@@ -1,7 +1,7 @@
 ﻿ITEM.name = "Gaus battery"
 ITEM.ammo = "gaus"
 ITEM.ammoAmount = 20
-ITEM.desc = "A box of 20 Gaus batteries."
+ITEM.desc = "A box of 20 Gaus batteries"
 ITEM.category = "Ammunition"
 ITEM.price = 6600
 ITEM.exRender = false
