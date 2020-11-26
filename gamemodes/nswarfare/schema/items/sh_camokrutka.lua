@@ -1,5 +1,5 @@
-﻿ITEM.name = "Косяк конопли"
-ITEM.desc = "Косяк успокоит нервы и поможет расслабиться на некоторое время. Благорадя ярко выраженному седативному эффекту, ненадолго отключит и перезапустит мозг, позволив ему остаться в порядке и избежать необратимых негативных последствий. \n\nХАРАКТЕРИСТИКИ: \n-стимулятор \n-сильное облегчение последствий псио-облучения"
+﻿ITEM.name = "Weed joint"
+ITEM.desc = "The joint will calm the nerves and help to relax for a while. Pleased with the pronounced sedative effect, briefly disconnects and restarts the brain, allowing it to stay in order and avoid irreversible negative consequences. \n\nATTRIBUTES: \n-Stimulant \n-Strong relief of the effects of psi-radiation"
 ITEM.price = 360
 ITEM.exRender = false
 ITEM.weight = 0.01
@@ -14,12 +14,12 @@ ITEM.iconCam = {
 }
 
 ITEM.functions.Use = {
-	name = "закурить",
+	name = "Smoke",
 	onRun = function(item)
 		local client = item.player
 		if (IsValid(item.player) && item.player:Alive()) then
 			if not item.player:getChar():getInv():hasItem("tinderbox") then
-				item.player:notify("У вас нет зажигалки!")
+				item.player:notify("You don't have a match!")
 				return false
 			end
 			
