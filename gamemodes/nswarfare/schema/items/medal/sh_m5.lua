@@ -1,5 +1,5 @@
-﻿ITEM.name = "Первенство «Мастера»"
-ITEM.desc = "Награда за достижение ранга. Выдается, если текущий ранг более 1000. Для преобразования в капитал - необходимо использовать.\n\nХАРАКТЕРИСТИКИ: \n-выоская стоимость"
+﻿ITEM.name = "Master Medal"
+ITEM.desc = "Award for achieving the Master rank. Issued if the current rank is more than 1000. To convert to capital, use \n\nATTRIBUTES: \n-value"
 ITEM.price = 20000
 ITEM.exRender = false
 ITEM.weight = 0.02
