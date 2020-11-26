@@ -1,8 +1,8 @@
-﻿ITEM.name = "Аккумуляторы"
+﻿ITEM.name = "Gaus battery"
 ITEM.ammo = "gaus"
 ITEM.ammoAmount = 20
-ITEM.desc = "Боеприпасы для гаусс-пушки, созданные с применением высокотехнологичного оборудования, в которых в качестве источника энергии используется капсулированный фрагмент артефакта «Вспышка»."
-ITEM.category = "Патроны"
+ITEM.desc = "A box of 20 Gaus batteries."
+ITEM.category = "Ammunition"
 ITEM.price = 6600
 ITEM.exRender = false
 
