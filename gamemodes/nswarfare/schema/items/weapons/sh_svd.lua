@@ -1,9 +1,9 @@
-﻿ITEM.name = "СВД"
-ITEM.desc = "Широко использовалась во всех боевых операциях, проводившихся советской армией с начала 1960-х. Зарекомендовала себя как исключительно надёжное и удобное в обращении оружие. \n\nБоеприпасы 7.62х54."
+﻿ITEM.name = "SVD"
+ITEM.desc = "It has been widely used in all combat operations carried out by the Soviet army since the early 1960s. \n\nAmmunition 7.62х54."
 ITEM.price = 45392
 ITEM.class = "weapon_cop_svd"
 ITEM.weaponCategory = "1"
-ITEM.category = "Оружие"
+ITEM.category = "Weapon"
 ITEM.exRender = false
 ITEM.weight = 4.13
 
