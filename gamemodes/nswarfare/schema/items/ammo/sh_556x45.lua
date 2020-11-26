@@ -1,8 +1,8 @@
-﻿ITEM.name = "Патроны 5,56x45"
+﻿ITEM.name = "5,56x45 Rounds"
 ITEM.ammo = "556x45"
 ITEM.ammoAmount = 120
-ITEM.desc = "Коробка с патронами калибра 5,56x45"
-ITEM.category = "Патроны"
+ITEM.desc = "Box with 120 rounds of 5,56x45"
+ITEM.category = "Ammunition"
 ITEM.price = 4200
 ITEM.exRender = false
 
