@@ -1,9 +1,9 @@
-﻿ITEM.name = "AН-94"
-ITEM.desc = "Оружие элитных войск советской армии. Был разработан в качестве замены устаревшему АК-74. В АН-94 подвижны не только внутренние механизмы, но и вся ствольная коробка вместе со стволом, что позволяет снизить отдачу, тем самым значительно повысив точность боя. \n\nБоеприпасы 5.45х39"
+﻿ITEM.name = "AN-94"
+ITEM.desc = "Weapons of elite troops of the Soviet army. It was designed as a replacement for the outdated AK-74. In AN-94 not only the internal mechanisms are mobile, but the entire firing bolt together with the barrel, which allows to reduce the impact, thereby significantly increasing the accuracy of the battle. \n\nAmmunition 5.45х39"
 ITEM.price = 41528
 ITEM.class = "weapon_cop_abakan"
 ITEM.weaponCategory = "1"
-ITEM.category = "Оружие"
+ITEM.category = "Weapon"
 ITEM.exRender = false
 ITEM.weight = 4.17
 
