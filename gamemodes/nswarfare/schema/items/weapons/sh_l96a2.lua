@@ -1,9 +1,9 @@
 ﻿ITEM.name = "L96A1"
-ITEM.desc = "Снайперская винтовка британского производства, разработанная в компании Accuracy International. Боеприпасы 7.62х51"
+ITEM.desc = "British-made sniper rifle developed by Accuracy International. \n\nAmmunition 7.62х51"
 ITEM.price = 125516
 ITEM.class = "weapon_cop_l96"
 ITEM.weaponCategory = "1"
-ITEM.category = "Оружие"
+ITEM.category = "Weapon"
 ITEM.exRender = false
 ITEM.model = "models/wick/weapons/stalker/stcopwep/w_l96_model_stcop.mdl"
 ITEM.width = 6
