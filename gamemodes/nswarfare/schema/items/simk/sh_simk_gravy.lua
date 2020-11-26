@@ -1,6 +1,6 @@
-﻿ITEM.name = "СИМК с «Грави»"
-ITEM.desc = "Артефакт образуется при длительном гравитационном воздействии на металлосодержащие вещества. Способен поддерживать антигравитационное поле. Многие сталкеры используют его так же, как и артефакт «Ночная звезда» – чтобы заметно уменьшить вес рюкзака. \n\nХАРАКТЕРИСТИКИ: \n-технологическое приспособление \n-высокая ценность \n-не требует подзарядки \n-максимальная вместимость - 1 \n-состояние: заполнен (содержит артефакт «Грави»)"
-ITEM.category = "СИМК"
+﻿ITEM.name = "Artefact Case (Gravi)"
+ITEM.desc = "The artifact is formed with a long-term gravitational influence on metal-containing substances. It is able to maintain an antigravity field. Many stalkers use it in the same way as the 'Night Star' artifact - to significantly reduce the weight of the backpack. \n\nХАРАКТЕРИСТИКИ: \n-технологическое приспособление \n-высокая ценность \n-не требует подзарядки \n-максимальная вместимость - 1 \n-состояние: заполнен (содержит артефакт «Грави»)"
+ITEM.category = "SIMK"
 ITEM.price = 43620
 ITEM.exRender = false
 ITEM.weight = 3.65
@@ -15,7 +15,7 @@ ITEM.iconCam = {
 }
 
 ITEM.functions.Use = {
-	name = "использовать",
+	name = "use",
 	icon = "icon16/cup.png",
 	onRun = function(item)
 		local client = item.player
