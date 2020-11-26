@@ -1,6 +1,6 @@
-﻿ITEM.name = "Профессиональный набор для ремонта оружия"
-ITEM.desc = "Этот тяжелый металлический ящик содержит все, что необходимо, чтобы починить любое, даже самое поврежденное и ржавое оружие. \n\nХАРАКТЕРИСТИКИ: \n-технологическое приспособление \n-высококачественное иделие \n-высокая ценность"
-ITEM.category = "Прочее"
+﻿ITEM.name = "Professional weapon repair kit"
+ITEM.desc = "This heavy metal box contains everything you need to fix any, even the most damaged and rusty weapon. \n\nATTRIBUTES: \n-Technological device \n-High quality \n-High value"
+ITEM.category = "Misc"
 ITEM.exRender = false
 ITEM.price = 15690
 ITEM.exRender = true
