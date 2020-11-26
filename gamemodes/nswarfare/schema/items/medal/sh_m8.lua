@@ -1,5 +1,5 @@
-﻿ITEM.name = "Первенство «Величайшего сталкера»"
-ITEM.desc = "Награда за достижение ранга. Выдается, если текущий ранг более 1750. Для преобразования в капитал - необходимо использовать.\n\nХАРАКТЕРИСТИКИ: \n-выоская стоимость"
+﻿ITEM.name = "Legendary Medal"
+ITEM.desc = "Award for achieving the Legendary rank. Issued if the current rank is more than 1750. To convert to capital, use \n\nATTRIBUTES: \n-value"
 ITEM.price = 35000
 ITEM.exRender = false
 ITEM.weight = 0.02
