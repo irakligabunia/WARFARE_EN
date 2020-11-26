@@ -1,5 +1,5 @@
-﻿ITEM.name = "ПСЗ-9д «Броня Долга» (Заказной)"
-ITEM.desc = "Ранняя модель комбинезона «Долга» — бронежилет спецназа серии ПС3-9, приспособленный для использования в условиях Зоны. Способен защитить от автоматной пули, но очень громоздок и почти не обеспечивает защиту от аномальных воздействий. \n\nВНИМАНИЕ! \n\n При разборке рекомендуется освободить инвентарь! \n\nХАРАКТЕРИСТИКИ: \n-усиленная бронезащита \n-возможно разобрать с помощью лома \n-защищает от радиации при наличии балона"
+﻿ITEM.name = "PZD-9d 'Duty Suit'"
+ITEM.desc = "The early model of the 'Duty' jumpsuit is a special forces body armor of the PZD-9 series, adapted for use in the zone. It is able to protect against automatic bullets, but is very bulky and almost does not provide protection from abnormal influences. \n\nWARNING! \n\n When disassembling, it is recommended to empty the inventory! \n\nATTRIBUTES: \n-Uparmored \n-Can be disassembled with a crowbar \n-Provides radiation protection if fitted with a CCR"
 ITEM.price = 114254
 ITEM.ric = 22
 ITEM.dmgsteal = 45
