@@ -1,5 +1,5 @@
-﻿ITEM.name = "Коробка с патронами"
-ITEM.desc = "Выдает все виды патрон при активации. \n\nХАРАКТЕРИСТИКИ: \n-высокая ценность"
+﻿ITEM.name = "Ammo box"
+ITEM.desc = "Gives out all kinds of cartridge when activated. \n\nATTRIBUTES: \n-high value"
 ITEM.price = 41976
 ITEM.exRender = false
 ITEM.weight = 0.1
