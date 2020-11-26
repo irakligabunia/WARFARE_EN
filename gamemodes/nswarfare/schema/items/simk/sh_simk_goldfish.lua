@@ -1,6 +1,6 @@
-﻿ITEM.name = "СИМК с «Золотой рыбкой»"
-ITEM.desc = "Все его свойства были обнаружены учёным Сахаровым на Янтаре после массивного выброса. После его тщательных исследований было установлено, что этот артефакт образуется после слияния трёх «Грави» на уровне взаимодействия сингулярных полей. \n\nХАРАКТЕРИСТИКИ: \n-технологическое приспособление \n-высокая ценность \n-не требует подзарядки \n-максимальная вместимость - 1 \n-состояние: заполнен (содержит артефакт «Золотая рыбка»)"
-ITEM.category = "СИМК"
+﻿ITEM.name = "Artefact Case (Goldfish)"
+ITEM.desc = "All its properties were discovered by Sakharov scientists on Yantar after a massive emission. After careful research, it was determined that this artifact was formed after the merger of the three 'Gravi' at the level of interaction of singular fields. \n\nХАРАКТЕРИСТИКИ: \n-технологическое приспособление \n-высокая ценность \n-не требует подзарядки \n-максимальная вместимость - 1 \n-состояние: заполнен (содержит артефакт «Золотая рыбка»)"
+ITEM.category = "SIMK"
 ITEM.price = 21752
 ITEM.exRender = false
 ITEM.weight = 3.65
@@ -15,7 +15,7 @@ ITEM.iconCam = {
 }
 
 ITEM.functions.Use = {
-	name = "использовать",
+	name = "use",
 	icon = "icon16/cup.png",
 	onRun = function(item)
 		local client = item.player
