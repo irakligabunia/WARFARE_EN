@@ -1,4 +1,4 @@
-﻿ITEM.name = "Глушитель"
+﻿ITEM.name = "Silencer"
 ITEM.price = 35140
 ITEM.weight = 0.01
 ITEM.exRender = false
@@ -12,26 +12,26 @@ ITEM.iconCam = {
 }
 
 ITEM.functions.Equip = {
-	name = "установить",
+	name = "attach",
 	onCanRun = function(item)				
 		return (!IsValid(item.entity))
 	end,
 
 	onRun = function(item)
-		item.player:notify("Улучшение одето на оружие!")
+		item.player:notify("Attachment attached!")
 		item.player:EmitSound(Sound("weapons/stalker_cop/addon_attach.wav"))
 		item:setData("equip", true)
 		return false
 	end
 }
 ITEM.functions.EquipUn = {
-	name = "снять",
+	name = "remove",
 	onCanRun = function(item)				
 		return (!IsValid(item.entity))
 	end,
 
 	onRun = function(item)
-		item.player:notify("Улучшение снято с оружия!")
+		item.player:notify("Attachment removed!")
 		item.player:EmitSound(Sound("weapons/stalker_cop/addon_detach.wav"))
 		item:setData("equip", false)
 		return false
