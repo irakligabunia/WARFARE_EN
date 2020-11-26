@@ -1,9 +1,9 @@
 ITEM.name = "HK416"
-ITEM.desc = "HK416 — немецкая штурмовая винтовка, адаптированная под американскую модульную систему AR15, созданная фирмой Heckler & Koch. Встречается только у ветеранов и мастеров в экзоскелетах. \n\nБоеприпасы 5.56х45"
+ITEM.desc = "The HK416 is a German assault rifle adapted to the American modular AR15 system, created by Heckler and Koch. It is seen only with veterans and masters in exoskeletons. \n\nAmmunition 5.56х45"
 ITEM.price = 56112
 ITEM.class = "weapon_cop_hk416"
 ITEM.weaponCategory = "1"
-ITEM.category = "Оружие"
+ITEM.category = "Weapon"
 ITEM.exRender = false
 ITEM.model = "models/wick/weapons/stalker/stcopwep/w_hk416_model_stcop.mdl"
 ITEM.width = 4
