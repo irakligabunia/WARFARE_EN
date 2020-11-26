@@ -1,9 +1,9 @@
 ﻿ITEM.name = "G36K"
-ITEM.desc = "Характерна высокими показателями надёжности, пробивающей способности, точности и настильности. Снабжена интегрированной оптикой с кратностью 1.5x. Встречается преимущественно у ветеранов и мастеров в экзоскелетах.  \n\nБоеприпасы 5,56x45"
+ITEM.desc = "It is characterized by high indicators of reliability, punching ability, accuracy and rigidness. It is equipped with integrated optics with a 1.5x multipler. It is found mainly with veterans and masters in exoskeletons.  \n\nAmmunition 5,56x45"
 ITEM.price = 47284
 ITEM.class = "weapon_cop_g36"
 ITEM.weaponCategory = "1"
-ITEM.category = "Оружие"
+ITEM.category = "Weapon"
 ITEM.exRender = false
 ITEM.model = "models/wick/weapons/stalker/stcopwep/w_g36_model_stcop.mdl"
 ITEM.width = 5
