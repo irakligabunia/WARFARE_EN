@@ -1,9 +1,9 @@
-﻿ITEM.name = "Бинокль"
-ITEM.desc = "Стандартный украинский армейский бинокль с максимальной кратностью увеличения х6.0. Позволяет детально рассматривать местность и строения с большого расстояния. Имеет очень прочный корпус."
+﻿ITEM.name = "Binoculars"
+ITEM.desc = "Standard Ukrainian army binoculars with a maximum multiple of x6.0. Allows you to examine the terrain and buildings in detail from a long distance."
 ITEM.price = 1688
 ITEM.class = "weapon_cop_binoculars"
 ITEM.weaponCategory = "5"
-ITEM.category = "Оружие"
+ITEM.category = "Weapon"
 ITEM.exRender = false
 ITEM.model = "models/wick/weapons/stalker/stcopwep/w_bin_model_stcop.mdl"
 ITEM.width = 2
