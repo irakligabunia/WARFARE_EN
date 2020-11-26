@@ -1,8 +1,8 @@
-﻿ITEM.name = "Патроны .45ACP"
+﻿ITEM.name = ".45ACP Rounds"
 ITEM.ammo = "45acp"
 ITEM.ammoAmount = 60
-ITEM.desc = "Коробка с патронами калибра .45ACP"
-ITEM.category = "Патроны"
+ITEM.desc = "Box with 60 rounds of .45ACP"
+ITEM.category = "Ammunition"
 ITEM.price = 2900
 ITEM.exRender = false
 
