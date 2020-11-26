@@ -1,6 +1,6 @@
-ITEM.name = "Армейская аптечка"
-ITEM.desc = "Специализированный медицинский набор для оказания первой помощи при ранениях на поле боя. В набор входят средства для ускорения свертывания крови на основе Менадиона, обезболивающие, антибиотики и стимуляторы иммунитета. Восстанавливает 73 здоровья. \n\nХАРАКТЕРИСТИКИ: \n-военное изделие \n-медленно использовангие (полевой набор)"
-ITEM.category = "Медицина"
+ITEM.name = "Army medkit"
+ITEM.desc = "Specialized medical kit for first aid for injuries on the battlefield. The kit includes means to accelerate blood clotting based on Menadion, painkillers, antibiotics and immune stimulants. Restores 73 health. \n\nATTRIBUTES: \n-military grade \n-long term"
+ITEM.category = "Medicine"
 ITEM.price = 1836
 ITEM.exRender = false
 ITEM.weight = 0.20
