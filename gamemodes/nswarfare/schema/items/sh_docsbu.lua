@@ -1,5 +1,5 @@
-﻿ITEM.name = "Персональное удостоверение ВСУ"
-ITEM.desc = "Документ военно служащего Украины, в нем содержатся данные, которые занесены в Систему, автоматически даёт право на проход в зону экологического бедствия. \n\nХАРАКТЕРИСТИКИ: \n-личная вещь"
+﻿ITEM.name = "UKM ID"
+ITEM.desc = "The document of the military employees of Ukraine, it contains data, which are entered into the system, and automatically gives the right to enter the environmental disaster zone. \n\nATTRIBUTES: \n-Personal belonging"
 ITEM.category = "misc"
 ITEM.price = 9535
 ITEM.exRender = false
@@ -27,7 +27,7 @@ end
 ITEM.functions.Use = {
 	onRun = function(item)
 		local client = item.player
-		if not item:getData("name") == "Пусто" then
+		if not item:getData("name") == "Empty" then
 			client:getChar():getInv():add("docsbu", 1, {name = client:getChar():getName()})
 			return true
 		end
@@ -37,7 +37,7 @@ ITEM.functions.Use = {
 }
 
 function ITEM:getDesc()
-	local description = self.desc.."\n\nИмя: "..self:getData("name", "Пусто").."."
+	local description = self.desc.."\n\nName: "..self:getData("name", "Empty").."."
 	return description
 end
 
