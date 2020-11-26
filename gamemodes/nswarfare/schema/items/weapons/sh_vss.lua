@@ -1,9 +1,9 @@
-﻿ITEM.name = "ВСС «Винторез»"
-ITEM.desc = "«Винтовка снайперская специальная», предназначена для бесшумной и беспламенной снайперской стрельбы, для чего снабжена интегрированным глушителем. Несмотря на магазин небольшой ёмкости, очень ценится сталкерами. 'n\nБоеприпасы 9х39 мм."
+﻿ITEM.name = "VSS Vintorez"
+ITEM.desc = "'Sniper Special Rifle' is designed for silent sniper shooting, for which it is equipped with an integrated silencer. Despite the small-capacity store, it is highly valued by stalkers. n\nAmmunition 9х39 мм."
 ITEM.price = 45792
 ITEM.class = "weapon_cop_vintorez"
 ITEM.weaponCategory = "1"
-ITEM.category = "Оружие"
+ITEM.category = "Weapon"
 ITEM.exRender = false
 ITEM.weight = 2.75
 
