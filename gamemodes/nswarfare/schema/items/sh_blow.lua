@@ -1,6 +1,6 @@
-﻿ITEM.name = "Анабиотик (произведено в Зоне)"
-ITEM.category = "Медицина"
-ITEM.desc = "Экспериментальный медицинский препарат, позволяет пережить Выброс. \n\nХАРАКТЕРИСТКИ: \n-медикамент \n-вызывает долгое помутнение сознание \n\nПозволяет пережить выброс"
+﻿ITEM.name = "Anabiotic (Zone grade)"
+ITEM.category = "Medicine"
+ITEM.desc = "Experimental medical drug, allows you to survive a blowout. \n\nATTRIBUTES: \n-Medication \n-Long term psychological effect \nAllows you to survive a blowout"
 ITEM.price = 3498
 ITEM.exRender = false
 ITEM.weight = 0.12
@@ -20,7 +20,7 @@ ITEM.functions.Use = {
 		client:Freeze(true)
 		client:GodEnable()
 		client:ConCommand("say /actinjured")
-		client:notify("Это займет 135 секунд...")
+		client:notify("This will take 135 seconds.")
 		timer.Create(135, function()
 			client:Freeze(false)
 			client:GodDisable()
