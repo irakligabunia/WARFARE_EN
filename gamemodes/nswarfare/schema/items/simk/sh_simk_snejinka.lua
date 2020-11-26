@@ -1,6 +1,6 @@
-﻿ITEM.name = "СИМК со «Снежинкой»"
-ITEM.desc = "Внешне артефакт похож на «Колобок». Существует мнение что это и есть «Колобок», свойства которого усилились после воздействия мощного электрического поля. Благодаря своим качествам способен резко увеличивать мышечный тонус носителя. \n\nХАРАКТЕРИСТИКИ: \n-технологическое приспособление \n-высокая ценность \n-не требует подзарядки \n-максимальная вместимость - 1 \n-состояние: заполнен (содержит артефакт «Снежинка»)"
-ITEM.category = "СИМК"
+﻿ITEM.name = "Artefact Case (Snowflake)"
+ITEM.desc = "The artifact looks like a Kolobok. There is an opinion that this is the Kolobok, whose properties were strengthened after exposure to a powerful electric field. Due to its qualities it is able to dramatically increase the muscle tone of the carrier. \n\nХАРАКТЕРИСТИКИ: \n-технологическое приспособление \n-высокая ценность \n-не требует подзарядки \n-максимальная вместимость - 1 \n-состояние: заполнен (содержит артефакт «Снежинка»)"
+ITEM.category = "SIMK"
 ITEM.price = 41904
 ITEM.exRender = false
 ITEM.weight = 2.31
@@ -15,7 +15,7 @@ ITEM.iconCam = {
 }
 
 ITEM.functions.Use = {
-	name = "использовать",
+	name = "use",
 	icon = "icon16/cup.png",
 	onRun = function(item)
 		local client = item.player
