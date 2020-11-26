@@ -1,9 +1,9 @@
 ﻿ITEM.name = "USP Compact"
-ITEM.desc = "Объединивший в себе несколько успешных элементов дизайна, пистолет HK USP Compact .45 калибра является частью большого семейства пистолетов, разработанных компанией H&K. Способный надежно работать даже в экстремальных условиях эксплуатации, он принят на вооружение полиции и подразделений сил особого назначения нескольких стран. Боеприпасы .45АСР"
+ITEM.desc = "Combining several successful design elements, the HK USP Compact .45 caliber pistol is part of a large family of pistols developed by the company H'K. Capable of working reliably even in extreme operating conditions, it is adopted by the police and special forces units of several countries. /n/nAmmunition .45АСР"
 ITEM.price = 11360
 ITEM.class = "weapon_cop_usp45"
 ITEM.weaponCategory = "2"
-ITEM.category = "Оружие"
+ITEM.category = "Weapon"
 ITEM.exRender = false
 ITEM.weight = 1.06
 
