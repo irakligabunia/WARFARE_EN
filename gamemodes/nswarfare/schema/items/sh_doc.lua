@@ -1,5 +1,5 @@
-﻿ITEM.name = "Административные документы"
-ITEM.desc = ""
+﻿ITEM.name = "Administration documents"
+ITEM.desc = "A bundle of classified documents. \n\nATTRIBUTES: \n-High value"
 ITEM.price = 6942
 ITEM.exRender = false
 ITEM.weight = 0.12
