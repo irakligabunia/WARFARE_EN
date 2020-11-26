@@ -1,5 +1,5 @@
-﻿ITEM.name = "Тайник бойца «Чистого Неба»"
-ITEM.desc = "При вскрытии тайника вы принимаете идеологию группировки «Чистого Неба» и присоединяетесь к их взглядам, став одним из их немногочисленных членов.\n\nХАРАКТЕРИСТИКИ: \n-личная вещь \n-высокая ценность \n-не выпадает \n-нельзя выбросить"
+﻿ITEM.name = "'Clear Sky' members' cache"
+ITEM.desc = "When you open the cache, you accept the ideology of the 'Clean Sky' group and join their views, becoming one of their few members. \n\nATTRIBUTES: \n-Personal belonging \n-High value \n-Doesn't fall out!"
 ITEM.price = 20758
 ITEM.exRender = false
 ITEM.weight = 14.25
