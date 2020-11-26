@@ -1,9 +1,9 @@
-﻿ITEM.name = "Гаусс-винтовка «Изделие 62» (заказной)"
-ITEM.desc = "Сверхточное высокотхнологическое оружие, известное как «Изделие №62», было разработано конструкторами секретных лабараторий внутри Зоны. Принцип его действия основан на разгоне пули системной электромагнитов; пуля при этом способна развивать сверхточность, что обеспечивает колоссальную пробивную способность при почти полном отсутствии отдачи. Для обеспечения достаточной энергоемкости аккумуляторов используются частицы некоторых артефактов. \n\nБоеприпасы Аккумуляторы"
+﻿ITEM.name = "Experiment 62 'Gaus Rifle'"
+ITEM.desc = "The ultra-precision high-thnological weapon, known as 'Experiment 62,' was developed by the designers of the secret laboratory inside the zone. The principle of its action is based on the acceleration of the bullet system electromagnets; The bullet is able to develop superch accuracy, which provides a colossal punching ability with almost no recoil. Some artifacts are used to ensure sufficient battery power. \n\nAmmunition Gaus batteries"
 ITEM.price = 459504
 ITEM.class = "weapon_cop_gauss"
 ITEM.weaponCategory = "1"
-ITEM.category = "Оружие"
+ITEM.category = "Weapon"
 ITEM.exRender = false
 ITEM.weight = 8.15
 
