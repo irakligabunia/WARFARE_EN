@@ -1,9 +1,9 @@
-﻿ITEM.name = "Нож"
-ITEM.desc = "Охотничий нож представляет собой прочное холодное оружие, предназначенное для охоты, рыбалки, походов и даже пикников.  \n\nХАРАКТЕРИСТИКИ: \n-используется для: бой \n-используется для: открытие банок консервов \n-используется для: разделки туш мутантов"
+﻿ITEM.name = "Knife"
+ITEM.desc = "A hunting knife is a durable cold weapon designed for hunting, fishing, hiking and even picnics.  \n\nATTRIBUTES: \n-usages: slashing arteries \n-usage: opening cans \n-usage: skinning mutants"
 ITEM.price = 1823
 ITEM.class = "weapon_cop_knife"
 ITEM.weaponCategory = "3"
-ITEM.category = "Оружие"
+ITEM.category = "Weapon"
 ITEM.exRender = false
 ITEM.weight = 0.28
 
