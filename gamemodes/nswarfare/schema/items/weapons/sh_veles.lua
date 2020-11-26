@@ -1,9 +1,9 @@
-﻿ITEM.name = "Детектор «Велес»"
-ITEM.desc = "Современный детектор аномалий, определяющий точное месторасположение почти всех известных науке артефактов. \n\nХАРАКТЕРИСТИКИ: \n-технологическое приспособление \n-не требует подзарядки"
+﻿ITEM.name = "'Veles' Detector"
+ITEM.desc = "A modern anomaly detector that determines the exact location of almost all known artifacts to science. \n\nATTRIBUTES: \n-Technological device \n-Doesn't require recharging"
 ITEM.price = 42074
 ITEM.class = "weapon_cop_veles"
 ITEM.weaponCategory = "detector"
-ITEM.category = "Оружие"
+ITEM.category = "Weapon"
 ITEM.exRender = false
 ITEM.weight = 0.29
 
