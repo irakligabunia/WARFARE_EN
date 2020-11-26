@@ -1,10 +1,10 @@
-﻿ITEM.name = "FN FNP (заказной)"
-ITEM.desc = "Cамозарядный пистолет, разработанный компанией FNH-USA (американским подразделением бельгийской компании FN Herstal). Несмотря на более чем хорошие характеристики, является морально устаревшим оружием, не способным пробить с первого раза большинство качественных бронежилетов. \n\nБоеприпасы .45АСР"
+﻿ITEM.name = "FN FNP"
+ITEM.desc = "A self-loading pistol developed by FNH-USA (an American division of the Belgian company FN Herstal). Despite more than good characteristics, is a obsolete weapon, unable to punch the most quality body armor. \n\nAmmunition .45АСР"
 ITEM.price = 47416
 ITEM.model = "models/wick/weapons/stalker/stcopwep/w_fnp_model_stcop.mdl"
 ITEM.class = "weapon_cop_fnp"
 ITEM.weaponCategory = "2"
-ITEM.category = "Оружие"
+ITEM.category = "Weapon"
 ITEM.height = 1
 ITEM.width = 2
 ITEM.exRender = false
