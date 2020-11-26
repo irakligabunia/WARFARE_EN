@@ -1,5 +1,5 @@
-﻿ITEM.name = "5000 Рублей"
-ITEM.desc = "Российские рубли, обычно хранят в кошельке, неотъемлемая часть торговлю. \n\nХАРАКТЕРИСТИКИ: \n-высокая ценность \n-для использования нужен кошелек"
+﻿ITEM.name = "Five thousand rubles"
+ITEM.desc = "Russian rubles are usually stored in a wallet, an integral part of trade. \n\nATTRIBUTES: \n-high value \n-a wallet is required to use"
 ITEM.price = 5000
 ITEM.exRender = false
 ITEM.weight = 0.01
@@ -17,7 +17,7 @@ ITEM.functions.Use = {
 	onRun = function(item)
 		if (IsValid(item.player) && item.player:Alive()) then
 			if not item.player:getChar():getInv():hasItem("kowelek") then
-				item.player:notify("У вас нет кошелька!")
+				item.player:notify("You don't have a wallet!")
 				return false
 			end
 			
