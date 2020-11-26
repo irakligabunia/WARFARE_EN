@@ -1,5 +1,5 @@
-ITEM.name = "Обрывки ткани"
-ITEM.desc = "Связка из маленьких кусочков защитных материалов таких, как кевлар, использующие в большинстве современных бронежителов и шлемов. \n\nХАРАКТЕРИСТИКИ: \n-технологическое приспособление \n-используется в крафте"
+ITEM.name = "Pieces of fabric"
+ITEM.desc = "A bunch of small pieces of protective materials such as Kevlar, which are used in most modern armored personnel carriers and helmets. \n\nХАРАКТЕРИСТИКИ: \n-Technological device \n-Crating device"
 ITEM.price = 397
 ITEM.exRender = false
 ITEM.weight = 2.29
