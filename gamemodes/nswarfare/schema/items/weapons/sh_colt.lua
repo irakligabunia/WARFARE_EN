@@ -1,10 +1,10 @@
 ﻿ITEM.name = "Colt M1911"
-ITEM.desc = "Пистолет американского производства, ценимый многими сталкерами за надёжность системы, сурово проверенной временем, и неплохие характеристики. Это отличное оружие, особенно в умелых руках и при должной сноровке. Несмотря на более чем хорошие характеристики, является морально устаревшим оружием, не способным пробить с первого раза большинство качественных бронежилетов. \n\nБоеприпасы .45АСР"
+ITEM.desc = "American-made pistol, appreciated by many stalkers for the reliability of the system, severely time-tested, and good characteristics. It is a great weapon, especially in capable hands and with proper skill. Despite more than good characteristics, is a obsolete weapon, unable to punch the first time most quality body armor. \n\nAmmunition .45АСР"
 ITEM.price = 7272
 ITEM.model = Model("models/wick/weapons/stalker/stcopwep/w_colt_model_stcop.mdl")
 ITEM.class = "weapon_cop_colt1911"
 ITEM.weaponCategory = "2"
-ITEM.category = "Оружие"
+ITEM.category = "Weapon"
 ITEM.height = 1
 ITEM.width = 2
 ITEM.exRender = false
