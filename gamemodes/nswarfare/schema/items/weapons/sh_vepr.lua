@@ -1,9 +1,9 @@
-ITEM.name = "Вепрь-12 Молот"
-ITEM.desc = "Российский гладкоствольный самозарядный карабин, разработанный на основе конструкции ручного пулемёта Калашникова. Предназначен для охоты, спортивных соревнований (как правило, по практической стрельбе в открытом классе), самообороны, а также использования в качестве служебного оружия. Является прямым конкурентом ружьям серии «Сайга-12». \n\nБоеприпасы 12x70"
+ITEM.name = "Vepr-12"
+ITEM.desc = "Russian smooth-bore self-loading carbine, developed on the basis of the design of the Kalashnikov hand machine gun. Designed for hunting, sporting events (usually on practical shooting in open class), self-defense, and use as a service weapon. It is a direct competitor to the Saiga-12 series.  \n\nAmmunition 12x70"
 ITEM.price = 36112
 ITEM.class = "weapon_cop_vepr"
 ITEM.weaponCategory = "1"
-ITEM.category = "Оружие"
+ITEM.category = "Weapon"
 ITEM.height = 2
 ITEM.width = 4
 ITEM.exRender = false
