@@ -1,5 +1,5 @@
-﻿ITEM.name = "Набор новичка"
-ITEM.desc = "ПРИ АКТИВАЦИИ НЕОБХОДИМО ОСВОБОДИТЬ ИНВЕНТАРЬ!\n\nВключает в себя:\nАПС (заказной)\nВеревку\nЛегкую броню\nТри пачки патрон 9x18\nИРП-Б\nАптечка первой помощи\n50000 рублей\n\nХАРАКТЕРИСТИКИ:\n-личная вещь\n-высокая ценность\n-не выпадает\n-нельзя выбросить"
+﻿ITEM.name = "Rookie starter kit"
+ITEM.desc = "BEFORE ACTIVATION, YOU NEED TO EMPTY THE INVENTORY!\n\nIncludes:\nAPS\nTie\nLight armor\nThree boxes of 9x18mm\nMRE\nFirst Aid Kit\n50000 rubles\n\nATTRIBUTES:\n-Personal belonging\n-High value\n-Doesn't fall out!\n-Cannot throw out!"
 ITEM.price = 28758
 ITEM.exRender = false
 ITEM.weight = 10.25
