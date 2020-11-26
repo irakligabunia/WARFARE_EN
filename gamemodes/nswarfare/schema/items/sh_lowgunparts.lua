@@ -1,5 +1,5 @@
-ITEM.name = "Маленькие оружейные запчасти"
-ITEM.desc = "Горстка небольших оружейных запчастей. Обычно включает в себя некоторые пружины, винты, спусковые крючки, короткие свтолы, ударники, затворы и прочего. \n\nХАРАКТЕРИСТИКИ: \n-технологическое приспособление \n-используется для крафта"
+ITEM.name = "Light weapon parts"
+ITEM.desc = "A handful of small parts. Usually includes some springs, screws, triggers, short sotols, drummers, shutters and other things. \n\nATTRIBUTES: \n-Technological device \n-Crafting device"
 ITEM.price = 799
 ITEM.exRender = false
 ITEM.weight = 0.68
