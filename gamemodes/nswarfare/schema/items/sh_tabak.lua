@@ -1,5 +1,5 @@
-﻿ITEM.name = "Российский табак"
-ITEM.desc = "Сигареты довольно дорогие и редкие в Зоне, так что наличие табачкого сырья позволяет изготавливать собственные сигареты по более низкой цене. Герметичная упаковка из олова гарантирует, что табак будет оставаться свежим в течении нескольких дней или недель. \n\nХАРАКТЕРИСТКИ: \n-низкое качество \n-вредно для организма \n-используется для изготовления самокруток \n-для использования требуется: зажигалка"
+﻿ITEM.name = "Russian Tobacco"
+ITEM.desc = "Cigarettes are quite expensive and rare in the zone, so the presence of tobacco raw materials allows you to make your own cigarettes at a lower price. The sealed tin packaging ensures that the tobacco stays fresh for a few days or weeks. \n\nATTRIBUTES: \n-Low quality \n-Unhealthy \n-Required to use: lighter"
 ITEM.price = 3201
 ITEM.exRender = false
 ITEM.weight = 0.1
@@ -16,7 +16,7 @@ ITEM.iconCam = {
 
 function ITEM:getDesc()
 	local str
-	str = self.desc.." \nОсталось %s использования"
+	str = self.desc.." \n%s uses remains"
 	return Format(str, self:getData("bigtabakAmount"))
 end
 
@@ -27,12 +27,12 @@ if (CLIENT) then
 end
 
 ITEM.functions.Smoke = {
-	name = "закурить",
+	name = "smoke",
 	onRun = function(item)
 	local client = item.player
 		if (IsValid(item.player) && item.player:Alive()) then
 			if not item.player:getChar():getInv():hasItem("tinderbox") then
-				item.player:notify("У вас нет зажигалки!")
+				item.player:notify("You don't have a lighter!")
 				return false
 			end
 
@@ -48,7 +48,7 @@ ITEM.functions.Smoke = {
 			item:setData("bigtabakAmount", item:getData("bigtabakAmount") - 1)
 			
 			if item:getData("bigtabakAmount") < 1 then
-				item.player:notify("Табак кончился")
+				item.player:notify("The tobacco ran out!")
 				return true
 			end
 		end
