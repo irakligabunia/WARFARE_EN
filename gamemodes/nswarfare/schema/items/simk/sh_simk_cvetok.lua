@@ -1,6 +1,6 @@
-﻿ITEM.name = "СИМК с «Каменным цветком»"
-ITEM.desc = "Артефакт представляет собой камень, близкий по своим характеристикам к гранитам. Возникает внутри гравитационных полей огромной интенсивности. Способен полностью или частично защищать рассудок владельца от пси-воздействия. \n\nХАРАКТЕРИСТИКИ: \n-технологическое приспособление \n-высокая ценность \n-не требует подзарядки \n-максимальная вместимость - 1 \n-состояние: заполнен (содержит артефакт «Каменный цветок»)"
-ITEM.category = "СИМК"
+﻿ITEM.name = "Artefact Case (Stoneflower)"
+ITEM.desc = "The artifact is a stone close in its characteristics to granites. It occurs inside gravitational fields of great intensity. It is able to fully or partially protect the owner's mind from psi-impact. \n\nХАРАКТЕРИСТИКИ: \n-технологическое приспособление \n-высокая ценность \n-не требует подзарядки \n-максимальная вместимость - 1 \n-состояние: заполнен (содержит артефакт «Каменный цветок»)"
+ITEM.category = "SIMK"
 ITEM.price = 26910
 ITEM.exRender = false
 ITEM.weight = 2.85
@@ -15,7 +15,7 @@ ITEM.iconCam = {
 }
 
 ITEM.functions.Use = {
-	name = "использовать",
+	name = "use",
 	icon = "icon16/cup.png",
 	onRun = function(item)
 		local client = item.player
