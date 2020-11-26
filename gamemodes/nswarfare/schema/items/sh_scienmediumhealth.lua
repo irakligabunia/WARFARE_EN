@@ -1,6 +1,6 @@
-﻿ITEM.name = "Научная аптечка"
-ITEM.category = "Медицина"
-ITEM.desc = "Медицинский набор, разработанный специально для научных сотрудников, которые работают в условиях Зоны. Содержит средства как для заживления механических травм, так и для предоствращения развития лучевой болезник \n\nХАРАКТЕРИСТИКИ: \n-высокая ценность \n-высококачественный препарат \n-медленное использование (полевой набор) \n\nВосст. здоровья 91"
+﻿ITEM.name = "Scientific medkit"
+ITEM.category = "Medicine"
+ITEM.desc = "A medical kit designed specifically for researchers who work in the zone. Contains tools for both the healing of mechanical injuries and the prevention of radiation sickness \n\nХАРАКТЕРИСТИКИ: \n-High value \n-High quality \n-Long term \n\nH +91"
 ITEM.price = 3164
 ITEM.exRender = false
 ITEM.weight = 0.1
