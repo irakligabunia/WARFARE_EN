@@ -1,5 +1,5 @@
-ITEM.name = "Телескопическое зеркало"
-ITEM.desc = "Маленькое зеркальце, закрепленное на тонкой металлической трубке. Удобный предмет, используемые боевиками, разбирающимися в исскустве ведения боя в городских условиях, так как позволяет заглянуть за угол и не получить при этом пулю.  /n/nХАРАКТЕРИСТИКИ: /n-военное изделние"
+ITEM.name = "Telescopic mirror"
+ITEM.desc = "A small mirror mounted on a thin metal tube. A convenient object used by militants who understand the art of fighting in urban environments, as it allows you to look around the corner and not get a bullet.  /n/nATTRIBUTES: /n-Military grade"
 ITEM.price = 384
 ITEM.exRender = false
 ITEM.weight = 0.09
