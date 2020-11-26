@@ -1,6 +1,6 @@
-﻿ITEM.name = "Два синтетических каната"
-ITEM.category = "Разное"
-ITEM.desc = "Два синтетических каната длиной по 5 метров каждый, часто встречаются на армейских складах. Но почему-то военные сталкеры зачастую включают их в свое снаряжение, тщательно комплектуя ими свои рюкзаки. \n\nХАРАКТЕРИСТИКИ: \n-повсеместное применение \n-используется как: материал, поддерживающий палатку"
+﻿ITEM.name = "Two synthetic ropes"
+ITEM.category = "Misc"
+ITEM.desc = "Two synthetic ropes 5 meters long each, often found in army warehouses. But for some reason military stalkers often include them in their equipment, carefully equipping them with their backpacks. \n\nATTRIBUTES: \n-Widespread use \n-Usages: Material"
 ITEM.price = 1209
 ITEM.weight = 0.75
 
