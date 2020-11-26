@@ -1,6 +1,6 @@
-﻿ITEM.name = "Пропуск ЧЗО"
-ITEM.desc = "Именной пропуск выданный в ЧЗО, который разрешает пройти в закрытую Зону 30 километрового бедствия в области Припяти. \n\nХАРАКТЕРИСТИКИ: \n-ценный предмет \n-позволяет торговать с военными \n-не выпадает"
-ITEM.category = "misc"
+﻿ITEM.name = "CEZ Pass"
+ITEM.desc = "A permit issued in the CEZ, which allows to pass into the closed zone of 30 kilometers of disaster in the region of Pripyat. \n\nATTRIBUTES: \n-Valuable \n-Allows you to trade with the military \n-Doesn't fall out!"
+ITEM.category = "Misc"
 ITEM.price = 6212
 ITEM.exRender = false
 ITEM.weight = 0.01
