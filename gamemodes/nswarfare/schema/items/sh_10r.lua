@@ -1,4 +1,4 @@
-﻿ITEM.name = "Ten roubles"
+﻿ITEM.name = "Ten rubles"
 ITEM.desc = "Russian rubles are usually stored in a wallet, an integral part of trade. \n\nATTRIBUTES: \n-high value \n-a wallet is required to use"
 ITEM.price = 10
 ITEM.exRender = false
