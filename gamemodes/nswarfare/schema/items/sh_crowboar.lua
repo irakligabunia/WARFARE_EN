@@ -1,5 +1,5 @@
-ITEM.name = "Лом (многоразовый)"
-ITEM.desc = "Очень надежный и практически не поддающийся разрушению инструмент. Идеально подходит для разборки оружия, некоторых шлемов и различных электронных устройств. Также может помочь при ремонте и техническом обслуживании оружия. \n \nХАРАКТЕРИСТИКИ: \n-повсеместное применение\n-импровизированный инструмент для разборки \n-используется для вскрытия ящиков \n-многоразовый инструмент"
+ITEM.name = "Crowbar"
+ITEM.desc = "A very reliable and almost indefiable tool. Perfect for disassembling weapons, some helmets and various electronic devices. It can also help with the repair and maintenance of weapons. \n\nATTRIBUTES: \n-Widespread use\n-Improvised tool \n-Used to open crates \n-Multi-tool"
 ITEM.price = 744
 ITEM.exRender = false
 ITEM.weight = 1.64
