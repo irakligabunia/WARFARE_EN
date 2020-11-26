@@ -1,20 +1,20 @@
 local relations_allies_f = {}
-relations_allies_f["Одиночки"] = {allies = {"Одиночки", "Долг", "Свобода", "Чистое Небо", "Ученые", "Торговцы", "Миротворцы", "Последний День", "Стервятники"}}
-relations_allies_f["Бандиты"] = {allies = {"Бандиты", "Свобода", "Наемники"}}
-relations_allies_f["Долг"] = {allies = {"Долг", "Одиночки", "Ученые", "Военные", "Чистое Небо", "Торговцы", "Миротворцы", "Стервятники"}}
-relations_allies_f["Свобода"] = {allies = {"Свобода", "Одиночки", "Ученые", "Бандиты", "Наемники", "Торговцы", "Чистое Небо", "Стервятники"}}
-relations_allies_f["Монолит"] = {allies = {"Монолит", "Зомбированные"}}
-relations_allies_f["Зомбированные"] = {allies = {"Монолит", "Зомбированные"}}
-relations_allies_f["Ренегаты"] = {allies = {"Ренегаты"}}
-relations_allies_f["Военные"] = {allies = {"Ученые", "Военные", "Долг", "Миротворцы"}}
-relations_allies_f["Наемники"] = {allies = {"Наемники", "Свобода", "Бандиты"}}
-relations_allies_f["Грех"] = {allies = {"Грех", "Послединй День", "Стервятники"}}
-relations_allies_f["Ученые"] = {allies = {"Ученые", "Военные", "Одиночки", "Долг", "Миротворцы", "Последний День", "Чистое Небо", "Стервятники"}}
-relations_allies_f["Миротворцы"] = {allies = {"Миротворцы", "Ученые", "Военные", "Одиночки", "Долг", "Ученые", "Чистое Небо", "Торговцы", "Стервятники"}}
-relations_allies_f["Последний День"] = {allies = {"Последний День", "Ученые", "Свобода", "Наемники", "Одиночки", "Грех", "Стервятники"}}
-relations_allies_f["Чистое Небо"] = {allies = {"Чистое Небо", "Одиночки", "Долг", "Свобода", "Торговцы", "Миротворцы", "Ученые", "Стервятники"}}
-relations_allies_f["Торговцы"] = {allies = {"Торговцы", "Одиночки", "Долг", "Свобода", "Миротворцы", "Чистое Небо", "Ученые", "Стервятники"}}
-relations_allies_f["Стервятники"] = {allies = {"Стервятники", "Торговцы", "Одиночки", "Долг", "Свобода", "Миротворцы", "Чистое Небо", "Грех", "Ученые", "Последний День"}}
+relations_allies_f["Loners"] = {allies = {"Loners", "Duty", "Freedom", "Clear Sky", "Ecologists", "Traders", "Миротворцы", "Последний День", "Стервятники"}}
+relations_allies_f["Bandits"] = {allies = {"Bandits", "Freedom", "Mercenaries"}}
+relations_allies_f["Duty"] = {allies = {"Duty", "Freedom", "Ecologists", "Military", "Clear Sky", "Traders", "Миротворцы", "Стервятники"}}
+relations_allies_f["Freedom"] = {allies = {"Freedom", "Loners", "Ecologists", "Bandits", "Mercenaries", "Traders", "Clear Sky", "Стервятники"}}
+relations_allies_f["Monolith"] = {allies = {"Monolith", "Zombified"}}
+relations_allies_f["Zombified"] = {allies = {"Monolith", "Zombified"}}
+relations_allies_f["Renegades"] = {allies = {"Renegades"}}
+relations_allies_f["Military"] = {allies = {"Ecologists", "Military", "Duty", "Миротворцы"}}
+relations_allies_f["Mercenaries"] = {allies = {"Mercenaries", "Freedom", "Bandits"}}
+relations_allies_f["Sin"] = {allies = {"Sin", "Послединй День", "Стервятники"}}
+relations_allies_f["Ecologists"] = {allies = {"Ecologists", "Military", "Loners", "Duty", "Миротворцы", "Последний День", "Clear Sky", "Стервятники"}}
+relations_allies_f["Миротворцы"] = {allies = {"Миротворцы", "Ecologists", "Military", "Loners", "Duty", "Clear Sky", "Traders", "Стервятники"}}
+relations_allies_f["Последний День"] = {allies = {"Последний День", "Ecologists", "Freedom", "Mercenaries", "Loners", "Sin", "Стервятники"}}
+relations_allies_f["Clear Sky"] = {allies = {"Clear Sky", "Loners", "Duty", "Freedom", "Traders", "Миротворцы", "Ecologists", "Стервятники"}}
+relations_allies_f["Traders"] = {allies = {"Traders", "Loners", "Duty", "Freedom", "Миротворцы", "Clear Sky", "Ecologists", "Стервятники"}}
+relations_allies_f["Стервятники"] = {allies = {"Стервятники", "Traders", "Loners", "Duty", "Freedom", "Миротворцы", "Clear Sky", "Sin", "Ecologists", "Последний День"}}
 relations_allies_f["Администратор"] = {allies = {"Администратор"}}
 relations_allies_f["Mир"] = {allies = {"Mир"}}
 
@@ -45,7 +45,7 @@ function SCHEMA:PlayerDeath(victim, weapon, attacker)
 		if attacker:HasQuest( "quest_killer_rep" ) == victim:Name() then
 			if not (attacker:getChar():getData("repkiller") == victim:Name()) then
 				attacker:getChar():setData("repkiller", victim:Name())
-				attacker:ConCommand("say Задание: Уничтожить сталкера выполнено.")
+				attacker:ConCommand("say Quest: Kill the stalker complete")
 			end
 		end
 
@@ -72,7 +72,7 @@ function SCHEMA:PlayerDisconnected(ply)
 
 	for k,v in pairs(player.GetAll()) do
 		if v:HasQuest("quest_killer_rep") == ply:Name() then
-			v:ConCommand("say Задание провалено: "..v:HasQuest("quest_killer_rep").." скрылся.")
+			v:ConCommand("say Quest failed "..v:HasQuest("quest_killer_rep").." dissapeared.")
 			v:RemoveQuest("quest_killer_rep")
 		end
 	end
@@ -107,14 +107,14 @@ function SCHEMA:OnCharCreated(client, character)
 		character:getInv():add("water", 1, {})]]
 	end
 
-	character:setData("act_table", {"Сидеть на земле #1", "Сидеть на земле #2", "Стоять с руками накрест",
-	"Сидеть на корточках", "Облокотиться о стену", "Сканировать аномалию #1", "Оружие на плече", "Отжиматься", 
-	"Находиться в заложниках", "Присядать", "Сидеть", "Облокотиться о стол", "Облокотиться о стену", 
-	"Облокотиться о стол #1", "Стоять смирно", "Отдать честь", "Гоп стоп", "Поднять руки", "Приветствовать", 
+	character:setData("act_table", {"Sitting on ground #1", "Sitting on ground #2", "Stand with arms crossed",
+	"Squat", "Lean against the wall", "Scan anomaly #1", "Weapons' on shoulder", "Push up", 
+	"Hostage", "Squatting", "Sit", "Lean against the table #1", "Lean against the wall #2", 
+	"Lean against the table #2", "Стоять смирно", "Отдать честь", "Гоп стоп", "Поднять руки", "Приветствовать", 
 	"Требовать убрать оружие"})
 
 	if (client:Team() == FACTION_MONOLIT) then
-		table.Add(client:getChar():getData("act_table"), {"Находиться в трансе"})
+		table.Add(client:getChar():getData("act_table"), {"Trance"})
 		character:setData("act_table", character:getData("act_table"))
 	end
 
