@@ -1,6 +1,6 @@
-ITEM.name = "Антирад"
-ITEM.category = "Медицина"
-ITEM.desc = "Препарат радиозащитного действия Мексамин, широко распространенный на территории Зоны. При применении вызывает сужения периферических кровеносных сосудов и кислородное голодание, в данном случае является средством профилактики и лечения лучевой болезни. \n\nХАРАКТЕРИСТИКИП: \n-медикамент \n-быстрое использование (шприц) \n-сильный побочный эффект \n\nРадиация - 34"
+ITEM.name = "Anti-rad pills"
+ITEM.category = "Medicine"
+ITEM.desc = "The drug radio-protective action Mexamine, widespread in the area. When used causes narrowing of peripheral blood vessels and oxygen starvation, in this case is a means of prevention and treatment of radiation sickness. \n\nATTRIBUTES: \n-Medication \n-Quick injection (syringe) \n-Strong side effects \n\nRadiation - 34"
 ITEM.price = 1560
 ITEM.weight = 0.02
 ITEM.exRender = false
@@ -15,7 +15,7 @@ ITEM.iconCam = {
 }
 
 ITEM.functions.use = {
-    name = "использовать",
+    name = "use",
     onRun = function(item)
        local client = item.player
        client:setNetVar("radioactive", client:getNetVar("radioactive", 0) - 74)
