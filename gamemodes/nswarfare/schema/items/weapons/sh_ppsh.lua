@@ -1,9 +1,9 @@
-﻿ITEM.name = "ППШ (наградной)"
-ITEM.desc = "Изготовлен под новый усиленный патрон 9×18 мм (9х18 мм +P+). Очень редкий типо воорубещия в Зоне."
+﻿ITEM.name = "PPSH-41"
+ITEM.desc = "Manufactured under a new reinforced cartridge 9×18 mm (9 x 18 mm). It is a very rare type of logging in the zone."
 ITEM.price = 142547
 ITEM.class = "weapon_cop_ppsh"
 ITEM.weaponCategory = "1"
-ITEM.category = "Оружие"
+ITEM.category = "Weapon"
 ITEM.exRender = false
 ITEM.weight = 2.81
 
