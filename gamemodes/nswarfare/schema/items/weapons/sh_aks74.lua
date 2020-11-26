@@ -1,4 +1,4 @@
-﻿ITEM.name = "AK-74"
+﻿ITEM.name = "AKS-74"
 ITEM.desc = "Domestically produced rifle. Due to its accuracy, ease of operation, reliability and relatively low cost, it has become widespread in the area. Perfect for short- and medium-distance combat to 100 meters. It is used by many military, free stalkers, Duty fighters and members of other groups. Uses 5.45 x39 cartridges."
 ITEM.price = 26359
 ITEM.class = "weapon_cop_ak_74"
