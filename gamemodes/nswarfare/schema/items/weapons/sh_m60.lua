@@ -1,9 +1,9 @@
 ITEM.name = "M60"
-ITEM.desc = "Боеприпасы 5.56х45"
+ITEM.desc = "An old light machine gun. /n/nAmmunition 5.56х45"
 ITEM.price = 66112
 ITEM.class = "weapon_cop_m60"
 ITEM.weaponCategory = "1"
-ITEM.category = "Оружие"
+ITEM.category = "Weapon"
 ITEM.exRender = false
 ITEM.weight = 5.13
 
