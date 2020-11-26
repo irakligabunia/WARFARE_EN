@@ -1,9 +1,9 @@
-﻿ITEM.name = "ОЦ-14 «Гроза»"
-ITEM.desc = "Опытный образец автоматно-гранатомётного комплекса, российская модификация стандартного «Гром-С14», созданная специально для действующих в Зоне спецподразделений. Отличается увеличенным размером магазина. \n\nБоеприпасы 9х39"
+﻿ITEM.name = "OTsch-14 'Groza'"
+ITEM.desc = "A prototype of the rifle-grenade complex, the Russian modification of the standard 'Thunder-C14' created specifically for the special forces operating in the zone. It is distinguished by the increased size of the magazine. \n\nAmmunition 9х39"
 ITEM.price = 40488
 ITEM.class = "weapon_cop_groza"
 ITEM.weaponCategory = "1"
-ITEM.category = "Оружие"
+ITEM.category = "Weapon"
 ITEM.exRender = false
 ITEM.weight = 4.32
 
