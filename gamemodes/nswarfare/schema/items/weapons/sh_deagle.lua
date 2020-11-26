@@ -1,10 +1,10 @@
 ﻿ITEM.name = "Desert Eagle"
-ITEM.desc = "Пистолет американского производства, ценимый многими сталкерами за надёжность системы, сурово проверенной временем, и неплохие характеристики. Это отличное оружие, особенно в умелых руках и при должной сноровке. Несмотря на более чем хорошие характеристики, является морально устаревшим оружием, не способным пробить с первого раза большинство качественных бронежилетов. \n\nБоеприпасы .45АСР"
+ITEM.desc = "Big ben \n\nAmmunition .45АСР"
 ITEM.price = 17416
 ITEM.model = Model("models/wick/weapons/stalker/stcopwep/w_deagle_model.mdl")
 ITEM.class = "weapon_cop_desert_eagle"
 ITEM.weaponCategory = "2"
-ITEM.category = "Оружие"
+ITEM.category = "Weapon"
 ITEM.height = 1
 ITEM.width = 2
 ITEM.exRender = false
