@@ -1,2 +1,2 @@
-ATTRIBUTE.name = "Навык: Крепкий желудок"
-ATTRIBUTE.desc = "Вкусная и качественная пища в ЧЗО - редкость. То, чем обычно питаются сталкеры, полезным не назовешь. Но Вы способны употребить и переварить даже то, что человек в здравом уме едой уже не считает."
+ATTRIBUTE.name = "Attribute: Iron Liver"
+ATTRIBUTE.desc = "Delicious and high-quality food in the Chernobyl Exclusion Zone is a rarity. What stalkers usually eat is not healthy. But you are able to consume and digest what a person in his right mind does not consider food."
