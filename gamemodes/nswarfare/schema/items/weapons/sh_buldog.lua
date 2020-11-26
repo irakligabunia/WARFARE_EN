@@ -1,9 +1,9 @@
-﻿ITEM.name = "РГ-6 «Бульдог» (заказной)"
-ITEM.desc = "Гранатомет револьверного тип используется для повышения огневой мощи пехоты в условиях городского боя. Применялся в некоторых локальных конфликтах, например в Чечне. Камеры барабана переднего заряжания, образованы шестью нарезными стволами, идентичными используемым в подствольных гранатометах. \n\nБоеприпасы ВОГ-25"
+﻿ITEM.name = "Bulldog 6"
+ITEM.desc = "This weapon type is used to increase infantry firepower in urban combat. It has been used in some local conflicts, such as Chechnya. The front-charging drum cameras are formed by six rifled barrels identical to those used in sub-barrel grenade launchers. \n\nAmmunition VOG-25"
 ITEM.price = 71072
 ITEM.class = "weapon_cop_rg6"
 ITEM.weaponCategory = "1"
-ITEM.category = "Оружие"
+ITEM.category = "Weapon"
 ITEM.model = "models/wick/weapons/stalker/stcopwep/w_rg6_model_stcop.mdl"
 ITEM.width = 4
 ITEM.height = 2
