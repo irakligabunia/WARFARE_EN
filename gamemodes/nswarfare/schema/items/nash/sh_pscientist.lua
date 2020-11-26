@@ -1,6 +1,6 @@
-﻿ITEM.name = "Нашивка «Ученых»"
-ITEM.desc = "\n\nХАРАКТЕРИСТИКИ: \n-личная вещь \n-высокая ценность"
-ITEM.category = "Нашивки"
+﻿ITEM.name = "Ecologist Patch"
+ITEM.desc = "A patch of the Ecologist faction"
+ITEM.category = "Patch"
 ITEM.price = 2202
 ITEM.exRender = false
 ITEM.weight = 0.02
