@@ -140,10 +140,10 @@ function SCHEMA:PlayerSpawn(client)
 		client:Freeze(false)
 		client:GodDisable()
 
-		--table.Add(client:getChar():getData("act_table"), {"Сидеть на земле #1", "Сидеть на земле #2"})
-		--client:getChar():setData("act_table", client:getChar():getData("act_table"))
-		--table.Add(client:getChar():getData("act_table"), {"first_sit"})
-		--[[table.RemoveByValue( client:getChar():getData("act_table"), "first_sit" )
+		table.Add(client:getChar():getData("act_table"), {"Sitting on ground #1", "Sitting on ground #2"})
+		client:getChar():setData("act_table", client:getChar():getData("act_table"))
+		table.Add(client:getChar():getData("act_table"), {"first_sit"})
+		table.RemoveByValue( client:getChar():getData("act_table"), "first_sit" )
 		client:getChar():setData("act_table", client:getChar():getData("act_table"))
 		PrintTable(client:getChar():getData("act_table"))]]
 
