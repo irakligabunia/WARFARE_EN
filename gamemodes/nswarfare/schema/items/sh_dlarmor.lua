@@ -1,5 +1,5 @@
 ITEM.name = "Pieces of fabric"
-ITEM.desc = "A bunch of small pieces of protective materials such as Kevlar, which are used in most modern armored personnel carriers and helmets. \n\nХАРАКТЕРИСТИКИ: \n-Technological device \n-Crating device"
+ITEM.desc = "A bunch of small pieces of protective materials such as Kevlar, which are used in most modern armored personnel carriers and helmets. \n\nATTRIBUTES: \n-Technological device \n-Crating device"
 ITEM.price = 397
 ITEM.exRender = false
 ITEM.weight = 2.29
