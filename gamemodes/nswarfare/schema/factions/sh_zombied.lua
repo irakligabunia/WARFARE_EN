@@ -1,5 +1,5 @@
-﻿FACTION.name = "Зомбированные"
-FACTION.desc = "Зомбированные"
+﻿FACTION.name = "Zombified"
+FACTION.desc = "Grunting and moaning for their mothers, mindlessly walking to their death."
 FACTION.color = Color(210, 105, 30)
 FACTION.models = {
 	"models/hdmodels/kek1ch/stalker_zombie1.mdl",
