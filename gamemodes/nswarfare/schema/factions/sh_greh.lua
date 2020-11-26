@@ -1,5 +1,5 @@
-﻿FACTION.name = "Грех"
-FACTION.desc = "Грех"
+﻿FACTION.name = "Sin"
+FACTION.desc = "Religious and zombified cult that consists of fanatics who oppose everyone, and hate the Ecologists."
 FACTION.color = Color(210, 105, 30)
 FACTION.models = {
 	"models/hdmodels/kek1ch/stalker_neutral_1_face_2.mdl",
