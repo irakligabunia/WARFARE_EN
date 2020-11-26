@@ -1,5 +1,5 @@
-﻿ITEM.name = "Мешочек с деньгами"
-ITEM.desc = "Для преобразования в капитал - необходимо использовать. \n\nХАРАКТЕРИСТИКИ: \n-высокая ценность"
+﻿ITEM.name = "Money bag"
+ITEM.desc = "To convert capital. \n\nATTRIBUTES: \n-High value"
 ITEM.price = 1000
 ITEM.exRender = false
 ITEM.weight = 0.22
