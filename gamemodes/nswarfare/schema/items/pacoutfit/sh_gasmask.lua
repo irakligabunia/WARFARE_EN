@@ -1,5 +1,5 @@
-﻿ITEM.name = "Противогаз ЭО-20 ПБФ"
-ITEM.desc = "Модернизированная, значительно более компактная версия классического противогаза ЭО-19 ПБФ. Простая система обеспечивает фильтрацию воздуха от радиационных частиц и химических реагентов. Защита от радиации была усовершенствована добавлением в фильтры свинца, однако, следует отментить, что противогаз не обладает необходимой надежностью для работы в токсичной среде. \n\nХАРАКТЕРИСТИКИ: \n-легкий противогаз \n-удобность: средняя \n-Используется при: ремонте снаряжения (+8)"
+﻿ITEM.name = "EO-20 PBF Gasmask"
+ITEM.desc = "A modernized, much more compact version of the classic EO-19 PBF gas mask. A simple system provides air filtration from radiation particles and chemical reagents. Radiation protection has been improved by adding lead to filters, but it should be known that the gas mask does not have the necessary reliability to operate in a toxic environment. \n\nХАРАКТЕРИСТИКИ: \n-легкий противогаз \n-удобность: средняя \n-Используется при: ремонте снаряжения (+8)"
 ITEM.uniqueID = "gasmask"
 ITEM.outfit = ITEM.uniqueID
 ITEM.outfitCategory = "hat"
