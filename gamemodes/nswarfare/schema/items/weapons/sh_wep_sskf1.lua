@@ -1,9 +1,9 @@
-ITEM.name = "Граната Ф-1"
-ITEM.category = "Оружие"
+ITEM.name = "F-1 Grenade"
+ITEM.category = "Weapon"
 ITEM.class = "weapon_cop_f1"
 ITEM.weaponCategory = "4"
 ITEM.price = 3280
-ITEM.desc = "Ручная оборонительная граната; её осколки способны пробивать бронежилеты средней степени защиты. В руки сталкеров попадает обычно в процессе меновых отношений с военными. \n\nВзрывная сила: высокая \nЗадержка взрыва: 4 секунды \nРадиус взрыва: 4.2 м \nКоличество осколков: 380 (мелкая шрапнель)"
+ITEM.desc = "Hand-held defensive grenade; its shards are capable of punching bulletproof vests of medium degree of protection. In the hands of stalkers falls usually in the process of menal relations with the military. \n\nExplosive power: высокая \nTime fuse: 4 seconds \nRadius: 4.2m \nShrapnel: 380"
 ITEM.weight = 0.60
 
 ITEM.model = "models/wick/weapons/stalker/stcopwep/w_f1_model_stcop.mdl"
