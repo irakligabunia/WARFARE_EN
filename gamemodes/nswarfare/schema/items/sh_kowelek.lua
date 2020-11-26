@@ -1,6 +1,6 @@
-﻿ITEM.name = "Кошелек"
-ITEM.desc = "Используется для хранения значительного количества денег. \n\nХАРАКТЕРИСТИКИ: \n-повсеместное применение \n-используется для: хранения денег \n-не выпадает"
-ITEM.category = "Прочее"
+﻿ITEM.name = "Wallet"
+ITEM.desc = "Used to store a significant amount of money. \n\nATTRIBUTES: \n-Widespread use \n-Usage: storing money \n-Doesn't fall out!"
+ITEM.category = "Misc"
 ITEM.price = 3221
 ITEM.exRender = false
 ITEM.weight = 0.07
