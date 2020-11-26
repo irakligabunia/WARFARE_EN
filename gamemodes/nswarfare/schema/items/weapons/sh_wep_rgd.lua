@@ -1,10 +1,10 @@
-ITEM.name = "Граната РГД-5"
-ITEM.category = "Оружие"
+ITEM.name = "RPD-5 Grenade"
+ITEM.category = "Weapon"
 ITEM.class = "weapon_cop_rgd5"
---ITEM.type = "grebade"
+--ITEM.type = "grenade"
 ITEM.weaponCategory = "4"
 ITEM.price = 2680
-ITEM.desc = "Ручная оборонительная граната; её осколки способны пробивать бронежилеты средней степени защиты. В руки сталкеров попадает обычно в процессе меновых отношений с военными. \n\nВзрывная сила: высокая \nЗадержка взрыва: 4 секунды \nРадиус взрыва: 1.2 м \nКоличество осколков: 180 (мелкая шрапнель)"
+ITEM.desc = "Hand-held defensive grenade; its shards are capable of punching bulletproof vests of medium degree of protection. In the hands of stalkers falls usually in the process of menal relations with the military. \n\nExplosive power: high \nTime fuse: 4 seconds \nRadius: 1.2m \nShrapnel: 180"
 ITEM.height = 1
 ITEM.width = 1
 ITEM.weight = 0.31
