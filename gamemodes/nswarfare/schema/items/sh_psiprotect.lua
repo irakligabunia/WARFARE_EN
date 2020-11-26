@@ -1,6 +1,6 @@
-ITEM.name = "Таблетки Пси-блокада"
-ITEM.category = "Медицина"
-ITEM.desc = "Наркотический препарат, блокирующий лавинообразные нервные импульсы. Интересен побочный эффект: после приёма препарата наблюдается кратковременное исчезновение каких-либо эмоций. В Зоне используется для противодействия аномальным полям повышенной пси-активности; за её пределами применения не нашёл. Обладает продолжительным действием."
+ITEM.name = "Anti-psi pills"
+ITEM.category = "Medicine"
+ITEM.desc = "A drug that blocks avalanche-like nerve impulses. An interesting side effect: after taking the drug there is a short-term disappearance of any emotions. In the zone is used to counteract the abnormal fields of increased psi-activity; theres no use beyond it. It has a long-lasting effect."
 ITEM.price = 1550
 ITEM.weight = 0.02
 
@@ -14,7 +14,7 @@ ITEM.iconCam = {
 }
 
 ITEM.functions.use = {
-    name = "использовать",
+    name = "use",
     onRun = function(item)
        local client = item.player
        client:setNetVar("psy", client:getNetVar("psy", 0) - 25)
