@@ -1,8 +1,8 @@
-﻿ITEM.name = "Патроны .338"
+﻿ITEM.name = ".338 Rounds"
 ITEM.ammo = "338"
 ITEM.ammoAmount = 60
-ITEM.desc = "Коробка с патронами калибра .338"
-ITEM.category = "Патроны"
+ITEM.desc = "Box with 60 rounds of .338"
+ITEM.category = "Ammunition"
 ITEM.price = 7100
 ITEM.exRender = false
 
