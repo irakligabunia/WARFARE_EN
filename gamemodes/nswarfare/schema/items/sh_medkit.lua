@@ -1,6 +1,6 @@
-﻿ITEM.name = "Сумка СМВ"
-ITEM.desc = "Представляет собой набор медицинского оборудования и лекарственных препаратов, предназначенных для оказания первой медицинской помощи. \nХАРАКТЕРИСТИКИ: \n-высокая ценность"
-ITEM.category = "Прочее"
+﻿ITEM.name = "Medic bag"
+ITEM.desc = "It is a set of medical equipment and medicines designed to provide first aid. \nХАРАКТЕРИСТИКИ: \n-High value"
+ITEM.category = "Misc"
 ITEM.price = 13212
 ITEM.exRender = false
 ITEM.weight = 4.25
