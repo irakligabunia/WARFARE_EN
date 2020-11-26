@@ -1,5 +1,5 @@
-﻿ITEM.name = "Туристический рюкзак"
-ITEM.desc = "Крупный рюкзак для дальних путешествий. Благодаря системе равномерного распределения веса, позволяет переносить достаточно припасов и снаряжения для продолжительного похода до пяти дней. \n\nХАРАКТЕРИСТИКИ: \n-элемент экипировки"
+﻿ITEM.name = "Tourist Backpack"
+ITEM.desc = "A large backpack for long-distance travel. Thanks to the system of even distribution of weight, it allows you to carry enough supplies and equipment for a long hike up to five days. \n\nХАРАКТЕРИСТИКИ: \n-элемент экипировки"
 ITEM.model = "models/misery/sumki/sumka2.mdl"
 ITEM.width = 2
 ITEM.height = 2
