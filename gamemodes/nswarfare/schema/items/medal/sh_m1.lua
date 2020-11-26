@@ -1,5 +1,5 @@
 ﻿ITEM.name = "Rookie Medal"
-ITEM.desc = "The award for achieving the rookie rank. Issued if the current rank is more than 50. \n\nATTRIBUTES: \n-value"
+ITEM.desc = "The award for achieving the rookie rank. Issued if the current rank is more than 50. To convert to capital, use \n\nATTRIBUTES: \n-value"
 ITEM.price = 1000
 ITEM.weight = 0.02
 ITEM.exRender = false
