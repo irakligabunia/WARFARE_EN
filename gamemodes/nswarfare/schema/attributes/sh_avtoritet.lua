@@ -1,2 +1,2 @@
-ATTRIBUTE.name = "Навык: Авторитет"
-ATTRIBUTE.desc = "Обаянием ли, умением ли разговаривать или, возможно, тонким знанием человеческой психологии - не важно, чем, но вы легко завоевывае сердца любых людей, будь то жадный барыга или отъявленный психопат."
+ATTRIBUTE.name = "Attribute: Authority"
+ATTRIBUTE.desc = "Whether it's charm, the ability to talk, or perhaps a subtle knowledge of human psychology, it doesn't matter what, but you easily win the hearts of any people, whether it's a greedy trader or a notorious psychopath."
