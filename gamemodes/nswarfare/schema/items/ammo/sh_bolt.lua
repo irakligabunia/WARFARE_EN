@@ -1,8 +1,8 @@
-ITEM.name = "Болты"
+ITEM.name = "Bolts"
 ITEM.ammo = "bolt"
 ITEM.ammoAmount = 90
-ITEM.desc = ""
-ITEM.category = "Патроны"
+ITEM.desc = "A collection of 90 bolts"
+ITEM.category = "Ammunition"
 ITEM.price = 116
 ITEM.exRender = false
 
