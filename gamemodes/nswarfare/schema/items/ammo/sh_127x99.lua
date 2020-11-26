@@ -16,7 +16,7 @@
 ITEM.name = "12,7×99 .50 BMG"
 ITEM.ammo = "127x99"
 ITEM.ammoAmount = 60
-ITEM.desc = "A box with 60 rounds of 12.7x99 .50 BMG"
+ITEM.desc = "Box with 60 rounds of 12.7x99 .50 BMG"
 ITEM.category = "Ammunition"
 ITEM.price = 4200
 ITEM.exRender = false
