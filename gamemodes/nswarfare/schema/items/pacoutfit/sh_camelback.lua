@@ -1,5 +1,5 @@
-﻿ITEM.name = "Рюкзак CamelBak (заказной)"
-ITEM.desc = "Многоцелевой настраиваемый штурмовой рюкзак больших размеров. Просторный, прочный и удобный, этот рюкзак пользуется заслуженной популярностью как военных, так и туристов во всем мире. \n\nХАРАКТЕРИСТИКИ: \n-элемент экипировки"
+﻿ITEM.name = "CamelBack Backpack"
+ITEM.desc = "A multi-purpose customizable assault backpack of large sizes. Spacious, durable and comfortable, this backpack enjoys the well-deserved popularity of both military and tourists all over the world. \n\nХАРАКТЕРИСТИКИ: \n-элемент экипировки"
 ITEM.width = 2
 ITEM.height = 3
 ITEM.price = 25832
