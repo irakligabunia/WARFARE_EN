@@ -1,5 +1,5 @@
-﻿ITEM.name = "Первенство «Сталкера»"
-ITEM.desc = "Награда за достижение ранга. Выдается, если текущий ранг более 250. Для преобразования в капитал - необходимо использовать.\n\nХАРАКТЕРИСТИКИ: \n-выоская стоимость"
+﻿ITEM.name = "Stalker Medal"
+ITEM.desc = "Award for achieving the Stalker rank. Issued if the current rank is more than 250. To convert to capital, use \n\nATTRIBUTES: \n-value"
 ITEM.price = 5000
 ITEM.weight = 0.02
 ITEM.exRender = false
