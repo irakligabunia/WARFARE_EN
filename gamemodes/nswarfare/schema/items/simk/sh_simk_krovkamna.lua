@@ -1,6 +1,6 @@
-﻿ITEM.name = "СИМК с «Кровью камня»"
-ITEM.desc = "Представляет собой красноватое образование из спрессованных полимеризированных остатков растений, почвы и костей. Обладает способностью частично нейтрализовать вредные для человека химические вещества. \n\nХАРАКТЕРИСТИКИ: \n-технологическое приспособление \n-высокая ценность \n-не требует подзарядки \n-максимальная вместимость - 1 \n-состояние: заполнен (содержит артефакт «Кровь камня»)"
-ITEM.category = "СИМК"
+﻿ITEM.name = "Artefact Case (Stoneblood)"
+ITEM.desc = "It is a reddish formation from compressed polymerized residues of plants, soil and bones. It has the ability to partially neutralize harmful chemicals for humans.  \n\nХАРАКТЕРИСТИКИ: \n-технологическое приспособление \n-высокая ценность \n-не требует подзарядки \n-максимальная вместимость - 1 \n-состояние: заполнен (содержит артефакт «Кровь камня»)"
+ITEM.category = "SIMK"
 ITEM.price = 16992
 ITEM.exRender = false
 ITEM.weight = 2.71
@@ -15,7 +15,7 @@ ITEM.iconCam = {
 }
 
 ITEM.functions.Use = {
-	name = "использовать",
+	name = "use",
 	icon = "icon16/cup.png",
 	onRun = function(item)
 		local client = item.player
