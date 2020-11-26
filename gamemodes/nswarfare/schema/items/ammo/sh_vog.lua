@@ -1,8 +1,8 @@
-﻿ITEM.name = "Снаряд ВОГ-25"
+﻿ITEM.name = "VOG-25 Grenade"
 ITEM.ammo = "vog"
 ITEM.ammoAmount = 1
-ITEM.desc = ""
-ITEM.category = "Патроны"
+ITEM.desc = "A VOG-25 grenade."
+ITEM.category = "Ammunition"
 ITEM.price = 3900
 ITEM.exRender = false
 
