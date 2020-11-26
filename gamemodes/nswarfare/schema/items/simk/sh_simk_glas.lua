@@ -1,6 +1,6 @@
-﻿ITEM.name = "СИМК с «Мамиными бусами»"
-ITEM.desc = "«Глаз» — название своё получил из-за внешнего сходства с органом зрения. Не так часто появляется, поэтому торговцы платят за него неплохие деньги. Сталкерами ценится за поверье, будто он приносит удачу. Ускоряет метаболизм организма, вследствие чего раны заживают быстрее. Образуется в аномалии типа «жарка» и в архианомалии «Симбионт».  \n\nХАРАКТЕРИСТИКИ: \n-технологическое приспособление \n-высокая ценность \n-не требует подзарядки \n-максимальная вместимость - 1 \n-состояние: заполнен (содержит артефакт «Глаз»)"
-ITEM.category = "СИМК"
+﻿ITEM.name = "Artefact Case (Eye)"
+ITEM.desc = " 'Eye' - got it's because of the visual similarity with the eye organ. Not so often appears, so traders pay good money for it. Stalkers are valued for believing that it brings good luck. Accelerates the metabolism of the body, so the wounds heal faster. It is formed in the anomalies of the type of 'Heat' and in the arch-emianomaly 'Symbiont'.  \n\nХАРАКТЕРИСТИКИ: \n-технологическое приспособление \n-высокая ценность \n-не требует подзарядки \n-максимальная вместимость - 1 \n-состояние: заполнен (содержит артефакт «Глаз»)"
+ITEM.category = "SIMK"
 ITEM.price = 20235
 ITEM.exRender = false
 ITEM.weight = 3.65
@@ -15,7 +15,7 @@ ITEM.iconCam = {
 }
 
 ITEM.functions.Use = {
-	name = "использовать",
+	name = "use",
 	icon = "icon16/cup.png",
 	onRun = function(item)
 		local client = item.player
