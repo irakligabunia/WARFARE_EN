@@ -1,6 +1,6 @@
 ﻿ITEM.name = "UKM ID"
 ITEM.desc = "The document of the military employees of Ukraine, it contains data, which are entered into the system, and automatically gives the right to enter the environmental disaster zone. \n\nATTRIBUTES: \n-Personal belonging"
-ITEM.category = "misc"
+ITEM.category = "Misc"
 ITEM.price = 9535
 ITEM.exRender = false
 ITEM.weight = 0.02
