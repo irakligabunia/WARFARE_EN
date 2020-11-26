@@ -1,6 +1,6 @@
-﻿ITEM.name = "СИМК с «Душой»"
-ITEM.desc = "Уникальный органический артефакт с не менее уникальными свойствами. Неизвестным пока образом увеличивает общую скорость восстановления организма. Из-за особенностей воздействия на организм и приятного внешнего вида представляет особый интерес для коллекционеров. \n\nХАРАКТЕРИСТИКИ: \n-технологическое приспособление \n-высокая ценность \n-не требует подзарядки \n-максимальная вместимость - 1 \n-состояние: заполнен (содержит артефакт «Душой»)"
-ITEM.category = "СИМК"
+﻿ITEM.name = "Artefact Case (Soul)"
+ITEM.desc = "A unique organic artifact with no less unique properties. Increases the overall rate of recovery of the body. Due to the features of the influence on the body and pleasant appearance is of particular interest to collectors. \n\nХАРАКТЕРИСТИКИ: \n-технологическое приспособление \n-высокая ценность \n-не требует подзарядки \n-максимальная вместимость - 1 \n-состояние: заполнен (содержит артефакт «Душой»)"
+ITEM.category = "SIMK"
 ITEM.price = 28662
 ITEM.exRender = false
 
@@ -14,7 +14,7 @@ ITEM.iconCam = {
 }
 
 ITEM.functions.Use = {
-	name = "использовать",
+	name = "use",
 	icon = "icon16/cup.png",
 	onRun = function(item)
 	local client = item.player
