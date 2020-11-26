@@ -1,6 +1,6 @@
-﻿ITEM.name = "СИМК с «Медузой»"
-ITEM.desc = "Артефакт гравитационной природы, обладающий способностью активно притягивать и поглощать радиоактивные частицы, тем самым уменьшая облучённость организма. Широко распространён в Зоне; за её пределами широко, хотя и негласно, используется при лечении острой лучевой болезни. \n\nХАРАКТЕРИСТИКИ: \n-технологическое приспособление \n-высокая ценность \n-не требует подзарядки \n-максимальная вместимость - 1 \n-состояние: заполнен (содержит артефакт «Медуза»)"
-ITEM.category = "СИМК"
+﻿ITEM.name = "Artefact Case (Jellyfish)"
+ITEM.desc = "An artifact of gravitational nature, which has the ability to actively attract and absorb radioactive particles, thereby reducing the irradiation of the body. Widespread in the zone; beyond its borders is widely, though unspoken, used in the treatment of acute radiation sickness. \n\nХАРАКТЕРИСТИКИ: \n-технологическое приспособление \n-высокая ценность \n-не требует подзарядки \n-максимальная вместимость - 1 \n-состояние: заполнен (содержит артефакт «Медуза»)"
+ITEM.category = "SIMK"
 ITEM.price = 15354
 ITEM.exRender = false
 
@@ -14,7 +14,7 @@ ITEM.iconCam = {
 }
 
 ITEM.functions.Use = {
-	name = "использовать",
+	name = "use",
 	icon = "icon16/cup.png",
 	onRun = function(item)
 		local client = item.player
