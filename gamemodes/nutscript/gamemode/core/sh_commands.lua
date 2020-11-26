@@ -475,7 +475,7 @@ nut.command.add("dropmoney", {
 
 		amount = math.Round(amount)
 		if (!client:getChar():getInv():hasItem("kowelek")) then
-			client:notify("У вас нет Кошелька")
+			client:notify("You don't have a wallet!")
 			return 
 		end
 
