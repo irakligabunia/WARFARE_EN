@@ -1,5 +1,5 @@
-﻿ITEM.name = "Шпицы для работы с артефактами"
-ITEM.desc = "Шпицы, изготовленные из закаленной стали, предназначенные непосредственно для работы с артефактами. Используются совместно с контейнерами артефактов всеъ типов, что облегчает манипуляции с ними. Ни один сталкер не покидает базу без такого инструмента - это доказывает всю важность такого инструмента, когда не хочется подхватить лишнюю дозу облучения, исходящего от артефакта. \n\nХАРАКТЕРИСТИКИ: \n-технологическое приспособление \n-используется при работе с артефактами \n-имеет важное значение при работе с контейнерами"
+﻿ITEM.name = "Artefact tools"
+ITEM.desc = "Tools, made of hardened steel, designed directly to work with artifacts. All types of artifacts are used in conjunction with containers, which makes it easier to manipulate them. No stalker leaves the base without such a tool - it proves the importance of such a tool, when you do not want to pick up an extra dose of radiation coming from the artifact.  \n\nХАРАКТЕРИСТИКИ: \n-технологическое приспособление \n-используется при работе с артефактами \n-имеет важное значение при работе с контейнерами"
 ITEM.category = "misc"
 ITEM.price = 421
 ITEM.exRender = false
