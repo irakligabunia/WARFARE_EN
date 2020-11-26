@@ -1,5 +1,5 @@
-ITEM.name = "Тяжелый оруженый мусор"
-ITEM.desc = "Свалка больших элементов конструкции оружия и механических частей в очень поврежденном состоянии. \n\nХАРАКТЕРИСТИКИ: \n-технологическое приспособление \n-используется для крафта"
+ITEM.name = "Heavy weapon parts"
+ITEM.desc = "Dump of large elements of the design of weapons and mechanical parts in a very damaged state. \n\nATTRIBUTES: \n-Technological device \n-Crafting device"
 ITEM.price = 1820
 ITEM.exRender = false
 ITEM.weight = 1.86
