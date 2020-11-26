@@ -1,6 +1,6 @@
-﻿ITEM.name = "СИМК с «Вспышкой»"
-ITEM.desc = "«Вспышка» — артефакт, образующийся в местах, насыщенных электромагнитным полем. Не так редок, но и не так распространён. Имеет удивительное свойство поглощать электрический ток, перенаправляя разряды с организма на себя. «Заряженные» Вспышки в быту используют в качестве «маленьких электростанций».Образуется в аномалиях типа «электра». \n\nХАРАКТЕРИСТИКИ: \n-технологическое приспособление \n-высокая ценность \n-не требует подзарядки \n-максимальная вместимость - 1 \n-состояние: заполнен (содержит артефакт «Вспышка»)"
-ITEM.category = "СИМК"
+﻿ITEM.name = "Artefact Case (Flash)"
+ITEM.desc = "'A flash' is an artifact formed in places saturated with an electromagnetic field. Not so rare, but not so common. It has an amazing property to absorb electric current, redirecting discharges from the body to itself. 'Charged' flashes in everyday life are used as 'small power plants.' \n\nХАРАКТЕРИСТИКИ: \n-технологическое приспособление \n-высокая ценность \n-не требует подзарядки \n-максимальная вместимость - 1 \n-состояние: заполнен (содержит артефакт «Вспышка»)"
+ITEM.category = "SIMK"
 ITEM.price = 11964
 ITEM.exRender = false
 ITEM.weight = 3.65
@@ -15,7 +15,7 @@ ITEM.iconCam = {
 }
 
 ITEM.functions.Use = {
-	name = "использовать",
+	name = "use",
 	icon = "icon16/cup.png",
 	onRun = function(item)
 		local client = item.player
