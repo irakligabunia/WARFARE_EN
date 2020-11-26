@@ -1,6 +1,6 @@
 ﻿ITEM.name = "Freedom Patch"
 ITEM.desc = "A patch of the Freedom faction"
-ITEM.category = "Нашивки"
+ITEM.category = "Patch"
 ITEM.price = 2202
 ITEM.exRender = false
 ITEM.weight = 0.02
