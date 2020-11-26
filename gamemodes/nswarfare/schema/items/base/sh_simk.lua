@@ -1,4 +1,4 @@
-ITEM.name = "СИМК"
+ITEM.name = "SIMK"
 ITEM.price = 10000
 ITEM.exRender = true
 ITEM.model = "models/hardbass/lead_box_closed.mdl"
