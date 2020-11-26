@@ -1,5 +1,5 @@
 ﻿ITEM.name = "L85A2"
-ITEM.desc = "Британское стрелковое оружие, созданное по схеме «булл-пап», довольно распространённое на территории Зоны. Отличительной чертой этой винтовки является высокая точность при стрельбе одиночными выстрелами (которые при достаточной сноровке стрелка вполне могут заменить автоматический огонь). Боеприпасы 5.56х45"
+ITEM.desc = "British small arms, created under the 'bull-pup' scheme, are quite common in the area. The distinctive feature of this rifle is the high accuracy when firing single shots (which with sufficient skill of the arrow may well replace automatic fire). \n\nAmmunition 5.56х45"
 ITEM.price = 45516
 ITEM.class = "weapon_cop_l85"
 ITEM.weaponCategory = "1"
