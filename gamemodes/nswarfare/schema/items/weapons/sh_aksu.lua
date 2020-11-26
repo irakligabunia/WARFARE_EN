@@ -1,9 +1,9 @@
-﻿ITEM.name = "АКС-74У"
-ITEM.desc = "Укороченная версия стандартного автомата Калашникова. Не столь эффективен, как АКС-74, но более лёгок, удобен и компактен, из-за чего широко распространён среди одиночек, военных и бандитов. \n\nБоеприпасы 5.45х39"
+﻿ITEM.name = "AKS-74u"
+ITEM.desc = "A shortened version of the standard Kalashnikov assault rifle. Not as effective as the AKS-74, but lighter, more comfortable and compact, which is why it is widespread among singles, military and bandits. \n\nAmmunition 5.45х39"
 ITEM.price = 22054
 ITEM.class = "weapon_cop_ak74u"
 ITEM.weaponCategory = "1"
-ITEM.category = "Оружие"
+ITEM.category = "Weapon"
 ITEM.exRender = true
 ITEM.weight = 2.8
 ITEM.model = "models/wick/weapons/stalker/stcopwep/w_ak74u_stcop.mdl"
