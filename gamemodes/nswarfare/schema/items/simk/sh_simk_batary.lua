@@ -1,6 +1,6 @@
 ﻿ITEM.name = "Artefact Case (Battery)"
 ITEM.desc = "A rare, rather expensive artifact, formed in electrical anomalies, slightly increases the muscle tone. It is known that this artifact contains electrostatic elements, but in what conditions it is formed, science is not yet known. \n\nХАРАКТЕРИСТИКИ: \n-технологическое приспособление \n-высокая ценность \n-не требует подзарядки \n-максимальная вместимость - 1 \n-состояние: заполнен (содержит артефакт «Батарейка»)"
-ITEM.category = "СИМК"
+ITEM.category = "SIMK"
 ITEM.price = 22752
 ITEM.exRender = false
 
