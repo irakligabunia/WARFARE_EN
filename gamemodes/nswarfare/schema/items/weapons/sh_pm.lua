@@ -1,9 +1,9 @@
-﻿ITEM.name = "ПМ"
-ITEM.desc = "Пистолет Макарова. Модификация под новый усиленный патрон 9×18 мм (9х18 мм +P+). Является самым распространённым пистолетом в Зоне."
+﻿ITEM.name = "PM"
+ITEM.desc = "Makarov's gun. It is the most common gun in the zone. /n/nAmmunition 9x18mm"
 ITEM.price = 4700
 ITEM.class = "weapon_cop_pm"
 ITEM.weaponCategory = "2"
-ITEM.category = "Оружие"
+ITEM.category = "Weapon"
 ITEM.exRender = false
 ITEM.weight = 0.81
 
