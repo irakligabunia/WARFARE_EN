@@ -1,5 +1,5 @@
-ITEM.name = "Металлическая лопата"
-ITEM.desc = "Старая металлическая лопата, используется в различных целей в Зоне. Может быть быстро заточека. \n\nХАРАКТЕРИСТИКИ: \n-повсеместное применение \n-используется для: установки палатки (многоразовый) \n-используется как: инструмент для разборки (многоразовый) \n-многоразовый инструмент"
+ITEM.name = "Metallic shovel"
+ITEM.desc = "An old metal shovel is used for various purposes in the zone. \n\nATTRIBUTES: \n-Widespread use \n-Used for: setting up tents \n-Used as: disassembly tool \n-Multi-tool"
 ITEM.price = 1071
 ITEM.exRender = false
 ITEM.weight = 1.64
