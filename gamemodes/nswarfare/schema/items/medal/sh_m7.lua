@@ -1,5 +1,5 @@
-﻿ITEM.name = "Первенство «Героя Зоны»"
-ITEM.desc = "Награда за достижение ранга. Выдается, если текущий ранг более 1500. Для преобразования в капитал - необходимо использовать.\n\nХАРАКТЕРИСТИКИ: \n-выоская стоимость"
+﻿ITEM.name = "Hero Medal"
+ITEM.desc = "Award for achieving the Hero rank. Issued if the current rank is more than 1500. To convert to capital, use \n\nATTRIBUTES: \n-value"
 ITEM.price = 30000
 ITEM.exRender = false
 ITEM.weight = 0.02
