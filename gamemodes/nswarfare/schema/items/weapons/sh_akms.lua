@@ -1,9 +1,9 @@
-﻿ITEM.name = "АКМС"
-ITEM.desc = "Автомат отечественного производства. Из-за своей точности, удобства эксплуатации, надёжности и относительно низкой стоимости стал широко распространён на территории Зоны. Прекрасно подходит для боя на короткие и средние дистанции до 100 метров. Используется многими военными, вольными сталкерами, бойцами «Долга» и членами других группировок. Использует патроны 5.45х39."
+﻿ITEM.name = "AKMS"
+ITEM.desc = "Domestically produced rifle. Due to its accuracy, ease of operation, reliability and relatively low cost, it has become widespread in the area. Perfect for short- and medium-distance combat to 100 meters. It is used by many military, free stalkers, Duty fighters and members of other groups. Uses 5.45 x39 cartridges."
 ITEM.price = 29359
 ITEM.class = "weapon_cop_ak74"
 ITEM.weaponCategory = "1"
-ITEM.category = "Оружие"
+ITEM.category = "Weapon"
 ITEM.exRender = false
 ITEM.model = "models/wick/weapons/stalker/stcopwep/w_ak_74_model_stcop.mdl"
 ITEM.width = 4
