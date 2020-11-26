@@ -1,7 +1,7 @@
 ﻿ITEM.name = "RPG-7 Rocket"
 ITEM.ammo = "rpg"
 ITEM.ammoAmount = 1
-ITEM.desc = "An RPG-7 rocket."
+ITEM.desc = "An RPG-7 rocket"
 ITEM.category = "Ammunition"
 ITEM.price = 5100
 ITEM.exRender = false
