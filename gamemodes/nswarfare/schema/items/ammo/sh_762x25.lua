@@ -1,8 +1,8 @@
-﻿ITEM.name = "Патроны 7,62x25"
+﻿ITEM.name = "7,62x25 Rounds"
 ITEM.ammo = "762x25"
 ITEM.ammoAmount = 60
-ITEM.desc = "Коробка с патронами калибра 7,62x25"
-ITEM.category = "Патроны"
+ITEM.desc = "Box with 60 rounds of 7,62x25"
+ITEM.category = "Ammunition"
 ITEM.price = 2900
 ITEM.exRender = false
 
