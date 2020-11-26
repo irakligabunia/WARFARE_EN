@@ -1,9 +1,9 @@
-﻿ITEM.name = "Винтовка Мосина"
-ITEM.desc = "Широко используется среди новичков, зарекомендовала себя как исключительно надёжное и удобное в обращении оружие. \n\nБоеприпасы 7.62х54."
+﻿ITEM.name = "Mosin Rifle"
+ITEM.desc = "Widely used among beginners, has proven to be an exceptionally reliable and convenient weapon. \n\nAmmunition 7.62х54."
 ITEM.price = 16392
 ITEM.class = "weapon_cop_mosin"
 ITEM.weaponCategory = "1"
-ITEM.category = "Оружие"
+ITEM.category = "Weapon"
 ITEM.exRender = false
 ITEM.weight = 4.13
 ITEM.model = "models/wick/weapons/stalker/stcopwep/w_mosin_model_stcop.mdl"
