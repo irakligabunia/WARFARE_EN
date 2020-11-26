@@ -1,9 +1,9 @@
-﻿ITEM.name = "ОЦ-03 СВУ-А"
-ITEM.desc = "Укороченная снайперская винтовка с увеличенным темпом стрельбы - самый компактный вариант из семейства винтовок СВУ / СВД. Ее уникальной особенностью является автоматический режим стрельбы, добавленный по требованию МВД РФ. Хотя в целом данное оружие не предназначено для ближнего боя, автоматический режим стрельбы огня оказывается полезе в экстренных случаях, когда снайпер оказывается обнаружен противником. \n\nБоеприпасы 7.62х54."
+﻿ITEM.name = "OTsch-03 SVU-A"
+ITEM.desc = "A shortened sniper rifle with an increased rate of fire. Is the most compact version of the family of SVU/SVD rifles. Its unique feature is the automatic firing mode, added at the request of the Russian Interior Ministry. Although in general these weapons are not intended for melee combat, the automatic firing mode exists for emergency cases, when the sniper is detected by the enemy.  \n\nAmmunition 7.62х54."
 ITEM.price = 73275
 ITEM.class = "weapon_cop_svu"
 ITEM.weaponCategory = "1"
-ITEM.category = "Оружие"
+ITEM.category = "Weapon"
 ITEM.exRender = false
 ITEM.weight = 4.03
 
