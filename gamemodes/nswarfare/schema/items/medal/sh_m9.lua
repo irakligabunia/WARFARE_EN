@@ -1,5 +1,5 @@
-﻿ITEM.name = "Первенство «Зова Припяти»"
-ITEM.desc = "Награда за достижение ранга. Выдается, если текущий ранг более 2000. Для преобразования в капитал - необходимо использовать.\n\nХАРАКТЕРИСТИКИ: \n-выоская стоимость"
+﻿ITEM.name = "Call of Pripyat Medal"
+ITEM.desc = "The award for achieving the Call of Pripyat rank. Issued if the current rank is more than 2000. To convert to capital, use \n\nATTRIBUTES: \n-value"
 ITEM.price = 40000
 ITEM.exRender = false
 ITEM.weight = 0.02
