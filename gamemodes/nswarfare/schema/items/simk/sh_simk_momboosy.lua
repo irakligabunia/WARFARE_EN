@@ -1,6 +1,6 @@
-﻿ITEM.name = "СИМК с «Мамиными бусами»"
-ITEM.desc = "«Мамины бусы» в свинцово-изолированном металлическом контейнере. Артефакт кристаллизуется в аномальных зонах с высокой термальной активностью. Активно поглощает избыточное тепло, при этом оставаясь прохладным на ощупь. Многое в этом артефакте остаётся полной загадкой для учёных. Впрочем, точно установлено, что излучение, возникающее при пульсации утолщений «Маминых бус», ускоряет протекание метаболических процессов в организме. \n\nХАРАКТЕРИСТИКИ: \n-технологическое приспособление \n-высокая ценность \n-не требует подзарядки \n-максимальная вместимость - 1 \n-состояние: заполнен (содержит артефакт «Мамины бусы»)"
-ITEM.category = "СИМК"
+﻿ITEM.name = "Artefact Case (Mama's Beads)"
+ITEM.desc = " 'Mama's Beads' in a lead-isolated metal container. The artifact crystallizes in anomalous zones with high thermal activity. Actively absorbs excess heat, while remaining cool to the touch. Much of this artifact remains a complete mystery to scientists. However, it is precisely established that the radiation that occurs during the pulsation of thickening of 'Mother's beads' accelerates the flow of metabolic processes in the body. \n\nХАРАКТЕРИСТИКИ: \n-технологическое приспособление \n-высокая ценность \n-не требует подзарядки \n-максимальная вместимость - 1 \n-состояние: заполнен (содержит артефакт «Мамины бусы»)"
+ITEM.category = "SIMK"
 ITEM.price = 36800
 ITEM.exRender = false
 
@@ -14,7 +14,7 @@ ITEM.iconCam = {
 }
 
 ITEM.functions.Use = {
-	name = "использовать",
+	name = "use",
 	icon = "icon16/cup.png",
 	onRun = function(item)
 		local client = item.player
