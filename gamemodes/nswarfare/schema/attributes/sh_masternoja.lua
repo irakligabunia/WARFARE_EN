@@ -1,2 +1,2 @@
-ATTRIBUTE.name = "Навык: Мастер ножа"
-ATTRIBUTE.desc = "Холодное оружие всегда привлекало вас: его ровный металлический блекс оказывает на Вас успокаивающее действие. Конечно, огнестрел - это удобно, но именно с ножом в руке вы чувствуете себя целостным."
+ATTRIBUTE.name = "Attribute: Master of the Blade"
+ATTRIBUTE.desc = "Cold weapons have always attracted you: their smooth metal shine has a calming effect on you. Of course, a firearm is convenient, but it is with a knife in your hand that you feel whole."
