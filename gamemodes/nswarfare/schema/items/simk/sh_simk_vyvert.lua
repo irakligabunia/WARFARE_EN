@@ -1,6 +1,6 @@
-﻿ITEM.name = "СИМК с «Вывертом»"
-ITEM.desc = "Артефакт причудливой формы, возникающий в местах повышенной гравитационной активности. Представляет собой своего рода губку, поглощающую радиоактивные элементы. В равной степени успешно защищает своего носителя от воздействия как наведённой радиации, так и уже попавших в организм радиоактивных частиц. \n\nХАРАКТЕРИСТИКИ: \n-технологическое приспособление \n-высокая ценность \n-не требует подзарядки \n-максимальная вместимость - 1 \n-состояние: заполнен (содержит артефакт «Выверт»)"
-ITEM.category = "СИМК"
+﻿ITEM.name = "Artefact Case (Invert)"
+ITEM.desc = "Artifact of bizarre shape, which occurs in places of increased gravitational activity. It is a kind of sponge that absorbs radioactive elements. Equally successfully protects its carrier from the effects of both injected radiation and already exposed radioactive particles. \n\nХАРАКТЕРИСТИКИ: \n-технологическое приспособление \n-высокая ценность \n-не требует подзарядки \n-максимальная вместимость - 1 \n-состояние: заполнен (содержит артефакт «Выверт»)"
+ITEM.category = "SIMK"
 ITEM.price = 36800
 ITEM.exRender = false
 
@@ -14,7 +14,7 @@ ITEM.iconCam = {
 }
 
 ITEM.functions.Use = {
-	name = "использовать",
+	name = "use",
 	icon = "icon16/cup.png",
 	onRun = function(item)
 		local client = item.player
