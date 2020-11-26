@@ -1,5 +1,5 @@
-﻿ITEM.name = "СИМК с «Батарейкой»"
-ITEM.desc = "Редкий, довольно дорогой артефакт, образующийся в аномалиях электрического типа, немного повышает мышечный тонуc. Известно, что в состав этого артефакта входят электростатические элементы, однако в каких именно условиях он формируется, науке пока не известно. \n\nХАРАКТЕРИСТИКИ: \n-технологическое приспособление \n-высокая ценность \n-не требует подзарядки \n-максимальная вместимость - 1 \n-состояние: заполнен (содержит артефакт «Батарейка»)"
+﻿ITEM.name = "Artefact Case (Battery)"
+ITEM.desc = "A rare, rather expensive artifact, formed in electrical anomalies, slightly increases the muscle tone. It is known that this artifact contains electrostatic elements, but in what conditions it is formed, science is not yet known. \n\nХАРАКТЕРИСТИКИ: \n-технологическое приспособление \n-высокая ценность \n-не требует подзарядки \n-максимальная вместимость - 1 \n-состояние: заполнен (содержит артефакт «Батарейка»)"
 ITEM.category = "СИМК"
 ITEM.price = 22752
 ITEM.exRender = false
@@ -14,7 +14,7 @@ ITEM.iconCam = {
 }
 
 ITEM.functions.Use = {
-	name = "использовать",
+	name = "use",
 	icon = "icon16/cup.png",
 	onRun = function(item)
 		local client = item.player
