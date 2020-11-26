@@ -1,6 +1,6 @@
-﻿ITEM.name = "СИМК с «Кристаллом»"
-ITEM.desc = "Получается при попадании тяжелого металла в аномалию «Жарка». Этот артефакт замечательно выводит радиацию. Такой артефакт высоко ценится сталкерами, и мало где его можно добыть. \n\nХАРАКТЕРИСТИКИ: \n-технологическое приспособление \n-высокая ценность \n-не требует подзарядки \n-максимальная вместимость - 1 \n-состояние: заполнен (содержит артефакт «Кристалл»)"
-ITEM.category = "СИМК"
+﻿ITEM.name = "Artefact (Crystal)"
+ITEM.desc = "It forms when a heavy metal gets into the 'Heat'.This artifact is wonderful for displaying radiation. Such an artifact is highly valued by stalkers, and there is little where it can be obtained. \n\nХАРАКТЕРИСТИКИ: \n-технологическое приспособление \n-высокая ценность \n-не требует подзарядки \n-максимальная вместимость - 1 \n-состояние: заполнен (содержит артефакт «Кристалл»)"
+ITEM.category = "SIMK"
 ITEM.price = 19728
 ITEM.exRender = false
 ITEM.weight = 3.65
@@ -15,7 +15,7 @@ ITEM.iconCam = {
 }
 
 ITEM.functions.Use = {
-	name = "использовать",
+	name = "use",
 	icon = "icon16/cup.png",
 	onRun = function(item)
 		local client = item.player
