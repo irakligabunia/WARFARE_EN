@@ -1,9 +1,9 @@
-﻿ITEM.name = "РПГ-7 (заказная)"
-ITEM.desc = "Простота, прочность, низкая стоимость и эффективность РПГ-7 сделало его самым популярным безотказным противотанковым орудием в мире. В настоящее время он выпускаетсяв разных модификциях девятью странами и состоит на вооружении более 40 стран мира. \n\nБоеприпасы ОГ-7В"
+﻿ITEM.name = "RPG-7"
+ITEM.desc = "The simplicity, durability, low cost and efficiency of the RPG-7 has made it the most popular trouble-free anti-tank gun in the world. It is currently produced in various modifictions by nine countries and is in service with more than 40 countries. \n\nAmmunition OG-7B"
 ITEM.price = 60364
 ITEM.class = "weapon_cop_rpg7"
 ITEM.weaponCategory = "1"
-ITEM.category = "Оружие"
+ITEM.category = "Weapon"
 ITEM.width = 6
 ITEM.height = 1
 ITEM.weight = 8.26
