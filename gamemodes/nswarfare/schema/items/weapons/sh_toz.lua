@@ -1,9 +1,9 @@
-﻿ITEM.name = "ТОЗ-34"
-ITEM.desc = "Широко распространённое охотничье ружьё — «вертикалка» — благодаря достаточной точности и хорошему останавливающему действию обеспечивает более надёжную защиту от мутантов, чем пистолет. Очень дёшево и доступно в сравнении с большинством видов оружия, поэтому активно применяется новичками и бандитами как на окраинах, так и в центре Зоны. \n\nБоеприпасы 12х70"
+﻿ITEM.name = "Toz-34"
+ITEM.desc = "The widespread hunting rifle, the "vertical" - provides more reliable protection against mutants than a gun due to its accuracy and good stopping action. Very cheap and accessible in comparison with most weapons, so actively used by newcomers and bandits both on the outskirts and in the center of the zone. \n\nAmmunition 12х70"
 ITEM.price = 8400
 ITEM.class = "weapon_cop_toz34"
 ITEM.weaponCategory = "1"
-ITEM.category = "Оружие"
+ITEM.category = "Weapon"
 ITEM.exRender = false
 ITEM.weight = 3.26
 
