@@ -1,5 +1,5 @@
 ﻿FACTION.name = "Clear Sky"
-FACTION.desc = "Clear Sky — Scientists that explore and investigate the Zone."
+FACTION.desc = "Clear Sky — Ragtag scientists that independently explore and investigate the Zone."
 FACTION.color = Color(0, 255, 255)
 FACTION.isDefault = false
 FACTION.isPublic = false
