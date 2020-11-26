@@ -1,5 +1,5 @@
-﻿ITEM.name = "«Чёрный ящик»"
-ITEM.desc = "«Чёрный ящик», уцелевший при падении вертолёта. В нём должна содержаться зашифрованная информация о последних минутах полёта. \n\nХАРАКТЕРИСТИКИ: \n-технологическое приспособление \n-высокая ценность \n-могут использовать только специалисты."
+﻿ITEM.name = "Black Box"
+ITEM.desc = "The Black Box that survived the helicopter crash. It should contain encrypted information about the last minutes of the flight. \n\nATTRIBUTES: \n-Technological device \n-High value \n-Can only be used by specialists"
 ITEM.price = 14900
 ITEM.exRender = false
 ITEM.weight = 3.00
