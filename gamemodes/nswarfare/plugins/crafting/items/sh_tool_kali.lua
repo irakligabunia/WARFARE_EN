@@ -1,5 +1,5 @@
-﻿ITEM.name = "Инструменты для калибровки"
-ITEM.desc = "Позволяет создать защиту от аномалий"
+﻿ITEM.name = "Calibration tools"
+ITEM.desc = "Allows you to create protection against anomalies"
 ITEM.price = 26620
 ITEM.weight = 1.24
 
