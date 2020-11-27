@@ -1,6 +1,6 @@
 ﻿AddCSLuaFile()
 
-SWEP.PrintName = "Детектор «Велес»"
+SWEP.PrintName = "Detector «Veles»"
 SWEP.Category  = "Call of Pripyat"
 
 SWEP.Base = "weapon_cop_base"
@@ -92,7 +92,7 @@ function SWEP:Initialize()
 end
 
 
-	--[[SWEP.vRenderOrder = nil
+	SWEP.vRenderOrder = nil
 	function SWEP:ViewModelDrawn()
 		local vm = self.VModel
 		if !IsValid(vm) then return end
