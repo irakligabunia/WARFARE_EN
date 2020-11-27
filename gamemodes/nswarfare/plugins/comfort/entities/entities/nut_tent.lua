@@ -1,7 +1,7 @@
 AddCSLuaFile()
 
 ENT.Type = "anim"
-ENT.PrintName = "Палатка"
+ENT.PrintName = "Tent"
 ENT.Category = "Warfare ENT"
 ENT.Spawnable = true
 
