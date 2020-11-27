@@ -1,5 +1,5 @@
-﻿ITEM.name = "Гитара"
-ITEM.desc = "\n\nХАРАКТЕРИСТИКИ: \n-повседневное применение"
+﻿ITEM.name = "Guitar"
+ITEM.desc = "\n\nATTRIBUTES: \n-Widespread use"
 ITEM.price = 1270
 ITEM.exRender = false
 ITEM.weight = 0.47
