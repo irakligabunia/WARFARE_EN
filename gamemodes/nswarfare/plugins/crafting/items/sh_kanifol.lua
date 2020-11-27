@@ -1,5 +1,5 @@
-﻿ITEM.name = "Банка канифоли"
-ITEM.desc = "Банка канифоли, используемой при пайке. Редкая вещь в Зоне: как правильно, фрагменты сломавшихся предметов здесь соединяют при помощи изоленты. \n\nХАРАКТЕРИСТИКИ:\n-технологическое приспособление\n-высокая ценность"
+﻿ITEM.name = "Kanifol box"
+ITEM.desc = "The canafoli used in rations. A rare thing in the zone: as it is right, fragments of broken objects here connect with the help of duct tape. \n\nATTRIBUTES:\n-Technological device\n-High value"
 ITEM.price = 780
 ITEM.weight = 0.1
 
