@@ -1,6 +1,6 @@
 AddCSLuaFile()
 
-SWEP.PrintName = "ППШ"
+SWEP.PrintName = "PPSh-41"
 SWEP.Category  = "Call of Pripyat"
 
 SWEP.Base = "weapon_cop_base"
