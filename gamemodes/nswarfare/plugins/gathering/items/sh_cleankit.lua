@@ -1,5 +1,5 @@
-﻿ITEM.name = "Средство для чистки средне/крупнокалиб. винтовок"
-ITEM.desc = "Комплект специальных щеток для чистки ствола и других частей огнестрельног оружия от грязи, песка, влаги, остатков смазки и других инородных материалов, которые накапливаются во время использования. \n\nХАРАКТЕРИСТИКИ: \n-технологическое приспособление \n-высококачественное изделие"
+﻿ITEM.name = "Rifle cleaning kit"
+ITEM.desc = "A set of special brushes for cleaning the barrel and other parts of firearms from dirt, sand, moisture, remnants of lubricant and other foreign materials that accumulate during use. \n\nATTRIBUTES: \n-Technological device \n-High quality"
 ITEM.price = 931
 ITEM.exRender = false
 ITEM.weight = 3.01
