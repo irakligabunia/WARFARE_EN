@@ -1,5 +1,5 @@
-﻿ITEM.name = "Обычная Кассета"
-ITEM.desc = "На нее записана распространенная и приятная музыка, подойдет для большинства слушателей, содержит большое количество миксов."
+﻿ITEM.name = "Regular Cassette"
+ITEM.desc = "Recordings of common and pleasant music, suitable for most listeners, contains a large number of mixes."
 ITEM.price = 27940
 ITEM.model = "models/kek1ch/cassette_orange.mdl"
 
