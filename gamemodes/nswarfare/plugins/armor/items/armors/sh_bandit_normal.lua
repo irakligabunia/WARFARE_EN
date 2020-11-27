@@ -1,5 +1,5 @@
-﻿ITEM.name = "Bandit Overalls"
-ITEM.desc = ""
+﻿ITEM.name = "Bandit suit"
+ITEM.desc = "A replica of the Mercenary suit, with replaced colors. Its design is based on the suit used by the special forces of the Western armies. Due to a special treatment of the fabric, the armor has a strengthened stability during the physical movement of its plates. Its protective properties are slightly better then those of the PSZ-7 military bulletproof suits. \n\nWARNING! \n\n Before disassembling, it is recommended to empty your invetory! \n\nATTRIBUTES: \n-Lightweight \n-Can be disassembled with a crowbar"
 ITEM.price = 14444 
 ITEM.ric = 25
 ITEM.dmgsteal = 45
@@ -115,11 +115,11 @@ local DuseArmor = {
 }
 
 ITEM.functions.duse = {
-	name = "разобрать",
+	name = "disassemble",
 	onRun = function(item)
 		if (IsValid(item.player) && item.player:Alive()) then
 			if not item.player:getChar():getInv():hasItem("crowboar") then
-				item.player:notify("У вас нет лома!")
+				item.player:notify("You don't have a crowbar!")
 				return false
 			end
 			
