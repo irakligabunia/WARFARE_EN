@@ -1,5 +1,5 @@
-﻿ITEM.name = "Самодельная походная печка"
-ITEM.desc = "Печь кустарного производства, использующая сухую древесину или угол в качестве топлива и предназначена для приготовления пищи. Популярная среди сталкеров, так как легка в изготовлении: копус состоит из простого газового баллона ёмкостью 5 литров, а внутренние детали грубо вырезаютсяы из повсеместно распространённых канистр. \n\nХАРАКТЕРИСТИКИ:\n-технологическое приспособление\n-используется пдля приготовления мяса"
+﻿ITEM.name = "Homemade hiking stove"
+ITEM.desc = "An artisanal oven that uses dry wood or a coal as fuel and is designed for cooking. Popular among stalkers, as it is easy to manufacture: the copus consists of a simple gas cylinder with a capacity of 5 litres, and the internal parts are roughly cut out of ubiquitous canisters. \n\nATTRIBUTES:\n-Technological device\n-Used to cook meat"
 ITEM.price = 2370
 ITEM.weight = 3.10
 
@@ -13,7 +13,7 @@ ITEM.iconCam = {
 }
 
 ITEM.functions.use = { 
-	name = "использовать",
+	name = "use",
 	tip = "useTip",
 	icon = "icon16/drive.png",
 	onRun = function(item)
