@@ -1,5 +1,5 @@
-﻿ITEM.name = "Табачные листы (привозные, 5 пакетов)"
-ITEM.desc = "Дорогой табак, завернутый в упаковку, судя по всему завезенный с Запада. Без каки--либо дополнительных вредных добавок, так что можно наслаждаться оригинальным вкусом самого табачного листа. \n\nХАРАКТЕРИСТИКИ: \n-слабый отравляющий эффект \n-для использования требуется: зажигалка \n-возможно закурить"
+﻿ITEM.name = "Tobacco sheets (5 packets)"
+ITEM.desc = "Expensive tobacco wrapped in packaging appears to have been imported from the West. Without any additional harmful additives, so you can enjoy the original taste of the tobacco sheet itself. \n\nATTRIBUTES: \n-Weak poisoning effect \n-Required to use: lighter \n-Smokeable"
 ITEM.price = 7722
 ITEM.weight = 0.12
 ITEM.tabakAmount = 4
@@ -15,7 +15,7 @@ ITEM.iconCam = {
 
 function ITEM:getDesc()
 	local str
-	str = self.desc.." Осталось %s."
+	str = self.desc.."%s left."
 	return Format(str, self:getData("tabakAmount"))
 end
 
@@ -26,12 +26,12 @@ if (CLIENT) then
 end
 
 ITEM.functions.Smoke = {
-	name = "закурить",
+	name = "smoke",
 	onRun = function(item)
 	local client = item.player
 		if (IsValid(client) && client:Alive()) then
 			if not client:getChar():getInv():hasItem("tinderbox") then
-				client:notify("У вас нет зажигалки!")
+				client:notify("You don't have a lighter!")
 				return false
 			end
 			
@@ -48,7 +48,7 @@ ITEM.functions.Smoke = {
 			item:setData("tabakAmount", item:getData("tabakAmount") - 1)
 			
 			if item:getData("tabakAmount") < 1 then
-				item.player:notify("Пачка пуста")
+				item.player:notify("The box is empty!")
 				return true
 			end
 		end
