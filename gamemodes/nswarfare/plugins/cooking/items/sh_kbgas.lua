@@ -1,6 +1,6 @@
-﻿ITEM.name = "Баллон с газом (7 литров)"
-ITEM.desc = "Тяжелый металлический газовый баллон, пропитанный изнутри особыми полимерами для хранения внутри СО2/О2 раза, а с внешней стороны покрыт гипалоном для защиты от погодных условий и ультрафиолета. Этот газовый баллон пригоден для хранения внутри любого промышленного газа под давлением. \n\nХАРАКТЕРИСТИКИ: \n-технологическое приспособление \n-топливо для приготовления пищи"
-ITEM.category = "misc"
+﻿ITEM.name = "Gas cylinder (7 litres)"
+ITEM.desc = "A heavy metal gas cylinder soaked from the inside with special polymers to store inside CO2/O2 times, and on the outside is covered with hypalon to protect against weather conditions and ultraviolet light. This gas cylinder is suitable for storage inside any industrial gas under pressure. \n\nATTRIBUTES: \n-Technological device \n-Fuel for cooking"
+ITEM.category = "Misc"
 ITEM.price = 1736
 ITEM.exRender = false
 ITEM.weight = 8
@@ -17,7 +17,7 @@ ITEM.iconCam = {
 
 function ITEM:getDesc()
 	local str
-	str = self.desc.." Осталось %s литр(а)"
+	str = self.desc.."%s litre(s) left"
 	return Format(str, self:getData("kerosinAmount"))
 end
 
