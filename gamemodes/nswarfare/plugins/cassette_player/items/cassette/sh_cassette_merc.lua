@@ -1,5 +1,5 @@
-﻿ITEM.name = "Кассета Наемников"
-ITEM.desc = "Список треков:\n1. Тимур Муцураев - Нет дороги назад\n2. Тимур Муцураев - Шамиль ведет отряд\n3. Тимур Муцураев - Мама, приезжай и меня забери\n4. Тимур Муцураев - Они ушли\n5. Тимур Муцураев - Если духом ты слаб\n6. Любэ - Комбат\n\nНа кассете написано «Танксит-Бекдорщик», в углу подпись «M&L». Интересно, что бы это могло значить?"
+﻿ITEM.name = "Mercenary Cassette"
+ITEM.desc = "Track List:\n1. Timur Mutsurayev - No road back\n2. Timur Mutsurayev - Shamil leads the squad\n3. Timur Mutsurayev - Mama, come and pick me up\n4. Timur Mutsurayev - They're gone\n5. Timur Mutsurayev - If you are weak in spirit\n6. Lube - Kombat\n\nThe tape reads 'Tanksit-Bekdorchik' and the signature 'M&L' is in the corner. I wonder what that might mean."
 ITEM.price = 87940
 ITEM.model = "models/kek1ch/cassette_backkek.mdl"
 
