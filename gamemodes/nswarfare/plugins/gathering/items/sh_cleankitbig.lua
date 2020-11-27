@@ -1,5 +1,5 @@
-﻿ITEM.name = "Универсальный набор для чистки оружия"
-ITEM.desc = "Расшироенный комплект для чистки оружия, составл которого позволяет ухаживать за оружием всех калибров. Кроме чистки и обслуживания может быть так же использован для ремонта. \n\nХАРАКТЕРИСТИКИ \n-технологическое приспособление \n-высококачественное изделие"
+﻿ITEM.name = "Universal weapon cleaning kit"
+ITEM.desc = "Extended kit for cleaning weapons, which consists of the composition of which allows to care for weapons of all calibers. In addition to cleaning and maintenance can also be used for repairs. \n\nATTRIBUTES \n-Technological device \n-High quality"
 ITEM.price = 2952
 ITEM.exRender = false
 ITEM.weight = 1.96
