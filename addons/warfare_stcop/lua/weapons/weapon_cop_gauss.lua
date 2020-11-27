@@ -1,6 +1,6 @@
 AddCSLuaFile()
 
-SWEP.PrintName = "Гаусс-пушка («Изделие №62»)"
+SWEP.PrintName = "Gauss-Gun («Model №62»)"
 SWEP.Category  = "Call of Pripyat"
 
 SWEP.Base = "weapon_cop_base"
