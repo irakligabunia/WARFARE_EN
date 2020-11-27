@@ -1,6 +1,6 @@
-﻿ITEM.name = "Украинский журнал PlayBoy"
-ITEM.desc = "Глянцевый журнал с красивыми славянскими девушками, на развороте Джоанна Крупа - звезда месяца. Довольно популятная находка среди сталкеров, которые нуждаются в психологической поддержке. На сентиментальные сталкеры используеют его лишь как топливо для печки. \n\nХАРАКТЕРИСТИКИ: \n-повсеместное применение"
-ITEM.category = "Разное"
+﻿ITEM.name = "Ukrainian playBoy magazine"
+ITEM.desc = "Glossy magazine with beautiful Slavic girls, on the turn Joanna Krupa - the star of the month. It's a pretty popular find among stalkers who need psychological support. Other sentimental stalkers use it only as fuel for the stove. \n\nATTRIBUTES: \n-Widespread use"
+ITEM.category = "Misc"
 ITEM.price = 453
 ITEM.exRender = false
 ITEM.weight = 0.06
