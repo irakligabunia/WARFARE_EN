@@ -51,53 +51,53 @@ function PANEL:Paint(w, h)
 	local reptext = LocalPlayer():getChar():getData("rep")
 	local ranktext = LocalPlayer():getChar():getData("rank")
 
-	draw.DrawText("Персонаж", "Roh20", ScrW() * 0.005, ScrH() * 0.003, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT)
+	draw.DrawText("Character", "Roh20", ScrW() * 0.005, ScrH() * 0.003, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT)
 
 	draw.DrawText(LocalPlayer():getChar():getName(), "Roh20", ScrW() * 0.1, ScrH() * 0.06, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT)
 
-	draw.DrawText("Группировка:", "Roh10", ScrW() * 0.1, ScrH() * 0.085, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT) --team.GetColor(character:getFaction()) Фракция
+	draw.DrawText("Faction:", "Roh10", ScrW() * 0.1, ScrH() * 0.085, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT) --team.GetColor(character:getFaction()) Фракция
 	draw.DrawText(team.GetName(LocalPlayer():Team()), "Roh10", ScrW() * 0.292, ScrH() * 0.085, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
 
-	draw.DrawText("Ранг:", "Roh10", ScrW() * 0.1, ScrH() * 0.106, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT)
+	draw.DrawText("Rank:", "Roh10", ScrW() * 0.1, ScrH() * 0.106, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT)
 
 	if (ranktext >= 12000) then --сюда репутацию
-		draw.DrawText("Легенда", "Roh10", ScrW() * 0.292, ScrH() * 0.106, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
+		draw.DrawText("Legend", "Roh10", ScrW() * 0.292, ScrH() * 0.106, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
 	elseif (ranktext >= 5200 and ranktext <= 11999) then
-		draw.DrawText("Мастер", "Roh10", ScrW() * 0.292, ScrH() * 0.106, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
+		draw.DrawText("Master", "Roh10", ScrW() * 0.292, ScrH() * 0.106, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
 	elseif (ranktext >= 3200 and ranktext <= 5199) then
-		draw.DrawText("Эксперт", "Roh10", ScrW() * 0.292, ScrH() * 0.106, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
+		draw.DrawText("Expert", "Roh10", ScrW() * 0.292, ScrH() * 0.106, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
 	elseif (ranktext >= 2000 and ranktext <= 3199) then
-		draw.DrawText("Ветеран", "Roh10", ScrW() * 0.292, ScrH() * 0.106, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
+		draw.DrawText("Veteran", "Roh10", ScrW() * 0.292, ScrH() * 0.106, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
 	elseif (ranktext >= 1000 and ranktext <= 1999) then
-		draw.DrawText("Профессионал", "Roh10", ScrW() * 0.292, ScrH() * 0.106, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
+		draw.DrawText("Professional", "Roh10", ScrW() * 0.292, ScrH() * 0.106, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
 	elseif (ranktext >= 600 and ranktext <= 999) then
-		draw.DrawText("Опытный", "Roh10", ScrW() * 0.292, ScrH() * 0.106, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
+		draw.DrawText("Experienced", "Roh10", ScrW() * 0.292, ScrH() * 0.106, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
 	elseif (ranktext >= 200 and ranktext <= 599) then
-		draw.DrawText("Стажер", "Roh10", ScrW() * 0.292, ScrH() * 0.106, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
+		draw.DrawText("Stalker", "Roh10", ScrW() * 0.292, ScrH() * 0.106, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
 	elseif (ranktext <= 199) then
-		draw.DrawText("Новичок", "Roh10", ScrW() * 0.292, ScrH() * 0.106, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
+		draw.DrawText("Newbie", "Roh10", ScrW() * 0.292, ScrH() * 0.106, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
 	end
 
-	draw.DrawText("Репутация:", "Roh10", ScrW() * 0.1, ScrH() * 0.127, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT)
+	draw.DrawText("Reputation:", "Roh10", ScrW() * 0.1, ScrH() * 0.127, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT)
 
 	if (reptext >= 2000) then 
-		draw.DrawText("Великолепно", "Roh10", ScrW() * 0.292, ScrH() * 0.127, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
+		draw.DrawText("Perfect", "Roh10", ScrW() * 0.292, ScrH() * 0.127, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
 	elseif (reptext >= 1000 and reptext <= 1999) then
-		draw.DrawText("Отлично", "Roh10", ScrW() * 0.292, ScrH() * 0.127, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
+		draw.DrawText("Excellent", "Roh10", ScrW() * 0.292, ScrH() * 0.127, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
 	elseif (reptext >= 500 and reptext <= 999) then
-		draw.DrawText("Оч.Хорошо", "Roh10", ScrW() * 0.292, ScrH() * 0.127, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
+		draw.DrawText("V.Good", "Roh10", ScrW() * 0.292, ScrH() * 0.127, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
 	elseif (reptext >= 100 and reptext <= 499) then
-		draw.DrawText("Хорошо", "Roh10", ScrW() * 0.292, ScrH() * 0.127, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
+		draw.DrawText("Good", "Roh10", ScrW() * 0.292, ScrH() * 0.127, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
 	elseif (reptext >= -29 and reptext <= 99) then
-		draw.DrawText("Безразлично", "Roh10", ScrW() * 0.292, ScrH() * 0.127, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
+		draw.DrawText("Neutral", "Roh10", ScrW() * 0.292, ScrH() * 0.127, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
 	elseif (reptext >= -79 and reptext <= -30) then
-		draw.DrawText("Плохо", "Roh10", ScrW() * 0.292, ScrH() * 0.127, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
+		draw.DrawText("Bad", "Roh10", ScrW() * 0.292, ScrH() * 0.127, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
 	elseif (reptext >= -299 and reptext <= -80) then
-		draw.DrawText("Оч.Плохо", "Roh10", ScrW() * 0.292, ScrH() * 0.127, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
+		draw.DrawText("V.Bad", "Roh10", ScrW() * 0.292, ScrH() * 0.127, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
 	elseif (reptext >= -599 and reptext <= -300) then
-		draw.DrawText("Ужасно", "Roh10", ScrW() * 0.292, ScrH() * 0.127, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
+		draw.DrawText("Horrible", "Roh10", ScrW() * 0.292, ScrH() * 0.127, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
 	elseif (reptext <= -600) then
-		draw.DrawText("Хуже всех", "Roh10", ScrW() * 0.292, ScrH() * 0.127, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
+		draw.DrawText("Terrible", "Roh10", ScrW() * 0.292, ScrH() * 0.127, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
 	end
 
 	surface.SetDrawColor(0, 0, 14, 150)
