@@ -1,6 +1,6 @@
-﻿ITEM.name = "Древесный уголь (3 кг)"
-ITEM.desc = "Древесный уголь, полученный из лиственных пород древесины, используемой для приготовления мяса, рыбы, овощей в жаровнях и барбекю. \n\nХАРАКТЕРИСТИКИ: \n-технологическое приспособление \n-топливо для приготовления пищи"
-ITEM.category = "Топливо"
+﻿ITEM.name = "Charcoal (3 kg)"
+ITEM.desc = "Charcoal derived from hardwood used to cook meat, fish, vegetables in roasters and barbecues. \n\nATTRIBUTES: \n-Technological device\n-Fuel for cooking"
+ITEM.category = "Fuel"
 ITEM.price = 585
 ITEM.weight = 3.10
 ITEM.kerosinAmount = 3
@@ -17,7 +17,7 @@ ITEM.iconCam = {
 
 function ITEM:getDesc()
 	local str
-	str = self.desc.." Осталось %s литр(а)"
+	str = self.desc.."%s litre(s) left"
 	return Format(str, self:getData("kerosinAmount"))
 end
 
