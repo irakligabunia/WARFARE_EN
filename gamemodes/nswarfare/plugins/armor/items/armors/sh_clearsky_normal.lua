@@ -1,5 +1,5 @@
-﻿ITEM.name = "Бронежилет ЧН-2"
-ITEM.desc = "Бронежилет ЧН-2 — усиленный бронекостюм группировки «Чистое Небо» , разрабатывался для проведения поисковых операций в областях со средним и высоким уровнем аномальной активности. \n\nВНИМАНИЕ! \n\n При разборке рекомендуется освободить инвентарь! \n\nХАРАКТЕРИСТИКИ: \n-легкая бронезащита \n-возможно разобрать с помощью лома \n-защищает от радиации при наличии балона"
+﻿ITEM.name = "CS-2 Suit"
+ITEM.desc = "The CS-2 armored vest, a reinforced armored suit of the 'Clear Sky' faction, was developed for search operations in areas with medium and high levels of anomalous activity. \n\nWARNING! \n\n Before disassembling, it is recommended to empty your invetory! \n\nATTRIBUTES: \n-Can be disassembled with a crowbar \n-Protects against radiation if fitted with CCR"
 ITEM.price = 40753
 ITEM.ric = 25
 ITEM.dmgsteal = 35
@@ -115,11 +115,11 @@ local DuseArmor = {
 }
 
 ITEM.functions.duse = {
-	name = "разобрать",
+	name = "disassemble",
 	onRun = function(item)
 		if (IsValid(item.player) && item.player:Alive()) then
 			if not item.player:getChar():getInv():hasItem("crowboar") then
-				item.player:notify("У вас нет лома!")
+				item.player:notify("You don't have a crowbar!")
 				return false
 			end
 			
