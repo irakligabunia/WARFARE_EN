@@ -75,11 +75,11 @@ local DuseArmor = {
 }
 
 ITEM.functions.duse = {
-	name = "разобрать",
+	name = "disassemble",
 	onRun = function(item)
 		if (IsValid(item.player) && item.player:Alive()) then
 			if not item.player:getChar():getInv():hasItem("crowboar") then
-				item.player:notify("У вас нет лома!")
+				item.player:notify("You don't have a crowbar!")
 				return false
 			end
 			
