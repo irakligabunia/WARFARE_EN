@@ -1,5 +1,5 @@
-﻿ITEM.name = "Плотная синтетическая нить"
-ITEM.desc = "Катушка с крепкой синтетической нитью для шиться, осталось совсем немного, но вполне хватит, чтоб заплатать пару дыр. Незаменимая вещь в этих краях, так как такая нить, в отличии от обычной, выдержит каждодневую суровую проверку на прочность и прослужит, пока не выйдет из строя снаряжение, которое ею подшито. \n\nХАРАКТЕРИСТИКИ:\n-повсеместное применение\n-используется при: ремонте снаряжение (+4)"
+﻿ITEM.name = "String"
+ITEM.desc = "A coil with a strong synthetic thread for sewing, there is not much left, but it is enough to pay a couple of holes. Irreplaceable thing in these parts, as such a thread, unlike the usual, will withstand the daily harsh test of strength. \n\nATTRIBUTES:\n-Widespread use\n-Usages: Repair gear (+4)"
 ITEM.price = 190	
 ITEM.weight = 0.02
 
