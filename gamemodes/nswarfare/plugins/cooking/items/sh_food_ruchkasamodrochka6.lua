@@ -1,5 +1,5 @@
-ITEM.name = "Нога снорка"
-ITEM.desc = "В ноге снорка содержится большое число сверхэластичных сухожилий. Именно это и объясняет способность мутанта совершать такие высокие и затяжные прыжки. Ученые до сих пор пытаются найти применение этим сухожилиям и будут весьма благодарны за каждый принесенный им образец. \n\nХАРАКТЕРИСТИКИ: \n-мутировавшая часть тела \n-распространенный научный экземпляр"
+ITEM.name = "Snork leg"
+ITEM.desc = "The leg of the snork contains a large number of super-elastic tendons. This explains the ability of the mutant to make such high and protracted jumps. Scientists are still trying to find a use for these tendons and will be very grateful for every sample they bring. \n\nATTRIBUTES: \n-Mutant body part"
 ITEM.price = 790
 ITEM.exRender = false
 ITEM.weight = 0.8
