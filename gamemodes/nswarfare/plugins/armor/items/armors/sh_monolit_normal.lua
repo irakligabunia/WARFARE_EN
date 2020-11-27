@@ -1,5 +1,5 @@
-﻿ITEM.name = "Комбинезон Монолита ПЗ-1"
-ITEM.desc = "Особенный образец монолитовской личной защиты. Изготовлен из более высокотехнологичного материала и дополненный экспериментальной пси-защитой. \n\nХАРАКТЕРИСТИКИ: \n-легкая бронезащита \n-возможно разобрать с помощью лома \n-защищает от радиации при наличии балона"
+﻿ITEM.name = "Suit PZ-1"
+ITEM.desc = "A PZ-1 experimental suit prioritizing ballistic protection and almost zero protection from the hazards of the Zone"
 ITEM.price = 21006
 ITEM.ric = 20
 ITEM.dmgsteal = 30
