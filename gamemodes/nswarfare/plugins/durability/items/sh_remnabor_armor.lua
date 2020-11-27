@@ -1,6 +1,6 @@
 ﻿ITEM.name = "Professional repair kit for armor"
 ITEM.desc = "A proffesionaly made tool-kit specifically made for repairing uniforms, exos and helmets alike."
-ITEM.category = "Прочее"
+ITEM.category = "Misc"
 ITEM.exRender = false
 ITEM.price = 20690
 ITEM.exRender = true
