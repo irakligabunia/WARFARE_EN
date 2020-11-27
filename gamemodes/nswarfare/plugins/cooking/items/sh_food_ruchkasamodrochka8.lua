@@ -1,5 +1,5 @@
-ITEM.name = "Копыто кабана"
-ITEM.desc = "Копыта кабана могут быть использованы для производства многих лекарственных средств, например, для получения противорадиационной сыворотки, выводящей из организма избытки радиационного облучения. \n\nХАРАКТЕРИСТИКИ: \n-мутировавшая часть тела \n-распространенный научный экземпляр"
+ITEM.name = "Boar hoof"
+ITEM.desc = "Boar hooves can be used for the production of many medicines, for example, to obtain an anti-radiation serum that ejects excess radiation poisoning. \n\nATTRIBUTES: \n-Mutant body part"
 ITEM.price = 670
 ITEM.exRender = false
 ITEM.weight = 0.31
