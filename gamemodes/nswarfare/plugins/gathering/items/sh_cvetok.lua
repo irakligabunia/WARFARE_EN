@@ -1,5 +1,5 @@
-﻿ITEM.name = "«Каменный цветок»"
-ITEM.desc = "Артефакт представляет собой камень, близкий по своим характеристикам к гранитам. Возникает внутри гравитационных полей огромной интенсивности. Способен полностью или частично защищать рассудок владельца от пси-воздействия. \n\nХАРАКТЕРИСТИКИ: \n-артефакт \n\nРадиация +3 / сек"
+﻿ITEM.name = "Stoneflower"
+ITEM.desc = "The artifact is a stone close in its characteristics to granites. It occurs inside gravitational fields of great intensity. It is able to fully or partially protect the owner's mind from psi-impact. \n\nATTRIBUTES: \n-Artefact \n\nRadiation +3 / sec"
 ITEM.price = 23910
 ITEM.isAnomaly = true
 ITEM.weight = 0.85
@@ -14,12 +14,12 @@ ITEM.iconCam = {
 }
 
 ITEM.functions.Use = {
-	name = "положить в СИМК",
+	name = "put in case",
 	onRun = function(item)
 		local client = item.player
 		if (IsValid(client) && client:Alive()) then
 			if not client:getChar():getInv():hasItem("simkemp") then
-				client:notify("Вам нужны СИМК (пустой).")
+				client:notify("You need an empty arterfact case")
 				return false
 			end
 
