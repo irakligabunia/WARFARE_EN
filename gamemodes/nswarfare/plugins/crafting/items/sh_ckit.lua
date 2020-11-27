@@ -1,5 +1,5 @@
-﻿ITEM.name = "Полевые столовые приборы"
-ITEM.desc = "Ложка, нож и вилка, изготовленные из тяжелой сталки. Надежный и довольно легкий набор столовых приборов, который идеально подходит для туризма и полевых исследований. Столовые приборы скреплены медной проволокой. \n\nХАРАКТЕРИСТИКИ:\n-повсеместное применение\n-используется при: чистке и смазке оружия (+2)"
+﻿ITEM.name = "Field cutlery"
+ITEM.desc = "A spoon, a knife and a fork made of heavy steel. A reliable and fairly light set of cutlery that is ideal for tourism and field research. The cutlery is fastened with copper wire. \n\nATTRIBUTES:\n-Widespread use\n-Used in: cleaning and lubricating weapons(+2)"
 ITEM.price = 180
 ITEM.weight = 0.2
 ITEM.model = "models/kek1ch/ckit.mdl"
