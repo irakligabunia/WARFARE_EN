@@ -1,5 +1,5 @@
-﻿ITEM.name = "Научный комбинезон «Свободы»"
-ITEM.desc = "Комбинезон серии ПСЗ-9М, родственник серии «СЕВА», отличающийся от последних материалами на порядок хуже для условий Зоны Отчуждения. Производится кустарным способом в поселке Мирный, зачастую на такие ставят бывшие в употреблении «Заслоны». \n\nВНИМАНИЕ! \n\n При разборке рекомендуется освободить инвентарь! \n\nХАРАКТЕРИСТИКИ: \n-усиленная бронезащита \n-возможно разобрать с помощью лома \n-защищает от радиации при наличии балона"
+﻿ITEM.name = "'Freedom' SEVA"
+ITEM.desc = "This bodysuit, intended for conducting research in the Zone, combines a closed-cycle respiratory module and an external isolation coating, resulting in excellent protection from anomalies. Due to poor protection from physical impact, the suit is not a good defense against bullet and fragmentation damage. This specific suit is made for the 'Freedom' faction. \n\nWARNING! \n\n Before disassembling, it is recommended to empty your invetory! \n\nATTRIBUTES: \n-Heavyweight \n-High value \n-Can be disassembled with a crowbar \n-Inbuilt CCR System"
 ITEM.price = 154254
 ITEM.ric = 30
 ITEM.dmgsteal = 45
@@ -75,11 +75,11 @@ local DuseArmor = {
 }
 
 ITEM.functions.duse = {
-	name = "разобрать",
+	name = "disassemble",
 	onRun = function(item)
 		if (IsValid(item.player) && item.player:Alive()) then
 			if not item.player:getChar():getInv():hasItem("crowboar") then
-				item.player:notify("У вас нет лома!")
+				item.player:notify("You don't have a crowbar!")
 				return false
 			end
 			
