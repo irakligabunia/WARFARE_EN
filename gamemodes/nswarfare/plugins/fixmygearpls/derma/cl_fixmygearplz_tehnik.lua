@@ -89,7 +89,7 @@ function PANEL:Init()
 
 		for _, v in pairs(items) do
 			if armor_button_toggled == 1 then
-				if v.category == "armor" and v:getData("equip") then
+				if v.category == "Suit" and v:getData("equip") then
 					local lines = nut.util.wrapText(v.name.." - "..v.desc, ScrW() * 0.124, "Roh10")
 					for i = 1, #lines do
 						y = ScrH() * 0 + (i * 18) 
@@ -129,7 +129,7 @@ function PANEL:Init()
 					end
 				end
 			else
-				local lines = nut.util.wrapText("Для ремонта снаряжения выберите иконки на панели «Экипировка», после чего нажмите на кнопку «Ремонт».", ScrW() * 0.124, "Roh10")
+				local lines = nut.util.wrapText("To repair the equipment, select the icons on the 'Equipment' panel, and then click on the 'Repair' button.", ScrW() * 0.124, "Roh10")
 				for i = 1, #lines do
 					y = ScrH() * 0 + (i * 18) 
 					nut.util.drawText(lines[i], x, y, color_white, ScrW() * 0.001, ScrH() * 0.13, "Roh10", TEXT_ALIGN_LEFT) 
@@ -176,7 +176,7 @@ function PANEL:Init()
 	left.fixit = left:Add("DButton")
 	left.fixit:SetSize( ScrW() * 0.085, ScrH() * 0.0325)
 	left.fixit:SetPos(ScrW() * 0.0115, ScrH() * 0.187)
-	left.fixit:SetText("Ремонт")
+	left.fixit:SetText("Repair")
 	left.fixit:SetFont("Roh20")
 	left.fixit:SetTextColor(Color(255, 255, 255, 210)) 
 	left.fixit.DoClick = function(client)
@@ -241,7 +241,7 @@ function PANEL:Init()
 		surface.SetDrawColor(Color( 30, 30, 30, 50))
 		surface.DrawOutlinedRect(ScrW() * 0, ScrH() * 0, ScrW() * 0.26, ScrH() * 0.033) --обводка шапки
 
-		draw.DrawText("Ремонт", "Roh20", ScrW() * 0.005, ScrH() * 0.003, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT ) --надпись шапки
+		draw.DrawText("Repair", "Roh20", ScrW() * 0.005, ScrH() * 0.003, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT ) --надпись шапки
 
 		surface.SetDrawColor(0, 0, 14, 150)
 		surface.DrawRect(ScrW() * 0.0115, ScrH() * 0.0575, ScrW() * 0.085, ScrH() * 0.125) --фон модели игрока
@@ -252,7 +252,7 @@ function PANEL:Init()
 		surface.SetDrawColor(0, 0, 14, 150)
 		surface.DrawRect(ScrW() * 0.1, ScrH() * 0.187, ScrW() * 0.1, ScrH() * 0.0325) --информация о предмете
 
-		draw.DrawText(tehnikname or "Пожилой Баг", "Roh20", ScrW() * 0.1, ScrH() * 0.06, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT)
+		draw.DrawText(tehnikname or "Old bug", "Roh20", ScrW() * 0.1, ScrH() * 0.06, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT)
 
 		if (cost_main == 0) then
 			draw.DrawText("--- ₽", "Roh10", ScrW() * 0.105, ScrH() * 0.193, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT)
@@ -260,13 +260,13 @@ function PANEL:Init()
 			draw.DrawText(cost_main.." ₽", "Roh10", ScrW() * 0.105, ScrH() * 0.193, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT)
 		end
 			
-		draw.DrawText("Фракция:", "Roh10", ScrW() * 0.1, ScrH() * 0.09, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT) --team.GetColor(character:getFaction())
-		draw.DrawText(tehnikdesc or "Одиночки", "Roh10", ScrW() * 0.2, ScrH() * 0.09, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
+		draw.DrawText("Faction:", "Roh10", ScrW() * 0.1, ScrH() * 0.09, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT) --team.GetColor(character:getFaction())
+		draw.DrawText(tehnikdesc or "Loner", "Roh10", ScrW() * 0.2, ScrH() * 0.09, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
 
-		draw.DrawText("Деньги:", "Roh10", ScrW() * 0.1, ScrH() * 0.111, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT)
+		draw.DrawText("Money:", "Roh10", ScrW() * 0.1, ScrH() * 0.111, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT)
 		draw.DrawText("--- ₽", "Roh10", ScrW() * 0.2, ScrH() * 0.111, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
 
-		draw.DrawText("Скидка:", "Roh10", ScrW() * 0.1, ScrH() * 0.132, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT)
+		draw.DrawText("Discount:", "Roh10", ScrW() * 0.1, ScrH() * 0.132, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT)
 
 		--draw.DrawText((LocalPlayer():getChar():getData("rep") * 0.001).."%", "Roh10", ScrW() * 0.2, ScrH() * 0.132, Color(255, 204, 0, 210), TEXT_ALIGN_RIGHT)
 
@@ -304,7 +304,7 @@ function PANEL:Init()
 		surface.SetDrawColor(Color( 30, 30, 30, 50))
 		surface.DrawOutlinedRect(ScrW() * 0, ScrH() * 0, ScrW() * 0.26, ScrH() * 0.033) --шапка
 
-		draw.DrawText("Модификации", "Roh20", ScrW() * 0.005, ScrH() * 0.003, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT ) --надпись шапки
+		draw.DrawText("Modification", "Roh20", ScrW() * 0.005, ScrH() * 0.003, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT ) --надпись шапки
 
 		surface.SetDrawColor(0, 0, 0, 210)
 		surface.DrawRect(ScrW() * 0.055, ScrH() * 0.12, ScrW() * 0.094, ScrH() * 0.0325) --верхняя альфа панелька
@@ -312,15 +312,15 @@ function PANEL:Init()
 		surface.SetDrawColor(0, 0, 0, 210)
 		surface.DrawRect(ScrW() * 0.045, ScrH() * 0.1525, ScrW() * 0.114, ScrH() * 0.0325) --нижняя альфа панелька
 
-		draw.DrawText("Не доступно", "Roh20", ScrW() * 0.102, ScrH() * 0.123, Color(255, 255, 255, 210), TEXT_ALIGN_CENTER ) --верхняя альфа надпись
+		draw.DrawText("Not available", "Roh20", ScrW() * 0.102, ScrH() * 0.123, Color(255, 255, 255, 210), TEXT_ALIGN_CENTER ) --верхняя альфа надпись
 
-		draw.DrawText("В альфа версии", "Roh20", ScrW() * 0.101, ScrH() * 0.1535, Color(255, 255, 255, 210), TEXT_ALIGN_CENTER ) --нижняя альфа надпись
+		draw.DrawText("In the alpha version", "Roh20", ScrW() * 0.101, ScrH() * 0.1535, Color(255, 255, 255, 210), TEXT_ALIGN_CENTER ) --нижняя альфа надпись
 	end
 
 	self.exit = self:Add("DButton")
 	self.exit:SetPos(ScrW() * 0.0525, ScrH() * 0.575)
 	self.exit:SetSize( ScrW() * 0.11, ScrH() * 0.0335)
-	self.exit:SetText("Выход")
+	self.exit:SetText("Exit")
 	self.exit:SetFont("Roh20")
 	self.exit:SetTextColor(Color(211, 211, 211)) 
 	function self.exit:Paint( w, h )
@@ -365,7 +365,7 @@ function PANEL:Init()
 	self.main_weapon_model = self:Add("nutItemIcon") --основное оружия
 	self.main_weapon_model:SetPos(-ScrW(), ScrH() * 0.08)
 	for _, v in pairs(items) do
-		if v.category == "Оружие" and v:getData("equip") then
+		if v.category == "Weapon" and v:getData("equip") then
 			if v.weaponCategory == "1" then
 				self.main_weapon_model:SetModel(v.model, 0)
  				if v.width == 6 and v.height == 1 then
@@ -487,7 +487,7 @@ function PANEL:Init()
 	self.armor_model = self:Add("nutItemIcon") --броня
 	self.armor_model:SetPos(-ScrW(), ScrH() * 0.08)
 	for _, v in pairs(items) do
-		if v.category == "armor" and v:getData("equip") then
+		if v.category == "Suit" and v:getData("equip") then
 			self.armor_model:SetModel(v.model, 0)
 			self.armor_model:SetPos(ScrW() * 0.0247, ScrH() * 0.255 - v.height * 5)
 			self.armor_model:SetSize(ScrW() * v.width * 0.036, ScrH() * v.height * 0.06)
@@ -613,7 +613,7 @@ function PANEL:Init()
 	end
 	self.armor_button.DoClick = function(client)
 		for _, v in pairs(items) do
-			if v.category == "armor" and v:getData("equip") then
+			if v.category == "Suit" and v:getData("equip") then
 				if self.armor_button:GetToggle() then
 					self.armor_button:SetToggle(false)
 					cost_main = cost_main - cost_armor_button
@@ -814,64 +814,64 @@ function PANEL:Init()
 		surface.SetDrawColor(Color( 0, 0, 0, 50))
 		surface.DrawOutlinedRect(ScrW() * 0.0115, ScrH() * 0.2, ScrW() * 0.189, ScrH() * 0.334) --вторичная обводка описания
 
-		draw.DrawText("Описание предмета", "Roh20", ScrW() * 0.0135, ScrH() * 0.198, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT) --название шапки описания
+		draw.DrawText("Item description", "Roh20", ScrW() * 0.0135, ScrH() * 0.198, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT) --название шапки описания
 
-		draw.DrawText("Персонаж", "Roh20", ScrW() * 0.005, ScrH() * 0.003, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT) --надпись шапки
+		draw.DrawText("Character", "Roh20", ScrW() * 0.005, ScrH() * 0.003, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT) --надпись шапки
 
 		draw.DrawText(LocalPlayer():getChar():getName(), "Roh20", ScrW() * 0.1, ScrH() * 0.06, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT)
 
-		draw.DrawText("Фракция:", "Roh10", ScrW() * 0.1, ScrH() * 0.09, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT) --team.GetColor(character:getFaction()) Фракция
+		draw.DrawText("Faction:", "Roh10", ScrW() * 0.1, ScrH() * 0.09, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT) --team.GetColor(character:getFaction()) Фракция
 		draw.DrawText(team.GetName(LocalPlayer():Team()), "Roh10", ScrW() * 0.2, ScrH() * 0.09, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
 
-		draw.DrawText("Деньги:", "Roh10", ScrW() * 0.1, ScrH() * 0.111, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT) --Деньги
+		draw.DrawText("Money:", "Roh10", ScrW() * 0.1, ScrH() * 0.111, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT) --Деньги
 		draw.DrawText(LocalPlayer():getChar():getMoney().." ₽", "Roh10", ScrW() * 0.2, ScrH() * 0.111, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
 
-		draw.DrawText("Ранг:", "Roh10", ScrW() * 0.1, ScrH() * 0.132, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT) --Ранг
+		draw.DrawText("Rank:", "Roh10", ScrW() * 0.1, ScrH() * 0.132, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT) --Ранг
 
 		if (ranktext >= 12000) then
-			draw.DrawText("Легенда", "Roh10", ScrW() * 0.2, ScrH() * 0.132, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
+			draw.DrawText("Legend", "Roh10", ScrW() * 0.2, ScrH() * 0.132, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
 		elseif (ranktext >= 5200 and ranktext <= 11999) then
-			draw.DrawText("Мастер", "Roh10", ScrW() * 0.2, ScrH() * 0.132, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
+			draw.DrawText("Master", "Roh10", ScrW() * 0.2, ScrH() * 0.132, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
 		elseif (ranktext >= 3200 and ranktext <= 5199) then
-			draw.DrawText("Эксперт", "Roh10", ScrW() * 0.2, ScrH() * 0.132, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
+			draw.DrawText("Expert", "Roh10", ScrW() * 0.2, ScrH() * 0.132, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
 		elseif (ranktext >= 2000 and ranktext <= 3199) then
-			draw.DrawText("Ветеран", "Roh10", ScrW() * 0.2, ScrH() * 0.132, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
+			draw.DrawText("Veteran", "Roh10", ScrW() * 0.2, ScrH() * 0.132, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
 		elseif (ranktext >= 1000 and ranktext <= 1999) then
-			draw.DrawText("Профессионал", "Roh10", ScrW() * 0.2, ScrH() * 0.132, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
+			draw.DrawText("Professional", "Roh10", ScrW() * 0.2, ScrH() * 0.132, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
 		elseif (ranktext >= 600 and ranktext <= 999) then
-			draw.DrawText("Опытный", "Roh10", ScrW() * 0.2, ScrH() * 0.132, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
+			draw.DrawText("Experienced", "Roh10", ScrW() * 0.2, ScrH() * 0.132, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
 		elseif (ranktext >= 200 and ranktext <= 599) then
-			draw.DrawText("Стажер", "Roh10", ScrW() * 0.2, ScrH() * 0.132, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
+			draw.DrawText("Rookie", "Roh10", ScrW() * 0.2, ScrH() * 0.132, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
 		elseif (ranktext <= 199) then
-			draw.DrawText("Новичок", "Roh10", ScrW() * 0.2, ScrH() * 0.132, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
+			draw.DrawText("Trainee", "Roh10", ScrW() * 0.2, ScrH() * 0.132, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
 		end
 
-		draw.DrawText("Репутация:", "Roh10", ScrW() * 0.1, ScrH() * 0.152, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT) --Репутация
+		draw.DrawText("Reputation :", "Roh10", ScrW() * 0.1, ScrH() * 0.152, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT) --Репутация
 
 		if (reptext >= 2000) then
-			draw.DrawText("Великолепно", "Roh10", ScrW() * 0.2, ScrH() * 0.152, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
+			draw.DrawText("Excellent", "Roh10", ScrW() * 0.2, ScrH() * 0.152, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
 		elseif (reptext >= 1000 and reptext <= 1999) then
-			draw.DrawText("Отлично", "Roh10", ScrW() * 0.2, ScrH() * 0.152, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
+			draw.DrawText("Perfect", "Roh10", ScrW() * 0.2, ScrH() * 0.152, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
 		elseif (reptext >= 500 and reptext <= 999) then
-			draw.DrawText("Оч.Хорошо", "Roh10", ScrW() * 0.2, ScrH() * 0.152, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
+			draw.DrawText("V.Good", "Roh10", ScrW() * 0.2, ScrH() * 0.152, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
 			elseif (reptext > 100 and reptext <= 499) then
-			draw.DrawText("Хорошо", "Roh10", ScrW() * 0.2, ScrH() * 0.152, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
+			draw.DrawText("Good", "Roh10", ScrW() * 0.2, ScrH() * 0.152, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
 		elseif (reptext >= -29 and reptext <= 99) then
-			draw.DrawText("Безразлично", "Roh10", ScrW() * 0.2, ScrH() * 0.152, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
+			draw.DrawText("Neutral", "Roh10", ScrW() * 0.2, ScrH() * 0.152, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
 		elseif (reptext >= -79 and reptext <= -30) then
-			draw.DrawText("Плохо", "Roh10", ScrW() * 0.2, ScrH() * 0.152, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
+			draw.DrawText("Bad", "Roh10", ScrW() * 0.2, ScrH() * 0.152, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
 		elseif (reptext >= -299 and reptext <= -80) then
-			draw.DrawText("Оч.Плохо", "Roh10", ScrW() * 0.2, ScrH() * 0.152, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
+			draw.DrawText("V.Bad", "Roh10", ScrW() * 0.2, ScrH() * 0.152, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
 		elseif (reptext >= -599 and reptext <= -300) then
-			draw.DrawText("Ужасно", "Roh10", ScrW() * 0.2, ScrH() * 0.152, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
+			draw.DrawText("Terrible", "Roh10", ScrW() * 0.2, ScrH() * 0.152, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
 		elseif (reptext <= -600) then
-			draw.DrawText("Хуже всех", "Roh10", ScrW() * 0.2, ScrH() * 0.152, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
+			draw.DrawText("Worst of all", "Roh10", ScrW() * 0.2, ScrH() * 0.152, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
 		end
 
 		surface.SetDrawColor(Color(0, 0, 14, 150))
 		surface.DrawRect(ScrW() * 0.0115, ScrH() * 0.543, ScrW() * 0.189, ScrH() * 0.0325) --панель веса
 
-		draw.DrawText("Общий вес: "..LocalPlayer():GetWeight().." кг (max"..nut.config.get("maxWeight") + LocalPlayer():GetWeightAddition().." кг)", "Roh10", ScrW() * 0.016, ScrH() * 0.547, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT)
+		draw.DrawText("Total weight: "..LocalPlayer():GetWeight().." kg (max"..nut.config.get("maxWeight") + LocalPlayer():GetWeightAddition().." kg)", "Roh10", ScrW() * 0.016, ScrH() * 0.547, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT)
 	end
 
 	function self:Paint( w, h )  --Расположение X Y, Размер W H.
@@ -886,7 +886,7 @@ function PANEL:Init()
 		surface.SetDrawColor(Color( 30, 30, 30, 50))
 		surface.DrawOutlinedRect(ScrW() * 0, ScrH() * 0, ScrW() * 0.26, ScrH() * 0.033) --шапка
 
-		draw.DrawText("Экпипировка", "Roh20", ScrW() * 0.005, ScrH() * 0.003, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT ) --надпись шапки
+		draw.DrawText("Equipment", "Roh20", ScrW() * 0.005, ScrH() * 0.003, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT ) --надпись шапки
 
 		surface.SetDrawColor(Color( 0, 33, 55, 160))
 		surface.DrawRect(ScrW() * 0.0115, ScrH() * 0.057, ScrW() * 0.189, ScrH() * 0.024) --верхняя панель основного оружия
@@ -907,19 +907,19 @@ function PANEL:Init()
 		surface.SetDrawColor(Color( 0, 0, 0, 50))
 		surface.DrawOutlinedRect(ScrW() * 0.011, ScrH() * 0.0575, ScrW() * 0.18915, ScrH() * 0.1265) --вторичная обводка
 
-		draw.DrawText("Основное", "Roh20", ScrW() * 0.102, ScrH() * 0.0555, Color(255, 255, 255, 210), TEXT_ALIGN_CENTER ) --надпись основного оружия
+		draw.DrawText("Main", "Roh20", ScrW() * 0.102, ScrH() * 0.0555, Color(255, 255, 255, 210), TEXT_ALIGN_CENTER ) --надпись основного оружия
 
 		surface.SetDrawColor(Color( 0, 33, 55, 160))
 		surface.DrawRect(ScrW() * 0.0115, ScrH() * 0.2, ScrW() * 0.1, ScrH() * 0.024) --верхняя панель брони
 
 		for _, v in pairs(items) do
-			if v.category == "armor" and v:getData("equip") then
+			if v.category == "Suit" and v:getData("equip") then
 				surface.SetDrawColor( Color(80, 80, 80, 160) )
 				surface.DrawRect(ScrW() * 0.0115, ScrH() * 0.2, math.Clamp((ScrW() * (v:getData("durabilityarmor")) / 1000 * 1.25), 0, ScrW() * 0.1), ScrH() * 0.024) --индикатор состояния шлема
 			end
 		end
 
-		draw.DrawText("Комбинезон", "Roh20", ScrW() * 0.062, ScrH() * 0.198, Color(255, 255, 255, 210), TEXT_ALIGN_CENTER ) --надпись на верхней панели брони
+		draw.DrawText("Suit", "Roh20", ScrW() * 0.062, ScrH() * 0.198, Color(255, 255, 255, 210), TEXT_ALIGN_CENTER ) --надпись на верхней панели брони
 
 		surface.SetDrawColor(Color( 0, 0, 0, 150))
 		surface.DrawRect(ScrW() * 0.0115, ScrH() * 0.224, ScrW() * 0.1, ScrH() * 0.206) --основная панель брони
@@ -962,7 +962,7 @@ function PANEL:Init()
 			end
 		end
 
-		draw.DrawText("Пистолет", "Roh20", ScrW() * 0.16, ScrH() * 0.322, Color(255, 255, 255, 210), TEXT_ALIGN_CENTER ) --надпись на верхней панели пистолета
+		draw.DrawText("Pistol", "Roh20", ScrW() * 0.16, ScrH() * 0.322, Color(255, 255, 255, 210), TEXT_ALIGN_CENTER ) --надпись на верхней панели пистолета
 
 		surface.SetDrawColor(Color( 0, 0, 0, 150))
 		surface.DrawRect(ScrW() * 0.12, ScrH() * 0.348, ScrW() * 0.08, ScrH() * 0.082) --основная панель пистолета
@@ -992,7 +992,7 @@ function PANEL:Init()
 		surface.SetDrawColor(Color( 0, 0, 0, 50))
 		surface.DrawOutlinedRect(ScrW() * 0.011, ScrH() * 0.446, ScrW() * 0.18915, ScrH() * 0.1265) --вторичная обводка дополнительного оружия
 
-		draw.DrawText("Дополнительное", "Roh20", ScrW() * 0.102, ScrH() * 0.444, Color(255, 255, 255, 210), TEXT_ALIGN_CENTER ) --надпись основного оружия
+		draw.DrawText("Additional", "Roh20", ScrW() * 0.102, ScrH() * 0.444, Color(255, 255, 255, 210), TEXT_ALIGN_CENTER ) --надпись основного оружия
 
 		surface.SetDrawColor( Color(125, 105, 0, 40) )
 		surface.SetMaterial( Material("lgh/circle_gradient.png") )
@@ -1001,8 +1001,8 @@ function PANEL:Init()
 end
 
 function PANEL:SetEntity( ent )
-	self.name = ent:getNetVar( "name", "Техник" )
-	self.desc = ent:getNetVar( "desc", "Одиночки" )
+	self.name = ent:getNetVar( "name", "Technician" )
+	self.desc = ent:getNetVar( "desc", "Loners" )
 end
 
 vgui.Register("fixmygearplz_tehnik", PANEL, "DFrame")
