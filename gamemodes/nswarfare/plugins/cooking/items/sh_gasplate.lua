@@ -1,5 +1,5 @@
-﻿ITEM.name = "Мультитопливная печь"
-ITEM.desc = "Печь прошла тщательное тестирование в полевых условиях и была использована в бесчисленном множестве экспедиций в течении многих лет. Она невероятно прочная, надежная и мощная. Работает в самых сложных и суровых условиях: как на огромных высотах, так и при экстремальных температурах. \n\nХАРАКТЕРИСТИКИ: \n-технологическое приспособление \n-высококачественное изделие \n-используется для: приготовления мясо мутантов \n-для использования требуется: зажигалка, керосин, либо канистра бензина"
+﻿ITEM.name = "Multi-fuel oven"
+ITEM.desc = "The furnace has been thoroughly tested in the field and has been used in countless expeditions over the years. It is incredibly strong, reliable and powerful. Works in the most difficult and harsh conditions: both at huge altitudes and at extreme temperatures. \n\nATTRIBUTES: \n-Technological device \n-High quality \n-Usages: to cook mutant parts \n-Required to use: lighter, kerosene, or a canister"
 ITEM.price = 9385
 ITEM.exRender = false
 ITEM.weight = 0.36
@@ -14,7 +14,7 @@ ITEM.iconCam = {
 }
 
 ITEM.functions.use = { 
-	name = "использовать",
+	name = "use",
 	tip = "useTip",
 	icon = "icon16/drive.png",
 	onRun = function(item)
