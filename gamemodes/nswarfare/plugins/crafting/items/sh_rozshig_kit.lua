@@ -1,5 +1,5 @@
-﻿ITEM.name = "Набор для розжига"
-ITEM.desc = ""
+﻿ITEM.name = "Ignition kit"
+ITEM.desc = "Everything you need to start a fire."
 ITEM.price = 1520
 ITEM.weight = 1.24
 
