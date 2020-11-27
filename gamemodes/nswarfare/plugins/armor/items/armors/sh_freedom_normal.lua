@@ -1,5 +1,5 @@
-﻿ITEM.name = "Комбинезон «Страж свободы»"
-ITEM.desc = "Производимый ремесленниками группировки «Свобода» усиленный комбинезон сталкера. Средний армейский бронежилет плюс накладные усиливающие циркониевые элементы дают неплохую защиту от автоматных пуль и осколков на различных дистанциях. Материал костюма состоит из двух слоев: специально обработанной кожи и ткани с асбестовой нитью. Дает совсем малую защиту от различных аномальных воздействий и радиации. \n\nВНИМАНИЕ! \n\n При разборке рекомендуется освободить инвентарь! \n\nХАРАКТЕРИСТИКИ: \n-легкая бронезащита \n-возможно разобрать с помощью лома \n-защищает от радиации при наличии балона"
+﻿ITEM.name = "'Guardian of Freedom' suit"
+ITEM.desc = "This stalker bodysuit with reinforced body armor made by Freedom craftsmen represents a good compromise between combat and anomaly protection. The built-in body armor comprises armor plating and ten Kevlar layers, capable of stopping a pistol bullet. The suit uses the relatively expensive Sovereign compound for anomaly protection. \n\nWARNING! \n\n Before disassembling, it is recommended to empty your invetory! \n\nATTRIBUTES: \n-Lightweight \n-Can be disassembled with a crowbar \n-Protects against radiation if fitted with CCR"
 ITEM.price = 22012
 ITEM.ric = 25
 ITEM.dmgsteal = 35
@@ -115,11 +115,11 @@ local DuseArmor = {
 }
 
 ITEM.functions.duse = {
-	name = "разобрать",
+	name = "disassemble",
 	onRun = function(item)
 		if (IsValid(item.player) && item.player:Alive()) then
 			if not item.player:getChar():getInv():hasItem("crowboar") then
-				item.player:notify("У вас нет лома!")
+				item.player:notify("You don't have a crowbar!")
 				return false
 			end
 			
