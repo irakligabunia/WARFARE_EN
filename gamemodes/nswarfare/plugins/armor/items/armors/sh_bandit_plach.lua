@@ -1,5 +1,5 @@
-﻿ITEM.name = "Черный кожаный плащ"
-ITEM.desc = "Обычный плащ из чёрной кожи. Заметной защиты носителю не обеспечивает. Разве что не даст замёрзнуть ночью и смягчит укус слепого пса. \n\nВНИМАНИЕ! \n\n При разборке рекомендуется освободить инвентарь! \n\nХАРАКТЕРИСТИКИ: \n-легкая бронезащита \n-возможно разобрать с помощью лома"
+﻿ITEM.name = "Black coat"
+ITEM.desc = "A regular cloak made of black leather. There is no noticeable protection for the media. It won't let you freeze at night and softens the bite of a blind dog. \n\nWARNING! \n\n Before disassembling, it is recommended to empty your invetory! \n\nATTRIBUTES: \n-Lightweight \n-Can be disassembled with a crowbar"
 ITEM.price = 13012
 ITEM.ric = 15
 ITEM.dmgsteal = 20
@@ -84,11 +84,11 @@ local DuseArmor = {
 }
 
 ITEM.functions.duse = {
-	name = "разобрать",
+	name = "disassemble",
 	onRun = function(item)
 		if (IsValid(item.player) && item.player:Alive()) then
 			if not item.player:getChar():getInv():hasItem("crowboar") then
-				item.player:notify("У вас нет лома!")
+				item.player:notify("You don't have a crowbar!")
 				return false
 			end
 			
