@@ -1,5 +1,5 @@
-ITEM.name = "Голова тушкана"
-ITEM.desc = "Голова тушкана. Ученые заинтересованы в изучении данных частей монстров с целью определения происхождения тушканов. \n\nХАРАКТЕРИСТИКИ: \n-мутировавшая часть тела \n-распростаненный научный экземпляр"
+ITEM.name = "Tushanko head"
+ITEM.desc = "The head of a tushanko. Scientists are interested in studying these parts of monsters in order to determine the origin of tushanko. \n\nATTRIBUTES: \n-Mutant body part"
 ITEM.price = 510
 ITEM.exRender = false
 ITEM.weight = 0.11
