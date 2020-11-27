@@ -1,5 +1,5 @@
-ITEM.name = "Рука зомби"
-ITEM.desc = "Мутировавшая рука мутанта, называемого сталкерами старый зомби - это бывшие люди, которые жили и работали в Зоне Отчуждения, каждый день подвергаясь воздействию огромного количества радиации, а после второго Чернобыльского инцидента еще и постоянному воздействию пси-излучения. \n\nХАРАКТЕРИСТИКИ: \n-мутировавшая часть тела \n-распространенный научный экземпляр"
+ITEM.name = "Zombie hand"
+ITEM.desc = "The mutated hand of a mutant called stalkers old zombies are former people who lived and worked in the Exclusion zone, every day exposed to a huge amount of radiation, and after the second Chernobyl incident and the constant effects of psi radiation. \n\nATTRIBUTES: \n-Mutant body part"
 ITEM.price = 620
 ITEM.exRender = false
 ITEM.weight = 0.18
