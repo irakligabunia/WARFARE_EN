@@ -1,7 +1,7 @@
 AddCSLuaFile()
 
 ENT.Type = "anim"
-ENT.PrintName = "Керосиновая лампа"
+ENT.PrintName = "Kerosene camp"
 ENT.Category = "Warfare ENT"
 ENT.Spawnable = true
 
