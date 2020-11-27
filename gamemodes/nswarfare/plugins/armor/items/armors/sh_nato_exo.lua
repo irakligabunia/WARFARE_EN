@@ -1,5 +1,5 @@
-﻿ITEM.name = "Экзоскелет «Миротворцев»"
-ITEM.desc = "Модернизация обычного экзоскелета. Применение более лёгких материалов позволило снизить массу самого костюма, а также повысить его износоустойчивость. \n\nВНИМАНИЕ! \n\n При разборке рекомендуется освободить инвентарь! \n\nХАРАКТЕРИСТИКИ: \n-тяжелая бронезащита \n-возможно разобрать с помощью лома \n-защищает от радиации при наличии балона"
+﻿ITEM.name = "Exoskeleton «PEACEKEEPERS»"
+ITEM.desc = "A later build of the previously experimental PEACEKEEP suit made for the peacekeepers in the Zone which were wiped out."
 ITEM.price = 255240
 ITEM.ric = 30
 ITEM.dmgsteal = 60
