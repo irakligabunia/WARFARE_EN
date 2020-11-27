@@ -1,5 +1,5 @@
-﻿ITEM.name = "Кассета «Ровного парня»"
-ITEM.desc = "Список треков:\n7Б - Нашла коса на камень\nАльянс - На заре\nLumen - С небес за землю\nУрбан - 4Б\n7Б - Некрещённая Луна\n7Б - Убегаем - догоняют\nLumen - Гореть\nLumen - Не надо снов\n\nНа кассете написано «Таксин Лох». Скорее всего, этот человек промышлял мелким воровством, из-за чего получил дурную славу. Наверное, его псевдоним запечатлен ради забавы."
+﻿ITEM.name = "Rare Cassette"
+ITEM.desc = "Track List:\n7B - Found a braid on a stone\nAlyans - At dawn\nLumen - From Heaven for Earth\nUrban - 4B\n7B - Unbaptized Moon\n7B - Running away - catch up\nLumen - Burning\nLumen - Don't Dream\n\nThe tape says 'Taksin is a retard.' Most likely, this man was engaged in petty theft, because of his bad name."
 ITEM.price = 176940
 ITEM.model = "models/kek1ch/cassette_taksin.mdl"
 
