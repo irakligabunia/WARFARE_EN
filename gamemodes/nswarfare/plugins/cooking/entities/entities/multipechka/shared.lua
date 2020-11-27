@@ -1,5 +1,5 @@
 ENT.Type 			= "anim"
-ENT.PrintName 		= "Мультитопливная печь"
+ENT.PrintName 		= "Multi-fuel oven"
 ENT.Author 			= "Kek1ch"
 ENT.Category		= "Warfare ENT"
 
