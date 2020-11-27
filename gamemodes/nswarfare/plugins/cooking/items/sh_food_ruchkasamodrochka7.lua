@@ -1,5 +1,5 @@
-ITEM.name = "Щупальца кровососа"
-ITEM.desc = "Щупальца кровососа содержать специальные железы, которые выделяют фермент, способный расщеплять клетки кожи и в то же время предотвращать свертывание крови. Раскрытие состава данного фермента может сделать большой прорыв в целой цепочке медицинских открытий. \n\nХАРАКТЕРИСТИКИ: \n-мутировавшая часть тела \n-редкий научный экземпляр \n-высокая ценность"
+ITEM.name = "Bloodsucker tentacle"
+ITEM.desc = "Bloodsucker tentacles contain special glands that secrete an enzyme that can break down skin cells while at the same time preventing blood clotting. Disclosure of the composition of this enzyme can make a big breakthrough in a whole chain of medical discoveries. \n\nATTRIBUTES: \n-Mutant body part \n-High value"
 ITEM.price = 1380
 ITEM.exRender = false
 ITEM.weight = 0.23
