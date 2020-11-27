@@ -1,5 +1,5 @@
-﻿ITEM.name = "Кассета Бандитов"
-ITEM.desc = "Отлично подойдет для любителей тюремной романтики.\n\nСписок треков:\n1. Михаил Круг - Владимирский Централ\n2. Михаил Круг - Водочку пьём\n3. Тема бандитов\n4. Бутырка - Не трогай осень\n5. Воровайки - Хоп, мусорок\n6. Бутырка - Вернусь домой"
+﻿ITEM.name = "Bandit Cassette"
+ITEM.desc = "Perfect for fans of prison romance. \n\nTrack List:\n1. Mikhail Krug - Vladimir Central\n2. Michael Krug - Vodka drink\n3. Bandit theme\n4. Butirkya - Don't touch the autumn\n5. Vovarky - Hop, garbage\n6. Butirkya - Return home"
 ITEM.price = 57940
 ITEM.model = "models/kek1ch/cassette_ad60.mdl"
 
