@@ -1,6 +1,6 @@
 AddCSLuaFile()
 
-SWEP.PrintName = "Винтовка Мосина"
+SWEP.PrintName = "Mosin-Nagant"
 SWEP.Category  = "Call of Pripyat"
 
 SWEP.Base = "weapon_cop_base"
