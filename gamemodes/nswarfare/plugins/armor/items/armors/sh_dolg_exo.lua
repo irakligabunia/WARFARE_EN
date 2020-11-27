@@ -1,5 +1,5 @@
-﻿ITEM.name = "Экзоскелет «Долга»"
-ITEM.desc = "Отечественная разработка одного из НИИ специально для группировки «Долг». Боевые функции преобладают, большая грузоподъемность. Большой вес костюма однако не исключает возможность бегать в нем. \n\nВНИМАНИЕ! \n\n При разборке рекомендуется освободить инвентарь! \n\nХАРАКТЕРИСТИКИ: \n-тяжелая бронезащита \n-возможно разобрать с помощью лома \n-защищает от радиации при наличии балона"
+﻿ITEM.name = "'Duty' Exoskeleton"
+ITEM.desc = "An experimental sample of a military exoskeleton. Was never mass-produced due to extraordinary cost and some design flaws. Despite this, it is in demand due to its ability to take on the weight of all carried equipment, and therefore small batches are made in underground facilities outside Ukraine. This specific suit is made for the Duty faction. \n\nWARNING! \n\n Before disassembling, it is recommended to empty your invetory! \n\nATTRIBUTES: \n-Heavyweight \n-Cam be disassembled with a crowbar \n-Protects against radiation if fitted with CCR"
 ITEM.price = 255240
 ITEM.ric = 30
 ITEM.dmgsteal = 60
