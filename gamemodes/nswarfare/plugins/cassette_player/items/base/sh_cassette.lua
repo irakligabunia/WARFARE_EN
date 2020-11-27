@@ -1,6 +1,6 @@
-﻿ITEM.name = "База для кассет"
-ITEM.desc = "Обычная кассета. На нее записано несколько треков от ТрипПила, Лизера, Флеша и Фейса. Можно сказать, что ее бывший вледелец «шарил»."
-ITEM.category = "Кассета"
+﻿ITEM.name = "Cassette case"
+ITEM.desc = "A regular cassette tape."
+ITEM.category = "Cassette"
 ITEM.price = 10000
 ITEM.model = "models/kek1ch/cassette_backkek.mdl"
 ITEM.width = 1
@@ -15,12 +15,12 @@ ITEM.isCassette = true
 
 function ITEM:getDesc()
 	local description = self.desc
-	description = description.."\n\nХАРАКТЕРИСТИКИ:\n-рекдкая вещь\n-повсеместное применение\n\nПри активации необходимо смотреть на проигрыватель"
+	description = description.."\n\nATTRIBUTES:\n-Rare item\n-Widespread use\n\nWhen activating, look at the cassette player."
 	return description
 end
 
 ITEM.functions.View = {
-	name = "воспроизвести",
+	name = "play",
 	onRun = function(item)
 		local client = item.player
 		local Hit = client:GetEyeTraceNoCursor()
