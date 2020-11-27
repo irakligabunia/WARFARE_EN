@@ -2,7 +2,7 @@ ENT.Base 			= "base_gmodentity"
 ENT.Type 			= "anim"
 ENT.Author 			= "Kek1ch"
 ENT.Category		= "Warfare ENT"
-ENT.PrintName		= "Костер"
+ENT.PrintName		= "Fireplace"
 
 ENT.Spawnable = true
 ENT.AdminSpawnable = true
