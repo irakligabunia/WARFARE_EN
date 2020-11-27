@@ -11,7 +11,7 @@ function PLUGIN:EntityFireBullets(entity, bullet)
 					if chance == 1 and v:getData("durability", 100) > 0 then
 						v:setData("durability", v:getData("durability") - 1)
 					elseif chance == 1 and v:getData("durability", 100) == 0 then
-						entity:notify("Оружие пришло в негодность!")
+						entity:notify("The weapon has fallen into disrepair!")
 						v:setData("equip", nil)
 						entity.carryWeapons = entity.carryWeapons or {}
 							
@@ -35,12 +35,12 @@ end
 function PLUGIN:PlayerHurt(entity)
 	for k, v in pairs(entity:getChar():getInv():getItems()) do
 		local chance = math.random(1, 16)
-		if v.category == "Броня" then
+		if v.category == "Suit" then
 			if v:getData("equip", false) == true then
 				if chance == 1 and v:getData("durabilityarmor", 100) > 0 then
 					v:setData("durabilityarmor", v:getData("durabilityarmor") - 1)
 				elseif chance == 1 and v:getData("durabilityarmor", 100) == 0 then
-					entity:notify("Броня пришла в негодность!")
+					entity:notify("The armor has fallen into disrepair!")
 					v:setData("equip", nil)
 				end
 			end
