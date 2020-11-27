@@ -1,6 +1,6 @@
-﻿ITEM.name = "Матрас"
-ITEM.category = "Разное"
-ITEM.desc = "Толстй поролоновый матрс. Водонепроницаемый, эффективно изолирует тепло от земли. Вместе с хорошим брезентом - неотъемленая часть любой палатки в Зонею Лучший выбор тех, кто не хочет спать на твердой поверхности. \n\nХАРАКТЕРИСТИКИ: \n-повсеместное применение \n-используется как: матрас для палатки"
+﻿ITEM.name = "Mattress"
+ITEM.category = "Misc"
+ITEM.desc = "Thick foam mattress. Waterproof, effectively insulates heat from the ground. Along with a good tarp is an integral part of any tent in the zone. The best choice of those who do not want to sleep on a hard surface. \n\nATTRIBUTES: \n-Widespread use \n-Usages: mattress for tent"
 ITEM.price = 666
 ITEM.weight = 2.28
 
