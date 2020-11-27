@@ -1,5 +1,5 @@
-﻿ITEM.name = "«Колобок»"
-ITEM.desc = "Колобок — артефакт, порождаемый химической аномалией «газировка». Довольно редкий артефакт, образующийся в зонах сильного химического загрязнения. Весьма ценится за способность подстегнуть организм так, чтобы тот в считанные минуты восстановился после травм любой степени тяжести. Учёные распространяют информацию о воздействии артефакта на генетический материал владельца; впрочем, подтверждения этому пока нет. \n\nХАРАКТЕРИСТИКИ: \n-артефакт \n\nРадиация +3 / сек"
+﻿ITEM.name = "Kolobok"
+ITEM.desc = "The kolobok is an artifact caused by a chemical anomaly called 'Gas'. A rather rare artifact formed in areas of severe chemical contamination. It is highly valued for the ability to stimulate the body so that in a matter of minutes he recovers from injuries of any degree of severity. Scientists disseminate information about the impact of the artifact on the genetic material of the owner; however, there is no confirmation of this yet. \n\nATTRIBUTES: \n-Artefact \n\nRadiation +3 / sec"
 ITEM.price = 32976
 ITEM.isAnomaly = true
 ITEM.weight = 0.82
@@ -14,12 +14,12 @@ ITEM.iconCam = {
 }
 
 ITEM.functions.Use = {
-	name = "положить в СИМК",
+	name = "put in case",
 	onRun = function(item)
 		local client = item.player
 		if (IsValid(item.player) && item.player:Alive()) then
 			if not client:getChar():getInv():hasItem("simkemp") then
-				client:notify("Вам нужны СИМК (пустой).")
+				client:notify("You need an empty artefact case.")
 				return false
 			end
 
