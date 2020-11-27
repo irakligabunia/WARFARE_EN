@@ -1,5 +1,5 @@
 ﻿ITEM.name = "CS-3a Suit"
-ITEM.desc = "Штатная экипировка штурмовых отрядов «Чистого неба». Бронежилет способен остановить пистолетную пулю, а встроеный противогаз и брезентовый комбинезон с особой пропиткой обеспечивает хорошую защиту от аномальных воздействий. \n\nWARNING! \n\n Before disassembling, it is recommended to empty your invetory! \n\nATTRIBUTES: \n-Heavyweight \n-Can be disassembled with a crowbar \n-Protects against radiation if fitted with CCR"
+ITEM.desc = "A suit from the 'Clear Sky' faction, worn by their expedition teams. The armored vest is able to stop the gun bullet, and the built-in gas mask and tarpaulin jumpsuit provides good protection against anomalous effects. \n\nWARNING! \n\n Before disassembling, it is recommended to empty your invetory! \n\nATTRIBUTES: \n-Heavyweight \n-Can be disassembled with a crowbar \n-Protects against radiation if fitted with CCR"
 ITEM.price = 154254
 ITEM.ric = 35
 ITEM.dmgsteal = 45
