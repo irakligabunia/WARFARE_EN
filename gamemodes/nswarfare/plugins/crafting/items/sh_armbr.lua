@@ -1,5 +1,5 @@
-﻿ITEM.name = "Армированный брезентоывй лист"
-ITEM.desc = "Толстый плотный лист текстильной ткани, армированный кевларом. Достаточно большой лист, можно залатать несколько поврежденных участков. \n\nХАРАКТЕРИСТИКИ: \n-военное изделие \n-высококачественное издение \n-используется в крафте"
+﻿ITEM.name = "Textile patch"
+ITEM.desc = "A thick, dense sheet of textile fabric reinforced by Kevlar. A large enough sheet, you can patch up a few damaged areas. \n\nATTRIBUTES: \n-Military grade \n-High quality \n-Crafting device"
 ITEM.price = 11520
 ITEM.exRender = false
 ITEM.weight = 0.47
