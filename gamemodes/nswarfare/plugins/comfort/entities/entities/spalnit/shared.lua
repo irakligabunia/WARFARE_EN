@@ -1,5 +1,5 @@
 ENT.Type 			= "anim"
-ENT.PrintName 		= "Спальник"
+ENT.PrintName 		= "Sleeping bag"
 ENT.Author 			= "Kek1ch"
 ENT.Category		= "Warfare ENT"
 
