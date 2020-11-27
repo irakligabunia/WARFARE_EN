@@ -1,5 +1,5 @@
-﻿ITEM.name = "Коробка конденсаторов"
-ITEM.desc = "Электрические конденсаторы служат для накопления электроэнергии. Простейшний консенсатор состоит из двух металлических пластин-обкладок и диэлектрика, находящегося между ними. Сами по себе довлльно редки в Зоне, но весьма полезны. \n\nХАРАКТЕРИСТИКИ:\n-технологическое приспособление\n-высокая ценность"
+﻿ITEM.name = "Capacitors box"
+ITEM.desc = "Electric capacitors serve to store electricity. The station consist of two metal plates and a dielectric in between. In themselves, they are extremely rare in the zone, but very useful. \n\nATTRIBUTES:\n-Technological device\n-High value"
 ITEM.price = 980
 ITEM.weight = 0.15
 
