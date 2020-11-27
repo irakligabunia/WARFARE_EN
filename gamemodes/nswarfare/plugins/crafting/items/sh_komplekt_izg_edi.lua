@@ -1,5 +1,5 @@
-ITEM.name = "Комплект изготовления еды"
-ITEM.desc = "Армейский швейцарский нож с затупившимся лезвием. Желаете открыть консервы, закурить и подтянуть подвижные части снаряжения, обрезать веревку или заточить что-либо? Воспользуйтесь этим ножом. Швейцарский нож известен своей универсальюностью и возможностью использования во множестве различных ситуациях. \n\nХАРАКТЕРИСТИКИ: \n-повсеместное применение \n-используется для: вскрытие консервных банок (многоразовый)"
+ITEM.name = "Food production kit"
+ITEM.desc = "Army Swiss knife with a blunted blade. Do you want to open canned food, smoke and tighten moving pieces of equipment, cut a rope or sharpen something? Use that knife. The Swiss knife is known for its universality and ability to be used in many different situations. \n\nATTRIBUTES: \n-Widespread use \n-Usages: opening cans (multiple)"
 ITEM.price = 1187
 ITEM.exRender = false
 ITEM.weight = 0.1
