@@ -1,5 +1,5 @@
-ITEM.name = "Рука излома"
-ITEM.desc = "Отрубленная рука Излома - ужасно деформированная часть тела гуманоидного мутанта. Совершенно очевидно, что эти существа раньше были людьми, а всё что с ними стало - последствиия второй Чернобыльской аварии. По остаткам одежды на их телах можно сделать вывод, что Изломы - это представители коренного населения, которые обитали и трудились непосредственно внутри периметра Зоны Отчуждения. \n\nХАРАКТЕРИСТИКИ: \n-мутировавшая часть тела"
+ITEM.name = "Izlom hand"
+ITEM.desc = "The severed hand of an Izlom. Is a horribly deformed part of the humanoid mutant's body. It is obvious that these creatures used to be human beings, and all that happened to them was after the second Chernobyl accident. From the remnants of clothing on their bodies, it can be concluded that the Izloms are foreign people who lived and worked directly inside the perimeter of the Exclusion Area. \n\nATTRIBUTES: \n-Mutant body part"
 ITEM.price = 560
 ITEM.exRender = false
 ITEM.weight = 2.24
