@@ -1,5 +1,5 @@
 ENT.Type 			= "anim"
-ENT.PrintName 		= "Полевая печька"
+ENT.PrintName 		= "Field stove"
 ENT.Author 			= "Kek1ch"
 ENT.Category		= "Warfare ENT"
 
