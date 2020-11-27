@@ -1,6 +1,6 @@
 AddCSLuaFile()
 
-SWEP.PrintName = "Фонарик"
+SWEP.PrintName = "Handheld Flashlight"
 SWEP.Category  = "Call of Pripyat"
 
 SWEP.Base = "weapon_cop_base"
