@@ -1,5 +1,5 @@
-﻿ITEM.name = "Кевларовые пластины"
-ITEM.desc = "Кевларовые пластины широко известны своими защитными свойствами и поэтому высоко ценятся. Они могут выполнять самые разные функции, но наиболее важными из них является поглощения мелких осколков. \n\nХАРАКТЕРИСТИКИ: \n-военное изделие \n-среднее улучшения защиты от повреждений \n-используется для крафта"
+﻿ITEM.name = "Kevlar plates"
+ITEM.desc = "Kevlar plates are widely known for their protective properties and are therefore highly valued. They can perform a variety of functions, but the most important of these is the absorption of small fragments. \n\nATTRIBUTES: \n-Military grade \n-Crafting device"
 ITEM.price = 6456
 ITEM.exRender = false
 ITEM.weight = 3.29
