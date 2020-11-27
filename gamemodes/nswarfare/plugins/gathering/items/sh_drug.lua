@@ -1,5 +1,5 @@
-﻿ITEM.name = "Комплект для изготовления наркотиков"
-ITEM.desc = "Небольшой футляр с различными металлическими изделиями, предназначенными для изготовления наркотических препаратов. Некоторые пластиковые упаковки содержат таблетки и непонятные травы. \n\nХАРАКТЕРИСТИКИ: \n-технологическое приспособление \n-высокая ценность \n-непригодно к использованию"
+﻿ITEM.name = "Drug-making kit"
+ITEM.desc = "A small case with various metal products designed for the manufacture of narcotic drugs. Some plastic packaging contains tablets and incomprehensible herbs. \n\nATTRIBUTES: \n-Technological device \n-High value \n-Unusable"
 ITEM.price = 1476
 ITEM.exRender = false
 ITEM.weight = 0.17
