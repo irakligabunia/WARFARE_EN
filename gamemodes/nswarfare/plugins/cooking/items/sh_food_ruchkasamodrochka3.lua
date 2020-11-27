@@ -1,5 +1,5 @@
-ITEM.name = "Хвост слепого пса"
-ITEM.desc = "Сопротивление кожи мутировавших слевых собак к воздействию электричества и химических реагентов вызывало весьма бурный ажиотаж в научном сообществе. Так как на хвостах собак отсутсвуте какая-либо жировая ткань, они особенно подходят для проведения лаборатоных исследований. \n\nХАРАКТЕРИСТИКИ: \n-мутировавшая часть тела \n-распростаренный научный экземпляр"
+ITEM.name = "Blind dog tail"
+ITEM.desc = "Resistance of the skin of mutated blind dogs to the effects of electricity and chemical reagents caused a very rapid stir in the scientific community. Since there is no fat tissue on the tails of dogs, they are especially suitable for laboratory tests. \n\nATTRIBUTES: \n-Mutant body part"
 ITEM.price = 620
 ITEM.exRender = false
 ITEM.weight = 0.14
