@@ -1,6 +1,6 @@
 ﻿ITEM.name = "Cloth Bandage"
 ITEM.desc = "A cloth bandage, looking to be handcrafted. Often used for bandaging wounds and stopping bleedings"
-ITEM.category = "Медицина"
+ITEM.category = "Medicine"
 ITEM.price = 520
 ITEM.weight = 0.14
 
