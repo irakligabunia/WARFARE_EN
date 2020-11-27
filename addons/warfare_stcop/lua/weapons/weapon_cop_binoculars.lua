@@ -1,6 +1,6 @@
 AddCSLuaFile()
 
-SWEP.PrintName = "Бинокль"
+SWEP.PrintName = "Binoculars"
 SWEP.Category  = "Call of Pripyat"
 
 SWEP.Base = "weapon_cop_base"
