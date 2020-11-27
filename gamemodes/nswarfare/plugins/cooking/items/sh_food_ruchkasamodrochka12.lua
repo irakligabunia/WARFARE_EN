@@ -1,5 +1,5 @@
-ITEM.name = "Рука контролера"
-ITEM.desc = "Контролеры, кажется, используют свои руки при ментальном контакте со своей жертвой. Учёные с удовольствием изучают их, пытаясь найти какие-либо мутации, отвечающие за их связь с пси-излучениями мозга контролера. Пахнет, как старые носки вперемешку с прокисшими овощами. \n\nХАРАКТЕРИСТИКИ: \n-мутировавшая часть тела"
+ITEM.name = "Controller hand"
+ITEM.desc = "Controllers seem to use their hands in mental contact with their victim. Scientists are happy to study them, trying to find any mutations responsible for their connection with the psi-radiations of the brain of the controller. It smells like old socks mixed with sour vegetables. \n\nATTRIBUTES: \n-Mutant body part"
 ITEM.price = 1180
 ITEM.exRender = false
 ITEM.weight = 0.21
