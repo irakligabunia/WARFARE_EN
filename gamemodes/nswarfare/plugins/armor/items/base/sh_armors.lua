@@ -1,5 +1,5 @@
 ITEM.name = "Armor Base"
-ITEM.category = "Броня"
+ITEM.category = "Suit"
 ITEM.isCloth = true
 ITEM.isArmor = true
 ITEM.weight = 0
@@ -25,14 +25,14 @@ if (CLIENT) then
 end
 
 ITEM.functions.Equip = {
-	name = "надеть",
+	name = "wear",
 	onRun = function(item)
 		local client = item.player
 		for k, v in pairs(client:getChar():getInv():getItems()) do
 			if (v.id != item.id) then
 				local itemTable = nut.item.instances[v.id]
 				if (itemTable) and (itemTable.isCloth and itemTable:getData("equip")) then
-					client:notify("На вас уже надета броня")
+					client:notify("You're already wearing a suit.")
 					return false
 				end
 			end
@@ -64,7 +64,7 @@ end
 
 function ITEM:getDesc()
 	local description = self.desc
-	description = description.."\n\nСостояние: "..self:getData("durabilityarmor", 100).."/100"
+	description = description.."\n\nDurability: "..self:getData("durabilityarmor", 100).."/100"
 	return description
 end
 
@@ -95,7 +95,7 @@ ITEM.functions.EquipUn = {
 }
 
 ITEM.functions.Repair = {
-	name = "починить",
+	name = "repair",
 	tip = "equipTip",
 	icon = "icon16/bullet_wrench.png",
 	onRun = function(item)
@@ -112,7 +112,7 @@ ITEM.functions.Repair = {
 			client:ScreenFade( SCREENFADE.IN, Color( 0, 0, 0 ), 1, 3 )
 			end)
 		else
-			client:notify("У Вас нет профессионального набора для ремонта брони")
+			client:notify("You don't have a professional suit repair kit")
 		end		
 		
 		return false
