@@ -1,6 +1,6 @@
 ENT.Type 			= "anim"
 
-ENT.PrintName		= "Мина"
+ENT.PrintName		= "Mine"
 ENT.Category 		= "Warfare ENT"
 
 ENT.Spawnable			= true
