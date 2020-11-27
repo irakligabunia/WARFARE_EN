@@ -1,5 +1,5 @@
-﻿ITEM.name = "Кассета Бармена"
-ITEM.desc = "На кассете записана нейтральная и мелодичная музыка, отлично подойдет для людных мест. \n\nСписок треков:\n1. Тема бара\n2. Океан Ельзи - Стрiляй\n3. Океан Эльзы - На лінії вогню\n4. Океан Ельзи - Вулиця\n5. Океан Ельзи - Я нэ здамся без бою\n6. Океан Эльзы - Коли Тебе Нема\n7. Океан Ельзи - Все Буде Добре\n8. Firelake - Dirge For The Planet\n\nНа кассете написано «Спасибо Дроде за победу». Видимо, этот человек достоен уважения."
+﻿ITEM.name = "Barmans' Cassette"
+ITEM.desc = "The cassette recorded neutral and melodic music, perfect for crowded places. \n\nTrack List:\n1. Barmans' theme\n2. Okean Elzy - Shoot\n3. Okean Elzy - In the line of fire\n4. Okean Elzy - Street \n5. Okean Elzy - I don't go without a fight\n6. Okean Elzy - When you're gone \n7. Okean Elzy - Everything will be good\n8. Firelake - Dirge For The Planet\n\nThe tape says 'Thank you Drod for the victory.' Seemingly, this man is worthy of respect."
 ITEM.price = 76940
 ITEM.model = "models/kek1ch/cassette_droda.mdl"
 
