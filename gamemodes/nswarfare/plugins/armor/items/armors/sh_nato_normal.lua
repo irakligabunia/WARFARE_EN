@@ -1,5 +1,5 @@
-﻿ITEM.name = "Комбинезон Миротворцев"
-ITEM.desc = "Комбинезон миротворцев, созданный для проведения штурмовых операций. Отличается лишь цветовым решением, характеристиками которые хуже чем у стандартного комбеза наёмников и отсутствием противогаза. \n\nВНИМАНИЕ! \n\nПри разборке рекомендуется освободить инвентарь! \n\nХАРАКТЕРИСТИКИ: \n-легкая бронезащита \n-возможно разобрать с помощью лома \n-защищает от радиации при наличии балона"
+﻿ITEM.name = "Suit [PEACEKEEP]"
+ITEM.desc = "A suit rarely used, although sometimes used by the members of the mercenary faction. Offering light protection from everything."
 ITEM.price = 21006
 ITEM.ric = 25
 ITEM.dmgsteal = 45
