@@ -1,5 +1,5 @@
-﻿ITEM.name = "Лист лёгкой ткани"
-ITEM.desc = "Простой лист ткани, широко применяемый как для заштопывания одежды, так и для чистки механизмов огнестрельно оружия от излишка масла при помощи растворителя. Можно использовать любые иголки и клей. \n\nХАРАКТЕРИСТИКИ: \n-повсеместное применение \n-используется при: ремонте снаряжения, обслуживании оружия (+3)"
+﻿ITEM.name = "Textile patch"
+ITEM.desc = "A simple sheet of fabric, widely used both for sashing clothes, and for cleaning the mechanisms of firearms from excess oil with solvent. You can use any needles and glue. \n\nATTRIBUTES: \n-Widespread usge \n-Usages: equipment repair, weapons maintenance (3)"
 ITEM.price = 190
 ITEM.exRender = true
 ITEM.weight = 0.08
