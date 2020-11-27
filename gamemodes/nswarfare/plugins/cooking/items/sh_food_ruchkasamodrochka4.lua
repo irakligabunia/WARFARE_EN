@@ -1,5 +1,5 @@
-ITEM.name = "Хвост псевдособки"
-ITEM.desc = "Недавно в Зоне стали ходить слухи, что появилась новая тендеция в моде, которая поработила весь мир: мех с хвостов псевдособак. Мех получается настолько мягким, что не имеет себе равных. \n\nХАРАКТЕРСТИКИ: \n-мутировавшая часть тела \n-распространенный научный экзмепляр"
+ITEM.name = "Pseudo dog tail"
+ITEM.desc = "Recently, there were rumors in the zone that there was a new tenedition in fashion, which enslaved the whole world: fur from the tails of pseudo-dogs. The fur is so soft that it is unparalleled. \n\nATTRIBUTES: \n-Mutant body part"
 ITEM.price = 690
 ITEM.exRender = false
 ITEM.weight = 0.21
