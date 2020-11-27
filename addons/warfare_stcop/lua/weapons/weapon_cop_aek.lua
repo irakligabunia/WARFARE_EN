@@ -1,6 +1,6 @@
 AddCSLuaFile()
 
-SWEP.PrintName = "АЕК-971"
+SWEP.PrintName = "AEK-971"
 SWEP.Category  = "Call of Pripyat"
 
 SWEP.Base = "weapon_cop_base"
@@ -41,7 +41,7 @@ SWEP.ScopeBone    = "wpn_scope"
 
 SWEP.ScopeTexture = "wpn_crosshair_red"
 
---SWEP.ShellModel = "models/shells/shell_556.mdl"
+SWEP.ShellModel = "models/shells/shell_556.mdl"
 
 SWEP.SilencerMode = 2
 SWEP.ScopeMode    = 2
