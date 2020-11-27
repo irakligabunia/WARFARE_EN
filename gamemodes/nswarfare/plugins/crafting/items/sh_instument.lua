@@ -1,5 +1,5 @@
-﻿ITEM.name = "Набор для заточки 3:1"
-ITEM.desc = "В Зоне тупой ож может привести к вашей гибели быстрее и легче, чем что-либо еще, за некоторыми исключениями. В связи с тем, что окружающая среда в Зоне оказывает разрушительное воздействие на большинство технологичных инструментов, даже простейших, таких как ножи или лезвия, инструмент для заточки незаменим. \n\nХАРАКТЕРИСТИКИ: \n-технологическое приспособление \n-высокое качество"
+﻿ITEM.name = "3-1 sharpening kit"
+ITEM.desc = "Due to the fact that the environment in the zone has a devastating effect on most technological tools, even the simplest, such as knives or blades, the sharpening tool is irreplaceable. \n\nATTRIBUTES: \n-Technological device \n-High value"
 ITEM.price = 232
 ITEM.exRender = false
 ITEM.weight = 0.16
