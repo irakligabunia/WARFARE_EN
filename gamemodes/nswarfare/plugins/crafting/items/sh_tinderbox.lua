@@ -1,5 +1,5 @@
-ITEM.name = "Зажигалка"
-ITEM.desc = "Надежный, водонепроницаемный источник огня в Зоне важен не только для курения, но и для приготовления пищи. Эта металлическая газовая зажигалка является инеальным выбором для использования в Зоне. \n\nХАРАКТЕРИСТИКИ: \n-используется для: готовка, курение, розжиг костра \n\nПополняется с помощью: Топливо для зажигалки"
+ITEM.name = "Lighter"
+ITEM.desc = "A reliable, waterproof source of fire in the zone is important not only for smoking, but also for cooking. This metal gas lighter is an ineline choice for use in the zone. \n\nATTRIBUTES: \n-Usages: cooking, smoking, burning a campfire \n\nRecharged with: Lighter fuel"
 ITEM.price = 1059
 ITEM.tinderboxAmount = 8
 ITEM.exRender = false
@@ -15,7 +15,7 @@ ITEM.iconCam = {
 }
 
 ITEM.functions.use = {
-    name = "заправить зажигалку",
+    name = "refuel lighter",
     onRun = function(item)
         local client = item.player
 		local items = client:getChar():getInv():hasItem("tinderboxfuel")
@@ -34,7 +34,7 @@ ITEM.functions.use = {
 
 function ITEM:getDesc()
 	local str
-	str = self.desc.." Осталось %s."
+	str = self.desc.."%s left."
 	return Format(str, self:getData("tinderboxAmount"))
 end
 
