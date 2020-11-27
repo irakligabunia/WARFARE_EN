@@ -1,5 +1,5 @@
-﻿ITEM.name = "Моток медной проволоки"
-ITEM.desc = "Электротехническая медная проволока используется практически во всех приборах, устройствах, аппаратах, установках, машинах, где происходит производство, передача или использование электрической энергии. В Зоне встречается относительно часть, являясь незаменимым элементом при работе с радиотехникой.  \n\nХАРАКТЕРИСТИКИ:\n-технологическое приспособление\n-высокая ценность"
+﻿ITEM.name = "Copper wire"
+ITEM.desc = "Electrical copper wire is used in almost all appliances, devices, appliances, installations, machines where the production, transmission or use of electrical energy takes place. There is a relatively important part of the zone when working with radio equipment.  \n\nATTRIBUTES:\n-Technological device\n-High value"
 ITEM.price = 320
 ITEM.weight = 0.1
 
