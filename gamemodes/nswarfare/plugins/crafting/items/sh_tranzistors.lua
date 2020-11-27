@@ -1,5 +1,5 @@
-﻿ITEM.name = "Коробка транзисторов"
-ITEM.desc = "Коробка качественных транзисторов - полупроводниковых деталей, способных генерировать, преобразовать и усиливать эелектрические колебания. Предел мечтаний радиотехника, если такого чудом занесет в Зону. \n\nХАРАКТЕРИСТИКИ:\n-технологическое приспособление\n-высокая ценность"
+﻿ITEM.name = "Transistors Box"
+ITEM.desc = "A box of quality transistors - semiconductor parts that can generate, transform and enhance elelectrical vibrations. The limit of radio equipment dreams, if such a miracle will bring to the zone. \n\nATTRIBUTES:\n-Technological device\n-High value"
 ITEM.price = 980
 ITEM.weight = 0.17
 
