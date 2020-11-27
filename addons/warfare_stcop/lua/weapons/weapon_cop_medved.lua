@@ -1,6 +1,6 @@
 ﻿AddCSLuaFile()
 
-SWEP.PrintName = "Детектор «Медведь»"
+SWEP.PrintName = "Detector «BEAR»"
 SWEP.Category  = "Call of Pripyat"
 
 SWEP.Base = "weapon_cop_base"
@@ -68,7 +68,6 @@ SWEP.ZoomOutSound  = ""
 
 SWEP.DoAimAnimation = false
 
---[[
 SWEP.BoneMatrix = {
 	wpn_body = {
 		Pos = Vector(0, 0, 0.3),
@@ -158,11 +157,11 @@ SWEP.WElements = {
 
 SWEP.VElements = {
 	["detector"] = { type = "Model", model = "models/wick/weapons/stalker/stcopwep/medved_modelk.mdl", bone = "wpn_body", rel = "", pos = Vector(4, 1.1, -0.519), angle = Angle(-59.611, 31.558, 162.468), size = Vector(0.699, 0.699, 0.699), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {[1] = 1} },
-	--["element_name"] = { type = "Model", model = "models/kali/miscstuff/stalker/bolt.mdl", bone = "Base", rel = "", pos = Vector(0, 0, 0), angle = Angle(12.857, -29.222, 180), size = Vector(0.755, 0.755, 0.755), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
+	["element_name"] = { type = "Model", model = "models/kali/miscstuff/stalker/bolt.mdl", bone = "Base", rel = "", pos = Vector(0, 0, 0), angle = Angle(12.857, -29.222, 180), size = Vector(0.755, 0.755, 0.755), color = Color(255, 255, 255, 255), surpresslightning = false, material = "", skin = 0, bodygroup = {} }
 }
 
 
---[[function SWEP:Think2()
+-function SWEP:Think2()
 	local vm = self.VModel
 	if CLIENT then
 		local dist, own, item = self.DistBeep, self.Owner, nut.item.list
