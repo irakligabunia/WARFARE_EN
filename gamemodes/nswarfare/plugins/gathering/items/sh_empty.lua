@@ -1,5 +1,5 @@
-﻿ITEM.name = "«Пустышка»"
-ITEM.desc = "«Пустышка» состоит из двух дисков голубоватого цвета, связанных между собой полупрозрачным материалом неизвестной природы. Этот странный артефакт считался лишенным каких-либо полезных свойств в течение длительного времени. Лишь недавно было обнаружено, что он обеспечивает весь высокий уровень защиты от пси-воздействий, частично поглощая их. \n\nХАРАКТЕРИСТИКИ: \n-артефакт \n\nРадиация +2 / сек"
+﻿ITEM.name = "Empty"
+ITEM.desc = "The 'Empty' consists of two discs of bluish color, connected by a translucent material of unknown nature. This strange artifact was considered devoid of any useful properties for a long time. Only recently has it been discovered that it provides a very high level of protection against psi-influences, partially absorbing them. \n\nATTRIBUTES: \n-Artefact \n\nRadiation +2 / sec"
 ITEM.price = 13752
 ITEM.isAnomaly = true
 ITEM.weight = 0.89
@@ -14,12 +14,12 @@ ITEM.iconCam = {
 }
 
 ITEM.functions.Use = {
-	name = "положить в СИМК",
+	name = "put in case",
 	onRun = function(item)
 		local client = item.player
 		if (IsValid(client) && client:Alive()) then
 			if not client:getChar():getInv():hasItem("simkemp") then
-				client:notify("Вам нужны СИМК (пустой).")
+				client:notify("You need an empty artefact case.")
 				return false
 			end
 			
