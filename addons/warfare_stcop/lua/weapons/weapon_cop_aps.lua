@@ -1,6 +1,6 @@
 AddCSLuaFile()
 
-SWEP.PrintName = "АПС"
+SWEP.PrintName = "APS"
 SWEP.Category  = "Call of Pripyat"
 
 SWEP.Base = "weapon_cop_base"
@@ -33,7 +33,7 @@ SWEP.OriginAng = Vector(0, 0, 0)
 SWEP.AimPos = Vector(-5.99, -2, -6.24)
 SWEP.AimAng = Vector(0.6, 0, 0)
 
---SWEP.ShellModel = "models/shells/shell_9mm.mdl"
+SWEP.ShellModel = "models/shells/shell_9mm.mdl"
 
 SWEP.SilencerBone = "wpn_silencer"
 
