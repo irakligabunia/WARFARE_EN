@@ -1,4 +1,4 @@
-﻿ITEM.name = "Toolkit"
+﻿ITEM.name = "Heavy duty toolkit"
 ITEM.desc = "Allows you to create consumables of equipment."
 ITEM.price = 7620
 ITEM.weight = 1.24
