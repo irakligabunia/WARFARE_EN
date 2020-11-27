@@ -1,5 +1,5 @@
-﻿ITEM.name = "Научный комбинезон «Монолита»"
-ITEM.desc = "Научный комбинезон «Монолита» — бронекостюм с замкнутой системой дыхания, принадлежащий бойцам группировки «Монолит». \n\nХАРАКТЕРИСТИКИ: \n-легкая бронезащита \n-возможно разобрать с помощью лома \n-защищает от радиации при наличии балона"
+﻿ITEM.name = "Scientific Suit «MONOLITH»"
+ITEM.desc = "A scientific, non-combat suit made by the Monolith. Offering extremely low protection from bullets."
 ITEM.price = 154254
 ITEM.ric = 25
 ITEM.dmgsteal = 45
