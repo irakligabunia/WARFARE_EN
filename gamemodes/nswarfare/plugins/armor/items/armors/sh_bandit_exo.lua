@@ -1,4 +1,4 @@
-﻿ITEM.name = "Exoskeleton «Bandits»"
+﻿ITEM.name = "'Bandit' Exoskeleton"
 ITEM.desc = "An experimental sample of a military exoskeleton. Was never mass-produced due to extraordinary cost and some design flaws. Despite this, it is in demand due to its ability to take on the weight of all carried equipment, and therefore small batches are made in underground facilities outside Ukraine. This specific suit is made for the Bandit faction."
 ITEM.price = 255240
 ITEM.ric = 30
