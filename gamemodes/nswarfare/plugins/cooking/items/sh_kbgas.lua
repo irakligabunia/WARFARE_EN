@@ -1,6 +1,6 @@
 ﻿ITEM.name = "Gas cylinder (7 litres)"
 ITEM.desc = "A heavy metal gas cylinder soaked from the inside with special polymers to store inside CO2/O2 times, and on the outside is covered with hypalon to protect against weather conditions and ultraviolet light. This gas cylinder is suitable for storage inside any industrial gas under pressure. \n\nATTRIBUTES: \n-Technological device \n-Fuel for cooking"
-ITEM.category = "Misc"
+ITEM.category = "Fuel"
 ITEM.price = 1736
 ITEM.exRender = false
 ITEM.weight = 8
