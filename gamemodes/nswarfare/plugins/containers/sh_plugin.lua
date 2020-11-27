@@ -18,28 +18,28 @@ nut.command.add("getlock", {
 						client:getChar():getInv():add("lock", 1, data)
 						data["lockedid"] = nil
 						target:setNetVar("doorData", data)
-						client:notify("Замок снят!")		
+						client:notify("Lock removed!")		
 					else
-						client:notify("На двери нет замка!")
+						client:notify("There is no lock on the door!")
 					end
 				else
-					client:notify("Дверь должна быть открытой, чтобы снять с нее замок!")
+					client:notify("The door must be open to remove the lock!")
 				end
 			else
 				if not target:getNetVar("locked", false) then
 					if (target:getNetVar("lockedid")) then
 						client:getChar():getInv():add("lock", 1, data)
 						target:setNetVar("lockedid", nil)
-						client:notify("Замок снят!")
+						client:notify("Lock removed!")
 					else
-						client:notify("На контейнере нет замка!")
+						client:notify("There is no lock on the door!")
 					end
 				else
-					client:notify("Контейнер должен быть открытым, чтобы снять с него замок!")
+					client:notify("The door must be open to remove the lock!")
 				end
 			end
 		else
-			client:notify("Вы должны смотреть на дверь или контейнер!")
+			client:notify("You have to look at the door or container!")
 		end
 	end
 })
@@ -256,10 +256,10 @@ if (CLIENT) then
 				netstream.Start("EntGiveMoney", entity, value)
 				entry:SetValue(0)
 			elseif value <= 0 then
-				nut.util.notify("Вы ввели недействительное значение!")
+				nut.util.notify("You entered an invalid value!")
 				entry:SetValue(0)
 			else
-				nut.util.notify("У вас нет таких денег!")
+				nut.util.notify("You don't have that many money!")
 				entry:SetValue(0)
 			end		
 		end
@@ -267,7 +267,7 @@ if (CLIENT) then
 		local transfer = nut.gui.inv1:Add("DButton")
 		transfer:SetSize( ScrW() * 0.095, ScrH() * 0.0325)
 		transfer:SetPos(ScrW() * 0.1937, ScrH() * 0.608)
-		transfer:SetText("Положить")
+		transfer:SetText("Put down")
 		transfer:SetFont("Roh20")
 		transfer:SetTextColor(Color(211, 211, 211)) 
 		function transfer:Paint( w, h )
@@ -301,10 +301,10 @@ if (CLIENT) then
 				netstream.Start("EntGiveMoney", entity, value)
 				entry:SetValue(0)
 			elseif value <= 0 then
-				nut.util.notify("Вы ввели недействительное значение!")
+				nut.util.notify("You entered an invalid value!")
 				entry:SetValue(0)
 			else
-				nut.util.notify("У вас нет таких денег!")
+				nut.util.notify("You don't have that many money!")
 				entry:SetValue(0)
 			end						
 		end
@@ -328,10 +328,10 @@ if (CLIENT) then
 				netstream.Start("GiveMoney", value)
 				entry1:SetValue(0)
 			elseif value <= 0 then
-				nut.util.notify("Вы ввели недействительное значение!")
+				nut.util.notify("You entered an invalid value!")
 				entry1:SetValue(0)
 			else
-				nut.util.notify("Здесь нет таких денег!")
+				nut.util.notify("There's no kind of that money here!")
 				entry1:SetValue(0)
 			end			
 		end
@@ -373,10 +373,10 @@ if (CLIENT) then
 				netstream.Start("GiveMoney", value)
 				entry1:SetValue(0)
 			elseif value <= 0 then
-				nut.util.notify("Вы ввели недействительное значение!")
+				nut.util.notify("There's no money here!")
 				entry1:SetValue(0)
 			else
-				nut.util.notify("Здесь нет таких денег!")
+				nut.util.notify("There's no kind of that money here!")
 				entry1:SetValue(0)
 			end						
 			print("Я блядь ахуеваю")
