@@ -1,5 +1,5 @@
-﻿ITEM.name = "Экзоскелет «Наёмника»"
-ITEM.desc = "Экспериментальный образец военного экзоскелета западного производства. Данный экзоскелет относится к третьему поколению. Используется наёмниками. Упор сделан на боевое применение, аномальная устойчивость низкая. Режим бега активирован. \n\nВНИМАНИЕ! \n\n При разборке рекомендуется освободить инвентарь! \n\nХАРАКТЕРИСТИКИ: \n-тяжелая бронезащита \n-возможно разобрать с помощью лома \n-защищает от радиации при наличии балона"
+﻿ITEM.name = "Exoskeleton «MERCENARY»"
+ITEM.desc = "The exoskeleton of the mercenaries, a very rare suit only used by the most successful mercenaries who made enough money to purchase this suit."
 ITEM.price = 255240
 ITEM.ric = 25
 ITEM.dmgsteal = 55
