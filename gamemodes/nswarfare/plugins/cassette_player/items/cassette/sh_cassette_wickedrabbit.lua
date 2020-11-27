@@ -1,5 +1,5 @@
-﻿ITEM.name = "Кассета с роком"
-ITEM.desc = "Список треков:\n1. Сектор Газа - Лирика\n2. Сплин – Линия Жизни\n3. Сектор газа - Бомж\n4. Виктор Цой - Перемен\n5. Кино – Группа крови\n6. Кино – Звезда по имени Солнце\n7. Сектор Газа - Туман\n\nНа кассете написано «С любовью WickedRabbit»."
+﻿ITEM.name = "Rock Cassette"
+ITEM.desc = "Track List:\n1. Gaza Strip - Lyrica\n2. Splin - Line of Life\n3. Gaza Strip - Homeless\n4. Victor Tsoi - Change\n5. Kino - Blood Type\n6. Kino - A Star named Sun\n7. Gaza Strip - Fog"
 ITEM.price = 236940
 ITEM.model = "models/kek1ch/cassette_wicked.mdl"
 
