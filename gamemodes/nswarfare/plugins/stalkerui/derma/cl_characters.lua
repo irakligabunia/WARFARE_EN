@@ -290,8 +290,8 @@ function PANEL:Init()
 		end
 
 		local PaintButtonsLeft = {}
-		PaintButtonsLeft["Enter the Zone"] = {Icon = "kek1ch/menu/play_menu_icon.png", PosX = ScrW()*0.0155, PosY = ScrH()*0.024}
-		PaintButtonsLeft["Load the game"] = {Icon = "kek1ch/menu/save_menu_icon.png", PosX = ScrW()*0.0155, PosY = ScrH()*0.024}
+		PaintButtonsLeft["Create a character"] = {Icon = "kek1ch/menu/play_menu_icon.png", PosX = ScrW()*0.0155, PosY = ScrH()*0.024}
+		PaintButtonsLeft["Load a character"] = {Icon = "kek1ch/menu/save_menu_icon.png", PosX = ScrW()*0.0155, PosY = ScrH()*0.024}
 		PaintButtonsLeft["Settings"] = {Icon = "kek1ch/menu/settings_menu_icon.png", PosX = ScrW()*0.0155, PosY = ScrH()*0.024}
 		PaintButtonsLeft["Return to game"] = {Icon = "kek1ch/menu/goback_menu_icon.png", PosX = ScrW()*0.0155, PosY = ScrH()*0.024}
 		PaintButtonsLeft["Back"] = {Icon = "kek1ch/menu/goback_menu_icon.png", PosX = ScrW()*0.0155, PosY = ScrH()*0.024}
@@ -385,7 +385,7 @@ function PANEL:Init()
 
 		local maxChars = hook.Run("GetMaxPlayerCharacter", LocalPlayer()) or nut.config.get("maxChars", 5)
 		if (count > 0 and #nut.characters < maxChars and hook.Run("ShouldMenuButtonShow", "create") != false) then
-			AddLabel("Enter the zone", function()
+			AddLabel("Create a character", function()
 				for k, v in SortedPairs(nut.faction.teams) do
 					if not IsValid(characterFrame) then
 
@@ -665,7 +665,7 @@ function PANEL:Init()
 						characterFrame.choosecr:SetTextColor(color_white)
 						characterFrame.choosecr:SetExpensiveShadow(1, Color(0, 0, 0, 100))
 						characterFrame.choosecr:SetFont("Roh20")
-						characterFrame.choosecr:SetText("Применить")
+						characterFrame.choosecr:SetText("Apply")
 						characterFrame.choosecr.Paint = BPaint
 						characterFrame.choosecr.DoClick = function(client)
 							characterFrame:Remove()
@@ -924,7 +924,7 @@ function PANEL:Init()
 		end
 
 		if (#nut.characters > 0 and hook.Run("ShouldMenuButtonShow", "load") != false) then
-			AddLabel("Load the server", function()
+			AddLabel("Load a character", function()
 				if not IsValid(characterFrame) then --не робит
 					local characterFrame = self:Add("DPanel")
 					characterFrame:SetAlpha(0)
