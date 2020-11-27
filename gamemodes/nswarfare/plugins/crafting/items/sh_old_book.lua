@@ -1,5 +1,5 @@
-﻿ITEM.name = "Старая книга"
-ITEM.desc = "Обычная ничем не примечательная книга. На некоторых страницах можно заметить жирные пятна или загнутые уголки, что указывает на то, что ей активно пользовались. К сожалению, долгое хранение в отвратительных условиях сказалось самым негативным образом - многие листы оказались вырваны или ипорчены, а переплет держится на одном лишь честном слове. \n\nХАРАКТЕРИСТИКИ:\n-личная вещь\n-используется при обслуживании оружия (+2)"
+﻿ITEM.name = "Old book"
+ITEM.desc = "The usual unremarkable book. On some pages you can see greasy spots or curved corners, which indicates that it was actively used. Unfortunately, long storage in disgusting conditions has affected the most negative way - many sheets were torn out or torn, and the binding is held on only an honest word. \n\nATTRIBUTES:\n-Personal belonging\n-Usages: Weapon maintenance (2)"
 ITEM.price = 130
 ITEM.weight = 0.22
 
