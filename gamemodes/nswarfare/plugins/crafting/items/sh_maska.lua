@@ -1,5 +1,5 @@
-﻿ITEM.name = "Тряпичная маска"
-ITEM.desc = "\n\nХАРАКТЕРИСТИКИ:\n-технологическое приспособление\n-непригодно к использованию"
+﻿ITEM.name = "Rag mask"
+ITEM.desc = "\n\nATTRIBUTES:\n-Technological device\n-Unusable"
 ITEM.price = 370
 ITEM.weight = 0.4
 
