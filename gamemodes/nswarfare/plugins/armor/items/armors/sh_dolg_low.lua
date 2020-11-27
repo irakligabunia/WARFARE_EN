@@ -1,5 +1,5 @@
 ﻿ITEM.name = "PS5-M"
-ITEM.desc = "Современная модель комбинезона «Долга». Больше подходит новобранцам из сталкеров, которые привыкли к относительно лёгким костюмам. В отличие от серии ПС3, обеспечивает хорошую защиту от аномального воздействия и при этом способен остановить пистолетную пулю и некоторые автоматные пули. \n\nWARNING! \n\n Before disassembling, it is recommended to empty your invetory! \n\nATTRIBUTES: \n-Can be disassembled with a crowbar \n-Protects against radiation if fitted with CCR"
+ITEM.desc = "This modern version of the Duty bodysuit is better suited for stalker recruits who are used to lightweight suits. Unlike the PSZ series, this suit provides good protection against anomalies while also being capable of stopping a pistol bullet. The suit cannot be modified with an artifact container, but may be upgraded with a combat support system instead. \n\nWARNING! \n\n Before disassembling, it is recommended to empty your invetory! \n\nATTRIBUTES: \n-Can be disassembled with a crowbar \n-Protects against radiation if fitted with CCR"
 ITEM.price = 21006
 ITEM.ric = 25
 ITEM.dmgsteal = 35
