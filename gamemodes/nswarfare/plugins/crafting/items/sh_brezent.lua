@@ -1,5 +1,5 @@
-﻿ITEM.name = "Камуфляжный брезент"
-ITEM.desc = "Брезент представляет собой большой лист крепкого, гибкого, водостойкого или водонепроницаемого материала, часто из ткани (например холст или полизстер), покрытой уретаном или пластиком, таким как полиэтилен. Зачастую усиливается дополнительными накладками на углах и по бокам для формирования отверстий крепления верёвки, что позволяет легко привязывать брещент к чему-либо. \n\nХАРАКТЕРИСТИКИ: \n-военное изделие \n-используется при: ремонте снаряжения, обслуживании оружия (+5)"
+﻿ITEM.name = "Camouflage tarpaulin"
+ITEM.desc = "The tarpaulin is a large sheet of strong, flexible, waterproof material, often made of fabric (such as a canvas or polysster) covered with uretan or plastic such as polyethylene. Often amplified by additional overlays on the corners and sides to form rope attachment holes, making it easy to tie the strap to anything. \n\nATTRIBUTES: \n-Military grapde \n-Usages: Repair suits, weapon maintenance (+5)"
 ITEM.price = 11520
 ITEM.exRender = false
 ITEM.weight = 0.8
