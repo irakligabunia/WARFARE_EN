@@ -13,7 +13,7 @@ netstream.Hook("fix_my_gear", function(client, data)
 
 	if not (data.cost_armor_button == 0) then
 		for _, v in pairs(items) do
-			if v.category == "Броня" and v:getData("equip") then
+			if v.category == "Suit" and v:getData("equip") then
 				v:setData("durabilityarmor", 100)
 			end
 		end
