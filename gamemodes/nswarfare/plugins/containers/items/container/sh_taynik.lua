@@ -1,5 +1,5 @@
-﻿ITEM.name = "Танйик"
-ITEM.desc = ""
+﻿ITEM.name = "Stash"
+ITEM.desc = "A secret stash to store your most valuables."
 ITEM.invW = 8
 ITEM.invH = 9
 --ITEM.locksound = "hgn/crussaria/devices/door_regular_stopclose.wav"
