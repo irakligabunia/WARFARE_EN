@@ -1,6 +1,6 @@
-ITEM.name = "Канистра (8 литров)"
-ITEM.desc = "Большая, наполовину пустая металлическая канистра с 95-м бензином. Канистры поставлялись в зону в больших количествах следом за украиноской военной техникой. \n\nХАРАКТЕРИСТИКИ: \n-технологическое приспособление \n-топливо для приготовления пищи \n-используется для: заправки машин"
-ITEM.category = "Топливо"
+ITEM.name = "Canister (8 litres)"
+ITEM.desc = "A large, half-empty metal canister with gasoline. The canisters were delivered to the zone in large quantities with Ukrainian military equipment. \n\nATTRIBUTES: \n-Technological device \n-Fuel for cooking"
+ITEM.category = "Fuel"
 ITEM.price = 1609
 ITEM.exRender = false
 ITEM.weight = 7.52
@@ -20,7 +20,7 @@ ITEM:hook("use", function(item)
 end)
 
 ITEM.functions._use = { 
-	name = "заправить",
+	name = "fill",
 	onRun = function(item)
 		local client = item.player
 		local data = {}
@@ -34,7 +34,7 @@ ITEM.functions._use = {
 			local percent
 			ent:fillGas(1000)
 			percent = (ent:getNetVar("gas") / ent.maxGas)*100
-			client:notify("Машина заправлена", client, percent)
+			client:notify("Done filling", client, percent)
 			return true
 		else
 			client:notify(L("vehicleGasLook", client))
@@ -49,7 +49,7 @@ ITEM.functions._use = {
 
 function ITEM:getDesc()
 	local str
-	str = self.desc.." Осталось %s литр(а)"
+	str = self.desc.." %s litre(s) left"
 	return Format(str, self:getData("kerosinAmount"))
 end
 
