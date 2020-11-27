@@ -1,5 +1,5 @@
-ITEM.name = "Рука Бюрера"
-ITEM.desc = "Руки у бюрера играют жизненоважную роль при использовании его телекинетических способностей. Ученый с великим интересом берутся за изученеие такого рода образцов с целью выявления в них мутаций. Пахнет, как старые носки вперемешку с прокисшими овощами. \n\nХАРАКТЕРИСТИКИ: \n-мутировавшая часть тела \n-очередной редкий научный экземпляр \n-высокая ценность"
+ITEM.name = "Burer hand"
+ITEM.desc = "The hands of the burer play a vital role when using his telekinetic abilities. Scientist with great interest take to study these kinds of samples in order to identify mutations in them. It smells like old socks mixed with sour vegetables. \n\nATTRIBUTES: \n-Mutated body part\n-Rare scientific item \n-High value"
 ITEM.price = 940
 ITEM.exRender = false
 ITEM.weight = 0.37
