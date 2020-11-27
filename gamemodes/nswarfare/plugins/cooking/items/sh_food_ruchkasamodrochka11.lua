@@ -1,5 +1,5 @@
-ITEM.name = "Коготь химеры"
-ITEM.desc = "Коготь химеры. Его точный молекулярный состав не изучен, но все знают, что он прочный и острый как алмаз. Это объясняет, почему монстр может разорвать с лёгкостью любую броню. При отсутствии более пригодных инструментов может использоваться для разделки туш мутантов. \n\nХАРАКТЕРИСТИКИ: \n-мутировавшая часть тела"
+ITEM.name = "Chimera claw"
+ITEM.desc = "Chimera claw. Its exact molecular composition is not studied, but everyone knows that it is strong and sharp as a diamond. This explains why a monster can easily break any armor. In the absence of more suitable tools can be used to cut the carcasses of mutants. \n\nATTRIBUTES: \n-Mutant body part"
 ITEM.price = 790
 ITEM.exRender = false
 ITEM.weight = 0.07
