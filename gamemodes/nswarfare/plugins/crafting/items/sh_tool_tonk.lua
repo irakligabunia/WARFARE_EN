@@ -1,5 +1,5 @@
-﻿ITEM.name = "Инструменты для тонкой работы"
-ITEM.desc = "Позволяет создавать элементы снаряжения, может быть отдано технику."
+﻿ITEM.name = "Lightweight duty toolkit"
+ITEM.desc = "Allows you to create items of equipment, can be given equipment."
 ITEM.price = 16620
 ITEM.weight = 1.24
 
