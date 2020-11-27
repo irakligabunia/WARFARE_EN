@@ -1,5 +1,5 @@
-﻿ITEM.name = "Набор для стрижки"
-ITEM.desc = "Комплект для стрижки и бриться, который ключает в себя нейлон, станок для ухожа за бородой и усами, расческу и точные ножницы, очень тонкие лезвия из нержавеющей сталки 420-й марки с прорезиненной рукоятью и тонким лезвием-триммером. \n\nХАРАКТЕРИСТИКИ:\n-повсеместное применение\n-используется при: ремонте снаряжение (+2)"
+﻿ITEM.name = "Haircut kit"
+ITEM.desc = "A haircut and shaving kit that includes nylon, a trimming machine for a beard and a mustache, a comb and precise scissors, very thin stainless steel blades with a rubberized handle and a thin blade-trimmer. \n\nATTRIBUTES:\n-Widespread use\n-Usages: Repair gear (+2)"
 ITEM.price = 170	
 ITEM.weight = 0.13
 
