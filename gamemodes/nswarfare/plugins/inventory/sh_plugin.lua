@@ -20,7 +20,6 @@ if (CLIENT) then
 				if IsValid(nut.gui.inv1) and IsValid(invent_info_kek) then
 					nut.gui.inv1:Remove()
 					invent_info_kek:Remove()
-					equipment_panel:Remove()
 					if IsValid(safebox_menuINV)  then
 						safebox_menuINV:Remove()
 					end
@@ -39,10 +38,6 @@ if (CLIENT) then
 					invent_info_kek = vgui.Create("invent_info_kek")
 					invent_info_kek:SetPos(ScrW()*0.6592, ScrH()*0.067)
 					invent_info_kek:SetSize(invent_info_kek:GetSize())
-
-					equipment_panel = vgui.Create("equipment_panel")
-					equipment_panel:SetPos(ScrW()*0.35, ScrH()*0.29)
-					equipment_panel:SetSize(equipment_panel:GetSize())
 				end
 			LocalPlayer().nextUseMenu = CurTime() + 0.1
 			end
@@ -50,7 +45,6 @@ if (CLIENT) then
 				if IsValid(nut.gui.inv1) and IsValid(invent_info_kek) and IsValid(equipment_panel) and IsValid(safebox_menuINV) and IsValid(case_info_kek) then
 					nut.gui.inv1:Remove()
 					invent_info_kek:Remove()
-					equipment_panel:Remove()
 					safebox_menuINV:Remove()
 					case_info_kek:Remove()
 				end
