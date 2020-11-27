@@ -1,6 +1,6 @@
 ﻿AddCSLuaFile()
 
-SWEP.PrintName = "Детектор «Отклик»"
+SWEP.PrintName = "Detector «ECHO»"
 SWEP.Category  = "Call of Pripyat"
 
 SWEP.Base = "weapon_cop_base"
