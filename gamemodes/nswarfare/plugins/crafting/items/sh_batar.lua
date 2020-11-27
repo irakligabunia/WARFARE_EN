@@ -1,7 +1,7 @@
-﻿ITEM.name = "Аккумулятор"
-ITEM.desc = "Источник электричества для автономного питания. Рабочее напряжение: 1.5V. Продолжительность работы: 300 секунд. \n\nХАРАКТЕРИСТИКИ: \n-электроника \n-используется для: работы фонарика"
+﻿ITEM.name = "Battery"
+ITEM.desc = "A source of electricity for autonomous power. Work voltage: 1.5V. Running time: 300 seconds.  \n\nATTRIBUTES: \n-Electronical device \n-Usages: powering a flashlight"
 ITEM.price = 1040
-ITEM.permit = "Разное"
+ITEM.permit = "Misc"
 ITEM.weight = 0.17
 
 ITEM.model = "models/kek1ch/battery.mdl"
