@@ -1,6 +1,6 @@
 AddCSLuaFile()
 
-SWEP.PrintName = "ТОЗ-34"
+SWEP.PrintName = "TOZ-34"
 SWEP.Category  = "Call of Pripyat"
 
 SWEP.Base = "weapon_cop_base"
