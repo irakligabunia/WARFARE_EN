@@ -1,5 +1,5 @@
 ﻿ITEM.name = "PSZ-9D «DUTY»"
-ITEM.desc = "PSZ-9D is a replica of the SKAT-9M used primarily by the DUTY faction"
+ITEM.desc = "Produced by one of Kiev's defence research institutes and commissioned by the Duty faction. It is as simple and reliable as the standard PSZ-9 model, but due to the new materials, it provides good protection from various harmful impacts, including firearm damage. \n\nWARNING! \n\n Before disassembling, it is recommended to empty your invetory! \n\nATTRIBUTES: \n-Can be disassembled with a crowbar \n-Protects against radiation if fitted with CCR"
 ITEM.price = 114254
 ITEM.ric = 22
 ITEM.dmgsteal = 45
@@ -115,11 +115,11 @@ local DuseArmor = {
 }
 
 ITEM.functions.duse = {
-	name = "разобрать",
+	name = "disassemble",
 	onRun = function(item)
 		if (IsValid(item.player) && item.player:Alive()) then
 			if not item.player:getChar():getInv():hasItem("crowboar") then
-				item.player:notify("У вас нет лома!")
+				item.player:notify("You don't have a crowbar!")
 				return false
 			end
 			
