@@ -17,7 +17,7 @@ local function DrawDot(x, y, dot_scale)
 	rect(x - dot_scale/2, y - dot_scale/2, dot_scale, dot_scale)
 end
 
---[[local CrosshairColor = {
+local CrosshairColor = {
 	neutral = Color(255, 255, 100),
 	hostile = Color(255, 0, 0),
 	friendly = Color(0, 255, 0),
