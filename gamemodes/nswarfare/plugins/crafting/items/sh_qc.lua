@@ -1,5 +1,5 @@
-﻿ITEM.name = "Система быстрого сброса QC"
-ITEM.desc = "\n\nХАРАКТЕРИСТИКИ:\n-технологическое приспособление\n-непригодно к использованию"
+﻿ITEM.name = "Rapid release system QC"
+ITEM.desc = "\n\nATTRIBUTES:\n-Technological device\n-Unusable"
 ITEM.price = 670
 ITEM.weight = 0.4
 
