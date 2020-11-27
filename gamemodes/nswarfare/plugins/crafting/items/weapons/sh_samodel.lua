@@ -1,9 +1,9 @@
-ITEM.name = "Самодельный детектор"
-ITEM.desc = "Детектор, собранный из простейших деталей, каким-то образом улавливает присутствие артефактов, если повезет. \n\nХАРАКТЕРИСТИКИ: \n-технологическое приспособление \n-не требует подзарядки"
+ITEM.name = "Homemade detector"
+ITEM.desc = "The detector, collected from the simplest parts, somehow catches the presence of artifacts, if you are lucky. \n\nATTRIBUTES: \n-Technological device \n-Doesn't require recharging"
 ITEM.price = 5412
 ITEM.class = "weapon_cop_detector"
 ITEM.weaponCategory = "detector"
-ITEM.category = "Оружие"
+ITEM.category = "Weapon"
 ITEM.exRender = false
 ITEM.weight = 0.44
 
