@@ -1,7 +1,7 @@
 local PLUGIN = PLUGIN
 
 ENT.Type = "anim"
-ENT.PrintName = "Тайник"
+ENT.PrintName = "Stash"
 ENT.Category = "Warfare ENT"
 ENT.Spawnable = false
 
@@ -74,7 +74,7 @@ if (SERVER) then
 			def.onOpen(self, activator)
 		end
 
-		activator:setAction("Открываем...", OPEN_TIME, function()
+		activator:setAction("Opening...", OPEN_TIME, function()
 			if (activator:GetPos():Distance(self:GetPos()) <= 100) then
 				self.receivers[activator] = true
 				activator.nutBagEntity = self
@@ -89,10 +89,10 @@ if (SERVER) then
 	function ENT:Use(activator)
 		if not self.placed and (activator:getChar():getID() == self.owner or activator:IsAdmin()) and self:IsValid() then
 			if activator:KeyDown(IN_WALK) then
-				activator:setAction("Передвигаем...", 7)
+				activator:setAction("Moving...", 7)
 				activator:doStaredAction(self, function()
 					if (!activator:getChar():getInv():add(self.item.uniqueID)) then
-						activator:notify("Вам не хватает места в инвентаре!")
+						activator:notify("You don't have enough space!")
 						return
 					else
 						self:Remove()
@@ -134,13 +134,13 @@ if (SERVER) then
 				end		
 				return
 			elseif self.money ~= 0 then
-				activator:notify("Нельзя передвинуть контейнер, когда в нем находятся деньги!")
+				activator:notify("You can't move a container when there's money in it!")
 				return
 			elseif self.lockedid ~= nil then
-				activator:notify("Нельзя передвинуть контейнер, на котором висит замок!")
+				activator:notify("You can't move the container on while it's locked!")
 				return
 			else
-				activator:notify("Нельзя передвинуть контейнер, когда в нем находятся предметы!")
+				activator:notify("You can't move a container when there's items in it!")
 				return
 			end
 		end
