@@ -1,6 +1,6 @@
 ITEM.name = "Container base"
 ITEM.desc = "Base as it is."
-ITEM.category = "Тайники"
+ITEM.category = "Stash"
 ITEM.model = "models/props_c17/FurnitureCouch001a.mdl"
 ITEM.invW = 0
 ITEM.invH = 0
@@ -9,7 +9,7 @@ ITEM.locksound = "hgn/crussaria/devices/door_regular_stopclose.wav"
 ITEM.opensound = "hgn/crussaria/devices/door_regular_opening.wav"
 
 ITEM.functions.use = {
-	name = "установить",
+	name = "place",
 	tip = "placeTip",
 	icon = "icon16/anchor.png",	
 	onRun = function(item)
