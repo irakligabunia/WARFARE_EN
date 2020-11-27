@@ -1,5 +1,5 @@
-﻿ITEM.name = "«Батарейка»"
-ITEM.desc = "Редкий, довольно дорогой артефакт, образующийся в аномалиях электрического типа, немного повышает мышечный тонуc. Известно, что в состав этого артефакта входят электростатические элементы, однако в каких именно условиях он формируется, науке пока не известно. \n\nХАРАКТЕРИСТИКИ: \n-артефакт \n\nРадиация +2 / сек"
+﻿ITEM.name = "Battery"
+ITEM.desc = "A rare, rather expensive artifact, formed in electrical anomalies, slightly increases the muscle tone. It is known that this artifact contains electrostatic elements, but in what conditions it is formed, science is not yet known. \n\nATTRIBUTES: \n-Artefact \n\nRadiation+2 / sec"
 ITEM.price = 19752
 ITEM.isAnomaly = true
 ITEM.weight = 0.82
@@ -14,13 +14,13 @@ ITEM.iconCam = {
 }
 
 ITEM.functions.Use = {
-	name = "положить в СИМК",
+	name = "put in case",
 	icon = "icon16/cup.png",
 	onRun = function(item)
 		local client = item.player
 		if (IsValid(item.player) && item.player:Alive()) then
 			if !item.player:getChar():getInv():hasItem("simkemp") then
-				item.player:notify("Вам нужны СИМК (пустой).")
+				item.player:notify("You need an empty artefact case.")
 				return false
 			end
 			item.player:EmitSound( Sound( "interface/inv_iam_close.ogg" ), Entity( 1 ):GetPos(), 1, CHAN_AUTO, 1, 20, 0, 100 )
