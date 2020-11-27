@@ -1,4 +1,4 @@
-﻿nut.command.add("roll", {
+nut.command.add("roll", {
 	syntax = "[number maximum]",
 	onRun = function(client, arguments)
 		nut.chat.send(client, "roll", math.random(0, math.min(tonumber(arguments[1]) or 100, 100)))
@@ -60,13 +60,10 @@ nut.command.add("setvoicemail", {
 nut.command.add("flaggive", {
 	adminOnly = true,
 	syntax = "<string name> [string flags]",
-	onRun = function(client, arguments, player)
-		if (!client:getChar():hasFlags("O")) then return end
-		if !serverguard.player:GetRank(player) == 'founder' then return false end
+	onRun = function(client, arguments)
 		local target = nut.command.findPlayer(client, arguments[1])
-		
+
 		if (IsValid(target) and target:getChar()) then
-			if !serverguard.player:GetRank(player) == 'founder' then return false end
 			local flags = arguments[2]
 
 			if (!flags) then
@@ -94,9 +91,7 @@ nut.command.add("flaggive", {
 nut.command.add("flagtake", {
 	adminOnly = true,
 	syntax = "<string name> [string flags]",
-	onRun = function(client, arguments, player)
-		if !serverguard.player:GetRank(player) == 'founder' then return false end
-		if (!client:getChar():hasFlags("O")) then return end
+	onRun = function(client, arguments)
 		local target = nut.command.findPlayer(client, arguments[1])
 
 		if (IsValid(target) and target:getChar()) then
@@ -115,20 +110,10 @@ nut.command.add("flagtake", {
 	end
 })
 
-nut.command.add("toggleraise", {
-	onRun = function(client, arguments)
-		if ((client.nutNextToggle or 0) < CurTime()) then
-			client:toggleWepRaised()
-			client.nutNextToggle = CurTime() + 0.5
-		end
-	end
-})
-
 nut.command.add("charsetmodel", {
 	adminOnly = true,
 	syntax = "<string name> <string model>",
 	onRun = function(client, arguments)
-		if (!client:getChar():hasFlags("O")) then return end
 		if (!arguments[2]) then
 			return L("invalidArg", client, 2)
 		end
@@ -164,7 +149,6 @@ nut.command.add("charsetbodygroup", {
 	adminOnly = true,
 	syntax = "<string name> <string bodyGroup> [number value]",
 	onRun = function(client, arguments)
-		if (!client:getChar():hasFlags("O")) then return end
 		local value = tonumber(arguments[3])
 		local target = nut.command.findPlayer(client, arguments[1])
 
@@ -189,78 +173,12 @@ nut.command.add("charsetbodygroup", {
 	end
 })
 
-nut.command.add("charsetattrib", {
-	adminOnly = true,
-	syntax = "<string charname> <string attribname> <number level>",
-	onRun = function(client, arguments)
-		local attribName = arguments[2]
-		if (!attribName) then
-			return L("invalidArg", client, 2)
-		end
-
-		local attribNumber = arguments[3]
-		attribNumber = tonumber(attribNumber)
-		if (!attribNumber or !isnumber(attribNumber)) then
-			return L("invalidArg", client, 3)
-		end
-
-		local target = nut.command.findPlayer(client, arguments[1])
-
-		if (IsValid(target)) then
-			local char = target:getChar()
-			if (char) then
-				for k, v in pairs(nut.attribs.list) do
-					if (nut.util.stringMatches(L(v.name, client), attribName) or nut.util.stringMatches(k, attribName)) then
-						char:setAttrib(k, math.abs(attribNumber))
-						client:notifyLocalized("attribSet", target:Name(), L(v.name, client), math.abs(attribNumber))
-
-						return
-					end
-				end
-			end
-		end
-	end
-})
-
-nut.command.add("charaddattrib", {
-	adminOnly = true,
-	syntax = "<string charname> <string attribname> <number level>",
-	onRun = function(client, arguments)
-		local attribName = arguments[2]
-		if (!attribName) then
-			return L("invalidArg", client, 2)
-		end
-
-		local attribNumber = arguments[3]
-		attribNumber = tonumber(attribNumber)
-		if (!attribNumber or !isnumber(attribNumber)) then
-			return L("invalidArg", client, 3)
-		end
-
-		local target = nut.command.findPlayer(client, arguments[1])
-
-		if (IsValid(target)) then
-			local char = target:getChar()
-			if (char) then
-				for k, v in pairs(nut.attribs.list) do
-					if (nut.util.stringMatches(L(v.name, client), attribName) or nut.util.stringMatches(k, attribName)) then
-						char:updateAttrib(k, math.abs(attribNumber))
-						client:notifyLocalized("attribUpdate", target:Name(), L(v.name, client), math.abs(attribNumber))
-
-						return
-					end
-				end
-			end
-		end
-	end
-})
-
 nut.command.add("charsetname", {
 	adminOnly = true,
 	syntax = "<string name> [string newName]",
 	onRun = function(client, arguments)
 		local target = nut.command.findPlayer(client, arguments[1])
-		if (!client:getChar():hasFlags("F")) then return end
+
 		if (IsValid(target) and !arguments[2]) then
 			return client:requestString("@chgName", "@chgNameDesc", function(text)
 				nut.command.run(client, "charsetname", {target:Name(), text})
@@ -272,18 +190,17 @@ nut.command.add("charsetname", {
 		local targetName = table.concat(arguments, " ")
 
 		if (IsValid(target) and target:getChar()) then
-			nut.util.notifyLocalized("cChangeName", client:Name(), target:Name(), targetName)
+			nut.util.notifyLocalized("cChangeName", nil, client:Name(), target:Name(), targetName)
 
-			target:getChar():setName(targetName:gsub("#", "#​"))
+			target:getChar():setName(targetName)
 		end
 	end
 })
 
 nut.command.add("chargiveitem", {
 	adminOnly = true,
-	syntax = "<string name> <string item>",
-	onRun = function(client, arguments, player)
-		if (!client:getChar():hasFlags("O")) then return end
+	syntax = "<string name> <string item> <integer amount>",
+	onRun = function(client, arguments)
 		if (!arguments[2]) then
 			return L("invalidArg", client, 2)
 		end
@@ -292,6 +209,7 @@ nut.command.add("chargiveitem", {
 
 		if (IsValid(target) and target:getChar()) then
 			local uniqueID = arguments[2]:lower()
+			local amount = tonumber(arguments[3])
 
 			if (!nut.item.list[uniqueID]) then
 				for k, v in SortedPairs(nut.item.list) do
@@ -303,18 +221,26 @@ nut.command.add("chargiveitem", {
 				end
 			end
 
-			local inv = target:getChar():getInv()
-			local succ, err = target:getChar():getInv():add(uniqueID)
-
-			if (succ) then
-				target:notifyLocalized("itemCreated")
-				if(target != client) then
-					client:notifyLocalized("itemCreated")
+			if (arguments[3] and arguments[3] != "") then
+				if (!amount) then
+					return L("invalidArg", client, 3)
 				end
-			else
-				target:notify(tostring(succ))
-				target:notify(tostring(err))
 			end
+
+			target:getChar():getInv():add(uniqueID, amount or 1)
+				:next(function(res)
+					if (IsValid(target)) then
+						target:notifyLocalized("itemCreated")
+					end
+					if (IsValid(client) and client ~= target) then
+						client:notifyLocalized("itemCreated")
+					end
+				end)
+				:catch(function(err)
+					if (IsValid(client)) then
+						client:notifyLocalized(err)
+					end
+				end)
 		end
 	end
 })
@@ -323,14 +249,13 @@ nut.command.add("charkick", {
 	adminOnly = true,
 	syntax = "<string name>",
 	onRun = function(client, arguments)
-		if (!client:getChar():hasFlags("M")) then return end
 		local target = nut.command.findPlayer(client, arguments[1])
 
 		if (IsValid(target)) then
 			local char = target:getChar()
 			if (char) then
 				for k, v in ipairs(player.GetAll()) do
-					v:notifyLocalized("charKick", v:Name(), target:Name())
+					v:notifyLocalized("charKick", client:Name(), target:Name())
 				end
 
 				char:kick()
@@ -343,7 +268,6 @@ nut.command.add("charban", {
 	syntax = "<string name>",
 	adminOnly = true,
 	onRun = function(client, arguments)
-		if (!client:getChar():hasFlags("M")) then return end
 		local target = nut.command.findPlayer(client, arguments[1])
 
 		if (IsValid(target)) then
@@ -351,9 +275,7 @@ nut.command.add("charban", {
 
 			if (char) then
 				nut.util.notifyLocalized("charBan", client:Name(), target:Name())
-				
-				char:setData("banned", true)
-				char:kick()
+				char:ban()
 			end
 		end
 	end
@@ -362,8 +284,7 @@ nut.command.add("charban", {
 nut.command.add("charunban", {
 	syntax = "<string name>",
 	adminOnly = true,
-	onRun = function(client, arguments, player)
-		if (!client:getChar():hasFlags("O")) then return end
+	onRun = function(client, arguments)
 		if ((client.nutNextSearch or 0) >= CurTime()) then
 			return L("charSearching", client)
 		end
@@ -434,6 +355,8 @@ nut.command.add("givemoney", {
 
 			target:notifyLocalized("moneyTaken", nut.currency.get(amount))
 			client:notifyLocalized("moneyGiven", nut.currency.get(amount))
+
+			client:AnimRestartGesture(GESTURE_SLOT_ATTACK_AND_RELOAD, ACT_GMOD_GESTURE_ITEM_PLACE, true)
 		end
 	end
 })
@@ -441,9 +364,7 @@ nut.command.add("givemoney", {
 nut.command.add("charsetmoney", {
 	adminOnly = true,
 	syntax = "<string target> <number amount>",
-	onRun = function(client, arguments, player)
-		if (!client:getChar():hasFlags("O")) then return end
-		if (!serverguard.player:GetRank(player) == 'founder') then return false end
+	onRun = function(client, arguments)
 		local amount = tonumber(arguments[2])
 
 		if (!amount or !isnumber(amount) or amount < 0) then
@@ -474,55 +395,24 @@ nut.command.add("dropmoney", {
 		end
 
 		amount = math.Round(amount)
-		if (!client:getChar():getInv():hasItem("kowelek")) then
-			client:notify("You don't have a wallet!")
-			return 
-		end
-
+		
 		if (!client:getChar():hasMoney(amount)) then
 			return
 		end
 
-		if (amount < 5000) then
-			return
-		end
-		
-		client:ConCommand("say /zlostmoney " ..amount.. " руб")
 		client:getChar():takeMoney(amount)
 		local money = nut.currency.spawn(client:getItemDropPos(), amount)
 		money.client = client
 		money.charID = client:getChar():getID()
+		
+		client:doGesture(GESTURE_SLOT_ATTACK_AND_RELOAD, ACT_GMOD_GESTURE_ITEM_PLACE, true)
 	end
 })
-
---[[nut.command.add("dropmoney", {
-	syntax = "<number amount>",
-	onRun = function(client, arguments)
-		local amount = tonumber(arguments[1])
-
-		if (!amount or !isnumber(amount) or amount < 1) then
-			return "@invalidArg", 1
-		end
-
-		amount = math.Round(amount)
-		
-		if (!client:getChar():hasMoney(amount)) then
-			return
-		end
-		
-		client:ConCommand("say /322lostmoney " ..amount.. " руб")
-		client:getChar():takeMoney(amount)
-		local money = nut.currency.spawn(client:getItemDropPos(), amount)
-		money.client = client
-		money.charID = client:getChar():getID()
-	end
-})]]
 
 nut.command.add("plywhitelist", {
 	adminOnly = true,
 	syntax = "<string name> <string faction>",
 	onRun = function(client, arguments)
-		if (!client:getChar():hasFlags("O")) then return end
 		local target = nut.command.findPlayer(client, arguments[1])
 		local name = table.concat(arguments, " ", 2)
 
@@ -574,7 +464,6 @@ nut.command.add("plyunwhitelist", {
 	adminOnly = true,
 	syntax = "<string name> <string faction>",
 	onRun = function(client, arguments)
-		if (!client:getChar():hasFlags("O")) then return end
 		local target = nut.command.findPlayer(client, arguments[1])
 		local name = table.concat(arguments, " ", 2)
 
@@ -604,7 +493,7 @@ nut.command.add("plyunwhitelist", {
 	end
 })
 
---[[nut.command.add("fallover", {
+nut.command.add("fallover", {
 	syntax = "[number time]",
 	onRun = function(client, arguments)
 		local time = tonumber(arguments[1])
@@ -623,7 +512,7 @@ nut.command.add("plyunwhitelist", {
 			client:setRagdolled(true, time)
 		end
 	end
-})]]
+})
 
 nut.command.add("beclass", {
 	syntax = "<string class>",
@@ -694,133 +583,68 @@ nut.command.add("chardesc", {
 })
 
 nut.command.add("plytransfer", {
+	adminOnly = true,
 	syntax = "<string name> <string faction>",
 	onRun = function(client, arguments)
-		if (!client:getChar():hasFlags("F")) then return end
 		local target = nut.command.findPlayer(client, arguments[1])
 		local name = table.concat(arguments, " ", 2)
+		local character = target:getChar()
 
+		if (not IsValid(target) or not character) then
+			return "@plyNotExist"
+		end
+
+		-- Find the specified faction.
+		local oldFaction = nut.faction.indices[character:getFaction()]
+		local faction = nut.faction.teams[name]
+		if (not faction) then
+			for k, v in pairs(nut.faction.indices) do
+				if (nut.util.stringMatches(L(v.name, client), name)) then
+					faction = v
+					break
+				end
+			end
+		end
+		if (not faction) then
+			return "@invalidFaction"
+		end
+
+		-- Change to the new faction.
+		target:getChar():setFaction(faction.index)
+		if (faction.onTransfered) then
+			faction:onTransfered(target, oldFaction)
+		end
+		hook.Run("CharacterFactionTransfered", character, oldFaction, faction)
+
+		-- Notify everyone of the change.
+		for k, v in ipairs(player.GetAll()) do
+			nut.util.notifyLocalized(
+				"cChangeFaction",
+				v, client:Name(), target:Name(), L(faction.name, v)
+			)
+		end
+	end
+})
+
+-- Credit goes to SmithyStanley
+nut.command.add("clearinv", {
+	adminOnly = true,
+	syntax = "<string name>",
+	onRun = function (client, arguments)
+		local target = nut.command.findPlayer(client, arguments[1])
+		
 		if (IsValid(target) and target:getChar()) then
-			local faction = nut.faction.teams[name]
-			if not client:IsAdmin() then
-				if ((faction != team.GetName(client:Team()) or faction != "Одиночки") and !client:getChar():hasFlags("O")) then return "Вы можете перекидывать игроков только в свою фракцию, либо кикать в одиночек." end
-				if not (target:Team() == FACTION_LONER) then return "Вы можете перекидывать только одиночек в свою фракцию" end
-			end
-			
-			if (!faction) then
-				for k, v in pairs(nut.faction.indices) do
-					if (nut.util.stringMatches(L(v.name, client), name)) then
-						faction = v
-
-						break
-					end
-				end
+			for k, v in pairs(target:getChar():getInv():getItems()) do
+				v:remove()
 			end
 
-			if (faction) then
-				target:getChar().vars.faction = faction.uniqueID
-				target:getChar():setFaction(faction.index)
-
-				if (faction.onTransfered) then
-					faction:onTransfered(target)
-				end
-
-				for k, v in ipairs(player.GetAll()) do
-					nut.util.notifyLocalized("cChangeFaction", v, client:Name(), target:Name(), L(faction.name, v))
-				end
-			else
-				return "@invalidFaction"
-			end
+			client:notifyLocalized("resetInv", target:getChar():getName())
 		end
 	end
 })
 
-nut.command.add("rep", {
-	onRun = function(client, arguments)
-		client:ConCommand("say /zchecknewrep "..client:getChar():getData("rep", 0))
+nut.command.add("content", {
+	onRun = function(client)
+		client:SendLua([[gui.OpenURL(nut.config.get("contentURL", "https://steamcommunity.com/sharedfiles/filedetails/?id=1513109120"))]])
 	end
 })
-
-nut.command.add("rank", {
-	onRun = function(client, arguments)
-		client:ConCommand("say /zchecrank "..client:getChar():getData("rank", 0))
-	end
-})
-
---[[nut.command.add("kitgold", {
-	--adminOnly = true,
-	syntax = "",
-	onRun = function(client, arguments, player)
-		if (IsValid(client) and client:getChar()) then
-			if !serverguard.player:GetRank(player) == 'gold' then return false end
-			local time = client:getChar():getData("kittime", 0) or 0
-			if (time >= 3600) then
-				client:getChar():setData("kittime", 0)
-				client:getChar():getInv():add("stalkerkombez")
-			else
-			client:notify("Вы сможете получить кит через "..client:getChar():getData("kittime", 0).." секунд")
-			end
-		end
-	end
-})
-
-nut.command.add("kitdiamond", {
-	--adminOnly = true,
-	syntax = "",
-	onRun = function(client, arguments, player)
-		if (IsValid(client) and client:getChar()) then
-			if !serverguard.player:GetRank(player) == 'diamond' then return false end
-			local time = client:getChar():getData("kittime", 0) or 0
-			if (time >= 3600) then
-				client:getChar():setData("kittime", 0)
-				client:getChar():getInv():add("stalkerseva")
-			else
-			client:notify("Вы сможете получить кит через "..client:getChar():getData("kittime", 0).." секунд")
-			end
-		end
-	end
-})
-
-nut.command.add("kittitan", {
-	--adminOnly = true,
-	syntax = "",
-	onRun = function(client, arguments, player)
-		if (IsValid(client) and client:getChar()) then
-			if !serverguard.player:GetRank(player) == 'titan' then return false end
-			local time = client:getChar():getData("kittime", 0) or 0
-			if (time >= 3600) then
-				client:getChar():setData("kittime", 0)
-				client:getChar():getInv():add("stalkerexonondrop")
-			else
-			client:notify("Вы сможете получить кит через "..client:getChar():getData("kittime", 0).." секунд")
-			end
-		end
-	end
-})]]
-
-
-
-
---[[nut.command.add("kitlider", {
-	syntax = "",
-	onRun = function(client, arguments, player)
-		if (IsValid(client) and client:getChar()) then
-			if (!client:getChar():hasFlags("F")) then return end
-			local time = client:getChar():getData("kittime", 0) or 0
-			if (time >= 0) then
-				client:getChar():setData("kittime", -28800)
-				client:getChar():giveMoney(110000)
-				--client:notify("Часов "..client:getChar():getData("kittime", 0))
-			else
-			client:notify("Осталось "..client:getChar():getData("kittime", 0) /(-3600).." часов до использования кита")
-			end
-		end
-	end
-})
-]]
-
-
-
-
-
-
