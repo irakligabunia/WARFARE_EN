@@ -1,5 +1,5 @@
-﻿ITEM.name = "Текстолитовая основа"
-ITEM.desc = "Представляет собой слоистый пластик на основе ткани из волокон и полимерного связующего вещества (бакелита, полиэфирной смолы, эпоксидной смолы). При должной сноровке может здорово помочь в починке. \n\nХАРАКТЕРИСТИКИ:\n-технологическое приспособление\n-высокая ценность"
+﻿ITEM.name = "Textolite base"
+ITEM.desc = "It is a layered plastic based on fiber tissue and polymer binder (bakelite, polyester resin, epoxy resin). With proper skill can help with the fix. \n\nATTRIBUTES:\n-Technological device\n-High value"
 ITEM.price = 690
 ITEM.weight = 0.05
 
