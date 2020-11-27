@@ -1,5 +1,5 @@
-﻿ITEM.name = "Переносное радио"
-ITEM.desc = "Музыка - это хороший способ успокоить нервы. Но радио со сломанной антенной навряд ли принесёт много пользы. Наличие влаги и грязи также свидетельствует о нерабочем состоянии. \n\nХАРАКТЕРИСТИКИ:\n-технологическое приспособление\n-непригодно к использованию"
+﻿ITEM.name = "Portable radio"
+ITEM.desc = "Music is a good way to calm your nerves. But a radio with a broken antenna is unlikely to do much good. The presence of moisture and dirt also indicates a non-working condition. \n\nATTRIBUTES:\n-Technological device\n-Unusable"
 ITEM.price = 370
 ITEM.weight = 0.4
 ITEM.model = "models/z-o-m-b-i-e/st/el_tehnika/st_priemnik_gorizont_01.mdl"
