@@ -1,5 +1,5 @@
 ﻿ITEM.name = "'Duty' SEVA"
-ITEM.desc = "This bodysuit, intended for conducting research in the Zone, combines a closed-cycle respiratory module and an external isolation coating, resulting in excellent protection from anomalies. Due to poor protection from physical impact, the suit is not a good defense against bullet and fragmentation damage. \n\nWARNING! \n\n Before disassembling, it is recommended to empty your invetory! \n\nATTRIBUTES: \n-Heavyweight \n-High value \n-Can be disassembled with a crowbar \n-Inbuilt CCR System"
+ITEM.desc = "This bodysuit, intended for conducting research in the Zone, combines a closed-cycle respiratory module and an external isolation coating, resulting in excellent protection from anomalies. Due to poor protection from physical impact, the suit is not a good defense against bullet and fragmentation damage. This specific suit is made for the Duty faction. \n\nWARNING! \n\n Before disassembling, it is recommended to empty your invetory! \n\nATTRIBUTES: \n-Heavyweight \n-High value \n-Can be disassembled with a crowbar \n-Inbuilt CCR System"
 ITEM.price = 154254
 ITEM.ric = 30
 ITEM.dmgsteal = 50
