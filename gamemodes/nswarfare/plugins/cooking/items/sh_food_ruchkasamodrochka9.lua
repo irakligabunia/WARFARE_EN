@@ -1,5 +1,5 @@
-ITEM.name = "Глаз плоти"
-ITEM.desc = "Мутировавшие, опухшие глаза плоти имеют ряд весьма странных особенностей наиболее интересной и полезной их которых является способность восстанавливать поврежденные участки организма, даже при весьма серьезных поражениях. \n\nХАРАКТЕРИСТИКИ: \n-мутировавшая часть тела"
+ITEM.name = "Flesh eye"
+ITEM.desc = "Mutated, swollen eyes of the flesh have a number of very strange features of the most interesting and useful of them which is the ability to repair damaged areas of the body, even with very serious lesions. \n\nATTRIBUTES: \n-Mutant body part"
 ITEM.model = "models/jerry/items/flesheye.mdl"
 ITEM.price = 640
 ITEM.exRender = false
