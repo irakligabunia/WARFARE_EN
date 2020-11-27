@@ -1,6 +1,6 @@
-﻿ITEM.name = "Керосин (5 литров)"
-ITEM.desc = "Керосин является широко распространенным топливом, используется в авиавции в качестве ракетного топлива, а так же при обжиге стеклянных изделий, ьытовых осветительных и нагревательных устройств. \n\nХАРАКТЕРИСТИКИ: \n-технологическое приспособление \n-топливо для приготовления пищи"
-ITEM.category = "Топливо"
+﻿ITEM.name = "Kersone (5 litres)"
+ITEM.desc = "Kerosene is a widespread fuel, used in the aviation as a rocket fuel, as well as in the roasting of glass products, lighting and heating devices. \n\nATTRIBUTES: \n-Technological device \n-Fuel for cooking"
+ITEM.category = "Fuel"
 ITEM.price = 1579
 ITEM.exRender = false
 ITEM.kerosinAmount = 5
@@ -17,7 +17,7 @@ ITEM.iconCam = {
 
 function ITEM:getDesc()
 	local str
-	str = self.desc.." Осталось %s литр(а)"
+	str = self.desc.."%s litre(s) left"
 	return Format(str, self:getData("kerosinAmount"))
 end
 
