@@ -1,5 +1,5 @@
-﻿ITEM.name = "Охотничий набор"
-ITEM.desc = "Целый мешок крючков, ножей и жругого оборудования, используемого для снятия шкуры и потрошения животных и мутантов. Из-за своего веса мало сталкеров исползует профессиональное оборудование при охоте на мутантов. Некоторые, однако, роассматривают его как лучший набор для потрошения мутантов. \n\nХАРАКТЕРИСТКИ: \n-повсеместное применение \n-используется для: вскрытия консервных банок (многоразовый) \n-используется для: разделка туш мунтантов (многоразовый)"
+﻿ITEM.name = "Hunting kit"
+ITEM.desc = "A whole bag of hooks, knives and chewing equipment used to remove skins and gut animals and mutants. Because of its weight, few stalkers use professional equipment when hunting mutants. Some, however, see it as the best set for evisceration of mutants. \n\nATTRIBUTES: \n-Widespread use \n-Usages: opening cans (multiple) \n-Usages: skinning mutants (multiple)"
 ITEM.price = 1547
 ITEM.exRender = false
 ITEM.weight = 6.68
