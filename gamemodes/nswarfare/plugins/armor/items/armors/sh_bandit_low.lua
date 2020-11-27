@@ -1,5 +1,5 @@
-﻿ITEM.name = "Бандитская куртка"
-ITEM.desc = "Обычный куртка. Заметной защиты носителю не обеспечивает. Разве что не даст замёрзнуть ночью и смягчит укус слепого пса. \n\nВНИМАНИЕ! \n\n При разборке рекомендуется освободить инвентарь! \n\nХАРАКТЕРИСТИКИ: \n-легкая бронезащита \n-возможно разобрать с помощью лома"
+﻿ITEM.name = "Bandit jacket"
+ITEM.desc = "A regular jacket. There is no noticeable protection for the media. Won't let you freeze at night and softens the bite of a blind dog.  \n\nWARNING! \n\n Before disassembling, it is recommended to empty your invetory! \n\nATTRIBUTES: \n-Lightweight \n-Can be disassembled with a crowbar"
 ITEM.price = 4124
 ITEM.ric = 5
 ITEM.dmgsteal = 10
@@ -83,11 +83,11 @@ local DuseArmor = {
 }
 
 ITEM.functions.duse = {
-	name = "разобрать",
+	name = "disassemble",
 	onRun = function(item)
 		if (IsValid(item.player) && item.player:Alive()) then
 			if not item.player:getChar():getInv():hasItem("crowboar") then
-				item.player:notify("У вас нет лома!")
+				item.player:notify("You don't have a crowbar!")
 				return false
 			end
 			
