@@ -1,5 +1,5 @@
-﻿ITEM.name = "Сигареты «Marlboro»"
-ITEM.desc = "Сигареты, импортированные с Запада. Должно быть, кто-то уже выкурил большую их часть, осталось только несколько штук. \n\nХАРАКТЕРИСТИКИ: \n-слабый отравляющий эффект \n-для использования требуется: зажигалка \n-возможно закурить"
+﻿ITEM.name = "'Marlboro' cigarette"
+ITEM.desc = "Cigarettes imported from the West. Someone must have smoked most of them, there's only a few left. \n\nATTRIBUTES: \n-Weak poisoning effect \n-Required to use: lighter \n-Smokable"
 ITEM.price = 2424
 ITEM.cigarettesAmount = 4
 ITEM.weight = 0.02
@@ -16,7 +16,7 @@ ITEM.iconCam = {
 
 function ITEM:getDesc()
 	local str
-	str = self.desc.."\n\nОсталось %s сигарет."
+	str = self.desc.."\n\n%s. cigarettes left"
 	return Format(str, self:getData("cigarettesAmount"))
 end
 
@@ -28,12 +28,12 @@ if (CLIENT) then
 end
 
 ITEM.functions.Smoke = {
-	name = "закурить",
+	name = "smoke",
 	onRun = function(item)
 	local client = item.player
 		if (IsValid(client) && client:Alive()) then
 			if not client:getChar():getInv():hasItem("tinderbox") then
-				client:notify("У вас нет зажигалки!")
+				client:notify("You don't have a lighter!")
 				return false
 			end
 			
@@ -49,7 +49,7 @@ ITEM.functions.Smoke = {
 			item:setData("cigarettesAmount", item:getData("cigarettesAmount") - 1)
 
 			if item:getData("cigarettesAmount") < 1 then
-				client:notify("Пачка пуста")
+				client:notify("The box is empty!")
 				return true
 			end
 		end
