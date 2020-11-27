@@ -1,5 +1,5 @@
-﻿ITEM.name = "Лист Брезента"
-ITEM.desc = "Лист текстиля военного класса, который можно использовать в полевых условиях для починки одежды и ремонта брони. Ценится за относительно низкую стоимость и большую универсальность.\n\nХАРАКТЕРИСТИКИ: \n-военное изделие" --Его описание
+﻿ITEM.name = "Tarp"
+ITEM.desc = "A sheet of military-grade textiles that can be used in the field to repair clothing and repair armor. Valued for its relatively low cost and greater versatility.\n\nATTRIBUTES: \n-Military grade" --Его описание
 ITEM.price = 410
 ITEM.exRender = false
 ITEM.weight = 0.08
