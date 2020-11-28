@@ -1,5 +1,5 @@
-﻿ITEM.name = "Чистящий комплект ValuPro III для винтовок"
-ITEM.desc = "Комплект специальных щеток для чистки ствола и других частей огнестрельного оружия от грящи, песка, влагиостатков смазки и других инородных материалов, которые накапливаются во время использования. \n\nХАРАКТЕРИСТИКИ: \n-технологическое приспособление \n=высококачественное изделие"
+﻿ITEM.name = "ValuPro III rifle cleaning kit"
+ITEM.desc = "A set of special brushes for cleaning the barrel and other parts of firearms from the grouse, sand, moisture residues of lubricant and other foreign materials that accumulate during use. \n\nATTRIBUTES: \n-Technological device \n-High quality"
 ITEM.price = 1857
 ITEM.exRender = false
 ITEM.weight = 0.37
