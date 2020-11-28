@@ -1,5 +1,5 @@
-﻿ITEM.name = "Контейнер с медикаментами"
-ITEM.desc = ""
+﻿ITEM.name = "Medical container"
+ITEM.desc = "A container containing medical supplies. /nATTRIBUTES: /n-Quest item"
 ITEM.price = 5160
 ITEM.weight = 0.01
 
