@@ -1,5 +1,5 @@
 ﻿ITEM.name = "Artefact Case (Moonlight)"
-ITEM.desc = "A unique artifact of electrostatic nature. Demonstrates the ability to resonance under the influence of psi waves. Over time, stalkers learned to adjust the artifact in such a way that it resonated in the opposite phase, thereby completely or to a large extent neutralizing psi radiation. Radioactive. \n\nХАРАКТЕРИСТИКИ: \n-технологическое приспособление \n-высокая ценность \n-не требует подзарядки \n-максимальная вместимость - 1 \n-состояние: заполнен (содержит артефакт «Лунный свет»)"
+ITEM.desc = "A unique artifact of electrostatic nature. Demonstrates the ability to resonance under the influence of psi waves. Over time, stalkers learned to adjust the artifact in such a way that it resonated in the opposite phase, thereby completely or to a large extent neutralizing psi radiation. Radioactive. \n\nATTRIBUTES: \n-Technological device \n-High value \n-Doesn't require recharging \n-Maximum capacity - 1 \n-Status: Full (Contains Artefact 'Moonlight')"
 ITEM.category = "SIMK"
 ITEM.price = 16536
 ITEM.exRender = false
