@@ -1,5 +1,5 @@
-ITEM.name = "Плеер"
-ITEM.desc = "Особый сталкерский плеер, с поддержкой пользовательской музыки, предназначен специально для Зоны. Работает на встроенной частице артефакта «Батарейка». Широкой популярности у сталкеров не приобрёл, но когда нет гитары, сойдёт и он.  \n\nХАРАКТЕРИСТИКИ: \n-повсеместное применение \n-используется для: прослушивания музыки \n-используется как: инструмент для разборки (многоразовый) \n-не требует подзарядки"
+ITEM.name = "Player"
+ITEM.desc = "A special stalker player, with the support of custom music, is designed specifically for the zone. Works on the built-in particle of the Battery artifact. He didn't gain widespread popularity with stalkers, but when there is no guitar, it becomes useful.  \n\nATTRIBUTES: \n-Widespread use \n-Usages: listening to music \n-Disassembling tool \n-Doesn't require recharging"
 ITEM.price = 3271
 ITEM.exRender = false
 ITEM.weight = 0.10
