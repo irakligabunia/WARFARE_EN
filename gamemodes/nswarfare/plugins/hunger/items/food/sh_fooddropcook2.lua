@@ -1,5 +1,5 @@
-ITEM.name = "Стейк из кабана (произведено в Зоне)"
-ITEM.desc = "Небольшая часть стейка, приготовленная на гриле и обильно приправленная солью и перцем. Наиболее популярное блюдо среди сталкеров. Завернута в пергаментную бумагу. \n\nХАРАКТЕРИСТИКИ: \n-вредная пища \n-радиационное облучение: 19 \n\nНасыщенеие 55 ккал экв"
+ITEM.name = "Boar steak (Zone product)"
+ITEM.desc = "A small portion of the steak, cooked on the grill and richly seasoned with salt and pepper. The most popular dish among stalkers. Wrapped in parchment paper. \n\nATTRIBUTES: \n-Unhealthy \n-Radiation exposure: 19 mSv\n\nSaturation 55 Kcal"
 ITEM.price = 1227
 ITEM.exRender = false
 ITEM.hunger = 55
@@ -32,5 +32,5 @@ ITEM.functions.use = {
 	onCanRun = function(item)
 		return (!item.empty)
 	end,
-	name = "употребить"
+	name = "use"
 }
