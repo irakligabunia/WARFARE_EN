@@ -1,5 +1,5 @@
-ITEM.name = "Мясо тушкана"
-ITEM.desc = "Небольшой кусочек мяса с тела мутировавшего грызуна. Дешевая и часто встречаемая пища, которая как поговаривают сталкера, укрепляет сердечную мышццу будучи приготовленной на огне. Может заинтересовать ученых. \n\nВНИМАНИЕ: \n\nСталкерам рекомендуется воздержаться от употребления такого рода мяса. \n\nХАРАКТЕРИСТИКИ: \n-мясо мутанта «низкого происхождения» \n-возможно приготовить \n-ядовитая пища \n-радиационное облучение: +17 м3в \n\nНасыщенеие 14 ккал экв."
+ITEM.name = "Tushanko meat"
+ITEM.desc = "A small piece of meat from the body of a mutated rodent. Cheap and often met food, which, per stalkers saying, can strengthen your heart muscles if cooked. Maybe scientists are interested. \n\nWARNING: \n\nStalkers are advised to refrain from eating this kind of meat. \n\nATTRIBUTES: \n-Cookable \n-Poisonous \n-Radiation exposure: +17 mSv \n\nSaturation 14 Kcal"
 ITEM.price = 69
 ITEM.exRender = false
 ITEM.weight = 0.1
@@ -31,5 +31,5 @@ ITEM.functions.use = {
 	onCanRun = function(item)
 		return (!item.empty)
 	end,
-	name = "употребить"
+	name = "use"
 }
