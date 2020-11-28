@@ -1,5 +1,5 @@
-﻿ITEM.name = "Бартыханчик (Мертв)"
-ITEM.desc = "Пиздец я долбаеб, нахуй я ему шею сверунл? Ладно, скажу, что он уже была мертва. \n\nХАРАКТЕРИСТИКИ: \n-квестовый предмет"
+﻿ITEM.name = "Scavanger (Dead)"
+ITEM.desc = "A faggot and a retard. Why did I break his neck? Okay, I'll tell you him he was already dead. \n\nATTRIBUTES: \n-Quest item"
 ITEM.price = 310
 ITEM.exRender = false
 ITEM.weight = 0.12
