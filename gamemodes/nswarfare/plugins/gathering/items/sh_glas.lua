@@ -1,5 +1,5 @@
-﻿ITEM.name = "«Глаз»"
-ITEM.desc = "«Глаз» — название своё получил из-за внешнего сходства с органом зрения. Не так часто появляется, поэтому торговцы платят за него неплохие деньги. Сталкерами ценится за поверье, будто он приносит удачу. Ускоряет метаболизм организма, вследствие чего раны заживают быстрее. Образуется в аномалии типа «жарка» и в архианомалии «Симбионт». \n\nХАРАКТЕРИСТИКИ: \n-артефакт \n\nРадиация +3 / сек"
+﻿ITEM.name = "Eye"
+ITEM.desc = "'Eye' - got it's name because of the visual similarity with the organ of vision. Not so often appears, so traders pay for it good money. Stalkers are valued for believing that he brings good luck. Accelerates the metabolism of the body, so the wounds heal faster. It is formed in the anomalies of the type of 'Heat' and in the arch-emianomaly 'Symbiont'. \n\nATTRIBUTES: \n-Artefact \n\nRadiation +3 / sec"
 ITEM.model = "models/kek1ch/eye.mdl"
 ITEM.price = 17235
 ITEM.isAnomaly = true
@@ -15,12 +15,12 @@ ITEM.iconCam = {
 }
 
 ITEM.functions.Use = {
-	name = "положить в СИМК",
+	name = "put in artefact case",
 	onRun = function(item)
 		local client = item.player
 		if (IsValid(client) && client:Alive()) then
 			if not client:getChar():getInv():hasItem("simkemp") then
-				client:notify("Вам нужны СИМК (пустой).")
+				client:notify("You need an empty artefact case.")
 				return false
 			end
 			
