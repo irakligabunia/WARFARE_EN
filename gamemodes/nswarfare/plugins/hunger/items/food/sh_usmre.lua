@@ -1,5 +1,5 @@
-﻿ITEM.name = "Американский MRE"
-ITEM.desc = "Сухой паек, готовый к употреблению является автономным, индивидуальным рационом питания вооруженных сил Соединенных Штатов в полевых условиях, при проведении боевых операций или при других сложных условиях, когда нет поблизости источников нормальной пищи. \n\nХАРАКТЕРИСТИКИ: \n-военный \n-высококачественное изделие \n-здоровое питание \n\nНасыщение 100 \nЖажда 100" --Его описание
+﻿ITEM.name = "American MRE"
+ITEM.desc = "Dry rations ready for use is an individual diet of the United States military in the field, in combat operations or in other difficult conditions where there are no sources of normal food nearby. \n\nATTRIBUTES: \n-Combat ration \n-High quality \n-Healthy \n-Saturation 100 \n-Thrist -100" --Его описание
 ITEM.price = 6435
 ITEM.hunger = 100
 ITEM.quantity = 3
@@ -18,7 +18,7 @@ ITEM.iconCam = {
 }
 
 ITEM.functions.use = {
-	name = "употребить",
+	name = "use",
 	icon = "icon16/cup.png",
 	onRun = function(item)
 		local client = item.player
