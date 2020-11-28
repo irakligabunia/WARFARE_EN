@@ -13,22 +13,18 @@ ITEM.iconCam = {
 }
 
 local relations_allies_f = {}
-relations_allies_f["Одиночки"] = {allies = {"Одиночки", "Долг", "Свобода", "Чистое Небо", "Ученые", "Торговцы", "Миротворцы", "Последний День", "Стервятники"}}
-relations_allies_f["Бандиты"] = {allies = {"Бандиты", "Свобода", "Наемники"}}
-relations_allies_f["Долг"] = {allies = {"Долг", "Одиночки", "Ученые", "Военные", "Чистое Небо", "Торговцы", "Миротворцы", "Стервятники"}}
-relations_allies_f["Свобода"] = {allies = {"Свобода", "Одиночки", "Ученые", "Бандиты", "Наемники", "Торговцы", "Чистое Небо", "Стервятники"}}
-relations_allies_f["Монолит"] = {allies = {"Монолит", "Зомбированные"}}
-relations_allies_f["Зомбированные"] = {allies = {"Монолит", "Зомбированные"}}
-relations_allies_f["Ренегаты"] = {allies = {"Ренегаты"}}
-relations_allies_f["Военные"] = {allies = {"Ученые", "Военные", "Долг", "Миротворцы"}}
-relations_allies_f["Наемники"] = {allies = {"Наемники", "Свобода", "Бандиты"}}
-relations_allies_f["Грех"] = {allies = {"Грех", "Послединй День", "Стервятники"}}
-relations_allies_f["Ученые"] = {allies = {"Ученые", "Военные", "Одиночки", "Долг", "Миротворцы", "Последний День", "Чистое Небо", "Стервятники"}}
-relations_allies_f["Миротворцы"] = {allies = {"Миротворцы", "Ученые", "Военные", "Одиночки", "Долг", "Ученые", "Чистое Небо", "Торговцы", "Стервятники"}}
-relations_allies_f["Последний День"] = {allies = {"Последний День", "Ученые", "Свобода", "Наемники", "Одиночки", "Грех", "Стервятники"}}
-relations_allies_f["Чистое Небо"] = {allies = {"Чистое Небо", "Одиночки", "Долг", "Свобода", "Торговцы", "Миротворцы", "Ученые", "Стервятники"}}
-relations_allies_f["Торговцы"] = {allies = {"Торговцы", "Одиночки", "Долг", "Свобода", "Миротворцы", "Чистое Небо", "Ученые", "Стервятники"}}
-relations_allies_f["Стервятники"] = {allies = {"Стервятники", "Торговцы", "Одиночки", "Долг", "Свобода", "Миротворцы", "Чистое Небо", "Грех", "Ученые", "Последний День"}}
+relations_allies_f["Loners"] = {allies = {"Loners", "Duty", "Freedom", "Clear Sky", "Ecologists", "Traders"}}
+relations_allies_f["Bandits"] = {allies = {"Bandits", "Freedom", "Mercenaries"}}
+relations_allies_f["Duty"] = {allies = {"Duty", "Freedom", "Ecologists", "Military", "Clear Sky", "Traders"}}
+relations_allies_f["Freedom"] = {allies = {"Freedom", "Loners", "Ecologists", "Bandits", "Mercenaries", "Traders", "Clear Sky"}}
+relations_allies_f["Monolith"] = {allies = {"Monolith", "Zombified"}}
+relations_allies_f["Zombified"] = {allies = {"Monolith", "Zombified"}}
+relations_allies_f["Military"] = {allies = {"Ecologists", "Military", "Duty"}}
+relations_allies_f["Mercenaries"] = {allies = {"Mercenaries", "Freedom", "Bandits"}}
+relations_allies_f["Ecologists"] = {allies = {"Ecologists", "Military", "Loners", "Duty", "Clear Sky"}}
+relations_allies_f["Clear Sky"] = {allies = {"Clear Sky", "Loners", "Duty", "Freedom", "Traders","Ecologists"}}
+relations_allies_f["Traders"] = {allies = {"Traders", "Loners", "Duty", "Freedom", "Clear Sky", "Ecologists"}}
+relations_allies_f["Администратор"] = {allies = {"Администратор"}}
 
 --[[ITEM.functions.Use = {
 	onRun = function(item)
