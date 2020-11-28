@@ -1,5 +1,5 @@
-ITEM.name = "Мясо кровососа"
-ITEM.desc = "Мясо кровососа весьма вязкое и тягучее, поэтому непригодно для еды. Хотя кровососы и являются смертельными чудовищами, цена на их мясо не особо высока из-за ограниченного применения. \n\nВНИМАНИЕ: \n\nСталкерам рекомендуется воздержаться от употребления такого рода мяса. \n\nХАРАКТЕРИСТИКИ: \n-мясо мутанта «высокого происхождения» \n-возможно приготовить \n-ядовитая пища \n-радиационное облучение: +31 м3в \n\nНасыщенеие 41"
+ITEM.name = "Bloodsucker meat"
+ITEM.desc = "Bloodsucker meat is very viscous and tough, so it is unsuitable for food. Although bloodsuckers are deadly monsters, the price of their meat is not particularly high due to limited use. \n\nWARNING: \n\nСталкерам рекомендуется воздержаться от употребления такого рода мяса. \n\nATTRIBUTES: \n-Rare \n-Cookable \n-Poisonous \n-Radiation exposure +31 mSv \n\nSaturation 41"
 ITEM.price = 542
 ITEM.exRender = false
 ITEM.weight = 0.42
@@ -32,5 +32,5 @@ ITEM.functions.use = {
 		return (!item.empty)
 	end,
 	icon = "icon16/cup.png",
-	name = "употребить"
+	name = "use"
 }
