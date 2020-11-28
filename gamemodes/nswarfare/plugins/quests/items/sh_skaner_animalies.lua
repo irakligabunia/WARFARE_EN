@@ -1,5 +1,5 @@
-﻿ITEM.name = "Сканер аномальной активности"
-ITEM.desc = ""
+﻿ITEM.name = "Anomalous activity scanner"
+ITEM.desc = "A prototype anomaly scanner that measures the enviroment for any anomalous activity."
 ITEM.price = 0
 ITEM.weight = 0.01
 
@@ -13,7 +13,7 @@ ITEM.iconCam = {
 }
 
 ITEM.functions.use = { 
-	name = "использовать",
+	name = "use",
 	tip = "useTip",
 	icon = "icon16/drive.png",
 	onRun = function(item)
@@ -24,7 +24,7 @@ ITEM.functions.use = {
 		data.filter = ply
 		local trace = util.TraceLine(data)
 
-		if (ply:getChar():getData("quest_boroda_scaner") == ply:GetQuest( "quest_boroda_scaner" )) then ply:notify("Квест уже выполнен.") return false end
+		if (ply:getChar():getData("quest_boroda_scaner") == ply:GetQuest( "quest_boroda_scaner" )) then ply:notify("The quest has already been completed.") return false end
 
 		if ply:HasQuest( "quest_boroda_scaner" ) then
 			for k, v in pairs(ents.FindInSphere( ply:GetPos(), 300 )) do
@@ -45,7 +45,7 @@ ITEM.functions.use = {
 				end
 			end
 		else
-			ply:notify("Предмет можно установить только при наличии квеста.")
+			ply:notify("The item can only be installed if you have the quest activated.")
 		end
 		return false
 	end,
