@@ -2,7 +2,7 @@
 --Russian translation by Shadow Nova (http://steamcommunity.com/profiles/76561197989134302)
 --Edited/fixed by Schwarz Kruppzo (http://steamcommunity.com/id/schwarzkruppzo)
 --Edited and added new by Neon (http://steamcommunity.com/id/ru_neon)
-NAME = "English"
+NAME = "Русский"
 
 LANGUAGE = {
 	Knife = "Tourist knife",
