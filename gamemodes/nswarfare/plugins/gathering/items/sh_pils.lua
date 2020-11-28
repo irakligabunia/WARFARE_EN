@@ -1,5 +1,5 @@
-﻿ITEM.name = "Чистящий набор «Прогресс»"
-ITEM.desc = "Комплект специальных щеток для чистки ствола и других частей огнестрельного оружия от грязи, песка, остатков и других инородных материалов, которые накапливаются во время использования. Используются повсеместно в Зоне для поддержания оружия в хорошем состоянии. \n\nХАРАКТЕРИСТИКИ: \n-технологическое приспособление \n-высококачественное изделие"
+﻿ITEM.name = "'Progress' cleansing kit"
+ITEM.desc = "A set of special brushes for cleaning the barrel and other parts of firearms from dirt, sand, residues and other foreign materials that accumulate during use. Used everywhere in the zone to keep the weapons in good condition. \n\nATTRIBUTES: \n-Technological device \n-High quality"
 ITEM.price = 1218
 ITEM.model = "models/kek1ch/cleaning_kit_p.mdl"
 ITEM.exRender = false
