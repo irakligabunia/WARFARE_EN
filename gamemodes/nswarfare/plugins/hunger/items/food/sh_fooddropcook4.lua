@@ -1,5 +1,5 @@
-ITEM.name = "Мясо тушкана (произведено в Зоне)"
-ITEM.desc = "Два маленьких зажаренных тушкана, приготовленные на гриле, приправленные солью и перцем Чили. Очень дешевая горячая и практичная пища, которая готовится в Зоне. Завернуто в толстую коричневую бумагу, чтобы жир не стекал. \n\nХАРАКТЕРИСТИКИ: \n-вредная пища \n-радиационное облучение: 6 \n\nНасыщенеие 18"
+ITEM.name = "Tushanko meat (Zone product)"
+ITEM.desc = "Two small roasted tushankos, grilled, seasoned with salt and chilli. Very cheap and practical food that is cooked in the zone. Wrapped in thick brown paper so that the fat does not drain. \n\nATTRIBUTES: \n-Unhealthy \n-Radiation exposure: 6 mSv \n-Saturation 18 Kcal"
 ITEM.price = 1014
 ITEM.exRender = false
 ITEM.weight = 0.1
@@ -31,5 +31,5 @@ ITEM.functions.use = {
 	onCanRun = function(item)
 		return (!item.empty)
 	end,
-	name = "употребить"
+	name = "use"
 }
