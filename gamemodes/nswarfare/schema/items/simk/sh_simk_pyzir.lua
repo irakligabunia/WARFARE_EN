@@ -1,5 +1,5 @@
 ﻿ITEM.name = "Artefact Case (Bubble)"
-ITEM.desc = "The artifact is a few hollow formations of organic nature connected to each other. It secretes a gaseous substance capable of neutralizing chemical or toxic particles in the human body. Due to its high efficiency, it is in great demand, but also has numerous negative properties. \n\nХАРАКТЕРИСТИКИ: \n-технологическое приспособление \n-высокая ценность \n-не требует подзарядки \n-максимальная вместимость - 1 \n-состояние: заполнен (содержит артефакт «Пузырь»)"
+ITEM.desc = "The artifact is a few hollow formations of organic nature connected to each other. It secretes a gaseous substance capable of neutralizing chemical or toxic particles in the human body. Due to its high efficiency, it is in great demand, but also has numerous negative properties. \n\nATTRIBUTES: \n-Technological device \n-High value \n-Doesn't require recharging \n-Maximum capacity - 1 \n-Status: Full (Contains Artefact 'Bubble')"
 ITEM.category = "SIMK"
 ITEM.price = 26752
 ITEM.exRender = false
