@@ -1,5 +1,5 @@
-﻿ITEM.name = "Рем. комплект для винтовок малого калибра"
-ITEM.desc = "Данный комплект содержит масла, растворители, основное оборудование для чистки и специальные инструменты, используемые для обслуживания различных оружейных механизмов. \n\nХАРАКТЕРИСТИКИ: \n-технологическое приспособление \n-высокая ценность \n-используется при создании пистолетов-пулеметов"
+﻿ITEM.name = "Small arms repair kit"
+ITEM.desc = "This kit contains oils, solvents, basic cleaning equipment and special tools used to service various weapons mechanisms. \n\nATTRIBUTES: \n-Technological device \n-High value \n-Used in the creation of submachine guns"
 ITEM.price = 7144
 ITEM.exRender = false
 ITEM.weight = 2.37
