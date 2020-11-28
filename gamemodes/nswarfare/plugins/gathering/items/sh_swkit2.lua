@@ -1,6 +1,6 @@
-﻿ITEM.name = "Продвинутый швейный набор"
-ITEM.desc = "Тяжелый продвинутый швейный набор военного класса предназначен для работы с трещинами в защитных пластинахсовременных бронежилетов. Он содержит большое количество металлических нитей, позволяющих сшить воедино буквально разорванную на части одежду. \n\nХАРАКТЕРИСТИКИ: \n-технологическое приспособление \n-высококачественное изделие \n-высокая ценность"
-ITEM.category = "Мусор" 
+﻿ITEM.name = "Advanced sewing kit"
+ITEM.desc = "The heavy advanced military-grade sewing kit is designed to work with cracks in the protective plates of modern body armor. It contains a large number of metal threads, allowing you to sew together literally torn into pieces clothes. \n\nATTRIBUTES: \n-Technological devices \n-High quality \n-High value"
+ITEM.category = "Misc" 
 ITEM.price = 9880
 ITEM.exRender = false
 ITEM.weight = 0.39
