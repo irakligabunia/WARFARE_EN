@@ -1,5 +1,5 @@
-﻿ITEM.name = "«Огненый шар»"
-ITEM.desc = "«Огненный шар» — часто использующийся сталкерами артефакт из-за его способности поддерживать приемлемую температуру в радиусе пяти метров. Однако у торговцев спросом похвастаться не может. Он образуется в высокотемпературных средах, но каким образом — никто ещё не выяснил. Образуется в аномалиях типа Жарка. \n\nХАРАКТЕРИСТИКИ: \n-артефакт \n\nРадиация +3 / сек"
+﻿ITEM.name = "Fireball"
+ITEM.desc = "'Fireball' is an artefact often used by stalkers because of its ability to maintain an acceptable temperature within a five-metre radius. However, traders can not boast of demand. It is formed in high-temperature environments, but how - no one has yet found out. It is formed in anomalies such as Heat. \n\nATTRIBUTES: \n-Artefact \n\nRadiation +3 / sec"
 ITEM.price = 14900
 ITEM.isAnomaly = true
 ITEM.weight = 0.82
@@ -15,12 +15,12 @@ ITEM.iconCam = {
 
 
 ITEM.functions.Use = {
-	name = "положить в СИМК",
+	name = "put in case",
 	onRun = function(item)
 		local client = item.player
 		if (IsValid(item.player) && client:Alive()) then
 			if not client:getChar():getInv():hasItem("simkemp") then
-				client:notify("Вам нужны СИМК (пустой).")
+				client:notify("You need an empty artefact case.")
 				return false
 			end
 			
