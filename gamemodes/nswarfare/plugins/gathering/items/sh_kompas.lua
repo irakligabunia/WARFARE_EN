@@ -1,5 +1,5 @@
-﻿ITEM.name = "«Компас»"
-ITEM.desc = "Редкий артефакт - последний раз его находили много месяцев назад. Обладает способностью показывать разрывы в аномальных полях. \n\nХАРАКТЕРИСТИКИ: \n-артефакт \n-телепортирует на базу"
+﻿ITEM.name = "Compass"
+ITEM.desc = "A rare artifact - the last time it was found was many months ago. It has the ability to show gaps in anomalous fields. \n\nATTRIBUTES: \n-Artefact \n-Teleports to the base"
 ITEM.price = 37218
 ITEM.isAnomaly = true
 ITEM.weight = 1.14
