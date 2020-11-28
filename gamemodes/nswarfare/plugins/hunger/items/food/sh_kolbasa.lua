@@ -1,6 +1,6 @@
-﻿ITEM.name = "Копченая колбаса (привозная)"
-ITEM.desc = "Колбаса, изготовленная из говядины и свинины. Закопченная и упакованная в вакумную упаковку, они может храниться в течении длительного времени. Данная палка колбасы импортирована из России. Такие обычно пользуются спросом среди русской мафии за свой исключительный аромат и вкус. \n\nХАРАКТЕРИСТИКИ: \n-пища \n-здоровое питание \n\nНасыщение 50" --Его описание
-ITEM.category = "Еда" 
+﻿ITEM.name = "Smoked sausage (imported)"
+ITEM.desc = "Sausage made from beef and pork. Sooty and packed in vacum packaging, they can be stored for a long time. This sausage stick is imported from Russia. Such are usually in demand among the Russian mafia for their exceptional aroma and taste. \n\nATTRIBUTES: \n-Food \n-Healthy \n-Satuartion 50 Kcal" --Его описание
+ITEM.category = "Food" 
 ITEM.price = 1971 
 ITEM.hunger = 50
 ITEM.thirst = 0
@@ -32,5 +32,5 @@ ITEM.functions.use = {
 	onCanRun = function(item)
 		return (!item.empty)
 	end,
-	name = "употребить"
+	name = "use"
 }
