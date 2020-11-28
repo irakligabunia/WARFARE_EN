@@ -11,12 +11,12 @@ nut.command.add("setpoint", {
 	onRun = function(client, arguments)
 		if arguments[1] == "first" then
 			PLUGIN.areaTable.FirstPoint = client:GetPos()
-			client:PrintMessage(HUD_PRINTTALK, "Первая точка - ("..string.format("%s", PLUGIN.areaTable.FirstPoint)..")")
+			client:PrintMessage(HUD_PRINTTALK, "First point - ("..string.format("%s", PLUGIN.areaTable.FirstPoint)..")")
 		elseif arguments[1] == "second" then
 			PLUGIN.areaTable.SecondPoint = client:GetPos()
-			client:PrintMessage(HUD_PRINTTALK, "Вторая точка - ("..string.format("%s", PLUGIN.areaTable.SecondPoint)..")")
+			client:PrintMessage(HUD_PRINTTALK, "Second point - ("..string.format("%s", PLUGIN.areaTable.SecondPoint)..")")
 		else
-			client:PrintMessage(HUD_PRINTTALK, "Вы должны указать первую и вторую точку. «/setpoint first» и «/setpoint second»")
+			client:PrintMessage(HUD_PRINTTALK, "You have to specify the first and second point. «/setpoint first» & «/setpoint second»")
 		end
 	end
 })
@@ -25,11 +25,11 @@ nut.command.add("activatezone", {
 	superAdminOnly = true,
 	onRun = function(client, arguments)
 		PLUGIN.areaTable.NameZone = arguments[1]
-		if not PLUGIN.areaTable.FirstPoint then client:PrintMessage(HUD_PRINTTALK, "Вы должны указать первую точку.") return false end
-		if not PLUGIN.areaTable.SecondPoint then client:PrintMessage(HUD_PRINTTALK, "Вы должны указать вторую точку.") return false end
-		if not PLUGIN.areaTable.NameZone then client:PrintMessage(HUD_PRINTTALK, "Вы должны ввести название территории.") return false end
+		if not PLUGIN.areaTable.FirstPoint then client:PrintMessage(HUD_PRINTTALK, "You have to specify the first point.") return false end
+		if not PLUGIN.areaTable.SecondPoint then client:PrintMessage(HUD_PRINTTALK, "You have to specify the second point.") return false end
+		if not PLUGIN.areaTable.NameZone then client:PrintMessage(HUD_PRINTTALK, "You have to enter the name of the territory.") return false end
 		AreaAdd(PLUGIN.areaTable.NameZone, PLUGIN.areaTable.FirstPoint, PLUGIN.areaTable.SecondPoint)
-		client:PrintMessage(HUD_PRINTTALK, "Вы создали территорию с названием База "..PLUGIN.areaTable.NameZone..". Первая точка - ("..string.format("%s", PLUGIN.areaTable.FirstPoint).."), вторая точка - ("..string.format("%s", PLUGIN.areaTable.SecondPoint).."). Удачи, username!")
+		client:PrintMessage(HUD_PRINTTALK, "You created a territory called Base "..PLUGIN.areaTable.NameZone..". first point - ("..string.format("%s", PLUGIN.areaTable.FirstPoint).."), second point - ("..string.format("%s", PLUGIN.areaTable.SecondPoint).."). Good luck, username!")
 		PLUGIN.areaTable.NameZone, PLUGIN.areaTable.FirstPoint, PLUGIN.areaTable.SecondPoint = nil
 		collectgarbage()
 	end
@@ -40,7 +40,7 @@ function GetAllArea()
 end
 
 local SaveZonesTable = { --Список сейф зон
-	"Одиночек",
+	"Loner",
 }
 
 if (CLIENT) then
@@ -88,7 +88,7 @@ function PLUGIN:PostDrawHUD()
 		local clientPos = LocalPlayer():GetPos() + LocalPlayer():OBBCenter()
 		if (clientPos:WithinAABox(areaData.MinVector, areaData.MaxVector)) then
 			if table.HasValue(SaveZonesTable, areaData.NameZone) then
-				draw.DrawText("Безопасная зона", "Roh_Low", ScrW() * 0.46, ScrH() * 0.185, Color(255, 255, 255), TEXT_ALIGN_LEFT)
+				draw.DrawText("Safezone", "Roh_Low", ScrW() * 0.46, ScrH() * 0.185, Color(255, 255, 255), TEXT_ALIGN_LEFT)
 			end
 
 			if (!IsValid(ZoneInfoPanel)) then
@@ -102,7 +102,7 @@ function PLUGIN:PostDrawHUD()
 					surface.DrawRect( 0, 0, w, h )
 					surface.DrawOutlinedRect(0, 0, w, h)
 
-					draw.DrawText("База\n"..areaData.NameZone, "Roh_Low", ScrW() * 0.025, ScrH() * 0.001, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT)
+					draw.DrawText("Base\n"..areaData.NameZone, "Roh_Low", ScrW() * 0.025, ScrH() * 0.001, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT)
 
 					surface.SetDrawColor(Color(255, 255, 255, 255))
 					surface.SetMaterial(Material(PaintsAreas[areaData.NameZone]))
