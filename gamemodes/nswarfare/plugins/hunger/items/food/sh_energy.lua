@@ -1,6 +1,6 @@
-﻿ITEM.name = "Очищенная вода (произведено в Зоне, 1 литр)" --Название предмета
-ITEM.desc = "Военные фляжки предназначены для питья воды небольшими глотками. Произведена и очищена медиками и учеными. \n\nХАРАКТЕРИСТИКИ: \n-напиток \n-здоровое питание \n\nРадиация -12 \nЖажда 70" --Его описание
-ITEM.category = "Еда"
+﻿ITEM.name = "Clean water (Zone product, 1 liter)" --Название предмета
+ITEM.desc = "Military flasks are designed to drink water in small sips. Produced and cleaned by medics and scientists. \n\nATTRIBUTES: \n-Beverage \n-Healthy \n\nRadiation -12 \nThirst -70" --Его описание
+ITEM.category = "Food"
 ITEM.price = 987
 ITEM.hunger = 0
 ITEM.thirst = 10
@@ -19,7 +19,7 @@ ITEM.iconCam = {
 }
 
 ITEM.functions.use = {
-	name = "употребить",
+	name = "use",
 	icon = "icon16/cup.png",
 	onRun = function(item)
 		local client = item.player
