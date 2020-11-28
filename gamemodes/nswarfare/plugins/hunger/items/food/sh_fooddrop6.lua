@@ -1,5 +1,5 @@
-ITEM.name = "Мясо плоти"
-ITEM.desc = "Довольно популярный продукт в Зоне, мясо плоти имеет хороший вкус и большую пищевую ценнность. Ученые уже достаточно много провели исслоедований над принесенными сталкерами образцами, поэтому спрос как таковой на такие куски мяса упал. \n\nВНИМАНИЕ:\n\nСталкерам рекомендуется воздержаться от употребления такого рода мяса. \n\nХАРАКТЕРИСТИКИ: \n-мясо мутанта низкого"
+ITEM.name = "Flesh meat"
+ITEM.desc = "A fairly popular product in the area, flesh meat has good taste and great food value. Scientists have already spent quite a lot of depletions over the samples brought by stalkers, so the demand for such pieces of meat fell. \n\nWARNING:\n\nStalkers are advised to refrain from eating this kind of meat of animals and mutants in the zone in raw form, as it is probably infected with trichinellosis or brucellosis. \n\nATTRIBUTETES: \n-Cookable \n-Poisonous \n-Radiation expsoure 17 mSv\n\nSaturation 17 Kcal"
 ITEM.price = 319
 ITEM.exRender = false
 ITEM.weight = 0.41
@@ -31,5 +31,5 @@ ITEM.functions.use = {
 	onCanRun = function(item)
 		return (!item.empty)
 	end,
-	name = "употребить"
+	name = "use"
 }
