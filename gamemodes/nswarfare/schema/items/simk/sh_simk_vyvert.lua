@@ -1,5 +1,5 @@
 ﻿ITEM.name = "Artefact Case (Invert)"
-ITEM.desc = "Artifact of bizarre shape, which occurs in places of increased gravitational activity. It is a kind of sponge that absorbs radioactive elements. Equally successfully protects its carrier from the effects of both injected radiation and already exposed radioactive particles. \n\nХАРАКТЕРИСТИКИ: \n-технологическое приспособление \n-высокая ценность \n-не требует подзарядки \n-максимальная вместимость - 1 \n-состояние: заполнен (содержит артефакт «Выверт»)"
+ITEM.desc = "Artifact of bizarre shape, which occurs in places of increased gravitational activity. It is a kind of sponge that absorbs radioactive elements. Equally successfully protects its carrier from the effects of both injected radiation and already exposed radioactive particles. \n\nATTRIBUTES: \n-Technological device \n-High value \n-Doesn't require recharging \n-Maximum capacity - 1 \n-Status: Full (Contains Artefact 'Invert')"
 ITEM.category = "SIMK"
 ITEM.price = 36800
 ITEM.exRender = false
