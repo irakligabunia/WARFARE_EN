@@ -1,5 +1,5 @@
 ﻿ITEM.name = "Artefact Case (Eye)"
-ITEM.desc = " 'Eye' - got it's because of the visual similarity with the eye organ. Not so often appears, so traders pay good money for it. Stalkers are valued for believing that it brings good luck. Accelerates the metabolism of the body, so the wounds heal faster. It is formed in the anomalies of the type of 'Heat' and in the arch-emianomaly 'Symbiont'.  \n\nХАРАКТЕРИСТИКИ: \n-технологическое приспособление \n-высокая ценность \n-не требует подзарядки \n-максимальная вместимость - 1 \n-состояние: заполнен (содержит артефакт «Глаз»)"
+ITEM.desc = " 'Eye' - got it's because of the visual similarity with the eye organ. Not so often appears, so traders pay good money for it. Stalkers are valued for believing that it brings good luck. Accelerates the metabolism of the body, so the wounds heal faster. It is formed in the anomalies of the type of 'Heat' and in the arch-emianomaly 'Symbiont'.  \n\nATTRIBUTES: \n-Technological device \n-High value \n-Doesn't require recharging \n-Maximum capacity - 1 \n-Status: Full (Contains Artefact 'Eye')"
 ITEM.category = "SIMK"
 ITEM.price = 20235
 ITEM.exRender = false
