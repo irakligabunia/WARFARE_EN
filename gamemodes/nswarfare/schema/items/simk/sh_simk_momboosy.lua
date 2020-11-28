@@ -1,5 +1,5 @@
 ﻿ITEM.name = "Artefact Case (Mama's Beads)"
-ITEM.desc = " 'Mama's Beads' in a lead-isolated metal container. The artifact crystallizes in anomalous zones with high thermal activity. Actively absorbs excess heat, while remaining cool to the touch. Much of this artifact remains a complete mystery to scientists. However, it is precisely established that the radiation that occurs during the pulsation of thickening of 'Mother's beads' accelerates the flow of metabolic processes in the body. \n\nХАРАКТЕРИСТИКИ: \n-технологическое приспособление \n-высокая ценность \n-не требует подзарядки \n-максимальная вместимость - 1 \n-состояние: заполнен (содержит артефакт «Мамины бусы»)"
+ITEM.desc = " 'Mama's Beads' in a lead-isolated metal container. The artifact crystallizes in anomalous zones with high thermal activity. Actively absorbs excess heat, while remaining cool to the touch. Much of this artifact remains a complete mystery to scientists. However, it is precisely established that the radiation that occurs during the pulsation of thickening of 'Mother's beads' accelerates the flow of metabolic processes in the body. \n\nATTRIBUTES: \n-Technological device \n-High value \n-Doesn't require recharging \n-Maximum capacity - 1 \n-Status: Full (Contains Artefact 'Mama's Beads')"
 ITEM.category = "SIMK"
 ITEM.price = 36800
 ITEM.exRender = false
