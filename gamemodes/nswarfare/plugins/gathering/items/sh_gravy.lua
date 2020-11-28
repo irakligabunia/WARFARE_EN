@@ -1,5 +1,5 @@
 ﻿ITEM.name = "Gravi"
-ITEM.desc = "The artifact is formed with a long-term gravitational influence on metal-containing substances. It is able to maintain an antigravity field. Many stalkers use it in the same way as the 'Night Star' artifact - to significantly reduce the weight of the backpack. \n\nATTRIBUTES: \n-артефакт \n\nРадиация +3 / сек"
+ITEM.desc = "The artifact is formed with a long-term gravitational influence on metal-containing substances. It is able to maintain an antigravity field. Many stalkers use it in the same way as the 'Night Star' artifact - to significantly reduce the weight of the backpack. \n\nATTRIBUTES: \n-Artefact \n\nRadiation +3 / sec"
 ITEM.price = 40620
 ITEM.isAnomaly = true
 ITEM.weight = 0.82
