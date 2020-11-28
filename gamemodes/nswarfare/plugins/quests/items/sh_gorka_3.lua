@@ -1,5 +1,5 @@
-﻿ITEM.name = "Костюм Горка-3 (В чехле)"
-ITEM.desc = "Отличный костюм за свои деньги. Не пропускает влагу, очень прочный. Может, он даже переоценен, но всё равно пользуется большим спросом. \n\nХАРАКТЕРИСТИКИ: \n-квестовый предмет"
+﻿ITEM.name = "Costume Gorka-3 (Case)"
+ITEM.desc = "Great suit for your money. It's waterproof and very strong. It may even be overrated, but it's still in high demand. \n\nATTRIBUTES: \n-Quest item"
 ITEM.price = 3521
 ITEM.exRender = false
 ITEM.weight = 0.12
