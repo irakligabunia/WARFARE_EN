@@ -1,5 +1,5 @@
-﻿ITEM.name = "Пси-шлем"
-ITEM.desc = "Прототип, разработнный учеными для защиты от пси-излучения. Представляет из себя наушники с начинкой, продолжающиеся конструкцией из сетки, покрывающей голову. Размеры позволяют носить его под капюшоном, каской, шлемом и другой экипировкой. \n\nХАРАКТЕРИСТИКИ: \n-важный предмет \n-элемент экипировки \n-не выпадает \n-обеспечивает надежную защиту от источников пси-излучения"
+﻿ITEM.name = "Psi helmet"
+ITEM.desc = "A prototype developed by scientists to protect against psi radiation. It is headphones are filled with mesh, that continues to cover the entire head. Dimensions allow you to wear it under the hood, helmet, helmet and other equipment. \n\nATTRIBUTES: \n-Important item \n-Equipment \n-Povides reliable protection against psi-radiation sources"
 ITEM.price = 38900
 ITEM.exRender = false
 
