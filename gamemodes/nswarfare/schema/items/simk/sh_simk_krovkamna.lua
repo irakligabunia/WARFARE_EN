@@ -1,5 +1,5 @@
 ﻿ITEM.name = "Artefact Case (Stoneblood)"
-ITEM.desc = "It is a reddish formation from compressed polymerized residues of plants, soil and bones. It has the ability to partially neutralize harmful chemicals for humans.  \n\nХАРАКТЕРИСТИКИ: \n-технологическое приспособление \n-высокая ценность \n-не требует подзарядки \n-максимальная вместимость - 1 \n-состояние: заполнен (содержит артефакт «Кровь камня»)"
+ITEM.desc = "It is a reddish formation from compressed polymerized residues of plants, soil and bones. It has the ability to partially neutralize harmful chemicals for humans.  \n\nATTRIBUTES: \n-Technological device \n-High value \n-Doesn't require recharging \n-Maximum capacity - 1 \n-Status: Full (Contains Artefact 'Stoneblood')"
 ITEM.category = "SIMK"
 ITEM.price = 16992
 ITEM.exRender = false
