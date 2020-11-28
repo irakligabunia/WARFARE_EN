@@ -1,5 +1,5 @@
-﻿ITEM.name = "«Ночная звезда»"
-ITEM.desc = "Ночная звезда — артефакт, изредка образующийся в аномалии «Трамплин». Красивое образование с зеркальной поверхностью и цветными фосфоресцирующими вкраплениями. Ночью освещает зеленоватым светом всё вокруг себя в радиусе одного-двух метров, за что и получил у сталкеров такое название. Представляет собой спрессованные и причудливо изогнутые сильной гравитацией остатки растений, почвы и вообще всего, что попадает в непосредственную близость от аномалии. \n\nХАРАКТЕРИСТИКИ: \n-артефакт \n\nРадиация +2 / сек"
+﻿ITEM.name = "Nightstar"
+ITEM.desc = "A night star is an artefact that occasionally forms in the Trumplin anomaly. Beautiful formation with a mirrored surface and colored phosphorescizing inlays. At night, it illuminates everything around him in a radius of one or two meters, for which the stalkers got such a name. It is a compressed and bizarrely curved by strong gravity remains of plants, soil and in general everything that falls into the immediate proximity of the anomaly. \n\nATTRIBUTES: \n-Artefact \n\nRadiation +2 / sec"
 ITEM.price = 12356
 ITEM.isAnomaly = true
 ITEM.weight = 0.82
@@ -14,12 +14,12 @@ ITEM.iconCam = {
 }
 
 ITEM.functions.Use = {
-	name = "положить в СИМК",
+	name = "put in case",
 	onRun = function(item)
 		local client = item.player
 		if (IsValid(item.player) and item.player:Alive()) then
 			if not client:getChar():getInv():hasItem("simkemp") then
-				client:notify("Вам нужны СИМК (пустой).")
+				client:notify("You need an empty artefact case")
 				return false
 			end
 
