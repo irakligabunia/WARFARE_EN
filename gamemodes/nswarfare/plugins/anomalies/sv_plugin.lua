@@ -28,7 +28,7 @@ function SpawnArts()
 			for i = 1, 20 do
 				if (!table.HasValue(entities, "nut_item")) and (entities) then 
 					nut.item.spawn(table.Random(AnomalyAnomalies[anomaly:GetClass()]), anomaly:GetPos() + Vector(math.random(-200, 200), math.random(-200, 200), 200))
-					MsgC(Color(0, 255, 0), "Артефакты заспавнены.\n")
+					MsgC(Color(0, 255, 0), "Artifacts automatically spawned.\n")
 				end
 			end
 		end
