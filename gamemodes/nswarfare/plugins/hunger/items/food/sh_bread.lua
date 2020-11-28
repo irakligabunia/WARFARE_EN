@@ -1,6 +1,6 @@
-﻿ITEM.name = "Свежий хлеб (привозной)"
-ITEM.desc = "Свежий хлеб, испеченной женой Шустрого, которая живет за пределами Зоны Отчуждения. Это было первое дело Шустрого, до того как его бизнес расширился. В настоящее время он снабжает бармена этим хлебом, а не продает его сам, как было раньше. \n\nХАРАКТЕРИСТИКИ \n-пища \n-здоровое питание \n\nНасыщение 35"
-ITEM.category = "Еда"
+﻿ITEM.name = "Bread (imported)"
+ITEM.desc = "Fresh bread baked by Shustrgo's wife, who lives outside the Exclusion zone. It was Shustro's first deal before his business expanded. He is now supplying the bartender with this bread, not selling it himself, as it used to be. \n\nATTRIBUTES \n-Food \n-Healthy \n\nSaturation 35"
+ITEM.category = "Food"
 ITEM.price = 1146
 ITEM.hunger = 35
 ITEM.thirst = 0
@@ -32,6 +32,6 @@ ITEM.functions.use = {
 	onCanRun = function(item)
 		return (!item.empty)
 	end,
-	name = "употребить"
+	name = "use"
 }
 
