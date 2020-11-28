@@ -1,5 +1,5 @@
-﻿ITEM.name = "Простой швейный набор"
-ITEM.desc = "Простой комплект для шитья, состоящий из катушки и ниток, нескольких стальных иголок и одних простых порванные участки на снаряжении. \n\nХАРАКТЕРИСТИКИ: \n-технологическое приспособление"
+﻿ITEM.name = "Simple sewing kit"
+ITEM.desc = "A simple sewing kit consisting of coils and threads, several steel needles and one simple torn areas on the equipment. \n\nATTRIBUTES: \n-Technological device"
 ITEM.price = 3292
 ITEM.exRender = true
 ITEM.weight = 0.14
