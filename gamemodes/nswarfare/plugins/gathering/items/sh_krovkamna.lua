@@ -1,5 +1,5 @@
-﻿ITEM.name = "«Кровь камня»"
-ITEM.desc = "Представляет собой красноватое образование из спрессованных полимеризированных остатков растений, почвы и костей. Обладает способностью частично нейтрализовать вредные для человека химические вещества. \n\nХАРАКТЕРИСТИКИ: \n-артефакт \n\nРадиация +2 / сек"
+﻿ITEM.name = "Stoneblood"
+ITEM.desc = "It is a reddish formation from compressed polymerized residues of plants, soil and bones. It has the ability to partially neutralize harmful chemicals for humans. \n\nATTRIBUTES: \n-Artefact \n\nRadiation +2 / sec"
 ITEM.price = 13992
 ITEM.isAnomaly = true
 ITEM.weight = 0.71
@@ -14,12 +14,12 @@ ITEM.iconCam = {
 }
 
 ITEM.functions.Use = {
-	name = "положить в СИМК",
+	name = "put in case",
 	onRun = function(item)
 		local client = item.player
 		if (IsValid(client) and client:Alive()) then
 			if not client:getChar():getInv():hasItem("simkemp") then
-				client:notify("Вам нужны СИМК (пустой).")
+				client:notify("You need an empty artefact case.")
 				return false
 			end
 
