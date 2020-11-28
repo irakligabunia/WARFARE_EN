@@ -1,5 +1,5 @@
 ﻿ITEM.name = "Artefact (Crystal)"
-ITEM.desc = "It forms when a heavy metal gets into the 'Heat'.This artifact is wonderful for displaying radiation. Such an artifact is highly valued by stalkers, and there is little where it can be obtained. \n\nХАРАКТЕРИСТИКИ: \n-технологическое приспособление \n-высокая ценность \n-не требует подзарядки \n-максимальная вместимость - 1 \n-состояние: заполнен (содержит артефакт «Кристалл»)"
+ITEM.desc = "It forms when a heavy metal gets into the 'Heat'. This artifact is wonderful for displaying radiation. Such an artifact is highly valued by stalkers, and there is little where it can be obtained. \n\nATTRIBUTES: \n-Technological device \n-High value \n-Doesn't require recharging \n-Maximum capacity - 1 \n-Status: Full (Contains Artefact 'Crystal')"
 ITEM.category = "SIMK"
 ITEM.price = 19728
 ITEM.exRender = false
