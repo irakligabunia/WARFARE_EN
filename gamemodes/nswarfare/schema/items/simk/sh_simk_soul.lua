@@ -1,5 +1,5 @@
 ﻿ITEM.name = "Artefact Case (Soul)"
-ITEM.desc = "A unique organic artifact with no less unique properties. Increases the overall rate of recovery of the body. Due to the features of the influence on the body and pleasant appearance is of particular interest to collectors. \n\nХАРАКТЕРИСТИКИ: \n-технологическое приспособление \n-высокая ценность \n-не требует подзарядки \n-максимальная вместимость - 1 \n-состояние: заполнен (содержит артефакт «Душой»)"
+ITEM.desc = "A unique organic artifact with no less unique properties. Increases the overall rate of recovery of the body. Due to the features of the influence on the body and pleasant appearance is of particular interest to collectors. \n\nATTRIBUTES: \n-Technological device \n-High value \n-Doesn't require recharging \n-Maximum capacity - 1 \n-Status: Full (Contains Artefact 'Soul')"
 ITEM.category = "SIMK"
 ITEM.price = 28662
 ITEM.exRender = false
