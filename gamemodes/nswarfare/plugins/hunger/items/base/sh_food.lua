@@ -11,7 +11,7 @@ ITEM.empty = false
 ITEM.weight = 0
 function ITEM:getDesc()
 	local str
-	str = self.desc.."\n\%s is left."
+	str = self.desc.."\n %s is left."
 	return Format(str, self:getData("quantity"))
 end
 
