@@ -1,5 +1,5 @@
-﻿ITEM.name = "«Снежинка»"
-ITEM.desc = "Внешне артефакт похож на «Колобок». Существует мнение что это и есть «Колобок», свойства которого усилились после воздействия мощного электрического поля. Благодаря своим качествам способен резко увеличивать мышечный тонус носителя. \n\nХАРАКТЕРИСТИКИ: \n-артефакт \n\nРадиация +4 / сек"
+﻿ITEM.name = "Snowflake"
+ITEM.desc = "The artifact looks like a Kolobok. There is an opinion that this is the Kolobok, whose properties were strengthened after exposure to a powerful electric field. Due to its qualities it is able to dramatically increase the muscle tone of the carrier. \n\nATTRIBUTES: \n-Artefact \n\nRadiation +4 / sec"
 ITEM.price = 38904
 ITEM.isAnomaly = true
 ITEM.weight = 0.82
@@ -14,12 +14,12 @@ ITEM.iconCam = {
 }
 
 ITEM.functions.Use = {
-	name = "положить в СИМК",
+	name = "put in case",
 	onRun = function(item)
 		local client = item.player
 		if (IsValid(client) and client:Alive()) then
 			if not client:getChar():getInv():hasItem("simkemp") then
-				client:notify("Вам нужны СИМК (пустой).")
+				client:notify("You need an empty artefact case.")
 				return false
 			end
 			client:EmitSound( Sound( "interface/inv_iam_close.ogg" ), Entity( 1 ):GetPos(), 1, CHAN_AUTO, 1, 20, 0, 100 )
