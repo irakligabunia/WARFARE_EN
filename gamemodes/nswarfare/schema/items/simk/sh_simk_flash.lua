@@ -1,5 +1,5 @@
 ﻿ITEM.name = "Artefact Case (Flash)"
-ITEM.desc = "'A flash' is an artifact formed in places saturated with an electromagnetic field. Not so rare, but not so common. It has an amazing property to absorb electric current, redirecting discharges from the body to itself. 'Charged' flashes in everyday life are used as 'small power plants.' \n\nХАРАКТЕРИСТИКИ: \n-технологическое приспособление \n-высокая ценность \n-не требует подзарядки \n-максимальная вместимость - 1 \n-состояние: заполнен (содержит артефакт «Вспышка»)"
+ITEM.desc = "'Flash' is an artifact formed in places saturated with an electromagnetic field. Not so rare, but not so common. It has an amazing property to absorb electric current, redirecting discharges from the body to itself. 'Charged' flashes in everyday life are used as 'small power plants.' \n\nATTRIBUTES: \n-Technological device \n-High value \n-Doesn't require recharging \n-Maximum capacity - 1 \n-Status: Full (Contains Artefact 'Flash')"
 ITEM.category = "SIMK"
 ITEM.price = 11964
 ITEM.exRender = false
