@@ -1,5 +1,5 @@
-﻿ITEM.name = "Тюбик клея «Звезда»"
-ITEM.desc = "Самый дешевый из синтетических клеев, доступных в Зоне. Основной элемент - раствор эпоксидной смолы, который может склеить два обрывка ткани или залатать небольшое отверстие на шлеме. Но будет бесполезен при значительных повреждениях снаряжение. С другой стороны «Звезда» популярна среди сталкеров за свою цену. \n\nХАРАКТЕРИСТИКИ: \n-технологическое приспособление"
+﻿ITEM.name = "'Star' glue tube"
+ITEM.desc = "The cheapest of the synthetic adhesives available in the zone. The main element is a solution of epoxy resin, which can glue two scraps of fabric or patch a small hole on the helmet. But it will be useless in the serious damage to the equipment. On the other hand, 'Star' is popular among stalkers for its price. \n\nATTRIBUTES: \n-Technological device"
 ITEM.price = 465
 ITEM.exRender = true
 ITEM.weight = 0.12
