@@ -28,9 +28,9 @@ function PANEL:Init()
 		surface.SetTextColor(Color(169, 169, 169))
 		surface.SetTextPos( some_tipsXyes, some_tipsYyes )
 		if ScrW() == 1280 then
-		surface.DrawText( "Вы: "..self.urvalue.."                     Ваша ставка на выигрыш: "..self.total.."               Враг: "..self.enemyvalue)
+		surface.DrawText( "You: "..self.urvalue.."                     Your bet on winning: "..self.total.."               Enemy: "..self.enemyvalue)
 		else
-		surface.DrawText( "Вы: "..self.urvalue.."                       Ваша ставка на выигрыш: "..self.total.."                         Враг: "..self.enemyvalue)
+		surface.DrawText( "You: "..self.urvalue.."                       Your bet on winning: "..self.total.."                         Enemy: "..self.enemyvalue)
 		end
 	end
 
@@ -40,7 +40,7 @@ function PANEL:Init()
 	self.typo_logo = self:Add("DLabel")
 	self.typo_logo:SetPos( typo_logoXyes, typo_logoYyes )
 	self.typo_logo:SetSize( typo_logoWyes, typo_logoHyes )
-	self.typo_logo:SetText("Игра: 21 очко")
+	self.typo_logo:SetText("Playing: Blackjack")
 	self.typo_logo:SetFont("DescCharFont1")
 
 	local some_tipsWyes, some_tipsHyes = self.scrW * 0.22, self.scrH * 0.02
@@ -49,7 +49,7 @@ function PANEL:Init()
 	self.some_tips = self:Add("DLabel")
 	self.some_tips:SetPos( some_tipsXyes, some_tipsYyes )
 	self.some_tips:SetSize( some_tipsWyes, some_tipsHyes )
-	self.some_tips:SetText("Минимальная ставка - 50. максимальная - 1000.")
+	self.some_tips:SetText("The minimum bet is 50. Maximum - 1000.")
 	self.some_tips:SetFont("DescCharFont1")
 
 	local char_moneyWyes, char_moneyHyes = self.scrW * 0.1, self.scrH * 0.02
@@ -58,7 +58,7 @@ function PANEL:Init()
 	self.value_char = self:Add("DLabel")
 	self.value_char:SetPos( char_moneyXyes, char_moneyYyes )
 	self.value_char:SetSize( char_moneyWyes, char_moneyHyes )
-	self.value_char:SetText("У вас "..LocalPlayer():getChar():getMoney().." рублей")
+	self.value_char:SetText("You have "..LocalPlayer():getChar():getMoney().." rubles")
 	self.value_char:SetFont("DescCharFont1")
 
 	local picwanWyes, picwanHyes = self.scrW * 0.055, self.scrH * 0.125
@@ -208,7 +208,7 @@ function PANEL:Init()
 	local but_exitXyes, but_exitYyes = (self.scrW * 0.300) - (but_exitWyes * 0.5), self.scrH * 0.505
 
 	self.but_exit = self:Add("DButton")
-	self.but_exit:SetText("Выход")
+	self.but_exit:SetText("Exit")
 	self.but_exit:SetColor(Color(169, 169, 169))
 	self.but_exit:SetFont("DescCharFont1")
 	self.but_exit:SetTextColor(color_white)
@@ -250,7 +250,7 @@ function PANEL:Init()
 	local but_startXyes, but_startYyes = (self.scrW * 0.05) - (but_startWyes * 0.5), self.scrH * 0.505
 
 	self.but_start = self:Add("DButton")
-	self.but_start:SetText("Принять ставки")
+	self.but_start:SetText("Check")
 	self.but_start:SetColor(Color(169, 169, 169))
 	self.but_start:SetFont("DescCharFont1")
 	self.but_start:SetTextColor(color_white)
@@ -370,7 +370,7 @@ function PANEL:addContinue()
 	local but_startXyes, but_startYyes = (self.scrW * 0.05) - (but_startWyes * 0.5), self.scrH * 0.505
 
 	self.but_starttwo = self:Add("DButton")
-	self.but_starttwo:SetText("Начать игру")
+	self.but_starttwo:SetText("Start game")
 	self.but_starttwo:SetColor(Color(169, 169, 169))
 	self.but_starttwo:SetFont("DescCharFont1")
 	self.but_starttwo:SetTextColor(color_white)
@@ -464,7 +464,7 @@ function PANEL:addContinue()
 	local vzatXyes, vzatYyes = (self.scrW * 0.135) - (vzatWyes * 0.5), self.scrH * 0.46
 
 	self.vzat = self:Add("DButton")
-	self.vzat:SetText("Взять еще")
+	self.vzat:SetText("Raise")
 	self.vzat:SetColor(Color(169, 169, 169))
 	self.vzat:SetFont("DescCharFont1")
 	self.vzat:SetTextColor(color_white)
@@ -587,7 +587,7 @@ function PANEL:addContinue()
 	local perhXyes, perhYyes = (self.scrW * 0.215) - (perhWyes * 0.5), self.scrH * 0.46
 
 	self.perh = self:Add("DButton")
-	self.perh:SetText("Передать ход")
+	self.perh:SetText("Fold")
 	self.perh:SetColor(Color(169, 169, 169))
 	self.perh:SetFont("DescCharFont1")
 	self.perh:SetTextColor(color_white)
@@ -783,7 +783,7 @@ function PANEL:addContinue2()
 	local but_start1Xyes, but_start1Yyes = (self.scrW * 0.05) - (but_start1Wyes * 0.5), self.scrH * 0.505
 
 	self.but_go_next = self:Add("DButton")
-	self.but_go_next:SetText("Продолжить")
+	self.but_go_next:SetText("Continue")
 	self.but_go_next:SetColor(Color(169, 169, 169))
 	self.but_go_next:SetFont("DescCharFont1")
 	self.but_go_next:SetTextColor(color_white)
@@ -836,15 +836,15 @@ function PANEL:addContinue2()
 
 		blyad_label.Think = function()
 			if self.w_and_lose == 1 then
-				blyad_label:SetText("Вы выиграли. Ваш выигрыш составил - "..self.total.." рублей. Сумма очков: вы - "..self.urvalue..", противник - "..self.enemyvalue..".")
+				blyad_label:SetText("You won. Your winnings amounted to - "..self.total.." rubles. Points: you- "..self.urvalue..", enemy - "..self.enemyvalue..".")
 				blyad_label:SetPos( wintextXyes, wintextYyes )
 				blyad_label:SetSize( wintextWyes, wintextHyes )
 			elseif self.w_and_lose == 3 then
-				blyad_label:SetText("Вы проиграли. Ваш проигрыш составил - "..self.total.." рублей. Сумма очков: вы - "..self.urvalue..", противник - "..self.enemyvalue..".")
+				blyad_label:SetText("You lose. Your loss was - "..self.total.." rubles. Points: you - "..self.urvalue..", enemy - "..self.enemyvalue..".")
 				blyad_label:SetPos( wintextXyes, wintextYyes )
 				blyad_label:SetSize( wintextWyes, wintextHyes )
 			elseif self.w_and_lose == 2 then
-				blyad_label:SetText("Победила друбжа! Сумма очков: вы - "..self.urvalue..", противник - "..self.enemyvalue..".")
+				blyad_label:SetText("Friendship has won! Points: you - "..self.urvalue..", enemy - "..self.enemyvalue..".")
 				blyad_label:SetPos( friendtextWyes, friendtextHyes )
 				blyad_label:SetSize( friendtextXyes, friendtextYyes )
 			else
@@ -858,7 +858,7 @@ function PANEL:addContinue2()
 		local but_exit1Xyes, but_exit1Yyes = (self.scrW * 0.198) - (but_exit1Wyes * 0.5), self.scrH * 0.207
 
 		but_exit1 = gobutnext:Add("DButton")
-		but_exit1:SetText("ОК")
+		but_exit1:SetText("OK")
 		but_exit1:SetColor(Color(169, 169, 169))
 		but_exit1:SetFont("DescCharFont1")
 		but_exit1:SetTextColor(color_white)
