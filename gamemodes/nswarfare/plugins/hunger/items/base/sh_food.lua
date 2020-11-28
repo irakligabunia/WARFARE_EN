@@ -1,9 +1,9 @@
 ﻿ITEM.name = "Food base"
 ITEM.desc = "A food."
-ITEM.category = "food"
+ITEM.category = "Food"
 ITEM.model = "models/props_lab/bindergraylabel01b.mdl"
 ITEM.hunger = 5
-ITEM.category = "Consumeable"
+ITEM.category = "Consumable"
 ITEM.thirst = 5
 ITEM.isFood = true
 ITEM.quantity = 1
@@ -11,7 +11,7 @@ ITEM.empty = false
 ITEM.weight = 0
 function ITEM:getDesc()
 	local str
-	str = self.desc.."\n\nОсталось %s порций."
+	str = self.desc.."\n\%s is left."
 	return Format(str, self:getData("quantity"))
 end
 
@@ -23,7 +23,7 @@ if (CLIENT) then
 end
 
 ITEM.functions.use = { -- sorry, for name order.
-	name = "Употребить",
+	name = "use",
 	tip = "useTip",
 	icon = "icon16/cup.png",
 	onRun = function(item)
@@ -35,7 +35,7 @@ ITEM.functions.use = { -- sorry, for name order.
 			item:setData("quantity", item:getData("quantity", item.quantity or 0) - 1)
 			
 			if item:getData("quantity") < 1 then
-				item.player:notify("Вы израсходовали все аптечки")
+				item.player:notify("You've used up all the first aid kits.")
 				return true
 			end
 		--end
