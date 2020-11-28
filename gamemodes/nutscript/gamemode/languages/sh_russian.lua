@@ -29,8 +29,7 @@ LANGUAGE = {
 	kisel_anomaly = "Fruit punch",
 	gazirovka_anomaly = "Gas",
 	kometa = "Burner",
-    electra_anomaly = "Electro",
-    
+        electra_anomaly = "Electro",
 	Loners = "Loners",
 	Strength = "Strength",
 	Monday = "Monday",
@@ -50,7 +49,7 @@ LANGUAGE = {
 	loadTip = "Select the character you previously created.",
 	leave = "Quit",
 	leaveTip = "You've given up.",
-	["return"] = "Return",
+        return = "Return",
 	returnTip = "Return to the last menu.",
 	name = "Name",
 	desc = "Description",
@@ -284,6 +283,6 @@ LANGUAGE = {
 	UseForward = "Use on a player",
 	Equip = "Equip",
 	Unequip = "Unequip",
-	Load = "Load",
+	load = "Load",
 	View = "View"
 }
