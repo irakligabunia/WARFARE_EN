@@ -272,7 +272,7 @@ PANEL = {}
 		surface.SetDrawColor(Color( 30, 30, 30, 90))
 		surface.DrawOutlinedRect(ScrW() * 0, ScrH() * 0, ScrW() * 0.41, ScrH() * 0.033) --шапка
 
-		draw.DrawText("Инвентарь", "Roh20", ScrW() * 0.005, ScrH() * 0.003, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT )
+		draw.DrawText("Inventory", "Roh20", ScrW() * 0.005, ScrH() * 0.003, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT )
 
 		surface.SetDrawColor(Color( 138, 149, 151, 60))
 		surface.DrawLine(ScrW() * 0.018, ScrH() * 0.0325, ScrW() * 0.29, ScrH() * 0.0325)
@@ -289,7 +289,7 @@ PANEL = {}
 
 		draw.DrawText(LocalPlayer():GetWeight() .."/".. (nut.config.get("maxWeight") + LocalPlayer():GetWeightAddition()), "Roh10", ScrW() * 0.15, ScrH() * 0.064, Color(255, 255, 255, 210), TEXT_ALIGN_CENTER )
 
-		draw.DrawText("Рюкзак", "Roh20", ScrW() * 0.02, ScrH() * 0.06, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT )
+		draw.DrawText("Backpack", "Roh20", ScrW() * 0.02, ScrH() * 0.06, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT )
 
 		surface.SetDrawColor(Color( 0, 0, 0, 255))
 		surface.DrawOutlinedRect(ScrW() * 0.0165, ScrH() * 0.059, ScrW() * 0.273, ScrH() * 0.53) --обводка модели игрока
