@@ -1,6 +1,6 @@
-﻿ITEM.name = "Водка Казаки"
-ITEM.desc = "Довольно популярная на территории Зоны водка укринского производства. Хорошо пьётся, хаметно снижает воздействие радиации, однако злоупотреблять ей не следует. \n-крепкий алкоголь \n-напиток \n\nЖажда +60" 
-ITEM.category = "Еда" 
+﻿ITEM.name = "Cossack Vodka"
+ITEM.desc = "It is quite popular in the territory of the Ukrainian-made vodka zone. It is well drunk, hametly reduces the impact of radiation, but it should not be abused. \nATTRIBUTES: \n-Strong alcohol \n-Beverage \n-Thrist +60" 
+ITEM.category = "Food" 
 ITEM.price = 1280 
 ITEM.thirst = 40
 ITEM.hunger = 0
@@ -19,7 +19,7 @@ ITEM.iconCam = {
 }
 
 ITEM.functions.use = {
-	name = "употребить",
+	name = "use",
 	icon = "icon16/cup.png",
 	onRun = function(item)
 		local client = item.player
