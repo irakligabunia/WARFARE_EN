@@ -1,5 +1,5 @@
-﻿ITEM.name = "Украинский рацион питания" 
-ITEM.desc = "Украинский боевой рацион питания основан на российском аналоге ИРП-Б, состоящий лишь из коммерчески доступных консервов и сущеных продуктов питания. \n\nХАРАКТЕРИСТИКИ: \n-военный рацион \n-здоровое питание \n\nНасыщение 90 \nЖажда 90"
+﻿ITEM.name = "Ukrainian MRE" 
+ITEM.desc = "The Ukrainian combat ration is based on the Russian MRE IRP-B, consisting only of commercially available canned food and essential food. \n\nATTRIBUTES: \n-Combat ration \n-Healthy \n-Saturation 90 Kcal\n-Thrist -90"
 ITEM.price = 14574
 ITEM.hunger = 90
 ITEM.thirst = 90
@@ -18,7 +18,7 @@ ITEM.iconCam = {
 
 function ITEM:getDesc()
 	local str
-	str = self.desc.."\n\nОсталось %s порций."
+	str = self.desc.."\n\n%s left."
 	return Format(str, self:getData("quantity"))
 end
 
@@ -30,7 +30,7 @@ if (CLIENT) then
 end
 
 ITEM.functions.use = {
-	name = "употребить",
+	name = "use",
 	tip = "useTip",
 	icon = "icon16/cup.png",
 	onRun = function(item)
