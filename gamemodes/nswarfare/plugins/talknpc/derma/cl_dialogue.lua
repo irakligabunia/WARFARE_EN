@@ -77,7 +77,7 @@ if CLIENT then
 			surface.SetDrawColor(Color( 138, 149, 151, 60))
 			surface.DrawLine(ScrW() * 0.05, ScrH() * 0.0325, ScrW() * 0.3, ScrH() * 0.0325)
 
-			draw.DrawText("Диалоговое окно", "Roh20", ScrW() * 0.005, ScrH() * 0.003, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT )
+			draw.DrawText("Dialogue window", "Roh20", ScrW() * 0.005, ScrH() * 0.003, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT )
 
 			surface.SetDrawColor( Color(125, 105, 0, 40) )
 			surface.SetMaterial( Material("lgh/circle_gradient.png") )
@@ -141,7 +141,7 @@ if CLIENT then
 			surface.SetDrawColor(Color( 138, 149, 151, 60))
 			surface.DrawLine(ScrW() * 0.05, ScrH() * 0.0325, ScrW() * 0.3, ScrH() * 0.0325)
 
-			draw.DrawText("Выбор реплики", "Roh20", ScrW() * 0.005, ScrH() * 0.003, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT )
+			draw.DrawText("Choose a replica", "Roh20", ScrW() * 0.005, ScrH() * 0.003, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT )
 		end
 
 		right_icon = vgui.Create( "DFrame" )
@@ -189,48 +189,48 @@ if CLIENT then
 			surface.SetDrawColor(Color( 0, 0, 0, 255))
 			surface.DrawOutlinedRect(ScrW() * 0.008, ScrH() * 0.045, ScrW() * 0.116, ScrH() * 0.125) --обводка модели игрока
 
-			draw.DrawText("Фракция:", "Roh10", ScrW() * 0.008, ScrH() * 0.17, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT) --team.GetColor(character:getFaction()) Фракция
+			draw.DrawText("Faction:", "Roh10", ScrW() * 0.008, ScrH() * 0.17, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT) --team.GetColor(character:getFaction()) Фракция
 			draw.DrawText(team.GetName(LocalPlayer():Team()), "Roh10", ScrW() * 0.123, ScrH() * 0.17, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
-			draw.DrawText("Ранг:", "Roh10", ScrW() * 0.008, ScrH() * 0.19, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT) --Ранг
+			draw.DrawText("Rank:", "Roh10", ScrW() * 0.008, ScrH() * 0.19, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT) --Ранг
 
 			if (ranktext >= 12000) then
-				draw.DrawText("Легенда", "Roh10", ScrW() * 0.123, ScrH() * 0.19, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
+				draw.DrawText("Legend", "Roh10", ScrW() * 0.123, ScrH() * 0.19, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
 			elseif (ranktext >= 5200 and ranktext <= 11999) then
-				draw.DrawText("Мастер", "Roh10", ScrW() * 0.123, ScrH() * 0.19, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
+				draw.DrawText("Master", "Roh10", ScrW() * 0.123, ScrH() * 0.19, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
 			elseif (ranktext >= 3200 and ranktext <= 5199) then
-				draw.DrawText("Эксперт", "Roh10", ScrW() * 0.123, ScrH() * 0.19, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
+				draw.DrawText("Expert", "Roh10", ScrW() * 0.123, ScrH() * 0.19, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
 			elseif (ranktext >= 2000 and ranktext <= 3199) then
-				draw.DrawText("Ветеран", "Roh10", ScrW() * 0.123, ScrH() * 0.19, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
+				draw.DrawText("Veteran", "Roh10", ScrW() * 0.123, ScrH() * 0.19, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
 			elseif (ranktext >= 1000 and ranktext <= 1999) then
-				draw.DrawText("Профессионал", "Roh10", ScrW() * 0.123, ScrH() * 0.19, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
+				draw.DrawText("Professional", "Roh10", ScrW() * 0.123, ScrH() * 0.19, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
 			elseif (ranktext >= 600 and ranktext <= 999) then
-				draw.DrawText("Опытный", "Roh10", ScrW() * 0.123, ScrH() * 0.19, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
+				draw.DrawText("Experienced", "Roh10", ScrW() * 0.123, ScrH() * 0.19, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
 			elseif (ranktext >= 200 and ranktext <= 599) then
-				draw.DrawText("Стажер", "Roh10", ScrW() * 0.123, ScrH() * 0.19, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
+				draw.DrawText("Rookie", "Roh10", ScrW() * 0.123, ScrH() * 0.19, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
 			elseif (ranktext <= 199) then
-				draw.DrawText("Новичок", "Roh10", ScrW() * 0.123, ScrH() * 0.19, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
+				draw.DrawText("Trainee", "Roh10", ScrW() * 0.123, ScrH() * 0.19, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
 			end
 
-			draw.DrawText("Репутация:", "Roh10", ScrW() * 0.008, ScrH() * 0.21, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT) --Репутация
+			draw.DrawText("Reputation:", "Roh10", ScrW() * 0.008, ScrH() * 0.21, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT) --Репутация
 
 			if (reptext >= 2000) then
-				draw.DrawText("Великолепно", "Roh10", ScrW() * 0.123, ScrH() * 0.21, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
+				draw.DrawText("Excellent", "Roh10", ScrW() * 0.123, ScrH() * 0.21, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
 			elseif (reptext >= 1000 and reptext <= 1999) then
-				draw.DrawText("Отлично", "Roh10", ScrW() * 0.123, ScrH() * 0.21, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
+				draw.DrawText("Perfect", "Roh10", ScrW() * 0.123, ScrH() * 0.21, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
 			elseif (reptext >= 500 and reptext <= 999) then
-				draw.DrawText("Оч.Хорошо", "Roh10", ScrW() * 0.123, ScrH() * 0.21, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
+				draw.DrawText("V.Good", "Roh10", ScrW() * 0.123, ScrH() * 0.21, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
 			elseif (reptext > 100 and reptext <= 499) then
-				draw.DrawText("Хорошо", "Roh10", ScrW() * 0.123, ScrH() * 0.21, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
+				draw.DrawText("Good", "Roh10", ScrW() * 0.123, ScrH() * 0.21, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
 			elseif (reptext >= -29 and reptext <= 99) then
-				draw.DrawText("Безразлично", "Roh10", ScrW() * 0.123, ScrH() * 0.21, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
+				draw.DrawText("Neutral", "Roh10", ScrW() * 0.123, ScrH() * 0.21, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
 			elseif (reptext >= -79 and reptext <= -30) then
-				draw.DrawText("Плохо", "Roh10", ScrW() * 0.123, ScrH() * 0.21, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
+				draw.DrawText("Bad", "Roh10", ScrW() * 0.123, ScrH() * 0.21, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
 			elseif (reptext >= -299 and reptext <= -80) then
-				draw.DrawText("Оч.Плохо", "Roh10", ScrW() * 0.123, ScrH() * 0.21, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
+				draw.DrawText("V.Bad", "Roh10", ScrW() * 0.123, ScrH() * 0.21, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
 			elseif (reptext >= -599 and reptext <= -300) then
-				draw.DrawText("Ужасно", "Roh10", ScrW() * 0.123, ScrH() * 0.21, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
+				draw.DrawText("Terrible", "Roh10", ScrW() * 0.123, ScrH() * 0.21, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
 			elseif (reptext <= -600) then
-				draw.DrawText("Хуже всех", "Roh10", ScrW() * 0.123, ScrH() * 0.21, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
+				draw.DrawText("Worst of all", "Roh10", ScrW() * 0.123, ScrH() * 0.21, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
 			end
 		end
 
@@ -276,13 +276,13 @@ if CLIENT then
 			surface.SetDrawColor(Color( 0, 0, 0, 255))
 			surface.DrawOutlinedRect(ScrW() * 0.008, ScrH() * 0.045, ScrW() * 0.116, ScrH() * 0.125) --обводка модели игрока
 
-			draw.DrawText("Группировка:", "Roh14", ScrW() * 0.008, ScrH() * 0.17, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT)
+			draw.DrawText("Grouping:", "Roh14", ScrW() * 0.008, ScrH() * 0.17, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT)
 			draw.DrawText(client_time_tolkerdesc, "Roh14", ScrW() * 0.123, ScrH() * 0.17, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
 
-			draw.DrawText("Ранг:", "Roh14", ScrW() * 0.008, ScrH() * 0.19, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT) --Ранг
+			draw.DrawText("Rank:", "Roh14", ScrW() * 0.008, ScrH() * 0.19, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT) --Ранг
 			draw.DrawText("---", "Roh14", ScrW() * 0.123, ScrH() * 0.19, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
 
-			draw.DrawText("Репутация:", "Roh14", ScrW() * 0.008, ScrH() * 0.21, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT) --Репутация
+			draw.DrawText("Reputation:", "Roh14", ScrW() * 0.008, ScrH() * 0.21, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT) --Репутация
 			draw.DrawText("---", "Roh14", ScrW() * 0.123, ScrH() * 0.21, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
 		end
 
@@ -293,7 +293,7 @@ if CLIENT then
 		openvendor = vgui.Create("DButton")
 		openvendor:SetSize( ScrW() * 0.095, ScrH() * 0.0375)
 		openvendor:SetPos(ScrW() * 0.4, ScrH() * 0.875)
-		openvendor:SetText("Торговать")
+		openvendor:SetText("Trade")
 		openvendor:SetFont("Roh20")
 		openvendor:SetTextColor(Color(255, 255, 255, 210)) 
 		openvendor:SetZPos(999)
@@ -348,7 +348,7 @@ if CLIENT then
 		exittalker = vgui.Create("DButton")
 		exittalker:SetSize( ScrW() * 0.095, ScrH() * 0.0375)
 		exittalker:SetPos(ScrW() * 0.5, ScrH() * 0.875)
-		exittalker:SetText("Уйти")
+		exittalker:SetText("Leave")
 		exittalker:SetFont("Roh20")
 		exittalker:SetTextColor(Color(255, 255, 255, 210)) 
 		exittalker:SetZPos(999)
@@ -410,7 +410,7 @@ if CLIENT then
 			btn:SetTextColor( color_red )
 
 			if LocalPlayer():HasQuest(string.gsub( k, "!", "" )) then
-				btn:SetText("По поводу задания...")
+				btn:SetText("About the job...")
 			else
 				btn:SetText(v)
 			end
@@ -460,7 +460,7 @@ if CLIENT then
 
 				timer.Simple(0.01, function()
 				if LocalPlayer():HasQuest(string.gsub( k, "!", "" )) then
-					btn:SetText("По поводу задания...")
+					btn:SetText("About the job...")
 					elseif !LocalPlayer():HasQuest(string.gsub( k, "!", "" )) then
 						btn:SetText(v)
 					end
