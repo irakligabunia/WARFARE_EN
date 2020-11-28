@@ -1,5 +1,5 @@
-ITEM.name = "Мясо слепого пса"
-ITEM.desc = "Мясо мутировавшей слепой собаки многие сталкеры используют как дешевую альтернативу наиболее популярному мясу кабана. Ученые уже достаточно много провели исследований над принесенными сталкерами образцами, поэтому спрос на такие куски мяса упал. \n\nВНИМАНИЕ: \n\nСталкерам рекомендуется воздержаться от употребления такого рода мяса животных и мутантов в Зоне в сыром виде, так как оно наверняка заражено трихинеллезом или бруцеллезом. \n \nХАРАКТЕРИСТИКИ: \n-мясо мутанта низкого происхождения \n-возможно приготовить \n-ядовитая пища \n-радиационное облучение: 17 \n\nНасыщение 17 ккал экв."
+ITEM.name = "Blind dog meat"
+ITEM.desc = "The meat of the mutated blind dog is used by many stalkers as a cheap alternative to the most popular boar meat. Scientists have already done quite a lot of research on the samples brought by stalkers, so the demand for such pieces of meat has fallen. \n\nWARNING: \n\nStalkers are advised to refrain from eating this kind of meat of animals and mutants in the zone in raw form, as it is probably infected with trichinellosis or brucellosis. \n \nATTRIBUTES: \n-Cookable \n-Poisonous \n-Radiation expsoure 17 mSv\n\nSaturation 17 Kcal."
 ITEM.model = Model("models/kek1ch/raw_dog.mdl")
 ITEM.price = 114
 ITEM.width = 1
@@ -30,5 +30,5 @@ ITEM.functions.use = {
 	onCanRun = function(item)
 		return (!item.empty)
 	end,
-	name = "употребить"
+	name = "use"
 }
