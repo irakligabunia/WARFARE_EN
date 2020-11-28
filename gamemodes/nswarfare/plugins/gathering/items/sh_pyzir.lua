@@ -1,5 +1,5 @@
-﻿ITEM.name = "«Пузырь»"
-ITEM.desc = "Артефакт представляет собой несколько полых образований органической природы, соединённых между собой. Выделяет газообразное вещество, способное нейтрализовать химические или токсичные частицы в организме человека. Ввиду высокой эффективности пользуется огромным спросом, но и обладает многочисленными отрицательными свойствами. \n\nХАРАКТЕРИСТИКИ: \n-артефакт \n\nРадиация +2 / сек"
+﻿ITEM.name = "Bubble"
+ITEM.desc = "The artifact is a few hollow formations of organic nature connected to each other. It secretes a gaseous substance capable of neutralizing chemical or toxic particles in the human body. Due to its high efficiency, it is in great demand, but also has numerous negative properties. \n\nATTRIBUTES: \n-Artefact \n\nRadiation +2 / sec"
 ITEM.price = 23752
 ITEM.isAnomaly = true
 ITEM.weight = 0.31
@@ -14,12 +14,12 @@ ITEM.iconCam = {
 }
 
 ITEM.functions.Use = {
-	name = "положить в СИМК",
+	name = "put in case",
 	onRun = function(item)
 		local client = item.player
 		if (IsValid(client) and client:Alive()) then
 			if not client:getChar():getInv():hasItem("simkemp") then
-				client:notify("Вам нужны СИМК (пустой).")
+				client:notify("You need an empty artefact case.")
 				return false
 			end
 
