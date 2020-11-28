@@ -1,5 +1,5 @@
-﻿ITEM.name = "«Мамины бусы»"
-ITEM.desc = "Артефакт кристаллизуется в аномальных зонах с высокой термальной активностью. Активно поглощает избыточное тепло, при этом оставаясь прохладным на ощупь. Многое в этом артефакте остаётся полной загадкой для учёных. Впрочем, точно установлено, что излучение, возникающее при пульсации утолщений «Маминых бус», ускоряет протекание метаболических процессов в организме. \n\nХАРАКТЕРИСТИКИ: \n-артефакт \n\nРадиация +3 / сек"
+﻿ITEM.name = "Mama's Beads"
+ITEM.desc = "'Mama's Beads' in a lead-isolated metal container. The artifact crystallizes in anomalous zones with high thermal activity. Actively absorbs excess heat, while remaining cool to the touch. Much of this artifact remains a complete mystery to scientists. However, it is precisely established that the radiation that occurs during the pulsation of thickening of 'Mother's beads' accelerates the flow of metabolic processes in the body. \n\nATTRIBUTES: \n-Artefact \n\nRadiation +3 / sec"
 ITEM.model = "models/kek1ch/dummy_glassbeads.mdl"
 ITEM.price = 33048
 ITEM.width = 1
@@ -13,12 +13,12 @@ fov = 4.7003422456651
 ITEM.weight = 0.82
 
 ITEM.functions.Use = {
-	name = "положить в СИМК",
+	name = "put in case",
 	onRun = function(item)
 		local client = item.player
 		if (IsValid(client) and client:Alive()) then
 			if not client:getChar():getInv():hasItem("simkemp") then
-				client:notify("Вам нужны СИМК (пустой).")
+				client:notify("You need an empty artefact case")
 				return false
 			end
 
