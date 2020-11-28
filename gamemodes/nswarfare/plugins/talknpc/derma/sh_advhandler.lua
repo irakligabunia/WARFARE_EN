@@ -102,7 +102,7 @@ PLUGIN.SpecialCall =
                     }
                     client:AddQuest( "quest_medicamenti", table.Random(rkek) )
                     for k, v in pairs(client:GetQuest( "quest_medicamenti" )) do
-                        client:ConCommand("say Задание: принести медику "..nut.item.list[v].name..".")
+                        client:ConCommand("say Job: bring the medic a "..nut.item.list[v].name..".")
                     end
                 end
                 return data
@@ -110,17 +110,17 @@ PLUGIN.SpecialCall =
             cl = function( client, panel, data )
                if data.gotquest then --Вы слышите бормотание, а после взгляд медика устремился на вас. - Чего хотел? Дырка какая, или ожог. Может рану зашить? Только ты учти, у меня сейчас туговато с медикаментами.
                     for k, v in pairs(LocalPlayer():GetQuest( "quest_medicamenti" )) do --Может, помочь с чем смогу? 
-                        panel:AddChat( data.name, "Тяжело вздохнув, оглядел вас, видимо оценивая ваш опыт, сказал - Ну, я могу дать тебе метку на один тайник мой, "..k..". Если принесешь мне его содержимое, а именно "..nut.item.list[v].name.." - чиста твоя совесть. Просто вспомни, сколько ты жизней загубишь.")
-                        panel:AddChat( LocalPlayer():Name(), "Я берусь.")
+                        panel:AddChat( data.name, "With a heavy sigh, looked at you, apparently appreciating your experience, and said, 'Well, I can give you a mark on one stash of mine, "..k..". If you bring me its contents, namely "..nut.item.list[v].name.." - Your conscience is clear. Just remember how many lives you're going to kill.")
+                        panel:AddChat( LocalPlayer():Name(), "I'm taking it.")
                     end
                     panel.talking = false
                     return
                 end
                 if data.done then
-                    panel:AddChat( data.name, "Считай, что ты спас несколько жизней. Вот, это тебе.")
+                    panel:AddChat( data.name, "You saved a few lives. Here, this is for you.")
                 else
                     for k, v in pairs( LocalPlayer():GetQuest( "quest_medicamenti" ) ) do
-                        panel:AddChat( data.name, "Как там продвигается наше дело? Напомню, что тайник находится "..k..", где ты найдешь "..nut.item.list[v].name.."." )
+                        panel:AddChat( data.name, "How's our case going? Let me remind you that the stash is located "..k..", where you'll find a "..nut.item.list[v].name.."." )
                     end
                 end
                 panel.talking = false
@@ -156,7 +156,7 @@ PLUGIN.SpecialCall =
                     },
                     client:AddQuest( "quest_syltan_sobake", kek1 )
                     for k, v in pairs(client:GetQuest( "quest_syltan_sobake" )) do
-                        client:ConCommand("say Задание: принести Султану - "..v.." хвоста псевдособаки.")
+                        client:ConCommand("say Mission: bring the Sultan - "..v.." tails of pseudo-dogs.")
                     end
                 end
                 return data
@@ -164,17 +164,17 @@ PLUGIN.SpecialCall =
             cl = function( client, panel, data )
                if data.gotquest then
                     for k, v in pairs(LocalPlayer():GetQuest( "quest_syltan_sobake" )) do
-                        panel:AddChat( data.name, "Короче, та маза еще не че не доказала. Ты конечно не лох какой, за слова отвечаешь, но это только начало. Тут недавно разбушевались собаки, загрызли нашего пацанчика. Ты метнись там, постреляй шавок короче и в доказательство мне хвосты принеси в количестве"..v.." шт." )
+                        panel:AddChat( data.name, "In short, that ointment has not yet proved. You're not a sucker, you're responsible for words, but this is just the beginning. There were dogs raging here recently, our kid was bitten. You're going to shoot some and bring some tails... Around "..v.." pieces." )
                         panel:AddChat( LocalPlayer():Name(), "Мля, да ты шо думаешь, я чепушила какой? Ща сделаю все в лучшем виде.")
                     end
                     panel.talking = false
                     return
                 end
                 if data.done then
-                    panel:AddChat( data.name, "Лопни мои глазоньки! Живой! Ну, на. Заработал.")
+                    panel:AddChat( data.name, "Holy shit! You're still alive. Here you go, you earned it.")
                 else
                     for k, v in pairs( LocalPlayer():GetQuest( "quest_syltan_sobake" ) ) do
-                        panel:AddChat( data.name, "Ты шо, забыл? Принеси "..v.." хвоста псевдособаки.")
+                        panel:AddChat( data.name, "Did you forget already? Bring "..v.." pseudo dog tails.")
                     end
                 end
                 panel.talking = false
@@ -213,26 +213,26 @@ PLUGIN.SpecialCall =
                     }
 
                     client:AddQuest( "quest_boroda_scaner", table.Random(anomalies) )
-                    client:ConCommand("say Задание: Установить сканер аномальной активности рядом с аномалией.")
+                    client:ConCommand("say Quest: Install an anomalous activity scanner near the anomaly.")
                     client:getChar():getInv():add("skaner_animalies")
                     timer.Simple(1, function()
-                        client:ConCommand("say Получен предмет: Сканер аномальной активности")
+                        client:ConCommand("say Received object: Anomalous activity scanner")
                     end)
                 end
                 return data
             end,
             cl = function( client, panel, data )
                 if data.gotquest then
-                    panel:AddChat( data.name, "Здарова, молодняк. Тут вобщем дельце нарисовалось, а отправить некого. Все бухают. Я вот тебе предлогаю, да заодно опыта наберешься. Там сходить надо, поставить у аномалии «"..L(LocalPlayer():GetQuest( "quest_boroda_scaner" )).."» кое-какой приборчик и обратно. Наградой не обижу." )
-                    panel:AddChat( LocalPlayer():Name(), "Ну ладно. Готовь денюжки.")
-                    panel:AddChat( data.name, "Вот это подход. Давай, я вечно тут.")
+                    panel:AddChat( data.name, "Greetings, young man. There's a lot of work to do, but there's no one to send. Everybody's drinking. You go to and do something for me, and get money and experience in return. You have to go there, at the «"..L(LocalPlayer():GetQuest( "quest_boroda_scaner" )).."» anomaly, put a scanner and come back back. Don't worry, the reward is good." )
+                    panel:AddChat( LocalPlayer():Name(), "Alright... Prepare the money.")
+                    panel:AddChat( data.name, "That's the way. Come on, I'm always here.")
                     panel.talking = false
                     return
                 end
                 if data.done then
-                    panel:AddChat( data.name, "Ух, молодца! Я в тебе не сомневался, ну разве что чуть-чуть. Ладно, держи честно заработанные.")
+                    panel:AddChat( data.name, "Well done! I didn't doubt you, except a little bit. Okay, here's your payment for your hard work.")
                 else
-                    panel:AddChat( data.name, "На аномалию «"..L(LocalPlayer():GetQuest( "quest_boroda_scaner" )).."» надо сходить и постаить сканер аномальной активности, который я тебе дал.")
+                    panel:AddChat( data.name, "At the anomaly «"..L(LocalPlayer():GetQuest( "quest_boroda_scaner" )).."» go there and put the anomalous activity scanner I gave you near it.")
                 end
                 panel.talking = false
             end,
@@ -274,20 +274,20 @@ PLUGIN.SpecialCall =
             end,
             cl = function( client, panel, data )
                if data.gotquest == true then
-                    panel:AddChat( data.name, "В последнее время появилось слишком много отморозков, решивших, что им кто-то разрешил разрушать баланс Зоны. Имеется целый список таких лиц. Начни с "..LocalPlayer():GetQuest( "quest_killer_rep" )..". Информация о его пребывании отсутствует, так что тебе придется самому узнавать информацию о нет. Оплата соответствующая.")
-                    panel:AddChat( LocalPlayer():Name(), "Считайте, что он уже мертв.")
+                    panel:AddChat( data.name, "Lately, there have been too many scumbags who have decided that someone has allowed them to destroy the balance of the zone. There is a whole list of such individuals. Start with "..LocalPlayer():GetQuest( "quest_killer_rep" )..". There is no information about his stay, so you will have to find out the information yourself. Payment is good.")
+                    panel:AddChat( LocalPlayer():Name(), "Consider him already dead.")
                     panel.talking = false
                     return
                 elseif data.gotquest == false then
-                    panel:AddChat( data.name, "Ничего нет.")
+                    panel:AddChat( data.name, "There's nothing.")
                     panel.talking = false
                     return
                 end
                 if data.done then
-                    panel:AddChat( data.name, "Отлично, думаю невидимые наблюдатели будут довольны. Твоя награда.")
+                    panel:AddChat( data.name, "Well, I think the invisible observers will be happy. Your reward.")
                 else
                     if LocalPlayer():GetQuest( "quest_killer_rep" ) then
-                        panel:AddChat( data.name, LocalPlayer():GetQuest( "quest_killer_rep" ).." еще живой?" )
+                        panel:AddChat( data.name, LocalPlayer():GetQuest( "quest_killer_rep" ).." still alive?" )
                     end
                 end
                 panel.talking = false
@@ -310,15 +310,15 @@ PLUGIN.SpecialCall =
             end,
             cl = function( client, panel, data )
                 if data.done == 1 then
-                    panel:AddChat( data.name, "Так, вот и всё... Можешь идти. Кстати, с тебя 2100." )
+                    panel:AddChat( data.name, "So, that's all... You can go. By the way, it costs you 2100..." )
                     panel.talking = false
                     return
                 elseif data.done == 0 then
-                    panel:AddChat( data.name, "Прости, но денег у тебя не хватит." )
+                    panel:AddChat( data.name, "I'm sorry, but you don't have enough money." )
                     panel.talking = false
                     return
                 elseif data.done == 2 then
-                    panel:AddChat( data.name, "Сейчас, только юбочку поправлю. Вот и всё, можешь идти." )
+                    panel:AddChat( data.name, "Let me adjust your skirt a little bit... That's it, you can go." )
                     panel.talking = false
                     return
                 end
@@ -331,7 +331,7 @@ PLUGIN.SpecialCall =
             end,
             cl = function( client, panel, data )
                 vgui.Create("21o4ko")
-                panel:AddChat( data.name, "Раздавай." )
+                panel:AddChat( data.name, "Hand it out." )
                 panel.talking = false
             end,
         },
@@ -342,7 +342,7 @@ PLUGIN.SpecialCall =
             end,
             cl = function( client, panel, data )
                 vgui.Create("fixmygearplz_tehnik")
-                panel:AddChat( data.name, "Давай посмотрим, что у тебя там." )
+                panel:AddChat( data.name, "Let's see what you've got in there." )
                 panel.talking = false
             end,
         },
@@ -386,14 +386,14 @@ PLUGIN.SpecialCall =
                 if data.gotquest then
                     local d_qst = questPLUGIN:GetQuest( "bandit_informator1" )
                     local pqst_dat = LocalPlayer():GetQuest( "bandit_informator1" )
-                    panel:AddChat( data.name, "Че ж ты сразу к пахану Султану не пошел... ах да, совсем забыл, тебя бы к нему и на метр не подпустили бы, че ж ты забыл у этих клятых гопарей? Ладно, не мое это дело, все сделаем за 5000 деревянных." )
+                    panel:AddChat( data.name, "Why didn't you go straight to the ploughman Sultan... Oh, I forgot, you wouldn't be allowed to see him a metre, why did you forget those hoodrats? Okay, it's none of my business, we'll do it for 5,000 rubles." )
                     panel.talking = false 
                     return
                 end
                 if data.done then
-                    panel:AddChat( data.name, "Отлично, начинаю обновлять твои данные. Такс... Сейчас обновим твой профиль в глобальной сталкерской сети... Старые данные стираем... Все, теперь ты бандит! Удачного тебе гоп-стопа по Зоне, ральный пацан *смеется*! И да, комбез бандитский возьми.")
+                    panel:AddChat( data.name, "Okay, I'm starting to update your data. Right... Now we will update your profile in the global stalker network... Old data is being erased... That's it, now you're a Bandit! Good luck gop-stopping in the zone, haha! Oh, and take the Bandit jacket with you.")
                 else
-                    panel:AddChat( data.name, "Не, парень, так не пойдет, у тебя бабла нет, возвращайся когда у тебя будет 5000 деревянных.")
+                    panel:AddChat( data.name, "No, man, it's not going to work, you don't have any money, come back when you have 5,000 rubles.")
                     local d_qst = questPLUGIN:GetQuest( "bandit_informator1" )
                     local pqst_dat = LocalPlayer():GetQuest( "bandit_informator1" )
                 end
@@ -428,10 +428,10 @@ PLUGIN.SpecialCall =
 							client:ConCommand("say /zlostmoney 200000")
 							end)
 							timer.Simple(1.6, function()
-							client:ConCommand("say /ztakeitem Бронекостюм «СКАТ-9М»")
+							client:ConCommand("say /ztakeitem «SKAT-9M» Suit")
 							end)
 							timer.Simple(2.3, function()
-							client:ConCommand("say /ztakeitem ОЦ-14-4А")
+							client:ConCommand("say /ztakeitem OTs-14 Groza")
 							end)
 						
                         data.done = true
@@ -450,14 +450,14 @@ PLUGIN.SpecialCall =
                 if data.gotquest then
                     local d_qst = questPLUGIN:GetQuest( "bandit_informator3" )
                     local pqst_dat = LocalPlayer():GetQuest( "bandit_informator3" )
-                    panel:AddChat( data.name, "Это запросто... Просто позволь тебе кое-что объяснить. Для начала скажу тебе одно: это будет стоить денег: 40000 деревянных, иначе разговора вообще не будет, вот еще что: если ты уйдешь из группировки в которую вступил, обратной дороги уже не будет, ни за какие деньги назад уже не примут, так что подумай башкой очень хорошо, надо ли тебе это. " )
+                    panel:AddChat( data.name, "It's easy... Just let me explain something. To begin with, I will tell you one thing: it will cost money: 40,000 rubles, otherwise there will be no conversation at all, here is another thing: if you leave the group, there will be no way out. There will be no refunds, so think very well, whether you need it." )
                     panel.talking = false 
                     return
                 end
                 if data.done then
-                    panel:AddChat( data.name, "Отлично, начинаю обновлять твои данные. Такс... Сейчас обновим твой профиль в глобальной сталкерской сети... Старые данные стираем... Все, теперь ты в Синдикате. Прибыльных контрактов, и да, держи снарягу.")
+                    panel:AddChat( data.name, "Okay, I'm starting to update your data. Right... Now we will update your profile in the global stalker network... Old data is being erased... That's it, now you're in the Syndicate. Profitable contracts, and yes, take the equipment")
                 else
-                    panel:AddChat( data.name, "Не, парень, так не пойдет, у тебя бабла нет, возвращайся когда у тебя будет 40000 деревянных.")
+                    panel:AddChat( data.name, "No, man, it's not going to work, you don't have any money, come back when you have 40,000 rubles.")
                     local d_qst = questPLUGIN:GetQuest( "bandit_informator3" )
                     local pqst_dat = LocalPlayer():GetQuest( "bandit_informator3" )
                 end
@@ -485,22 +485,22 @@ PLUGIN.SpecialCall =
                 else
                     data.gotquest = true
                     client:AddQuest( "quest_ribak_first", "gorka_3" )
-                    client:ConCommand("say Задание: принести сталкеру предмет - Костюм Горка - 3")
+                    client:ConCommand("say Quest: Bring the Stalker an item - Gorka 3")
                 end
                 return data
             end,
             cl = function( client, panel, data )
                if data.gotquest then
-                    panel:AddChat( data.name, "Костюм, а именно Горка. Если по секрету, то я хочу быть как спецназовец. Ну они там крутые, стреляют так пиу-пау, сильные... Ну ты понял. Еще у них реакция быстрая! *Сталкер все окрашивал и окрашивал эпитатми бойцов силовых структур. Вы немного призадумались и пропустили тонны бесмысленной информации, а вернувшись в реальный мир успели услышать только обрывок фразы...* нированные несколько лет!")
-                    panel:AddChat( LocalPlayer():Name(), "Посмотрю, что можно сделать.")
+                    panel:AddChat( data.name, "A suit, namely Gorka. In secret, I want to be like a commando. Well, they are there cool, shoot so piu-pau, strong ... You get it. They also have a quick reaction! ' The stalker painted a picutre of epithets of law enforcement fighters. You zoned out and missed tons of meaningless information, and when you returned to the real world you had time to hear only a snippet of the rambling...")
+                    panel:AddChat( LocalPlayer():Name(), "I'll see what I can do.")
                     panel.talking = false
                     return
                 end
                 if data.done then
-                    panel:AddChat( LocalPlayer():Name(), "Принес я тебе костюм. Он немного помятый, но я думаю так только антуражнее. Если честно, то я сомневаюсь что он сделает из тебя сильного, выносливого и меткого спецназовца.")
-                    panel:AddChat( data.name, "Потрясающе! А насчет меткого и сильного спецназовца, то это мы еще посмотрим. Вот увидишь, скоро обо мне легенды будут сочинять и баллады петь.")
+                    panel:AddChat( LocalPlayer():Name(), "I brought you a suit. It's a little dented. To be honest, I doubt it's going to make you a strong, hardy, and unruly commando.")
+                    panel:AddChat( data.name, "How thrilling! As for the unruly and strong commando, we'll see about that. You'll see, soon the legends will write and sing ballads of me.")
                 else
-                    panel:AddChat( data.name, "Ну че? Принес Горку?")
+                    panel:AddChat( data.name, "What's going on? Did you bring the Gorka")
                 end
                 panel.talking = false
             end,
@@ -528,23 +528,23 @@ PLUGIN.SpecialCall =
                 else
                     data.gotquest = true
                     client:AddQuest( "quest_ribak_second", "6b_armor" )
-                    client:ConCommand("say Задание: принести сталкеру предмет - Бронежилет")
+                    client:ConCommand("say Quest: Bring the Stalker an item - 6b Armored vest")
                 end
                 return data
             end,
             cl = function( client, panel, data )
                if data.gotquest then
-                    panel:AddChat( data.name, "О, еще один. Че смотришь, смешно? Ну да, смешно, это ж не ты в таких тряпках ходишь...")
-                    panel:AddChat( LocalPlayer():Name(), "Чего злой такой? Я конечно не социальная служба, но помочь смогу. Разумеется, если ты не будешь мне грубить.")
-                    panel:AddChat( data.name, " Ну, раз так... Ладно, прости, просто на нервах весь, да еще и костюм этот...  Короче слушай: Захотел я как-то прикупить себе комплект одежды, ну камуфляжный такой, все дела. Выбрал по этим интернетам вашим дурацким, оплатил все через карту и ждал. Ну, приехал костюм, я распаковываю, а там вот это чудище. Времени скандалить у меня не было, поэтому я смирился. Друган с которым ехали в это проклятое место сказал, что засмеивать меня не будут, но у сталкеров весьма специфическое чувство юмора, да и нету уже того другана... Извини, отошел от темы. Сначало все было безобидно, но потом эти шутки приобретали масштабы и в конечном итоге меня теперь вообще кличут Рыбак. Но ведь не все так плохо, да? Я недавно увидел вояк, а на них такие броники модные, 6Б вроде какие-то там. Вот прошу, принеси мне один такой, он большой и почти весь костюм под себя возьмет, а то этим обезьянам лишь бы поржать!")
+                    panel:AddChat( data.name, "Oh, another one. What are you looking at, asshole? Funny? Yeah, it's pretty funny that you aren't the one wearing these rags...")
+                    panel:AddChat( LocalPlayer():Name(), "Why so angry? I'm not a therapist, but I can help in other ways. Of course, if you don't be rude to me.")
+                    panel:AddChat( data.name, " Well, if that's the case... Okay, I'm sorry, I'm just on my nerves, and even this suit ...  In short, listen: I wanted to buy myself a set of clothes, well camouflage such, all business. Picked on these internet websites, paid everything through the card and waited. Well, the suit's here, I'm unpacking, and there's this creature. I didn't have time to scandal, so I ran away. My friend who I came with to this place with told me that people won't laugh at me, and that stalkers have a specific sense of humor... Sorry, I'm off topic. At first everything was harmless, but then these jokes took on the scale and eventually I was called Rybak. But it's not that bad, is it? I saw a military soldier recently, and they have such trendy vests, a kind of 6B vest. Please bring me one, it is big and covers the entire body... I'll be finally able to put those monkeys in their place, and no one will laugh at me anymore!")
                     panel.talking = false
                     return
                 end
                 if data.done then
-                    panel:AddChat( LocalPlayer():Name(), "Такой тяжелый этот 6Б. Ты смотри аккуратнее, в лодку с ним садись, а то перевернет!")
-                    panel:AddChat( data.name, "Очень смешно. Я так и знал что тебе не составит труда его найти, военные тут как и все остальные гибнут пачками. Но я не суеверный, а тем более не брезгливый. Рыбак свесил со спины рюкзак и согнулся над ним, шурша и переворачивая все внутри. После нащупывания нужного объекта, он все так же на коленях передал вам небольшой, гремящий мешок, полностью состоящий из брезента. Вот, там все за проделанную работу, а теперь позволь мне удалиться для примерки нового аксессуара.")
+                    panel:AddChat( LocalPlayer():Name(), "The 6B is a heavy vest... Watch out, and don't put in your boat, unless you want to swim back ashore!")
+                    panel:AddChat( data.name, "Very funny. I knew you wouldn't have a problem finding it, the military here are glorified stalkers in reality. But I'm not that squeamish. The Rybak slings a backpack from his back, puts it on the ground and crouches down, rustling and turning everything inside. After groping the desired object, he still on his knees handed you a small, old bag, consisting entirely of tarpaulin patches. Here, that's for your hard work, and now let me retire to try on a new accessory.")
                 else
-                    panel:AddChat( data.name, "Ну че? Принес броник?" )
+                    panel:AddChat( data.name, "What's going on? Did you bring the vest?" )
                 end
                 panel.talking = false
             end,
@@ -575,25 +575,25 @@ PLUGIN.SpecialCall =
                 else
                     data.gotquest = true
                     client:AddQuest( "quest_bartihan4ik", "bartihan4ik_life" )
-                    client:ConCommand("say Задание: принести сталкеру Бартыханчика")
+                    client:ConCommand("say Quest: Bring the Stalker an item: Bartihanchik")
                 end
                 return data
             end,
             cl = function( client, panel, data )
                if data.gotquest then
-                    panel:AddChat( LocalPlayer():Name(), "Привет, чего грустишь? Помочь чем?")
-                    panel:AddChat( data.name, "Да чем ты мне поможешь? Он же маленький был, темный... Чего смотришь? Крыса у меня пропала, Бартыханчик звали... Ты правда готов помочь? Не ожидая вашего ответа, сталкер продолжил. Бартыханчик любил пещеры, там сыро и темно, для него как большая и бесконечная нора. Я оставил его в рюкзаке, на секунду отвернулся и все, нету Бартыханчика... Поищи его в этих норах под сгоревшим хутором, я тебе клетку для переноски дам. Только аккуратнее, не спугни его, у него и так стресс.")
+                    panel:AddChat( LocalPlayer():Name(), "Hey, why are you sad? Need help?")
+                    panel:AddChat( data.name, "'What can you even do for me? She was small, dark... I've got a rat, his name was Bartyhanchik. . . . Are you really ready to help?' Not waiting for your answer, the stalker continued. 'Bartyihanchik loved caves, the damp and dark ones and big, endless holes. I left him in my backpack, turned away for a second and he was gone, there is no Bartihanchik... Look for him in these burrows under the burnt-out farm, I'll give you a cage to carry. Just be careful not to scare him off, he's already stressed.")
                     panel.talking = false
                     return
                 end
                 if (LocalPlayer():getChar():getInv():hasItem("bartihan4ik_life")) then
-                    panel:AddChat( LocalPlayer():Name(), "Принес я твою крысу, и вправду в пещере была. Как она среди аномалий вообще пробиралась?")
-                    panel:AddChat( data.name, "Спасибо, от всей души благодарю! А насчет пещеры, она же маленькая, да и чувство инстинктивной опасности есть. Может, норки где рыла для прохода, может еще чего. Главное, Бартыханчик живой и здоровый, спасибо тебе. Вот, держи, я и не думал что ты поможешь.")
+                    panel:AddChat( LocalPlayer():Name(), "I brought your rat, she was really deep in those caves . How did she get through the anomalies?")
+                    panel:AddChat( data.name, "Thank you, thank you from the bottom of my heart! As for the caves, she is small, and has a good instinct of danger. Maybe she dug holes, or something. The main thing is that Bartihanchik is alive and well, thank you. Here, hold on, I didn't think you'd help.")
                 elseif (LocalPlayer():getChar():getInv():hasItem("bartihan4ik_dead")) then
-                    panel:AddChat( LocalPlayer():Name(), "Нашел я твою крысу... Вот только она мертва, уже была в таком состоянии.")
-                    panel:AddChat( data.name, "Эх... И на этом спасибо, сталкер, забирай свою награду и уходи.")
+                    panel:AddChat( LocalPlayer():Name(), "I found your rat... Except she's dead, I found her that way.")
+                    panel:AddChat( data.name, "Eh... Thank you anyway, stalker, take your reward and leave, please.")
                 else
-                    panel:AddChat( data.name, "Где же Бартыханчик?" )
+                    panel:AddChat( data.name, "Where's Bartihankchik?" )
                 end
                 panel.talking = false
             end,
@@ -609,17 +609,17 @@ PLUGIN.SpecialCall =
             end,
             cl = function( client, panel, data )
                 if LocalPlayer():getChar():getData("rep") < -50 then
-                    panel:AddChat( LocalPlayer():Name(), "Я знаю что у тебя можно подправить кое-что, да? Я перешел дорогу не одному сталкеру, меня теперь везде чуть ли не запинывают! У меня есть деньги, скажи сколько.")
-                    panel:AddChat( data.name, "*Присмотревшись к вам, довольно цокнул и расстянулся в улыбке:* А, так это о тебя слухи пошли. Да на тебя уже первые заказы поступают, правда суммы пока не большие. Но время удвоит, и даже утроит количество людей, не навидящих тебя. Я могу подправить архивы, твои фотографии и прочее, но сам пойми, это будет стоить круглую сумму. Это будет расцениваться для тебя "..(-LocalPlayer():getChar():getData("rep") * 1000).."рублей. Ну что, готов начать новую жизнь?" )
+                    panel:AddChat( LocalPlayer():Name(), "I know you fix problematic stalkers like me... I crossed some wrong bridges at the wrong times, and now everyone wants me dead! I have the money, tell me how much.")
+                    panel:AddChat( data.name, "*Looked at you and reached out in a smile: Oh, so those rumors were about you. Yes, there's already tales of your misfortunes ravaging the area, though it still can be fixed. You better take care of this now, because rumors spread like wildfire... I can fix the archives, your photos and stuff, but you know, it's going to cost a round sum. It's going to be considered for you. "..(-LocalPlayer():getChar():getData("rep") * 1000).."Rubles. Well, are you ready to start a new life?")
                     if LocalPlayer():getChar():hasMoney((-LocalPlayer():getChar():getData("rep") * 1000)) then
-                        panel:AddChat( LocalPlayer():Name(), "*Перевел нужную сумму информатору.")
+                        panel:AddChat( LocalPlayer():Name(), "*Transferred the necessary amount to the informant.")
                     else
-                        panel:AddChat( LocalPlayer():Name(), "Пока у меня таких денег нет.")
+                        panel:AddChat( LocalPlayer():Name(), "I don't have that kind of money yet.")
                     end
                     panel.talking = false 
                 else
-                    panel:AddChat( LocalPlayer():Name(), "Я знаю что у тебя можно подправить кое-что, да? Я перешел дорогу не одному сталкеру, меня теперь везде чуть ли не запинывают! У меня есть деньги, скажи сколько.")
-                    panel:AddChat( data.name, "Не чувак, у тебя всё в порядке, скажи спасибо, что не обманул тебя.")
+                    panel:AddChat( LocalPlayer():Name(), "I know you fix problematic stalkers like me... I crossed some wrong bridges at the wrong times, and now everyone wants me dead! I have the money, tell me how much.")
+                    panel:AddChat( data.name, "No dude, you're fine... However very naive... Scramble and grow a head, will you?")
                     panel.talking = false
                 end
             end,
