@@ -1,5 +1,5 @@
-﻿ITEM.name = "«Медуза»"
-ITEM.desc = "Артефакт гравитационной природы, обладающий способностью активно притягивать и поглощать радиоактивные частицы, тем самым уменьшая облучённость организма. Широко распространён в Зоне; за её пределами широко, хотя и негласно, используется при лечении острой лучевой болезни. \n\nХАРАКТЕРИСТИКИ: \n-артефакт \n\nРадиация +2 / сек"
+﻿ITEM.name = "Jellyfish"
+ITEM.desc = "An artifact of gravitational nature, which has the ability to actively attract and absorb radioactive particles, thereby reducing the irradiation of the body. Widespread in the zone; beyond its borders is widely, though unspoken, used in the treatment of acute radiation sickness. \n\nATTRIBUTES: \n-Artefact \n\nRadiation +2 / sec"
 ITEM.price = 12354
 ITEM.isAnomaly = true
 ITEM.weight = 0.82
@@ -14,12 +14,12 @@ ITEM.iconCam = {
 }
 
 ITEM.functions.Use = {
-	name = "положить в СИМК",
+	name = "put in case",
 	onRun = function(item)
 		local client = item.player
 		if (IsValid(client) and client:Alive()) then
 			if not client:getChar():getInv():hasItem("simkemp") then
-				client:notify("Вам нужны СИМК (пустой).")
+				client:notify("You need an empty artefact case.")
 				return false
 			end
 
