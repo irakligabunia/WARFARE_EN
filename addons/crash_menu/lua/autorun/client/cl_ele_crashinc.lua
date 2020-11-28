@@ -81,12 +81,12 @@ hook.Add("PostRenderVGUI", "ServerTimeout_HUDPaint", function()
 		surface.DrawTexturedRect(ScrW()/2-LogoWidth/2, 20,LogoWidth,LogoHeight)
 	end
 
-	draw.SimpleText("Потеряно соединение с сервером.", "dobi4ikxyecoc", ScrW()/2, ScrH()/2 - 25, Color(0, 0, 0, 255), TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
-	draw.SimpleText("Потеряно соединение с сервером.", "dobi4ikxyecoc", ScrW()/2, ScrH()/2 - 25, Color(211, 211, 211), TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
+	draw.SimpleText("Lost connection", "dobi4ikxyecoc", ScrW()/2, ScrH()/2 - 25, Color(0, 0, 0, 255), TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
+	draw.SimpleText("Lost connection.", "dobi4ikxyecoc", ScrW()/2, ScrH()/2 - 25, Color(211, 211, 211), TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
 
 	if (untilReconnect > 0) then
-		draw.SimpleText("Переподключение произойдет через " .. untilReconnect .. " секунд(ы).", "dobi4ikxyecoc", ScrW()/2, ScrH()/2 + 25, Color(0, 0, 0, 255), TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
-		draw.SimpleText("Переподключение произойдет через " .. untilReconnect .. " секунд(ы).", "dobi4ikxyecoc", ScrW()/2, ScrH()/2 + 25, Color(62, 95, 138, 255), TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
+		draw.SimpleText("Reconnecting in " .. untilReconnect .. " секунд(ы).", "dobi4ikxyecoc", ScrW()/2, ScrH()/2 + 25, Color(0, 0, 0, 255), TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
+		draw.SimpleText("Reconnecting in" .. untilReconnect .. " секунд(ы).", "dobi4ikxyecoc", ScrW()/2, ScrH()/2 + 25, Color(62, 95, 138, 255), TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
 	else
 		RunConsoleCommand("retry")
 	end
