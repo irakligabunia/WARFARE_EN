@@ -1,5 +1,5 @@
-﻿ITEM.name = "«Кристалл»"
-ITEM.desc = "Получается при попадании тяжелого металла в аномалию «Жарка». Этот артефакт замечательно выводит радиацию. Такой артефакт высоко ценится сталкерами, и мало где его можно добыть. \n\nХАРАКТЕРИСТИКИ: \n-артефакт \n\nРадиация +2 / сек"
+﻿ITEM.name = "Crystal"
+ITEM.desc = "It forms when a heavy metal gets into the 'Heat'.This artifact is wonderful for displaying radiation. Such an artifact is highly valued by stalkers, and there is little where it can be obtained. \n\nATTRIBUTES: \n-Artefact \n-Radiation +2 / sec"
 ITEM.model = "models/kek1ch/crystal.mdl"
 ITEM.price = 16728
 ITEM.width = 1
@@ -13,12 +13,12 @@ fov = 4.6703654082599
 ITEM.weight = 1.65
 
 ITEM.functions.Use = {
-	name = "положить в СИМК",
+	name = "put in case",
 	onRun = function(item)
 		local client = item.player
 		if (IsValid(client) and client:Alive()) then
 			if not client:getChar():getInv():hasItem("simkemp") then
-				client:notify("Вам нужны СИМК (пустой).")
+				client:notify("You need an empty artefact case.")
 				return false
 			end
 
