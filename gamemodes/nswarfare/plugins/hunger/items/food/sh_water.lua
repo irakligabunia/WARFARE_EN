@@ -1,6 +1,6 @@
-﻿ITEM.name = "Водка «Немирофф» (привозная, 0,5 литра)"
-ITEM.desc = "Военные флажки предназначены для питья воды небольшими глотками. Произведена и очищена медиками и учеными. Вода в сочетании с особым видом спирта кипятится при очень высокой температуре в целях очистки и дезинфекции. \n\nХАРАКТЕРИСТИКИ: \n-напиток \n-крепкий алкоголь \n\nРадиация -24 \nЖажда 37" --Его описание
-ITEM.category = "Еда" 
+﻿ITEM.name = "Vodka 'Nemiroff' (imported, 0.5 liters)"
+ITEM.desc = "Military flags are designed to drink water in small sips. Produced and cleaned by medics and scientists. Water combined with a special type of alcohol is boiled at a very high temperature for cleaning and disinfection. \n\nATTRIBUTES: \n-Beverage \n-Strong alcohol \n-Radiation exposure -24 mSv\nThrist +37" --Его описание
+ITEM.category = "Food"
 ITEM.price = 1746 
 ITEM.thirst = 37
 ITEM.exRender = false
@@ -18,7 +18,7 @@ ITEM.iconCam = {
 }
 
 ITEM.functions.use = { 
-	name = "употребить",
+	name = "use",
 	tip = "useTip",
 	icon = "icon16/cup.png",
 	onRun = function(item)
