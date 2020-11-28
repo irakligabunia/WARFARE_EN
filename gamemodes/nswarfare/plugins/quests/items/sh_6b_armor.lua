@@ -1,5 +1,5 @@
-ITEM.name = "Бронежилет 6б4-23-1"
-ITEM.desc = "Не самая новая модель бронежилета, но до сих поря актуальны. Скорее всего, в нее вставлены бронепластины 5а класса. Отличная вещь. \n\nХАРАКТЕРИСТИКИ: \n-квестовый предмет"
+ITEM.name = "Armored vest 6b4-23-1"
+ITEM.desc = "Not the newest model of body armor, but still relevant. Most likely, it inserted armor plates 5a class. \n\nATTRIBUTES: \n-Quest item"
 ITEM.price = 24341
 ITEM.exRender = false
 ITEM.weight = 0.12
