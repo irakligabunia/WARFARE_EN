@@ -1,5 +1,5 @@
 ITEM.name = "Artefact Case"
-ITEM.desc = "Lead-isolated metal container artifact (SIMK). Is a simple metal box with thick walls, lined with foam, as well as a heavy lid with sealing gums. Specially designed for the transport of radioactive materials. \n\nХАРАКТЕРИСТКИ: \n-ехнологическое приспособление \n-не требует подзарядки \n-позволяет транспортировать артефакты \n-максимальная вместимость: 1 \n-состояние: пустой \n\nВНИМАНИЕ: \n\nСледует извлечь артефакт из контейнера перед их продажей"
+ITEM.desc = "Lead-isolated metal container artifact (SIMK). Is a simple metal box with thick walls, lined with foam, as well as a heavy lid with sealing gums. Specially designed for the transport of radioactive materials. \n\nATTRIBUTES: \n-Technological device \n-Doesn't require recharging \n-Allows usage of artefacts \n-Maximum capacity - 1 \n-Status - empty \n\nWARNING: \n\nThe artifact should be removed from the container before it is sold"
 ITEM.price = 5718
 ITEM.exRender = false
 ITEM.weight = 2
