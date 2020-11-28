@@ -1,5 +1,5 @@
-﻿ITEM.name = "«Лунный свет»"
-ITEM.desc = "Уникальный артефакт электростатической природы. Демонстрирует способность к резонансу под воздействием пси-волн. Со временем сталкеры научились подстраивать артефакт таким образом, чтобы тот резонировал в противофазе, тем самым полностью или в значительной степени нейтрализуя пси-излучение. Радиоактивен. \n\nХАРАКТЕРИСТИКИ: \n-артефакт \n\nРадиация +2 / сек"
+﻿ITEM.name = "Moonlight"
+ITEM.desc = "A unique artifact of electrostatic nature. Demonstrates the ability to resonance under the influence of psi waves. Over time, stalkers learned to adjust the artifact in such a way that it resonated in the opposite phase, thereby completely or to a large extent neutralizing psi radiation. Radioactive. \n\nATTRIBUTES: \n-Artefact \n\nRadiation +2 / sec"
 ITEM.model = "models/kek1ch/electra_moonlight.mdl"
 ITEM.price = 13536
 ITEM.width = 1
@@ -13,12 +13,12 @@ fov = 3
 ITEM.weight = 0.82
 
 ITEM.functions.Use = {
-	name = "положить в СИМК",
+	name = "put in case",
 	onRun = function(item)
 		local client = item.player
 		if (IsValid(client) and client:Alive()) then
 			if not client:getChar():getInv():hasItem("simkemp") then
-				client:notify("Вам нужны СИМК (пустой).")
+				client:notify("You need an empty artefact case.")
 				return false
 			end
 
