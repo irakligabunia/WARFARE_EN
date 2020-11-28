@@ -1,5 +1,5 @@
-﻿ITEM.name = "Бартыханчик (Живой)"
-ITEM.desc = "Он такой холодный, но еще живой, стоило бы его согреть...\n\nХАРАКТЕРИСТИКИ: \n-квестовый предмет"
+﻿ITEM.name = "Bartihanchik (Alive)"
+ITEM.desc = "It is so cold, but still alive, it would be worth warming it ...\n\nATTRIBUTES: \n-Quest item"
 ITEM.price = 510
 ITEM.exRender = false
 ITEM.weight = 0.12
@@ -15,7 +15,7 @@ ITEM.iconCam = {
 
 
 ITEM.functions.use = { 
-	name = "свернуть шею",
+	name = "twist neck",
 	tip = "useTip",
 	icon = "icon16/drive.png",
 	onRun = function(item)
