@@ -1,5 +1,5 @@
 ﻿ENT.Type = "anim"
-ENT.PrintName = "Тайник c Бартыханчиком"
+ENT.PrintName = "Stash"
 ENT.Category = "Warfare ENT"
 ENT.Spawnable = true
 ENT.AdminOnly = true
@@ -39,20 +39,20 @@ function ENT:Use(activator)
 	if self:GetNetworkedBool("Usable") == true then
 	self:EmitSound("interface/inv_iam_open.ogg")
 		self:SetNetworkedBool("Usable", false)
-		activator:setAction("Ведётся поиск вещей...", 4)
+		activator:setAction("Searching...", 4)
 		activator:doStaredAction(self, 
 		function()
 			if activator:getChar():getInv():add(table.Random(tbl), 1) then
-				activator:notify("Вы нашли что-то полезное")
+				activator:notify("You found something useful.")
 				self:EmitSound("interface/inv_iam_close.ogg")
 			else
-				activator:notify("Вам не хватает места в инвентаре")
+				activator:notify("You don't have enough space!")
 			end
 			if activator:getChar():getInv():add("bartihan4ik_life", 1) then
-				activator:notify("Вы нашли что-то полезное")
+				activator:notify("You found something useful.")
 				self:EmitSound("interface/inv_iam_close.ogg")
 			else
-				activator:notify("Вам не хватает места в инвентаре")
+				activator:notify("You don't have enough space!")
 			end
 			timer.Simple(math.random(1800, 1801), function()
 				self:SetNetworkedBool("Usable", true)
@@ -65,7 +65,7 @@ function ENT:Use(activator)
 			end
 		end)
 	else
-		activator:notify("Здесь ничего нет")
+		activator:notify("There's nothing here.")
 	end
 end
 
