@@ -55,7 +55,7 @@ if (CLIENT) then
 end
 
 ITEM.functions.toggle = {
-	name = "переключить",
+	name = "toggle",
 	tip = "useTip",
 	onRun = function(item)
 		item:setData("power", !item:getData("power", false), player.GetAll(), false, true)
@@ -66,7 +66,7 @@ ITEM.functions.toggle = {
 }
 
 ITEM.functions.use = {
-	name = "настроить частоту",
+	name = "adjust frequency",
 	tip = "useTip",
 	onRun = function(item)
 		netstream.Start(item.player, "radioAdjust", item:getData("freq", "000,0"), item.id)
