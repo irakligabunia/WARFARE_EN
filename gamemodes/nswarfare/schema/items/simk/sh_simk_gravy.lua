@@ -1,5 +1,5 @@
 ﻿ITEM.name = "Artefact Case (Gravi)"
-ITEM.desc = "The artifact is formed with a long-term gravitational influence on metal-containing substances. It is able to maintain an antigravity field. Many stalkers use it in the same way as the 'Night Star' artifact - to significantly reduce the weight of the backpack. \n\nХАРАКТЕРИСТИКИ: \n-технологическое приспособление \n-высокая ценность \n-не требует подзарядки \n-максимальная вместимость - 1 \n-состояние: заполнен (содержит артефакт «Грави»)"
+ITEM.desc = "The artifact is formed with a long-term gravitational influence on metal-containing substances. It is able to maintain an antigravity field. Many stalkers use it in the same way as the 'Night Star' artifact - to significantly reduce the weight of the backpack. \n\nATTRIBUTES: \n-Technological device \n-High value \n-Doesn't require recharging \n-Maximum capacity - 1 \n-Status: Full (Contains Artefact 'Gravi')"
 ITEM.category = "SIMK"
 ITEM.price = 43620
 ITEM.exRender = false
