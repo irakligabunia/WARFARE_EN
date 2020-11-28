@@ -1,5 +1,5 @@
 ﻿ITEM.name = "Artefact Case (Goldfish)"
-ITEM.desc = "All its properties were discovered by Sakharov scientists on Yantar after a massive emission. After careful research, it was determined that this artifact was formed after the merger of the three 'Gravi' at the level of interaction of singular fields. \n\nХАРАКТЕРИСТИКИ: \n-технологическое приспособление \n-высокая ценность \n-не требует подзарядки \n-максимальная вместимость - 1 \n-состояние: заполнен (содержит артефакт «Золотая рыбка»)"
+ITEM.desc = "All its properties were discovered by Sakharov scientists on Yantar after a massive emission. After careful research, it was determined that this artifact was formed after the merger of the three 'Gravi' at the level of interaction of singular fields. \n\nATTRIBUTES: \n-Technological device \n-High value \n-Doesn't require recharging \n-Maximum capacity - 1 \n-State: filled (contains Goldfish artefact)"
 ITEM.category = "SIMK"
 ITEM.price = 21752
 ITEM.exRender = false
