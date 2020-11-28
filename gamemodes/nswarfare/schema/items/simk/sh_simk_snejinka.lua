@@ -1,5 +1,5 @@
 ﻿ITEM.name = "Artefact Case (Snowflake)"
-ITEM.desc = "The artifact looks like a Kolobok. There is an opinion that this is the Kolobok, whose properties were strengthened after exposure to a powerful electric field. Due to its qualities it is able to dramatically increase the muscle tone of the carrier. \n\nХАРАКТЕРИСТИКИ: \n-технологическое приспособление \n-высокая ценность \n-не требует подзарядки \n-максимальная вместимость - 1 \n-состояние: заполнен (содержит артефакт «Снежинка»)"
+ITEM.desc = "The artifact looks like a Kolobok. There is an opinion that this is the Kolobok, whose properties were strengthened after exposure to a powerful electric field. Due to its qualities it is able to dramatically increase the muscle tone of the carrier. \n\nATTRIBUTES: \n-Technological device \n-High value \n-Doesn't require recharging \n-Maximum capacity - 1 \n-Status: Full (Contains Artefact 'Snowflake')"
 ITEM.category = "SIMK"
 ITEM.price = 41904
 ITEM.exRender = false
