@@ -1,5 +1,5 @@
-﻿ITEM.name = "Сломанный счетчик Гейгера"
-ITEM.desc = "Гейгера, который когда-то использовался в качестве детектора частиц, измеряющего ионизирующие (радиоактивные) излучение. \n\nХАРАКТЕРИСТИКИ: \n-технологическое приспособление \n-используется для: утилизация"
+﻿ITEM.name = "Broken Geiger counter"
+ITEM.desc = "Geiger, which was once used as a particle detector, measures ionizing (radioactive) radiation. \n\nATTRIBUTES: \n-Technological device \n-Used for: utility"
 ITEM.price = 1089
 ITEM.exRender = false
 ITEM.weight = 0.24
