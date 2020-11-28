@@ -1,4 +1,4 @@
-﻿ITEM.name = "Scavanger (Dead)"
+﻿ITEM.name = "Bartihanchik (Dead)"
 ITEM.desc = "A faggot and a retard. Why did I break his neck? Okay, I'll tell you him he was already dead. \n\nATTRIBUTES: \n-Quest item"
 ITEM.price = 310
 ITEM.exRender = false
