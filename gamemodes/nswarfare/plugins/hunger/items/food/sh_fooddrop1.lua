@@ -1,5 +1,5 @@
-ITEM.name = "Мясо кабана"
-ITEM.desc = "Самое популярное мясо на территории Зоны Отчуждения. Весьма питательное и не сильно загрязненное. Ученые уже достаточно много провели исследований над принесенными сталкерами образцами, поэтому спрос как таковой на такие куски мяса упал. \n\nВНИМАНИЕ: \n\nСталкерам рекомендуется воздержаться от употребления такого рода мяса. \n\nХАРАКТЕРИСТИКИ: \n-мясо мутанта низкого происхождения \n-возможно приготовить \n-ядовитая пища \n-радиационное облучение: 35 \n\nНасыщение 17"
+ITEM.name = "Boar meat"
+ITEM.desc = "The most popular meat in the Exclusion Area. Very nutritious and not heavily contaminated. Scientists have already done quite a lot of research on the samples brought by stalkers, so the demand as such for such pieces of meat has fallen. \n\nATTRIBUTES: \n\nStalkers are advised to refrain from eating this kind of meat. \n-Cookable \n-Poisonous  \n-Radiation exposure: 35 \n\nSaturation 17"
 ITEM.price = 387
 ITEM.weight = 0.51
 ITEM.exRender = false
@@ -31,5 +31,5 @@ ITEM.functions.use = {
 	onCanRun = function(item)
 		return (!item.empty)
 	end,
-	name = "употребить"
+	name = "use"
 }
