@@ -1,5 +1,5 @@
-ITEM.name = "Мясо псевдособаки (произведено в Зоне)"
-ITEM.desc = "Порция жаренных отбивных из мяса псевдособаки. Хорошие пищевые свойства из-за плотной мышечной ткани животного. \n\nХАРАКТЕРИСТИКИ: \n-мясо мутанта «низкого происхождения» \n-ядовитая пища \n-радиационное облучение: 177 м3в \n\nНасыщенеие 40"
+ITEM.name = "Pseudo dog meat (Zone product)"
+ITEM.desc = "Portion of fried chops from pseudo-dog meat. Good nutritional properties due to the dense muscle tissue of the animal.  \n\nATTRIBUTES:\n-Poisonous \n-Radiation exposure: 17 м3в \n\nSaturation 40"
 ITEM.price = 1227
 ITEM.hunger = 40
 ITEM.thirst = 5
@@ -32,6 +32,6 @@ ITEM.functions.use = {
 	onCanRun = function(item)
 		return (!item.empty)
 	end,
-	name = "употребить"
+	name = "use"
 }
 
