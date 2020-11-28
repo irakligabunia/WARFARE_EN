@@ -1,5 +1,5 @@
-﻿ITEM.name = "«Золотая рыбка»"
-ITEM.desc = "Все его свойства были обнаружены учёным Сахаровым на Янтаре после массивного выброса. После его тщательных исследований было установлено, что этот артефакт образуется после слияния трёх «Грави» на уровне взаимодействия сингулярных полей. \n\nХАРАКТЕРИСТИКИ: \n-артефакт \n\nРадиация +2 / сек"
+﻿ITEM.name = "Goldfish"
+ITEM.desc = "All its properties were discovered by Sakharov scientists on Yantar after a massive emission. After careful research, it was determined that this artifact was formed after the merger of the three 'Gravi' at the level of interaction of singular fields. \n\nATTRIBUTES: \n-Artefact \n-Radiation +3 / sec"
 ITEM.price = 19752
 ITEM.isAnomaly = true
 ITEM.weight = 0.82
@@ -14,12 +14,12 @@ ITEM.iconCam = {
 }
 
 ITEM.functions.Use = {
-	name = "положить в СИМК",
+	name = "put in artefact case",
 	onRun = function(item)
 		local client = item.player
 		if (IsValid(client) && client:Alive()) then
 			if not client:getChar():getInv():hasItem("simkemp") then
-				client:notify("Вам нужны СИМК (пустой).")
+				client:notify("You need an empty artefact case.")
 				return false
 			end
 
