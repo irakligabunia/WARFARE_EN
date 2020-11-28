@@ -1,5 +1,5 @@
-﻿ITEM.name = "Ненастроенный Пси-шлем"
-ITEM.desc = "Прототип, разработнный учеными для защиты от пси-излучения. Представляет из себя наушники с начинкой, продолжающиеся конструкцией из сетки, покрывающей голову. Размеры позволяют носить его под капюшоном, каской, шлемом и другой экипировкой. \n\nХАРАКТЕРИСТИКИ: \n-важный предмет \n-элемент экипировки \n-не обеспечивает защиту от источников пси-излучения"
+﻿ITEM.name = "Untuned Psi helmet"
+ITEM.desc = "A prototype developed by scientists to protect against psi radiation. It is a headphones with filling and mesh covering the head. It's dimensions allow you to wear it under the hood, helmet, helmet and other equipment. \n\nATTRIBUTES: \n-Important item \n-Equipment \n-Does not provide protection from psi-radiation sources"
 ITEM.price = 12900
 ITEM.exRender = false
 ITEM.weight = 0.12
