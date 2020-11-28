@@ -1,5 +1,5 @@
-﻿ITEM.name = "«Грави»"
-ITEM.desc = "Артефакт образуется при длительном гравитационном воздействии на металлосодержащие вещества. Способен поддерживать антигравитационное поле. Многие сталкеры используют его так же, как и артефакт «Ночная звезда» – чтобы заметно уменьшить вес рюкзака. \n-артефакт \n\nРадиация +3 / сек"
+﻿ITEM.name = "Gravi"
+ITEM.desc = "The artifact is formed with a long-term gravitational influence on metal-containing substances. It is able to maintain an antigravity field. Many stalkers use it in the same way as the 'Night Star' artifact - to significantly reduce the weight of the backpack. \n\nATTRIBUTES: \n-артефакт \n\nРадиация +3 / сек"
 ITEM.price = 40620
 ITEM.isAnomaly = true
 ITEM.weight = 0.82
@@ -14,12 +14,12 @@ ITEM.iconCam = {
 }
 
 ITEM.functions.Use = {
-	name = "положить в СИМК",
+	name = "put in case",
 	onRun = function(item)
 		local client = item.player
 		if (IsValid(client) && iclient:Alive()) then
 			if not client:getChar():getInv():hasItem("simkemp") then
-				client:notify("Вам нужны СИМК (пустой).")
+				client:notify("You need an empty artefact case.")
 				return false
 			end
 
