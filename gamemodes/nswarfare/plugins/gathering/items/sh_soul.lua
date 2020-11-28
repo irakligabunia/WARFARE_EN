@@ -1,5 +1,5 @@
-﻿ITEM.name = "«Душа»"
-ITEM.desc = "Уникальный органический артефакт с не менее уникальными свойствами. Неизвестным пока образом увеличивает общую скорость восстановления организма. Из-за особенностей воздействия на организм и приятного внешнего вида представляет особый интерес для коллекционеров. \n\nХАРАКТЕРИСТИКИ: \n-артефакт \n\nРадиация +4 / сек"
+﻿ITEM.name = "Soul"
+ITEM.desc = "A unique organic artefact with no less unique properties. Increases the overall rate of recovery of the body. Due to the features of the influence on the body and pleasant appearance is of particular interest to collectors. \n\nATTRIBUTES: \n-Artefact \n\nRadiation +4 / sec"
 ITEM.price = 25662
 ITEM.isAnomaly = true
 ITEM.weight = 0.82
@@ -14,12 +14,12 @@ ITEM.iconCam = {
 }
 
 ITEM.functions.Use = {
-	name = "положить в СИМК",
+	name = "put in case",
 	onRun = function(item)
 		local client = item.player
 		if (IsValid(client) and client:Alive()) then
 			if not client:getChar():getInv():hasItem("simkemp") then
-				client:notify("Вам нужны СИМК (пустой).")
+				client:notify("You need an empty artefact case.")
 				return false
 			end
 			
