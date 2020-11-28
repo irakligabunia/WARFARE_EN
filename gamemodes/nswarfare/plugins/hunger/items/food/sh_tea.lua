@@ -1,5 +1,5 @@
-﻿ITEM.name = "Чай Бороды (произведено в Зоне, 1 литр)" 
-ITEM.desc = "Популярный среди сталкеров горячий чай Бороды, настоянный на съедобных сушенных грибах в кипяченной воде (поговаривают, что не радиоактивной) с добавлением сахара. Сталкеры. которые могут позволить покупать данный напиток, часто берут его с собой в длительные ходки по Зоне. Это довольно хороший и относительно здоровый способ оставаться на ногах, когда устанешь или когда пережидаешь холодные темные ночи. \n\nХАРАКТЕРИСТИКИ \n-напиток \n-здоровое питание \n\nРадиация -13 м3d / сек \nНасыщение 226 ккал экв." --Его описание
+﻿ITEM.name = "Beard's Tea (1 litre, Zone product)" 
+ITEM.desc = "Popular among stalkers, infused with edible dried mushrooms in boiled water (they say it is not radioactive) with added sugar. Stalkers usually buy this drink and take it with them in long walks around the zone. It's a pretty good and relatively healthy way to stay on your feet when you're tired or when you're waiting for cold dark nights to end. \n\nATTRIBUTES \n-Beverage \n-Healthy \n-Radiation exposure: -13 mSv \n-Saturation 226 Kcal" --Его описание
 ITEM.price = 6709
 ITEM.thirst = 90
 ITEM.hunger = 10
@@ -18,7 +18,7 @@ ITEM.iconCam = {
 }
 
 ITEM.functions.use = {
-	name = "употребить",
+	name = "use",
 	tip = "useTip",
 	onRun = function(item)
 		local client = item.player
