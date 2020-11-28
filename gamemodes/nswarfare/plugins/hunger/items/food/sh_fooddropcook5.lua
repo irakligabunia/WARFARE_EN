@@ -1,5 +1,5 @@
-ITEM.name = "Собачья отбивная (произведено в Зоне)"
-ITEM.desc = "Небольшая горячая отбивная из слепого пса смешанная с чесноком, перцем и грибами. Упакована в старую жестяную коробку. Дешевая альтернатива популярным кабаньим стейкам. \n\nХАРАКТЕРИСТИКИ: \n-вредная пища \n-радиационное облучение: 11 \n\nНасыщенеие 32"
+ITEM.name = "Dog chop (Zone product)"
+ITEM.desc = "A small hot chop from a blind dog mixed with garlic, pepper and mushrooms. Packed in an old tin box. A cheap alternative to popular boar steaks. \n\nATTRIBUTES: \n-Unhealthy \n-Radiation: 11 mSv \n-Saturation 32 Kcal"
 ITEM.price = 676
 ITEM.exRender = false
 ITEM.weight = 0.21
@@ -31,6 +31,6 @@ ITEM.functions.use = {
 	onCanRun = function(item)
 		return (!item.empty)
 	end,
-	name = "употребить"
+	name = "use"
 }
 
