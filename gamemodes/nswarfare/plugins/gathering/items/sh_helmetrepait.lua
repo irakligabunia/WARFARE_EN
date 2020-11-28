@@ -1,5 +1,5 @@
-﻿ITEM.name = "Масло и растворитель «Двойка»"
-ITEM.desc = "Оружейное масло Красной армии, которое используется уже более 70 лет. Металлическая масленка разделена на две части, в одной масло, в другой чистящий растворитель. \n\nХАРАКТЕРИСТИКИ: \n-технологическое приспособление \n-жидкое оружейное масло и чистящий набор"
+﻿ITEM.name = "Oil and solvent 'The Deuce'"
+ITEM.desc = "Red Army weapons oil, which has been used for more than 70 years. The metal oil is divided into two parts, in one oil, in another cleaning solvent. \n\nATTRIBUTES: \n-Technological device"
 ITEM.exRender = false
 ITEM.weight = 0.27
 ITEM.price = 312
