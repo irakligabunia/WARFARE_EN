@@ -1,5 +1,5 @@
-ITEM.name = "Гуляш из кровососа (произведено в Зоне)"
-ITEM.desc = "Небольшая горячая порция гуляша из мяса кровососа, приправленная чили с добавлением грибов. Упаковано в жестяную коробку. \n\nХАРАКТЕРИСТИКИ: \n-мясо мутанта «низкого происхождения» \n-вредная пища \n-радиационное облучение: 21 \n\nНасыщенеие 58"
+ITEM.name = "Bloodsucker goulash (Zone product)"
+ITEM.desc = "A small hot portion of goulash from bloodsuction meat, seasoned with chili with the addition of mushrooms. Packed in a tin box. \n\nATTRIBUTES: \n-Unhealthy \n-Radiation exposure: 21 mSv \n\nSatuartion 58 Kcal"
 ITEM.price = 1493
 ITEM.exRender = false
 ITEM.weight = 0.42
@@ -31,5 +31,5 @@ ITEM.functions.use = {
 	onCanRun = function(item)
 		return (!item.empty)
 	end,
-	name = "употребить"
+	name = "use"
 }
