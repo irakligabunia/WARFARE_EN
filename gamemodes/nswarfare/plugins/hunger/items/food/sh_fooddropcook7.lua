@@ -1,5 +1,5 @@
-ITEM.name = "Жаренная рука снорка (произведено в Зоне)"
-ITEM.desc = "Прожаренная рука снорка. Охотники полагают, что подобная пища придает им сил для дальнейшей охоты, учитывая тот факт, что в мясо снорков содержатся различные состовляющие, способствующие делать столь высокие прыжки. Не стоит забывать, что поедание снорков - самый настоящик каннибализм. \n\nХАРАКТЕРИСТИКИ: \n-вредная пища \n-радиационное облучение: 15 м3в \n\nНасыщенеие 34"
+ITEM.name = "Cooked snork hand (Zone product)"
+ITEM.desc = "Roasted hand of a snork. Hunters believe that such food gives them strength for further hunting, given the fact that the meat of snorks contains various components, contributing to make such high jumps. Do not forget that eating snorkels infuses cannibalism. \n\nATTIRUBTES: \n-Unhealthy \n-Radiation exposure: 15 mSv \n-Saturation 34 Kcal"
 ITEM.price = 948
 ITEM.exRender = false
 ITEM.weight = 0.27
@@ -31,5 +31,5 @@ ITEM.functions.use = {
 	onCanRun = function(item)
 		return (!item.empty)
 	end,
-	name = "употребить"
+	name = "use"
 }
