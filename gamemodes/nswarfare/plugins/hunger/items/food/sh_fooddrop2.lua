@@ -1,5 +1,5 @@
-ITEM.name = "Мясо псевдособаки"
-ITEM.desc = "Мясо псевдособаки - весьма диетический продукт в Зоне. Довольно вкусное, с большой пищевой ценностью, сталкеры часто выбирают его в прожаренном виде. Может заинтересовать ученых. Из куска мяса при нехитрых манипуляциях можно добыть немного животного жира, пригодного для смазки оружия. \n\nВНИМАНИЕ: \n\nСталкерам рекомендуется воздержаться от употребления такого рода мяса \n\nХАРАКТЕРИСТИКИ: \n-мясо мутанта низкого происхождения \n-возможно приготовить \n-ядовитая пища \n-радиационное облучение: +27 мЗв \n\nНасыщение 19 ккал экв"
+ITEM.name = "Psuedo dog meat"
+ITEM.desc = "Pseudo-dog meat is a very dietary product in the zone. Pretty tasty, with great nutritional value, stalkers often choose it in a roasted form. Maybe scientists are interested. From a piece of meat with simple manipulations you can get some animal fat, suitable for lubrication of weapons. \n\nWARNING: \n\nStalkers are advised to refrain from eating this kind of meat \n\nATTRIBUTES: \n-Cookable \n-Poisonous \n-Radiation exposure: +27 mSv \n\nSaturation 19 Kcal"
 ITEM.price = 240
 ITEM.exRender = false
 ITEM.weight = 0.2
@@ -31,5 +31,5 @@ ITEM.functions.use = {
 	onCanRun = function(item)
 		return (!item.empty)
 	end,
-	name = "употребить"
+	name = "use"
 }
