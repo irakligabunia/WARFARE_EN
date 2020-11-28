@@ -151,7 +151,7 @@ function SCHEMA:HUDPaint()
 				surface.SetDrawColor(Color( 0, 0, 0, 200))
 				surface.DrawOutlinedRect(ScrW() * 0.434, ScrH() * 0.8, ScrW() * 0.13, ScrH() * 0.036)
 
-				draw.DrawText("Поднять предмет (У)", "Roh15", ScrW() * 0.5, ScrH() * 0.805, Color(255, 255, 255, 210), TEXT_ALIGN_CENTER)
+				draw.DrawText("Pick up item (E)", "Roh15", ScrW() * 0.5, ScrH() * 0.805, Color(255, 255, 255, 210), TEXT_ALIGN_CENTER)
 			elseif (entity:GetClass() == "nut_vendor" or entity:GetClass() == "nut_talker") and (dist < 100) then
 				surface.SetDrawColor(15, 15, 15, 200)
 				surface.DrawRect(ScrW() * 0.445, ScrH() * 0.8, ScrW() * 0.11, ScrH() * 0.036)
@@ -159,7 +159,7 @@ function SCHEMA:HUDPaint()
 				surface.SetDrawColor(Color( 0, 0, 0, 200))
 				surface.DrawOutlinedRect(ScrW() * 0.445, ScrH() * 0.8, ScrW() * 0.11, ScrH() * 0.036)
 
-				draw.DrawText("Говорить (У)", "Roh15", ScrW() * 0.5, ScrH() * 0.805, Color(255, 255, 255, 210), TEXT_ALIGN_CENTER)
+				draw.DrawText("Interact (E)", "Roh15", ScrW() * 0.5, ScrH() * 0.805, Color(255, 255, 255, 210), TEXT_ALIGN_CENTER)
 			elseif (entity:GetClass() == "prop_ragdoll") and (dist < 100) and (MutantTable[entity:GetModel()]) then
 				surface.SetDrawColor(15, 15, 15, 200)
 				surface.DrawRect(ScrW() * 0.445, ScrH() * 0.8, ScrW() * 0.11, ScrH() * 0.036)
@@ -167,7 +167,7 @@ function SCHEMA:HUDPaint()
 				surface.SetDrawColor(Color( 0, 0, 0, 200))
 				surface.DrawOutlinedRect(ScrW() * 0.445, ScrH() * 0.8, ScrW() * 0.11, ScrH() * 0.036)
 
-				draw.DrawText("Разделать (У)", "Roh15", ScrW() * 0.5, ScrH() * 0.805, Color(255, 255, 255, 210), TEXT_ALIGN_CENTER)
+				draw.DrawText("Unpack (E)", "Roh15", ScrW() * 0.5, ScrH() * 0.805, Color(255, 255, 255, 210), TEXT_ALIGN_CENTER)
 			elseif (entity:GetClass() == "nut_metal_entbox" or entity:GetClass() == "nut_wood_entbox") and (dist < 100) then
 				surface.SetDrawColor(15, 15, 15, 200)
 				surface.DrawRect(ScrW() * 0.434, ScrH() * 0.8, ScrW() * 0.13, ScrH() * 0.036)
@@ -175,7 +175,7 @@ function SCHEMA:HUDPaint()
 				surface.SetDrawColor(Color( 0, 0, 0, 200))
 				surface.DrawOutlinedRect(ScrW() * 0.434, ScrH() * 0.8, ScrW() * 0.13, ScrH() * 0.036)
 
-				draw.DrawText("Возможно разбить", "Roh15", ScrW() * 0.5, ScrH() * 0.805, Color(255, 255, 255, 210), TEXT_ALIGN_CENTER)
+				draw.DrawText("Breakable", "Roh15", ScrW() * 0.5, ScrH() * 0.805, Color(255, 255, 255, 210), TEXT_ALIGN_CENTER)
 			elseif (entity:GetClass() == "nut_box") and (dist < 100) then
 				surface.SetDrawColor(15, 15, 15, 200)
 				surface.DrawRect(ScrW() * 0.445, ScrH() * 0.8, ScrW() * 0.11, ScrH() * 0.036)
@@ -183,7 +183,7 @@ function SCHEMA:HUDPaint()
 				surface.SetDrawColor(Color( 0, 0, 0, 200))
 				surface.DrawOutlinedRect(ScrW() * 0.445, ScrH() * 0.8, ScrW() * 0.11, ScrH() * 0.036)
 
-				draw.DrawText("Обыскать (У)", "Roh15", ScrW() * 0.5, ScrH() * 0.805, Color(255, 255, 255, 210), TEXT_ALIGN_CENTER)
+				draw.DrawText("Search (E)", "Roh15", ScrW() * 0.5, ScrH() * 0.805, Color(255, 255, 255, 210), TEXT_ALIGN_CENTER)
 			end
 		end
 	end
@@ -221,7 +221,7 @@ function SCHEMA:Tick()
 end
 
 local color = {}
---if (game.GetMap() == "rp_zaton_warfare_kek1ch_v1") then
+if (game.GetMap() == "rp_zaton_warfare_kek1ch_v1") then
 	color["$pp_colour_addr"] = 0.06
 	color["$pp_colour_addg"] = 0
 	color["$pp_colour_addb"] = 0.02
@@ -250,7 +250,7 @@ hook.Add( "OnEntityCreated", "R_Optimisation.OnEntityCreated", function(ply)
     RunConsoleCommand("rope_smooth", "0")
     RunConsoleCommand("Rope_wind_dist", "0")
     RunConsoleCommand("Rope_shake", "0")
-    RunConsoleCommand("violence_ablood", "1")
+    --RunConsoleCommand("violence_ablood", "1")
     RunConsoleCommand("mat_queue_mode", "-1")
     RunConsoleCommand("cl_threaded_bone_setup", "1")
     RunConsoleCommand("gmod_mcore_test", "1")
@@ -262,7 +262,7 @@ hook.Add( "OnEntityCreated", "R_Optimisation.OnEntityCreated", function(ply)
     RunConsoleCommand("Muzzleflash_light", "0")
     RunConsoleCommand("cl_wpn_sway_interp", "0")
     RunConsoleCommand("in_usekeyboardsampletime", "0")
-    --RunConsoleCommand("r_3dsky", "0")
+    RunConsoleCommand("r_3dsky", "0")
 end)
 
 surface.CreateFont( "Roh_Low", {
