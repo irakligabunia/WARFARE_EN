@@ -1,6 +1,6 @@
-﻿ITEM.name = "Водка Столичная (Привозная, 0.75 листра)" --Название предмета
-ITEM.desc = "Обожаемый русскими напиток, да и многими другими людьми во всем мире. Это русская водка довольно высокого качества. \n-крепкий алкоголь \n-высококачественное изделие \n\nЖажда 60" --Его описание
-ITEM.category = "Еда" 
+﻿ITEM.name = "Vodka 'Stolichnaya' (Imported, 0.75 litres)" --Название предмета
+ITEM.desc = "Drink adored by Russians, and many other people around the world. This Russian vodka is of quite high quality. \nATTRIBUTES: \n-Strong alcohol \n-High quality \n-Thrist +60" --Его описание
+ITEM.category = "Food" 
 ITEM.price = 3994 
 ITEM.thirst = 60
 ITEM.hunger = 0
@@ -19,7 +19,7 @@ ITEM.iconCam = {
 }
 
 ITEM.functions.use = {
-	name = "употребить",
+	name = "use",
 	tip = "useTip",
 	icon = "icon16/cup.png",
 	onRun = function(item)
