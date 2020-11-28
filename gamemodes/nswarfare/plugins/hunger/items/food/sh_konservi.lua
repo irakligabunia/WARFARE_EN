@@ -1,6 +1,6 @@
-﻿ITEM.name = "Тушенка из говядины «Абакан» (привозная)"
-ITEM.desc = "Тушенка - это общее название из тушеного мяса, производимая в Советском Союзе и других странах Варшавского договора. Ирония заключается в том, что идея такого продукта пришла в Россию во время Второй мировой войны в форме помощи от Соединенных Штатов. \n\nХАРАКТЕРИСТИКИ: \n-пища \n-здоровое питание \n-для употребления нужен: Нож \n\nНасыщение 80" --Его описание
-ITEM.category = "Еда"
+﻿ITEM.name = "Abakan beef stew (imported)"
+ITEM.desc = "The stew is a common name for stew produced in the Soviet Union and other Warsaw Pact countries. The irony is that the idea of such a product came to Russia during World War II in the form of assistance from the United States. \n\nATTRIBUTES: \n-Food \n-Healthy \n-Required to use: Knife \n-Saturation 80 Kcal" --Его описание
+ITEM.category = "Food"
 ITEM.price = 2769 
 ITEM.hunger = 80
 ITEM.thirst = 10
@@ -20,7 +20,7 @@ ITEM.functions.use = {
 	onRun = function(item)
 		local client = item.player
 		if not client:getChar():getInv():hasItem("knife") then
-			client:notify("Вам нужен Нож для открытия консервов.")
+			client:notify("You need a knife to open the can.")
 			return false
 		end
 		
@@ -36,6 +36,6 @@ ITEM.functions.use = {
 	onCanRun = function(item)
 		return (!item.empty)
 	end,
-	name = "Употребить"
+	name = "use"
 }
 ITEM.empty = false
