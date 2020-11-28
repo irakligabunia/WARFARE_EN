@@ -1,5 +1,5 @@
-﻿ITEM.name = "«Выверт»"
-ITEM.desc = "Артефакт причудливой формы, возникающий в местах повышенной гравитационной активности. Представляет собой своего рода губку, поглощающую радиоактивные элементы. В равной степени успешно защищает своего носителя от воздействия как наведённой радиации, так и уже попавших в организм радиоактивных частиц. \n\nХАРАКТЕРИСТИКИ: \n-артефакт \n\nРадиация +4 / сек"
+﻿ITEM.name = "Invert"
+ITEM.desc = "Artifact of bizarre shape, which occurs in places of increased gravitational activity. It is a kind of sponge that absorbs radioactive elements. Equally successfully protects its carrier from the effects of both injected radiation and already exposed radioactive particles.  \n\nATTRIBUTES: \n-Artefact \n\nRadiation +4 / sec"
 ITEM.price = 16825
 ITEM.isAnomaly = true
 
@@ -13,12 +13,12 @@ ITEM.iconCam = {
 }
 
 ITEM.functions.Use = {
-	name = "положить в СИМК",
+	name = "put in case",
 	onRun = function(item)
 		local client = item.player
 		if (IsValid(client) and client:Alive()) then
 			if not client:getChar():getInv():hasItem("simkemp") then
-				client:notify("Вам нужны СИМК (пустой).")
+				client:notify("You need an empty artefact case.")
 				return false
 			end
 
