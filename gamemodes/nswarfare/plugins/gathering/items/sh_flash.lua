@@ -1,5 +1,5 @@
-﻿ITEM.name = "«Вспышка»"
-ITEM.desc = "«Вспышка» — артефакт, образующийся в местах, насыщенных электромагнитным полем. Не так редок, но и не так распространён. Имеет удивительное свойство поглощать электрический ток, перенаправляя разряды с организма на себя. «Заряженные» Вспышки в быту используют в качестве «маленьких электростанций».Образуется в аномалиях типа «электра». \n\nХАРАКТЕРИСТИКИ: \n-артефакт \nРадиация +2 / сек"
+﻿ITEM.name = "Flash"
+ITEM.desc = "A flash is an artefact formed in places saturated with an electromagnetic field. Not so rare, but not so common. It has an amazing property to absorb electric current, redirecting discharges from the body to itself. 'Charged' flashes in everyday life are used as 'small power plants.'  \n\nATTRIBUTES: \n-Artefact \nRadiation +2 / sec"
 ITEM.price = 8964
 ITEM.isAnomaly = true
 ITEM.weight = 0.82
@@ -14,12 +14,12 @@ ITEM.iconCam = {
 }
 
 ITEM.functions.Use = {
-	name = "положить в СИМК",
+	name = "put in case",
 	onRun = function(item)
 		local client = item.player
 		if (IsValid(item.player) && client:Alive()) then
 			if not client:getChar():getInv():hasItem("simkemp") then
-				client:notify("Вам нужны СИМК (пустой).")
+				client:notify("You need an empty artefact case.")
 				return false
 			end
 			client:EmitSound( Sound( "interface/inv_iam_close.ogg" ), Entity( 1 ):GetPos(), 1, CHAN_AUTO, 1, 20, 0, 100 )
