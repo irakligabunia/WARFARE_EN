@@ -1,7 +1,7 @@
 local PLUGIN = PLUGIN
 
 ----------------------------------------
---Спавн артефактов
+--Artifact Spawning dont change unless ur a retard
 ----------------------------------------
 local AnomalyAnomalies = {
 	["electra_anomaly"] = {"batary", "moonlight", "snejinka", "flash", "empty"},
