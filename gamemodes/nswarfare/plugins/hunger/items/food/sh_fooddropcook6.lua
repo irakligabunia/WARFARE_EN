@@ -1,5 +1,5 @@
-ITEM.name = "Сало плоти (произведено в Зоне)"
-ITEM.desc = "Два ломтика сала и жирного бекона из мутировавших свиней, более известных, как плоти. Завернуто в толстую коричневую бумагу, чтобы жир не стекал. \n\nХАРАКТЕРИСТИКИ: \n-вредная пища \n-радиационное облучение: 15 м3в \n\nНасыщенеие 48"
+ITEM.name = "Flesh fat (Zone product)"
+ITEM.desc = "Two slices of bacon and fat bacon from mutated pigs, better known as flesh. Wrapped in thick brown paper so that the fat does not drain. \n\nATTRIBUTES: \n-Unhealthy \n-Radiation exposure: 15 mSv \n-Saturation 48 Kcal"
 ITEM.price = 997
 ITEM.exRender = false
 ITEM.weight = 0.41
@@ -31,5 +31,5 @@ ITEM.functions.use = {
 	onCanRun = function(item)
 		return (!item.empty)
 	end,
-	name = "употребить"
+	name = "use"
 }
