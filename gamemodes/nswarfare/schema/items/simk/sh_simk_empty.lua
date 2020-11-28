@@ -1,5 +1,5 @@
 ﻿ITEM.name = "Artefact Case (Empty)"
-ITEM.desc = "'Empty' consists of two discs of bluish color, connected by a translucent material of unknown nature. This strange artifact was considered devoid of any useful properties for a long time. Only recently has it been discovered that it provides a very high level of protection against psi-influences, partially absorbing them. \n\nХАРАКТЕРИСТИКИ: \n-технологическое приспособление \n-высокая ценность \n-не требует подзарядки \n-максимальная вместимость - 1 \n-состояние: заполнен (содержит артефакт «Пустышка»)"
+ITEM.desc = "'Empty' consists of two discs of bluish color, connected by a translucent material of unknown nature. This strange artifact was considered devoid of any useful properties for a long time. Only recently has it been discovered that it provides a very high level of protection against psi-influences, partially absorbing them. \n\nATTRIBUTES: \n-Technological device \n-High value \n-Doesn't require recharging \n-Maximum capacity - 1 \n-Status: Full (Contains Artefact 'Empty')"
 ITEM.category = "SIMK"
 ITEM.price = 16752
 ITEM.exRender = false
