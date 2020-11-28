@@ -1,5 +1,5 @@
 ﻿ITEM.name = "Artefact Case (Stoneflower)"
-ITEM.desc = "The artifact is a stone close in its characteristics to granites. It occurs inside gravitational fields of great intensity. It is able to fully or partially protect the owner's mind from psi-impact. \n\nХАРАКТЕРИСТИКИ: \n-технологическое приспособление \n-высокая ценность \n-не требует подзарядки \n-максимальная вместимость - 1 \n-состояние: заполнен (содержит артефакт «Каменный цветок»)"
+ITEM.desc = "The artifact is a stone close in its characteristics to granites. It occurs inside gravitational fields of great intensity. It is able to fully or partially protect the owner's mind from psi-impact. \n\nATTRIBUTES: \n-Technological device \n-High value \n-Doesn't require recharging \n-Maximum capacity - 1 \n-Status: Full (Contains Artefact 'Stoneflower')"
 ITEM.category = "SIMK"
 ITEM.price = 26910
 ITEM.exRender = false
