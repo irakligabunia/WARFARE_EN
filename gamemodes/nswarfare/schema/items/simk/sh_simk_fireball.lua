@@ -1,5 +1,5 @@
 ﻿ITEM.name = "Artefact (Fireball)"
-ITEM.desc = "The Fireball is a artifact often used by stalkers because of its ability to maintain an acceptable temperature within a five-metre radius. However, traders can not boast of demand. It is formed in high-temperature environments, but how - no one has yet found out. It is formed in anomalies such as Heat. \n\nХАРАКТЕРИСТИКИ: \n-технологическое приспособление \n-высокая ценность \n-не требует подзарядки \n-максимальная вместимость - 1 \n-состояние: заполнен (содержит артефакт «Огненный шар»)"
+ITEM.desc = "The Fireball is a artifact often used by stalkers because of its ability to maintain an acceptable temperature within a five-metre radius. However, traders can not boast of demand. It is formed in high-temperature environments, but how - no one has yet found out. It is formed in anomalies such as Heat. \n\nATTRIBUTES: \n-Technological device \n-High value \n-Doesn't require recharging \n-Maximum capacity - 1 \n-Status: Full (Contains Artefact 'Fireball')"
 ITEM.category = "SIMK"
 ITEM.price = 17900
 ITEM.exRender = false
