@@ -1,5 +1,5 @@
-﻿ITEM.name = "Рем. комплект средне/крупнокалиб. винтовок"
-ITEM.desc = "Данный комплект содержит масла, растворители, основное оборудования для чистки и специальные инструменты, используемые для обслуживания различных оружейных материалов. \n\nХАРАКТЕРИСТИКИ: \n-технологическое приспособление \n-высокая ценность" 
+﻿ITEM.name = "Medium/large rifle repair kit"
+ITEM.desc = "This kit contains oils, solvents, basic cleaning equipment and special tools used to service various weapons materials. \n\nATTRIBUTES: \n-Technological device \n-High value" 
 ITEM.price = 5683
 ITEM.exRender = false
 ITEM.weight = 2.01
