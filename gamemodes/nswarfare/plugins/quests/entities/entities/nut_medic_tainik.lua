@@ -1,5 +1,5 @@
 ﻿ENT.Type = "anim"
-ENT.PrintName = "Тайник медика"
+ENT.PrintName = "Medic stash"
 ENT.Category = "Warfare ENT"
 ENT.Spawnable = true
 ENT.AdminOnly = true
@@ -38,13 +38,13 @@ end
 function ENT:Use(activator)
 	if activator:HasQuest( "quest_medicamenti" ) and !(activator:getChar():getData("quest_medicamenti") == 1) then
 		self:EmitSound("interface/inv_open.ogg")
-		activator:setAction("Ведётся поиск вещей...", 4)
+		activator:setAction("Searching...", 4)
 		activator:doStaredAction(self, function()
 			if activator:getChar():getInv():add("medic_container", 1) then
 				self:EmitSound("interface/inv_close.ogg")
 				activator:getChar():setData("quest_medicamenti", 1)
 			else
-				activator:notify("Вам не хватает места в инвентаре")
+				activator:notify("You don't have enough space!")
 			end
 		end, 4, 
 		function()
@@ -53,6 +53,6 @@ function ENT:Use(activator)
 			end
 		end)
 	else
-		activator:notify("Здесь ничего нет")
+		activator:notify("There's nothing here.")
 	end
 end
