@@ -1,5 +1,5 @@
 ﻿ENT.Type = "anim"
-ENT.PrintName = "Stash"
+ENT.PrintName = "Scavangers stash"
 ENT.Category = "Warfare ENT"
 ENT.Spawnable = true
 ENT.AdminOnly = true
