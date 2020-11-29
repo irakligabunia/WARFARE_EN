@@ -48,8 +48,8 @@ function PANEL:Paint(w, h)
 	surface.SetDrawColor(Color( 0, 0, 0, 255))
 	surface.DrawOutlinedRect(ScrW() * 0.0115, ScrH() * 0.0575, ScrW() * 0.085, ScrH() * 0.125) --обводка модели игрока
 
-	local reptext = LocalPlayer():getChar():getData("rep")
 	local ranktext = LocalPlayer():getChar():getData("rank")
+	local reptext = LocalPlayer():getChar():getData("rep")
 
 	draw.DrawText("Character", "Roh20", ScrW() * 0.005, ScrH() * 0.003, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT)
 
