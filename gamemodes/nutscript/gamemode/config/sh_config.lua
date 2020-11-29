@@ -60,7 +60,7 @@ nut.config.add("invW", 6, "How many slots in a row there is in a default invento
 	data = {min = 0, max = 20},
 	category = "characters"
 })
-nut.config.add("invH", 4, "How many slots in a column there is in a default inventory.", nil, {
+nut.config.add("invH", 9, "How many slots in a column there is in a default inventory.", nil, {
 	data = {min = 0, max = 20},
 	category = "characters"
 })
