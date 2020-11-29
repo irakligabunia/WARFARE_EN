@@ -1,7 +1,7 @@
-"darkrp"
+"nsstalkerrp"
 {
 "base" "nutscript"
-"pisundesc" "DarkRP"
+"pisundesc" "NS - StalkerRP"
 "vice" "Chessnut"
 "menusystem" "1"
 } 
