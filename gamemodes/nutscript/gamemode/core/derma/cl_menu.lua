@@ -310,9 +310,9 @@ local alpha = 80
 			elseif (rank > 600 and rank < 999) then
 				self.urrank:SetText("Rank: Experienced")
 			elseif (rank > 200 and rank < 599) then
-				self.urrank:SetText("Rank: Stalker")
+				self.urrank:SetText("Rank: Rookie")
 			elseif (rank < 199) then
-				self.urrank:SetText("Rank: Newbie")
+				self.urrank:SetText("Rank: Trainee")
 			end
 		end
 		self.urrank:SetFont("dobi4ikxyecockft")
@@ -355,9 +355,9 @@ local alpha = 80
 			elseif (rep > -299 and rep < -80) then
 				self.rep_chek:SetText("Reputation: V. Bad")
 			elseif (rep > -599 and rep < -300) then
-				self.rep_chek:SetText("Reputation: Horrible")
+				self.rep_chek:SetText("Reputation: Terrible")
 			elseif (rep < -600) then
-				self.rep_chek:SetText("Reputation: Worst")
+				self.rep_chek:SetText("Reputation: Worst of all")
 			end
 		end
 		self.rep_chek:SetFont("dobi4ikxyecockft")
