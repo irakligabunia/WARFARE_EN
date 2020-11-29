@@ -111,7 +111,7 @@ local alpha = 80
 		self.but_1 = self:Add("DButton")
 		self.but_1:SetPos( but_1Xyes, but_1Yyes )
 		self.but_1:SetSize( but_1Wyes, but_1Hyes )
-		self.but_1:SetText("Персонажи")
+		self.but_1:SetText("Characters")
 		self.but_1:SetFont("dobi4ikxyecockft123123123")
 		self.but_1:SetTextColor(color_white) 
 		function self.but_1:Paint( w, h )
@@ -141,7 +141,7 @@ local alpha = 80
 		self.but_2 = self:Add("DButton")
 		self.but_2:SetPos( but_2Xyes, but_2Yyes )
 		self.but_2:SetSize( but_2Wyes, but_2Hyes )
-		self.but_2:SetText("Навыки")
+		self.but_2:SetText("Perks")
 		self.but_2:SetFont("dobi4ikxyecockft123123123")
 		self.but_2:SetTextColor(color_white) 
 		function self.but_2:Paint( w, h )
@@ -232,7 +232,7 @@ local alpha = 80
 		self.main_values = self:Add("DLabel")
 		self.main_values:SetPos( main_valuesX, main_valuesY )
 		self.main_values:SetSize( main_valuesW, main_valuesH )
-		self.main_values:SetText("Статистика")
+		self.main_values:SetText("Statistics")
 		self.main_values:SetFont("dobi4ikxyecockft")
 		self.main_values:SetTextColor(Color(169, 169, 169))
 		self.main_values:SetExpensiveShadow(2, color_black)
@@ -245,7 +245,7 @@ local alpha = 80
 		self.main_values2:Dock(TOP)
 		self.main_values2:DockMargin(3, 3, 3, 0)
 		self.main_values2:SetTall(ScrH() * 0.032)
-		self.main_values2:SetText("Общие данные")
+		self.main_values2:SetText("General Information")
 		self.main_values2:SetFont("dobi4ikxyecockft")
 		self.main_values2:SetTextColor(Color(169, 169, 169))
 		function self.main_values2:Paint( w, h )
@@ -298,21 +298,21 @@ local alpha = 80
 		local rank = char:getData("rank", 0)
 		self.urrank.Think = function()
 			if (rank > 2000 and rank < 3199) then
-				self.urrank:SetText("Ранг: Ветеран")
+				self.urrank:SetText("Rank: Veteran")
 			elseif (rank > 12000) then
-				self.urrank:SetText("Ранг: Легенда")
+				self.urrank:SetText("Rank: Legend")
 			elseif (rank > 5200 and rank < 11999) then
-				self.urrank:SetText("Ранг: Мастер")
+				self.urrank:SetText("Rank: Master")
 			elseif (rank > 3200 and rank < 5199) then
-				self.urrank:SetText("Ранг: Эксперт")
+				self.urrank:SetText("Rank: Expert")
 			elseif (rank > 1000 and rank < 1999) then
-				self.urrank:SetText("Ранг: Профессионал")
+				self.urrank:SetText("Rank: Professional")
 			elseif (rank > 600 and rank < 999) then
-				self.urrank:SetText("Ранг: Опытный")
+				self.urrank:SetText("Rank: Experienced")
 			elseif (rank > 200 and rank < 599) then
-				self.urrank:SetText("Ранг: Стажер")
+				self.urrank:SetText("Rank: Stalker")
 			elseif (rank < 199) then
-				self.urrank:SetText("Ранг: Новичок")
+				self.urrank:SetText("Rank: Newbie")
 			end
 		end
 		self.urrank:SetFont("dobi4ikxyecockft")
@@ -326,7 +326,7 @@ local alpha = 80
 		self.rank_o4ko:Dock(TOP)
 		self.rank_o4ko:DockMargin(3, 3, 3, 0)
 		self.rank_o4ko:SetTall(ScrH() * 0.032)
-		self.rank_o4ko:SetText("Очки ранга: "..char:getData("rank", 0))
+		self.rank_o4ko:SetText("Rank Points: "..char:getData("rank", 0))
 		self.rank_o4ko:SetFont("dobi4ikxyecockft")
 		self.rank_o4ko:SetTextColor(Color(169, 169, 169))
 		function self.rank_o4ko:Paint( w, h )
@@ -341,23 +341,23 @@ local alpha = 80
 		local rep = char:getData("rep", 0)
 		self.rep_chek.Think = function()
 			if (rep > -29 and rep < 99) then
-				self.rep_chek:SetText("Репутация: Безразлично")
+				self.rep_chek:SetText("Reputation: Perfect")
 			elseif (rep > 2000) then
-				self.rep_chek:SetText("Репутация: Великолепно")
+				self.rep_chek:SetText("Reputation: Excellent")
 			elseif (rep > 1000 and rep < 1999) then
-				self.rep_chek:SetText("Репутация: Отлично")
+				self.rep_chek:SetText("Reputation: Great")
 			elseif (rep > 500 and rep < 999) then
-				self.rep_chek:SetText("Репутация: Оч. Хорошо")
+				self.rep_chek:SetText("Reputation: V. Good")
 			elseif (rep > 100 and rep < 499) then
-				self.rep_chek:SetText("Репутация: Хорошо")
+				self.rep_chek:SetText("Reputation: Good")
 			elseif (rep > -79 and rep < -30) then
-				self.rep_chek:SetText("Репутация: Плохо")
+				self.rep_chek:SetText("Reputation: Bad")
 			elseif (rep > -299 and rep < -80) then
-				self.rep_chek:SetText("Репутация: Оч. Плохо")
+				self.rep_chek:SetText("Reputation: V. Bad")
 			elseif (rep > -599 and rep < -300) then
-				self.rep_chek:SetText("Репутация: Ужасно")
+				self.rep_chek:SetText("Reputation: Horrible")
 			elseif (rep < -600) then
-				self.rep_chek:SetText("Репутация: Хуже всех")
+				self.rep_chek:SetText("Reputation: Worst")
 			end
 		end
 		self.rep_chek:SetFont("dobi4ikxyecockft")
@@ -371,7 +371,7 @@ local alpha = 80
 		self.rep_o4ko:Dock(TOP)
 		self.rep_o4ko:DockMargin(3, 3, 3, 0)
 		self.rep_o4ko:SetTall(ScrH() * 0.032)
-		self.rep_o4ko:SetText("Очки репуцтации: "..char:getData("rep", 0))
+		self.rep_o4ko:SetText("Reputation points: "..char:getData("rep", 0))
 		self.rep_o4ko:SetFont("dobi4ikxyecockft")
 		self.rep_o4ko:SetTextColor(Color(169, 169, 169))
 		function self.rep_o4ko:Paint( w, h )
@@ -383,7 +383,7 @@ local alpha = 80
 		self.two4ko:Dock(TOP)
 		self.two4ko:DockMargin(3, 3, 3, 0)
 		self.two4ko:SetTall(ScrH() * 0.032)
-		self.two4ko:SetText("Побед в 21 очко: "..char:getData("two4ko", 0))
+		self.two4ko:SetText("Victories in blackjack: "..char:getData("two4ko", 0))
 		self.two4ko:SetFont("dobi4ikxyecockft")
 		self.two4ko:SetTextColor(Color(169, 169, 169))
 		function self.two4ko:Paint( w, h )
@@ -410,7 +410,7 @@ local alpha = 80
 		self.secord_stroka:Dock(TOP)
 		self.secord_stroka:DockMargin(3, 3, 3, 0)
 		self.secord_stroka:SetTall(ScrH() * 0.032)
-		self.secord_stroka:SetText("Физические данные")
+		self.secord_stroka:SetText("Physical Information")
 		self.secord_stroka:SetFont("dobi4ikxyecockft")
 		self.secord_stroka:SetTextColor(Color(169, 169, 169))
 		function self.secord_stroka:Paint( w, h )
@@ -423,7 +423,7 @@ local alpha = 80
 		self.hpmax:Dock(TOP)
 		self.hpmax:DockMargin(3, 3, 3, 0)
 		self.hpmax:SetTall(ScrH() * 0.032)
-		self.hpmax:SetText("Очки здоровья: "..LocalPlayer():Health())
+		self.hpmax:SetText("Health: "..LocalPlayer():Health())
 		self.hpmax:SetFont("dobi4ikxyecockft")
 		self.hpmax:SetTextColor(Color(169, 169, 169))
 		function self.hpmax:Paint( w, h )
@@ -435,7 +435,7 @@ local alpha = 80
 		self.stamina:Dock(TOP)
 		self.stamina:DockMargin(3, 3, 3, 0)
 		self.stamina:SetTall(ScrH() * 0.032)
-		self.stamina:SetText("Очки выносливости: "..LocalPlayer():getLocalVar("stm", 0))
+		self.stamina:SetText("Stamina: "..LocalPlayer():getLocalVar("stm", 0))
 		self.stamina:SetFont("dobi4ikxyecockft")
 		self.stamina:SetTextColor(Color(169, 169, 169))
 		function self.stamina:Paint( w, h )
@@ -447,7 +447,7 @@ local alpha = 80
 		self.speed_run:Dock(TOP)
 		self.speed_run:DockMargin(3, 3, 3, 0)
 		self.speed_run:SetTall(ScrH() * 0.032)
-		self.speed_run:SetText("Скорость бега: "..LocalPlayer():GetRunSpeed())
+		self.speed_run:SetText("Agility: "..LocalPlayer():GetRunSpeed())
 		self.speed_run:SetFont("dobi4ikxyecockft")
 		self.speed_run:SetTextColor(Color(169, 169, 169))
 		function self.speed_run:Paint( w, h )
