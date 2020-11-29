@@ -73,9 +73,9 @@ function PANEL:Paint(w, h)
 	elseif (ranktext >= 600 and ranktext <= 999) then
 		draw.DrawText("Experienced", "Roh10", ScrW() * 0.292, ScrH() * 0.106, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
 	elseif (ranktext >= 200 and ranktext <= 599) then
-		draw.DrawText("Stalker", "Roh10", ScrW() * 0.292, ScrH() * 0.106, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
+		draw.DrawText("Rookie", "Roh10", ScrW() * 0.292, ScrH() * 0.106, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
 	elseif (ranktext <= 199) then
-		draw.DrawText("Newbie", "Roh10", ScrW() * 0.292, ScrH() * 0.106, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
+		draw.DrawText("Trainee", "Roh10", ScrW() * 0.292, ScrH() * 0.106, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
 	end
 
 	draw.DrawText("Reputation:", "Roh10", ScrW() * 0.1, ScrH() * 0.127, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT)
@@ -95,9 +95,9 @@ function PANEL:Paint(w, h)
 	elseif (reptext >= -299 and reptext <= -80) then
 		draw.DrawText("V.Bad", "Roh10", ScrW() * 0.292, ScrH() * 0.127, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
 	elseif (reptext >= -599 and reptext <= -300) then
-		draw.DrawText("Horrible", "Roh10", ScrW() * 0.292, ScrH() * 0.127, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
-	elseif (reptext <= -600) then
 		draw.DrawText("Terrible", "Roh10", ScrW() * 0.292, ScrH() * 0.127, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
+	elseif (reptext <= -600) then
+		draw.DrawText("Worst of all", "Roh10", ScrW() * 0.292, ScrH() * 0.127, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
 	end
 
 	surface.SetDrawColor(0, 0, 14, 150)
