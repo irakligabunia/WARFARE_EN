@@ -130,7 +130,7 @@ function SCHEMA:HUDPaint()
 		local items = LocalPlayer():getChar():getInv():getItems()
 
 		for k,v in pairs(items) do
-			if (v.category == "Броня") and (v:getData("equip") == true) then
+			if (v.category == "Armor") and (v:getData("equip") == true) then
 				if ArmorOverlayNormal[v.uniqueID] then
 					surface.SetMaterial(Material(ArmorOverlayNormal[v.uniqueID], "noclamp" ))
 					surface.SetDrawColor(255, 255, 255, 255)
@@ -159,7 +159,7 @@ function SCHEMA:HUDPaint()
 				surface.SetDrawColor(Color( 0, 0, 0, 200))
 				surface.DrawOutlinedRect(ScrW() * 0.445, ScrH() * 0.8, ScrW() * 0.11, ScrH() * 0.036)
 
-				draw.DrawText("Interact (E)", "Roh15", ScrW() * 0.5, ScrH() * 0.805, Color(255, 255, 255, 210), TEXT_ALIGN_CENTER)
+				draw.DrawText("Talk to (E)", "Roh15", ScrW() * 0.5, ScrH() * 0.805, Color(255, 255, 255, 210), TEXT_ALIGN_CENTER)
 			elseif (entity:GetClass() == "prop_ragdoll") and (dist < 100) and (MutantTable[entity:GetModel()]) then
 				surface.SetDrawColor(15, 15, 15, 200)
 				surface.DrawRect(ScrW() * 0.445, ScrH() * 0.8, ScrW() * 0.11, ScrH() * 0.036)
@@ -167,7 +167,7 @@ function SCHEMA:HUDPaint()
 				surface.SetDrawColor(Color( 0, 0, 0, 200))
 				surface.DrawOutlinedRect(ScrW() * 0.445, ScrH() * 0.8, ScrW() * 0.11, ScrH() * 0.036)
 
-				draw.DrawText("Unpack (E)", "Roh15", ScrW() * 0.5, ScrH() * 0.805, Color(255, 255, 255, 210), TEXT_ALIGN_CENTER)
+				draw.DrawText("Unpack (У)", "Roh15", ScrW() * 0.5, ScrH() * 0.805, Color(255, 255, 255, 210), TEXT_ALIGN_CENTER)
 			elseif (entity:GetClass() == "nut_metal_entbox" or entity:GetClass() == "nut_wood_entbox") and (dist < 100) then
 				surface.SetDrawColor(15, 15, 15, 200)
 				surface.DrawRect(ScrW() * 0.434, ScrH() * 0.8, ScrW() * 0.13, ScrH() * 0.036)
@@ -250,7 +250,7 @@ hook.Add( "OnEntityCreated", "R_Optimisation.OnEntityCreated", function(ply)
     RunConsoleCommand("rope_smooth", "0")
     RunConsoleCommand("Rope_wind_dist", "0")
     RunConsoleCommand("Rope_shake", "0")
-    --RunConsoleCommand("violence_ablood", "1")
+    RunConsoleCommand("violence_ablood", "1")
     RunConsoleCommand("mat_queue_mode", "-1")
     RunConsoleCommand("cl_threaded_bone_setup", "1")
     RunConsoleCommand("gmod_mcore_test", "1")
@@ -262,7 +262,7 @@ hook.Add( "OnEntityCreated", "R_Optimisation.OnEntityCreated", function(ply)
     RunConsoleCommand("Muzzleflash_light", "0")
     RunConsoleCommand("cl_wpn_sway_interp", "0")
     RunConsoleCommand("in_usekeyboardsampletime", "0")
-    RunConsoleCommand("r_3dsky", "0")
+    --RunConsoleCommand("r_3dsky", "0")
 end)
 
 surface.CreateFont( "Roh_Low", {
