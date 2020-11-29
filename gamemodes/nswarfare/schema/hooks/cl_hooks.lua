@@ -130,7 +130,7 @@ function SCHEMA:HUDPaint()
 		local items = LocalPlayer():getChar():getInv():getItems()
 
 		for k,v in pairs(items) do
-			if (v.category == "Броня") and (v:getData("equip") == true) then
+			if (v.category == "Suit") and (v:getData("equip") == true) then
 				if ArmorOverlayNormal[v.uniqueID] then
 					surface.SetMaterial(Material(ArmorOverlayNormal[v.uniqueID], "noclamp" ))
 					surface.SetDrawColor(255, 255, 255, 255)
@@ -151,7 +151,7 @@ function SCHEMA:HUDPaint()
 				surface.SetDrawColor(Color( 0, 0, 0, 200))
 				surface.DrawOutlinedRect(ScrW() * 0.434, ScrH() * 0.8, ScrW() * 0.13, ScrH() * 0.036)
 
-				draw.DrawText("Поднять предмет (У)", "Roh15", ScrW() * 0.5, ScrH() * 0.805, Color(255, 255, 255, 210), TEXT_ALIGN_CENTER)
+				draw.DrawText("Pick up", "Roh15", ScrW() * 0.5, ScrH() * 0.805, Color(255, 255, 255, 210), TEXT_ALIGN_CENTER)
 			elseif (entity:GetClass() == "nut_vendor" or entity:GetClass() == "nut_talker") and (dist < 100) then
 				surface.SetDrawColor(15, 15, 15, 200)
 				surface.DrawRect(ScrW() * 0.445, ScrH() * 0.8, ScrW() * 0.11, ScrH() * 0.036)
@@ -159,7 +159,7 @@ function SCHEMA:HUDPaint()
 				surface.SetDrawColor(Color( 0, 0, 0, 200))
 				surface.DrawOutlinedRect(ScrW() * 0.445, ScrH() * 0.8, ScrW() * 0.11, ScrH() * 0.036)
 
-				draw.DrawText("Говорить (У)", "Roh15", ScrW() * 0.5, ScrH() * 0.805, Color(255, 255, 255, 210), TEXT_ALIGN_CENTER)
+				draw.DrawText("Talk", "Roh15", ScrW() * 0.5, ScrH() * 0.805, Color(255, 255, 255, 210), TEXT_ALIGN_CENTER)
 			elseif (entity:GetClass() == "prop_ragdoll") and (dist < 100) and (MutantTable[entity:GetModel()]) then
 				surface.SetDrawColor(15, 15, 15, 200)
 				surface.DrawRect(ScrW() * 0.445, ScrH() * 0.8, ScrW() * 0.11, ScrH() * 0.036)
@@ -167,7 +167,7 @@ function SCHEMA:HUDPaint()
 				surface.SetDrawColor(Color( 0, 0, 0, 200))
 				surface.DrawOutlinedRect(ScrW() * 0.445, ScrH() * 0.8, ScrW() * 0.11, ScrH() * 0.036)
 
-				draw.DrawText("Разделать (У)", "Roh15", ScrW() * 0.5, ScrH() * 0.805, Color(255, 255, 255, 210), TEXT_ALIGN_CENTER)
+				draw.DrawText("Divide", "Roh15", ScrW() * 0.5, ScrH() * 0.805, Color(255, 255, 255, 210), TEXT_ALIGN_CENTER)
 			elseif (entity:GetClass() == "nut_metal_entbox" or entity:GetClass() == "nut_wood_entbox") and (dist < 100) then
 				surface.SetDrawColor(15, 15, 15, 200)
 				surface.DrawRect(ScrW() * 0.434, ScrH() * 0.8, ScrW() * 0.13, ScrH() * 0.036)
@@ -175,7 +175,7 @@ function SCHEMA:HUDPaint()
 				surface.SetDrawColor(Color( 0, 0, 0, 200))
 				surface.DrawOutlinedRect(ScrW() * 0.434, ScrH() * 0.8, ScrW() * 0.13, ScrH() * 0.036)
 
-				draw.DrawText("Возможно разбить", "Roh15", ScrW() * 0.5, ScrH() * 0.805, Color(255, 255, 255, 210), TEXT_ALIGN_CENTER)
+				draw.DrawText("Breakable", "Roh15", ScrW() * 0.5, ScrH() * 0.805, Color(255, 255, 255, 210), TEXT_ALIGN_CENTER)
 			elseif (entity:GetClass() == "nut_box") and (dist < 100) then
 				surface.SetDrawColor(15, 15, 15, 200)
 				surface.DrawRect(ScrW() * 0.445, ScrH() * 0.8, ScrW() * 0.11, ScrH() * 0.036)
@@ -183,7 +183,7 @@ function SCHEMA:HUDPaint()
 				surface.SetDrawColor(Color( 0, 0, 0, 200))
 				surface.DrawOutlinedRect(ScrW() * 0.445, ScrH() * 0.8, ScrW() * 0.11, ScrH() * 0.036)
 
-				draw.DrawText("Обыскать (У)", "Roh15", ScrW() * 0.5, ScrH() * 0.805, Color(255, 255, 255, 210), TEXT_ALIGN_CENTER)
+				draw.DrawText("Search", "Roh15", ScrW() * 0.5, ScrH() * 0.805, Color(255, 255, 255, 210), TEXT_ALIGN_CENTER)
 			end
 		end
 	end
