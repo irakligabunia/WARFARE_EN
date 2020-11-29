@@ -583,28 +583,28 @@ function GM:DrawCharInfo(client, character, info)
     if (ranktext) then
 
     	if (ranktext > 12000) then
-			info[#info + 1] = {"Ранг: Легенда", Color(230,255,25)}
+			info[#info + 1] = {"Rank: Veteran", Color(230,255,25)}
 		
 		elseif (ranktext > 5200 and ranktext < 11999) then
-			info[#info + 1] = {"Ранг: Мастер", Color(230,255,25)}
+			info[#info + 1] = {"Rank: Legend", Color(230,255,25)}
 		
 		elseif (ranktext > 3200 and ranktext < 5199) then
-			info[#info + 1] = {"Ранг: Эксперт", Color(230,255,25)}
+			info[#info + 1] = {"Rank: Master", Color(230,255,25)}
 	
 		elseif (ranktext > 2000 and ranktext < 3199) then
-			info[#info + 1] = {"Ранг: Ветеран", Color(230,255,25)}
+			info[#info + 1] = {"Rank: Expert", Color(230,255,25)}
 		
 		elseif (ranktext > 1000 and ranktext < 1999) then
-			info[#info + 1] = {"Ранг: Профессионал", Color(230,255,25)}
+			info[#info + 1] = {"Rank: Professional", Color(230,255,25)}
 		
 		elseif (ranktext > 600 and ranktext < 999) then
-			info[#info + 1] = {"Ранг: Опытный", Color(230,255,25)}
+			info[#info + 1] = {"Rank: Experienced", Color(230,255,25)}
 		
 		elseif (ranktext > 200 and ranktext < 599) then
-			info[#info + 1] = {"Ранг: Стажер", Color(230,255,25)}
+			info[#info + 1] = {"Rank: Rookie", Color(230,255,25)}
 		
 		elseif (ranktext < 199) then
-			info[#info + 1] = {"Ранг: Новичок", Color(230,255,25)}
+			info[#info + 1] = {"Rank: Trainee", Color(230,255,25)}
 		end
 
 		--info[#info + 1] = {ranktext, Color(230,255,25)}
@@ -612,31 +612,31 @@ function GM:DrawCharInfo(client, character, info)
 	if (reptext) then
 
 		if (reptext > 2000) then
-			info[#info + 1] = {"Репутация: Великолепно", Color(230,255,25)}
+			info[#info + 1] = {"Reputation: Excellent", Color(230,255,25)}
 		
 		elseif (reptext > 1000 and reptext < 1999) then
-			info[#info + 1] = {"Репутация: Отлично", Color(230,255,25)}
+			info[#info + 1] = {"Reputation: Great", Color(230,255,25)}
 		
 		elseif (reptext > 500 and reptext < 999) then
-			info[#info + 1] = {"Репутация: Оч. Хорошо", Color(230,255,25)}
+			info[#info + 1] = {"Reputation: V.Good", Color(230,255,25)}
 		
 		elseif (reptext > 100 and reptext < 499) then
-			info[#info + 1] = {"Репутация: Хорошо", Color(230,255,25)}
+			info[#info + 1] = {"Reputation: Good", Color(230,255,25)}
 		
 		elseif (reptext > -29 and reptext < 99) then
-			info[#info + 1] = {"Репутация: Безразлично", Color(230,255,25)}
+			info[#info + 1] = {"Reputation: Neutral", Color(230,255,25)}
 		
 		elseif (reptext > -79 and reptext < -30) then
-			info[#info + 1] = {"Репутация: Плохо", Color(230,255,25)}
+			info[#info + 1] = {"Reputation: Bad", Color(230,255,25)}
 		
 		elseif (reptext > -299 and reptext < -80) then
-			info[#info + 1] = {"Репутация: Оч. Плохо", Color(230,255,25)}
+			info[#info + 1] = {"Reputation: V.Bad", Color(230,255,25)}
 		
 		elseif (reptext > -599 and reptext < -300) then
-			info[#info + 1] = {"Репутация: Ужасно", Color(230,255,25)}
+			info[#info + 1] = {"Reputation: Terrible", Color(230,255,25)}
 		
 		elseif (reptext < -600) then
-			info[#info + 1] = {"Репутация: Хуже всех", Color(230,255,25)}
+			info[#info + 1] = {"Reputation: Worst", Color(230,255,25)}
 		end
 
 		--info[#info + 1] = {reptext, Color(230,255,25)}
