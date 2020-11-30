@@ -3,7 +3,6 @@ local PANEL = {}
 function PANEL:Init(uniqueID)
 
 	self:SetSize(ScrW() * 0.3, ScrH() * 0.682)
-	self:MakePopup()
 	self:SetTitle("")
 	self:ShowCloseButton(false)
 	self:SetDraggable(false)
