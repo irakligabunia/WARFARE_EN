@@ -406,6 +406,31 @@ local deathSounds = {
 	Sound("vo/npc/male01/pain09.wav")
 }
 
+function GM:PlayerDeath(client, inflictor, attacker)
+	if (client:getChar()) then
+		--[[if (IsValid(client.nutRagdoll)) then
+			client.nutRagdoll.nutIgnoreDelete = true
+			client.nutRagdoll:Remove()
+			client:setLocalVar("blur", nil)
+		end]]
+
+		client:setNetVar("deathStartTime", CurTime())
+		if serverguard.player:GetRank(client) == 'vip' then
+			client:setNetVar("deathTime", CurTime() + nut.config.get("spawnTime", 5) / 10)
+		else
+			client:setNetVar("deathTime", CurTime() + nut.config.get("spawnTime", 5))
+		end
+
+		local deathSound = hook.Run("GetPlayerDeathSound", client) or table.Random(deathSounds)
+
+		--[[if (client:isFemale() and !deathSound:find("female")) then
+			deathSound = deathSound:gsub("male", "female")
+		end]]
+
+		client:EmitSound(deathSound)
+	end
+end
+
 function GM:PlayerDeathThink(client) 
 	if (client:getChar()) then 
 		local deathTime = client:getNetVar("deathTime") 
