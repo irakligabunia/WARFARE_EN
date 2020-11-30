@@ -303,7 +303,7 @@ if (CLIENT) then
 						surface.DrawTexturedRect(ScrW() * 0.89, ScrH()*0.955, ScrW()*0.008, ScrH()*0.014)
 					end
 				end
-				if v.category == "Броня" and v:getData("equip") then
+				if v.category == "Suit" and v:getData("equip") then
 					if v:getData("durabilityarmor") <= 80 and v:getData("durabilityarmor") >= 60 then
 						surface.SetMaterial(Material( "daui/armor_1.png", "noclamp smooth" ))
 						surface.SetDrawColor(255,255,255,255) 
