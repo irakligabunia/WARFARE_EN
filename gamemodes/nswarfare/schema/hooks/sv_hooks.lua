@@ -80,10 +80,10 @@ function SCHEMA:OnNPCKilled( npc, attacker, inflictor )
 end	
 
 function SCHEMA:OnCharCreated(client, character)
-	character:setData("rank", 1)
-	character:setData("rep", 1)
-	client:setNetVar("rank", character:getData("rank", 0))
-	client:setNetVar("rep", character:getData("rep", 0))
+	character:setData("rank", 0)
+	character:setData("rep", 0)
+	client:setNetVar("rank", character:getData("rank", 1))
+	client:setNetVar("rep", character:getData("rep", 1))
 
 	if character:getInv() then		
 		character:getInv():add("pda", 1, {})
