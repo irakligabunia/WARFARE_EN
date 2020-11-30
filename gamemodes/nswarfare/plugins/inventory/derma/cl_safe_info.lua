@@ -15,11 +15,11 @@ function PANEL:Init(uniqueID)
 	local Hit = LocalPlayer():GetEyeTraceNoCursor()
 	local entity = Hit.Entity
 
-	if (entity:getNetVar("name") == "Сейф") then
+	if (entity:getNetVar("name") == "Safe") then
 		self.icon:SetModel(entity:GetModel())
 		self.icon:SetFOV(40)
 		self.icon:SetCamPos(Vector( -30, 80, 23 ))
-	elseif (entity:getNetVar("name") == "Рюкзак") then
+	elseif (entity:getNetVar("name") == "Backpack") then
 		self.icon:SetModel(entity:GetModel())
 		self.icon:SetFOV(40)
 		self.icon:SetCamPos(Vector( -30, 80, 23 ))
@@ -69,42 +69,42 @@ function PANEL:setup()
 
 			if (ranktext) then
 				if (ranktext >= 12000) then
-					urrank = "Легенда"
+					urrank = "Legend"
 				elseif (ranktext >= 5200 and ranktext <= 11999) then
-					urrank = "Мастер"
+					urrank = "Master"
 				elseif (ranktext >= 3200 and ranktext <= 5199) then
-					urrank = "Эксперт"
+					urrank = "Expert"
 				elseif (ranktext >= 2000 and ranktext <= 3199) then
-					urrank = "Ветеран"
+					urrank = "Veteran"
 				elseif (ranktext >= 1000 and ranktext <= 1999) then
-					urrank = "Профессионал"
+					urrank = "Professional"
 				elseif (ranktext >= 600 and ranktext <= 999) then
-					urrank = "Опытный"
+					urrank = "Experienced"
 				elseif (ranktext >= 200 and ranktext <= 599) then
-					urrank = "Стажер"
+					urrank = "Rookie"
 				elseif (ranktext <= 199) then
-					urrank = "Новичок"
+					urrank = "Trainee"
 				end
 			end
 			if (reptext) then
 				if (reptext >= 2000) then 
-					urrep = "Великолепно"
+					urrep = "Excellent"
 				elseif (reptext >= 1000 and reptext <= 1999) then
-					urrep = "Отлично"
+					urrep = "Great"
 				elseif (reptext >= 500 and reptext <= 999) then
-					urrep = "Оч.Хорошо"
+					urrep = "V.Good"
 				elseif (reptext >= 100 and reptext <= 499) then
-					urrep = "Хорошо"
+					urrep = "Good"
 				elseif (reptext >= -29 and reptext <= 99) then
-					urrep = "Безразлично"
+					urrep = "Neutral"
 				elseif (reptext >= -79 and reptext <= -30) then
-					urrep = "Плохо"
+					urrep = "Bad"
 				elseif (reptext >= -299 and reptext <= -80) then
-					urrep = "Оч.Плохо"
+					urrep = "V.Bad"
 				elseif (reptext >= -599 and reptext <= -300) then
-					urrep = "Ужасно"
+					urrep = "Terrible"
 				elseif (reptext <= -600) then
-					urrep = "Хуже всех"
+					urrep = "Worst of all"
 				end
 			end
 		end
@@ -136,13 +136,13 @@ function PANEL:Paint(w, h)
 	surface.SetDrawColor(Color( 0, 0, 0, 255))
 	surface.DrawOutlinedRect(ScrW() * 0.0115, ScrH() * 0.0575, ScrW() * 0.085, ScrH() * 0.125) --обводка модели игрока
 
-	draw.DrawText("Обыскивается", "Roh20", ScrW() * 0.005, ScrH() * 0.003, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT)
+	draw.DrawText("Searching", "Roh20", ScrW() * 0.005, ScrH() * 0.003, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT)
 
-	draw.DrawText("Группировка:", "Roh10", ScrW() * 0.1, ScrH() * 0.085, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT) --team.GetColor(character:getFaction()) Фракция
+	draw.DrawText("Faction:", "Roh10", ScrW() * 0.1, ScrH() * 0.085, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT) --team.GetColor(character:getFaction()) Фракция
 
-	draw.DrawText("Ранг:", "Roh10", ScrW() * 0.1, ScrH() * 0.106, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT)
+	draw.DrawText("Rank:", "Roh10", ScrW() * 0.1, ScrH() * 0.106, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT)
 
-	draw.DrawText("Репутция:", "Roh10", ScrW() * 0.1, ScrH() * 0.127, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT)
+	draw.DrawText("Reputation:", "Roh10", ScrW() * 0.1, ScrH() * 0.127, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT)
 
 	draw.DrawText(entity:getNetVar("rep") or urrep or "---", "Roh10", ScrW() * 0.292, ScrH() * 0.127, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
 
@@ -150,13 +150,13 @@ function PANEL:Paint(w, h)
 	surface.DrawRect(ScrW() * 0.1, ScrH() * 0.15, ScrW() * 0.193, ScrH() * 0.0325) --информация о предмете
 
 
-	if entity:getNetVar("name") == "Тайник" then
+	if entity:getNetVar("name") == "Stash" then
 		draw.DrawText((nut.gui["inv"..entity:getInv():getID()].money or 0).."₽", "Roh20", ScrW() * 0.105, ScrH() * 0.155, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT)
 	elseif entity:getNetVar("name") == "Сейф" then
 		draw.DrawText((LocalPlayer():getChar():getReserve() or 0).."₽", "Roh20", ScrW() * 0.105, ScrH() * 0.155, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT)
 	end
 
-	if entity:getNetVar("name") == "Сейф" or entity:getNetVar("name") == "Рюкзак" or entity:getNetVar("name") == "Тайник" then
+	if entity:getNetVar("name") == "Safe" or entity:getNetVar("name") == "Рюкзак" or entity:getNetVar("name") == "Тайник" then
 		draw.DrawText(entity:getNetVar("name"), "Roh20", ScrW() * 0.1, ScrH() * 0.06, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT)
 		draw.DrawText("---", "Roh10", ScrW() * 0.292, ScrH() * 0.085, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
 		draw.DrawText("---", "Roh10", ScrW() * 0.292, ScrH() * 0.106, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
