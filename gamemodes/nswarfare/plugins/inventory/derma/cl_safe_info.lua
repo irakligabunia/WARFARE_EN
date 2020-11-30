@@ -152,11 +152,11 @@ function PANEL:Paint(w, h)
 
 	if entity:getNetVar("name") == "Stash" then
 		draw.DrawText((nut.gui["inv"..entity:getInv():getID()].money or 0).."₽", "Roh20", ScrW() * 0.105, ScrH() * 0.155, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT)
-	elseif entity:getNetVar("name") == "Сейф" then
+	elseif entity:getNetVar("name") == "Safe" then
 		draw.DrawText((LocalPlayer():getChar():getReserve() or 0).."₽", "Roh20", ScrW() * 0.105, ScrH() * 0.155, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT)
 	end
 
-	if entity:getNetVar("name") == "Safe" or entity:getNetVar("name") == "Рюкзак" or entity:getNetVar("name") == "Тайник" then
+	if entity:getNetVar("name") == "Safe" or entity:getNetVar("name") == "Backpack" or entity:getNetVar("name") == "Stash" then
 		draw.DrawText(entity:getNetVar("name"), "Roh20", ScrW() * 0.1, ScrH() * 0.06, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT)
 		draw.DrawText("---", "Roh10", ScrW() * 0.292, ScrH() * 0.085, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
 		draw.DrawText("---", "Roh10", ScrW() * 0.292, ScrH() * 0.106, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
