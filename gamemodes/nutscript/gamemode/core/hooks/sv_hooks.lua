@@ -415,11 +415,7 @@ function GM:PlayerDeath(client, inflictor, attacker)
 		end]]
 
 		client:setNetVar("deathStartTime", CurTime())
-		if serverguard.player:GetRank(client) == 'vip' then
-			client:setNetVar("deathTime", CurTime() + nut.config.get("spawnTime", 5) / 10)
-		else
-			client:setNetVar("deathTime", CurTime() + nut.config.get("spawnTime", 5))
-		end
+		client:setNetVar("deathTime", CurTime() + nut.config.get("spawnTime", 5))
 
 		local deathSound = hook.Run("GetPlayerDeathSound", client) or table.Random(deathSounds)
 
