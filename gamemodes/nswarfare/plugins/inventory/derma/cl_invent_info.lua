@@ -60,24 +60,6 @@ function PANEL:Paint(w, h)
 
 	draw.DrawText("Rank:", "Roh10", ScrW() * 0.1, ScrH() * 0.106, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT)
 
-	if (ranktext >= 12000) then --сюда репутацию
-		draw.DrawText("Legend", "Roh10", ScrW() * 0.292, ScrH() * 0.106, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
-	elseif (ranktext >= 5200 and ranktext <= 11999) then
-		draw.DrawText("Master", "Roh10", ScrW() * 0.292, ScrH() * 0.106, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
-	elseif (ranktext >= 3200 and ranktext <= 5199) then
-		draw.DrawText("Expert", "Roh10", ScrW() * 0.292, ScrH() * 0.106, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
-	elseif (ranktext >= 2000 and ranktext <= 3199) then
-		draw.DrawText("Veteran", "Roh10", ScrW() * 0.292, ScrH() * 0.106, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
-	elseif (ranktext >= 1000 and ranktext <= 1999) then
-		draw.DrawText("Professional", "Roh10", ScrW() * 0.292, ScrH() * 0.106, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
-	elseif (ranktext >= 600 and ranktext <= 999) then
-		draw.DrawText("Experienced", "Roh10", ScrW() * 0.292, ScrH() * 0.106, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
-	elseif (ranktext >= 200 and ranktext <= 599) then
-		draw.DrawText("Rookie", "Roh10", ScrW() * 0.292, ScrH() * 0.106, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
-	elseif (ranktext <= 199) then
-		draw.DrawText("Trainee", "Roh10", ScrW() * 0.292, ScrH() * 0.106, Color(255, 255, 255, 210), TEXT_ALIGN_RIGHT)
-	end
-
 	draw.DrawText("Reputation:", "Roh10", ScrW() * 0.1, ScrH() * 0.127, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT)
 
 	if (reptext >= 2000) then 
