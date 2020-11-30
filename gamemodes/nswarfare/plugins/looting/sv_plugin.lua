@@ -1,7 +1,7 @@
 local PLUGIN = PLUGIN
 
 function PLUGIN:DoPlayerDeath( client, attacker, dmg )
-	if (client:getChar():hasFlags("L")) or (team.GetName(client:Team()) == "Монолит") or (team.GetName(client:Team()) == "Чистое Небо") or (team.GetName(client:Team()) == "Миротворцы") then return end
+	if (client:getChar():hasFlags("L")) or (team.GetName(client:Team()) == "Monolith") or (team.GetName(client:Team()) == "Clear Sky") or (team.GetName(client:Team()) == "Миротворцы") then return end
 	if !IsValid(client) then return end
 	if !client:getChar() then return end
 	if (!client:getChar():hasMoney(client:getChar():getMoney())) then return end
@@ -11,7 +11,7 @@ function PLUGIN:DoPlayerDeath( client, attacker, dmg )
 end
 
 function PLUGIN:PlayerDeath( ply, dmg, att )
-	if (ply:getChar():hasFlags("L")) or (team.GetName(ply:Team()) == "Монолит") or (team.GetName(ply:Team()) == "Чистое Небо") or (team.GetName(ply:Team()) == "Миротворцы") then return end
+	if (ply:getChar():hasFlags("L")) or (team.GetName(ply:Team()) == "Monolith") or (team.GetName(ply:Team()) == "Clear Sky") or (team.GetName(ply:Team()) == "Миротворцы") then return end
 
 	local entity = ents.Create("nut_loot")
 	entity:SetPos( ply:GetPos() + Vector( 0, 0, 10 ) )
@@ -51,7 +51,7 @@ function PLUGIN:PlayerDeath( ply, dmg, att )
 				v:remove()
 			else
 				v:transfer(entity:getNetVar("id"))
-				if (v.category == "Оружие" or v.category == "armor") then
+				if (v.category == "Weapon" or v.category == "Suit") then
 					v:setData("durability", math.random(4, 13))
 					v:setData("durabilityarmor", math.random(4, 13))
 				end
