@@ -207,7 +207,7 @@ function PANEL:Init()
 	self.steambutton:SetPos(ScrW() * 0.955, ScrH() * 0.006)
 	self.steambutton:SetText("")
 	self.steambutton.DoClick = function(client)
-		gui.OpenURL("https://steamcommunity.com/sharedfiles/filedetails/?id=1513109120")
+		gui.OpenURL("https://steamcommunity.com/sharedfiles/filedetails/?id=2308642895")
 	end
 
 	function self.steambutton:Paint(w,h)
@@ -224,7 +224,7 @@ function PANEL:Init()
 	self.vkbutton:SetPos(ScrW() * 0.915, ScrH() * 0.006)
 	self.vkbutton:SetText("")
 	self.vkbutton.DoClick = function(client)
-		gui.OpenURL("https://vk.com/stalkerino10")
+		gui.OpenURL("https://discord.gg/Xv8avRSg")
 	end
 
 	function self.vkbutton:Paint(w,h)
@@ -250,7 +250,7 @@ function PANEL:Init()
 		surface.DrawTexturedRect(ScrW()*0.01, ScrH()*0.023, ScrW()*0.036, ScrH()*0.065)
 
 		local x, y = ScrW() * 0.0445, ScrH() * 0.245 --позиция текста по x, больше влезает вертикально
-		local lines = nut.util.wrapText("BETA VERSION OF WARFARE_EN, MAKE SURE TO REPORT BUGS TO THE CODE MONKIES", ScrW() * 0.515, "Roh25")
+		local lines = nut.util.wrapText("BETA VERSION OF WARFARE_EN, MAKE SURE TO REPORT BUGS TO THE CODE MONKIES. JOIN OUR DISCORD.", ScrW() * 0.515, "Roh25")
 		for i = 1, #lines do
 			y = ScrW() * 0 + (i * 18)
 			nut.util.drawText(lines[i], x, y, Color(0, 0, 0), ScrW() * 0, ScrH() * 0, "Roh20", TEXT_ALIGN_CENTER) --позиция, не ебу
