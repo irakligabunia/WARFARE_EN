@@ -11,7 +11,7 @@
 			</div></div>
 		]]
 
-		tabs["Помощь"] = function(panel)
+		tabs["Help"] = function(panel)
 			local html
 			local header = [[<html>
 			<head>
@@ -90,15 +90,15 @@
 end
 
 hook.Add("BuildHelpMenu", "nutBasicHelp", function(tabs)
-	tabs["Контент сервера"] = function(node)
-		gui.OpenURL("https://steamcommunity.com/sharedfiles/filedetails/?id=1301651285")
+	tabs["Content"] = function(node)
+		gui.OpenURL("https://steamcommunity.com/sharedfiles/filedetails/?id=2308642895")
 	end
 	
-	tabs["Группа в вк"] = function(node)
-		gui.OpenURL("https://vk.com/cocrpstalker")
+	tabs["Discord"] = function(node)
+		gui.OpenURL("https://discord.gg/Xv8avRSg")
 	end
 	
-	tabs["Команды"] = function(node)
+	tabs["Commands"] = function(node)
 		local body = ""
 
 		for k, v in SortedPairs(nut.command.list) do
@@ -132,7 +132,7 @@ hook.Add("BuildHelpMenu", "nutBasicHelp", function(tabs)
 		return body
 	end
 
-	tabs["Флаги"] = function(node)
+	tabs["Flags"] = function(node)
 		local body = [[<table border="0" cellspacing="8px">]]
 
 		for k, v in SortedPairs(nut.flag.list) do
