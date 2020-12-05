@@ -74,7 +74,7 @@ ITEM.functions.use = {
 		return false
 	end,
 }
-]]
+
 function ITEM:getDesc()
 	local str
 	
