@@ -1,5 +1,5 @@
 ﻿ITEM.name = "Toz-34"
-ITEM.desc = "The widespread hunting rifle, the "vertical" - provides more reliable protection against mutants than a gun due to its accuracy and good stopping action. Very cheap and accessible in comparison with most weapons, so actively used by newcomers and bandits both on the outskirts and in the center of the zone. \n\nAmmunition 12х70"
+ITEM.desc = "A widespread hunting rifle. Provides more reliable protection against mutants than a gun due to its accuracy and good stopping action. Very cheap and accessible in comparison with most weapons, so actively used by newcomers and bandits both on the outskirts and in the center of the zone. \n\nAmmunition 12х70"
 ITEM.price = 8400
 ITEM.class = "weapon_cop_toz34"
 ITEM.weaponCategory = "1"
