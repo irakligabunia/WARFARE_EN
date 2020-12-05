@@ -1,4 +1,4 @@
-﻿ITEM.name = "COMSUIT «BULAT»"
+﻿ITEM.name = "'BULAT' Suit"
 ITEM.desc = "A very modern Combat Suit made and produced by the Ukrainian Military, made for its best fighters and renowned as one of the best suits in the Zone"
 ITEM.exRender = false
 ITEM.ric = 25
@@ -61,9 +61,7 @@ ITEM.ArmorFade[FACTION_RENEGAT] = {Models = {
 ITEM.ArmorFade[FACTION_NATO] = {Models = {
 "models/spenser/kek1ch/nato_seva_vadim.mdl"
 }}
-ITEM.ArmorFade[FACTION_LASTDAY] = {Models = {
-"models/spenser/kek1ch/lastday_stalker_seva_vadim.mdl"
-}}
+
 
 local DuseArmor = {
 	"armbr",
@@ -75,11 +73,11 @@ local DuseArmor = {
 }
 
 ITEM.functions.duse = {
-	name = "разобрать",
+	name = "disassemble",
 	onRun = function(item)
 		if (IsValid(item.player) && item.player:Alive()) then
 			if not item.player:getChar():getInv():hasItem("crowboar") then
-				item.player:notify("У вас нет лома!")
+				item.player:notify("You don't have a crowbar!")
 				return false
 			end
 			
