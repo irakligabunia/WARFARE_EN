@@ -657,6 +657,6 @@ nut.command.add("clearinv", {
 
 nut.command.add("content", {
 	onRun = function(client)
-		client:SendLua([[gui.OpenURL(nut.config.get("contentURL", "https://steamcommunity.com/sharedfiles/filedetails/?id=1513109120"))]])
+		client:SendLua([[gui.OpenURL(nut.config.get("contentURL", "https://steamcommunity.com/sharedfiles/filedetails/?id=2308642895"))]])
 	end
 })
