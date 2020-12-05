@@ -170,7 +170,7 @@ local alpha = 80
 		self.but_3 = self:Add("DButton")
 		self.but_3:SetPos( but_3Xyes, but_3Yyes )
 		self.but_3:SetSize( but_3Wyes, but_3Hyes )
-		self.but_3:SetText("Помощь")
+		self.but_3:SetText("Help")
 		self.but_3:SetFont("dobi4ikxyecockft123123123")
 		self.but_3:SetTextColor(color_white) 
 		function self.but_3:Paint( w, h )
