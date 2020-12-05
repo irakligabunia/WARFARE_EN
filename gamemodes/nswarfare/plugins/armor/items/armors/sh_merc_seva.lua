@@ -1,5 +1,5 @@
-﻿ITEM.name = "Basic Scientific Suit"
-ITEM.desc = "A very generic scientific suit, only protecting from the hazards of the zone including Radiation"
+﻿ITEM.name = "'Mercenary' SEVA"
+ITEM.desc = "A standard SEVA suit painted blue."
 ITEM.price = 154254
 ITEM.ric = 30
 ITEM.dmgsteal = 50
@@ -61,9 +61,6 @@ ITEM.ArmorFade[FACTION_RENEGAT] = {Models = {
 ITEM.ArmorFade[FACTION_NATO] = {Models = {
 "models/spenser/kek1ch/nato_seva_vadim.mdl"
 }}
-ITEM.ArmorFade[FACTION_LASTDAY] = {Models = {
-"models/spenser/kek1ch/lastday_stalker_seva_vadim.mdl"
-}}
 
 local DuseArmor = {
 	"armbr",
@@ -75,11 +72,11 @@ local DuseArmor = {
 }
 
 ITEM.functions.duse = {
-	name = "разобрать",
+	name = "disassemble",
 	onRun = function(item)
 		if (IsValid(item.player) && item.player:Alive()) then
 			if not item.player:getChar():getInv():hasItem("crowboar") then
-				item.player:notify("У вас нет лома!")
+				item.player:notify("You don't have a crowbar!")
 				return false
 			end
 			
