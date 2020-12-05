@@ -179,7 +179,7 @@ end
 function GM:PrePlayerLoadedChar(client, character, lastChar)
 	client:SetBodyGroups("000000000")
 	client:SetSkin(0)
-	client:ConCommand("say /zcharconnect , Welcoem to «STALKERNET»")
+	client:ConCommand("say /zcharconnect , Welcome to STALKER.NET.")
 end
 
 function GM:PlayerLoadedChar(client, character, lastChar)
