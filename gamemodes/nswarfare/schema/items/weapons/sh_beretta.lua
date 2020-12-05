@@ -1,5 +1,5 @@
 ﻿ITEM.name = "Beretta 92F"
-ITEM.desc = "Pistols of this series have a worldwide reputation for reliable, albeit a few bulky weapons, and are in service with the army and police units of many countries. No less popular with criminals thanks to a powerful cartridge and the light weight. As a rule, not the newest models get into the zone. \n\Ammunition 9x19"
+ITEM.desc = "Pistols of this series have a worldwide reputation for reliable, albeit a few bulky weapons, and are in service with the army and police units of many countries. No less popular with criminals thanks to a powerful cartridge and the light weight. As a rule, not the newest models get into the zone. \nAmmunition 9x19"
 ITEM.price = 6510
 ITEM.class = "weapon_cop_beretta92fs"
 ITEM.weaponCategory = "2"
