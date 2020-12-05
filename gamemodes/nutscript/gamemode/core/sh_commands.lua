@@ -626,6 +626,18 @@ nut.command.add("plytransfer", {
 	end
 })
 
+nut.command.add("rep", {
+	onRun = function(client, arguments)
+		client:ConCommand("say /zchecknewrep "..client:getChar():getData("rep", 0))
+	end
+})
+
+nut.command.add("rank", {
+	onRun = function(client, arguments)
+		client:ConCommand("say /zchecrank "..client:getChar():getData("rank", 0))
+	end
+})
+
 -- Credit goes to SmithyStanley
 nut.command.add("clearinv", {
 	adminOnly = true,
