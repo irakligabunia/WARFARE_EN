@@ -149,7 +149,7 @@ local PANEL = {}
 		self.info:SetPos(buttonX, button2Y )
 		self.info:SetTall(36)
 		self.info:DockMargin(0, 0, 0, 32)
-		self.info:SetText("-Нажмите [ПРОБЕЛ] для перехода в меню-")
+		self.info:SetText("Press SPACE to continue...")
 		self.info:SetFont("dobi4ikxyecoc")
 
 		self.info:SetContentAlignment(2)
@@ -187,7 +187,7 @@ local PANEL = {}
 		self.tkv = self:Add("DLabel")
 		self.tkv:SetSize(0, buttonH2)
 		self.tkv:SetPos(buttonX2, buttonY2)
-		self.tkv:SetText(" Внимание! Это бета версия сборки Warfare RP, прездазначенная для тестирования\n                    Она не отображает финального качества продукта\n                         Спасибо за понимание и поддержу. Удачи!")
+		self.tkv:SetText(" we are in early access :( ")
 		self.tkv:SetTextColor(Color(0, 0, 0))
 		self.tkv:SetFont("dobi4ikxyecockft")
 		self.tkv:SizeTo( buttonW2, buttonH2, 0.3, 0, 1 )
