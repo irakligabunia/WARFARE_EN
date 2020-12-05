@@ -1,4 +1,4 @@
-﻿ITEM.name = "Suit Io7a"
+﻿ITEM.name = "Io7a Suit"
 ITEM.desc = "The most used suit of the mercenaries, the cheap and reliable IO7A"
 ITEM.price = 21006
 ITEM.ric = 25
@@ -101,9 +101,6 @@ ITEM.ArmorFade[FACTION_RENEGAT] = {Models = {
 }}
 ITEM.ArmorFade[FACTION_NATO] = {Models = {
 "models/spenser/kek1ch/nato_soldier_spetsnaz_vadim.mdl"
-}}
-ITEM.ArmorFade[FACTION_LASTDAY] = {Models = {
-"models/spenser/kek1ch/lastday_stalker_1_vadim.mdl"
 }}
 
 local DuseArmor = {
