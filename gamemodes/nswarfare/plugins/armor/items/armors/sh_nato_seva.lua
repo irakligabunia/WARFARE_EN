@@ -1,4 +1,4 @@
-﻿ITEM.name = "PSZ-9D «PEACEKEEP»"
+﻿ITEM.name = "'Peacekeepers' SEVA suit"
 ITEM.desc = "Отличный защитный костюм для Зоны. Сталкеры ценят его за сочетание отличных противоаномальных качеств и противопулевой защиты. В составе: комбинезон ПСЗ-9д, система дыхания с замкнутым циклом, встроенная система подавления действия аномальных полей. Предоставляет качественную защиту от пулевого и осколочного попадания. \n\nВНИМАНИЕ! \n\n При разборке рекомендуется освободить инвентарь! \n\nХАРАКТЕРИСТИКИ: \n-усиленная бронезащита \n-возможно разобрать с помощью лома \n-защищает от радиации при наличии балона"
 ITEM.price = 154254
 ITEM.ric = 30
@@ -61,9 +61,6 @@ ITEM.ArmorFade[FACTION_RENEGAT] = {Models = {
 ITEM.ArmorFade[FACTION_NATO] = {Models = {
 "models/spenser/kek1ch/nato_seva_vadim.mdl"
 }}
-ITEM.ArmorFade[FACTION_LASTDAY] = {Models = {
-"models/spenser/kek1ch/lastday_stalker_seva_vadim.mdl"
-}}
 
 local DuseArmor = {
 	"armbr",
@@ -75,11 +72,11 @@ local DuseArmor = {
 }
 
 ITEM.functions.duse = {
-	name = "разобрать",
+	name = "disassemble",
 	onRun = function(item)
 		if (IsValid(item.player) && item.player:Alive()) then
 			if not item.player:getChar():getInv():hasItem("crowboar") then
-				item.player:notify("У вас нет лома!")
+				item.player:notify("You don't have a crowbar!")
 				return false
 			end
 			
