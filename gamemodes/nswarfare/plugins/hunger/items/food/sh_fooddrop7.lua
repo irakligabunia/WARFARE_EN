@@ -32,7 +32,7 @@ ITEM.functions.use = {
 	end,
 	name = "use"
 }
-"
+
 ITEM.price = 248
 ITEM.model = "models/kek1ch/raw_snork.mdl"
 ITEM.width = 1
