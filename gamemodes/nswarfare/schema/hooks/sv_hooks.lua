@@ -10,7 +10,7 @@ relations_allies_f["Mercenaries"] = {allies = {"Mercenaries", "Freedom", "Bandit
 relations_allies_f["Ecologists"] = {allies = {"Ecologists", "Military", "Loners", "Duty", "Clear Sky"}}
 relations_allies_f["Clear Sky"] = {allies = {"Clear Sky", "Loners", "Duty", "Freedom", "Traders","Ecologists"}}
 relations_allies_f["Traders"] = {allies = {"Traders", "Loners", "Duty", "Freedom", "Clear Sky", "Ecologists"}}
-relations_allies_f["Администратор"] = {allies = {"Администратор"}}
+relations_allies_f["Administration"] = {allies = {"Administration"}}
 
 local RandomRenegatModel = {
 	"models/spenser/kek1ch/renegat_kek1ch_kurtka.mdl",
@@ -18,41 +18,41 @@ local RandomRenegatModel = {
 	"models/spenser/kek1ch/renegat_normal_kek1ch.mdl"
 }
 
-function SCHEMA:PlayerDeath(victim, weapon, attacker)
-	if (attacker:IsPlayer()) and (victim != attacker) then
-		if table.HasValue(relations_allies_f[team.GetName(attacker:Team())].allies, team.GetName(victim:Team())) then
-			attacker:getChar():setData("rep", attacker:getChar():getData("rep", 0) - 5)
-		else
-			if serverguard.player:GetRank(attacker) == 'vip' then
-				attacker:getChar():setData("rep", attacker:getChar():getData("rep", 0) + 2)
-			else
-				attacker:getChar():setData("rep", attacker:getChar():getData("rep", 0) + 1)
-			end
-		end
+--function SCHEMA:PlayerDeath(victim, weapon, attacker)
+--	if (attacker:IsPlayer()) and (victim != attacker) then
+--		if table.HasValue(relations_allies_f[team.GetName(attacker:Team())].allies, team.GetName(victim:Team())) then
+--			attacker:getChar():setData("rep", attacker:getChar():getData("rep", 0) - 5)
+--		else
+--			if serverguard.player:GetRank(attacker) == 'vip' then
+--				attacker:getChar():setData("rep", attacker:getChar():getData("rep", 0) + 2)
+--			else
+--				attacker:getChar():setData("rep", attacker:getChar():getData("rep", 0) + 1)
+--			end
+--		end
 
-		if serverguard.player:GetRank(attacker) == 'vip' then
-			attacker:getChar():setData("rank", attacker:getChar():getData("rank", 0) + 2)
-		else
-			attacker:getChar():setData("rank", attacker:getChar():getData("rank", 0) + 1)
-		end
+--		if serverguard.player:GetRank(attacker) == 'vip' then
+--			attacker:getChar():setData("rank", attacker:getChar():getData("rank", 0) + 2)
+--		else
+--			attacker:getChar():setData("rank", attacker:getChar():getData("rank", 0) + 1)
+--		end
 
-		if attacker:HasQuest( "quest_killer_rep" ) == victim:Name() then
-			if not (attacker:getChar():getData("repkiller") == victim:Name()) then
-				attacker:getChar():setData("repkiller", victim:Name())
-				attacker:ConCommand("say Quest: Kill the stalker complete")
-			end
-		end
+--		if attacker:HasQuest( "quest_killer_rep" ) == victim:Name() then
+--			if not (attacker:getChar():getData("repkiller") == victim:Name()) then
+--				attacker:getChar():setData("repkiller", victim:Name())
+--				attacker:ConCommand("say Quest: Kill the stalker complete")
+--			end
+--		end
 
-		if (attacker:getChar():getData("rep") < -100) and not (attacker:Team() == FACTION_RENEGAT) then
-			local faction = nut.faction.indices[FACTION_RENEGAT]
-			if (faction) then
-				attacker:getChar().vars.faction = faction.uniqueID
-				attacker:getChar():setFaction(faction.index)
-				attacker:SetModel(string.gsub(table.Random(RandomRenegatModel), "spenser", "hdmodels"))
-			end
-		end
-	end
-end
+--		if (attacker:getChar():getData("rep") < -100) and not (attacker:Team() == FACTION_RENEGAT) then
+--			local faction = nut.faction.indices[FACTION_RENEGAT]
+--			if (faction) then
+--				attacker:getChar().vars.faction = faction.uniqueID
+--				attacker:getChar():setFaction(faction.index)
+--				attacker:SetModel(string.gsub(table.Random(RandomRenegatModel), "spenser", "hdmodels"))
+--			end
+--		end
+--	end
+--end
 
 function SCHEMA:OnPlayerHitGround( ply, inWater, onFloater, speed )
     ply:ViewPunch(Angle(8, 0, 0))
@@ -98,9 +98,9 @@ function SCHEMA:OnCharCreated(client, character)
 		character:getInv():add("1000r", 1, {})
 		character:getInv():add("bread", 1, {})
 		character:getInv():add("konservi", 1, {})
-		character:getInv():add("water", 1, {})]]
+		character:getInv():add("water", 1, {})
 	end
-
+end
 	character:setData("act_table", {"Sitting on ground #1", "Sitting on ground #2", "Stand with arms crossed",
 	"Squat", "Lean against the wall", "Scan anomaly #1", "Weapons' on shoulder", "Push up", 
 	"Hostage", "Crouch", "Sit", "Lean against the table #1", "Lean against the wall #1", 
@@ -117,7 +117,7 @@ function SCHEMA:OnCharCreated(client, character)
 	end)
 
 	nut.item.inventories[character:getData("safebox")]:getID():add("water", 1, {})]]
-end
+--end
 
 local tabe_patch = {
 [FACTION_LONER] = "ploner",
