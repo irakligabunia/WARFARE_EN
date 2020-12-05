@@ -1,4 +1,4 @@
-﻿ITEM.name = "Exoskeleton «MERCENARY»"
+﻿ITEM.name = "'Mercenary' Exoskeleton"
 ITEM.desc = "The exoskeleton of the mercenaries, a very rare suit only used by the most successful mercenaries who made enough money to purchase this suit."
 ITEM.price = 255240
 ITEM.ric = 25
@@ -53,9 +53,6 @@ ITEM.ArmorFade[FACTION_RENEGAT] = {Models = {
 }}
 ITEM.ArmorFade[FACTION_NATO] = {Models = {
 "models/spenser/kek1ch/nato_exo_vadim.mdl"
-}}
-ITEM.ArmorFade[FACTION_LASTDAY] = {Models = {
-"models/spenser/kek1ch/lastday_stalker_exo_vadim.mdl"
 }}
 
 local DuseArmor = {
