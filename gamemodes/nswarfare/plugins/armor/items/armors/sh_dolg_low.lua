@@ -71,10 +71,6 @@ ITEM.ArmorFade[FACTION_RENEGAT] = {Models = {
 ITEM.ArmorFade[FACTION_NATO] = {Models = {
 "models/spenser/kek1ch/nato_soldier_obichniy_vadim.mdl"
 }}
-ITEM.ArmorFade[FACTION_LASTDAY] = {Models = {
-"models/spenser/kek1ch/lastday_stalker_3_vadim.mdl",
-"models/spenser/kek1ch/lastday_stalker_4_vadim.mdl"
-}}
 
 local DuseArmor = {
 	"armbr",
