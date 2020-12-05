@@ -1,4 +1,4 @@
-﻿ITEM.name = "COMSUIT «BERIL-5M»"
+﻿ITEM.name = "'BERIL-5M' Suit"
 ITEM.desc = "A Combat Suit for the Spetsnaz fighters of Ukraine's soldiers in the Zone, a very expensive yet one of the best suits in the Zone"
 ITEM.price = 27012
 ITEM.ric = 30
@@ -71,10 +71,6 @@ ITEM.ArmorFade[FACTION_RENEGAT] = {Models = {
 ITEM.ArmorFade[FACTION_NATO] = {Models = {
 "models/spenser/kek1ch/nato_soldier_obichniy_vadim.mdl"
 }}
-ITEM.ArmorFade[FACTION_LASTDAY] = {Models = {
-"models/spenser/kek1ch/lastday_stalker_3_vadim.mdl",
-"models/spenser/kek1ch/lastday_stalker_4_vadim.mdl"
-}}
 
 local DuseArmor = {
 	"armbr",
@@ -83,11 +79,11 @@ local DuseArmor = {
 }
 
 ITEM.functions.duse = {
-	name = "разобрать",
+	name = "dissasemble",
 	onRun = function(item)
 		if (IsValid(item.player) && item.player:Alive()) then
 			if not item.player:getChar():getInv():hasItem("crowboar") then
-				item.player:notify("У вас нет лома!")
+				item.player:notify("You don't have a crowbar!")
 				return false
 			end
 			
