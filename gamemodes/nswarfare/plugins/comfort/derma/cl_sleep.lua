@@ -17,7 +17,7 @@ function PANEL:Init()
 	self.sleepimg = self:Add( "DImage" )
 	self.sleepimg:SetSize( buttonWimg, buttonHimg )
 	self.sleepimg:SetPos( buttonXimg, buttonYimg )
-	self.sleepimg:SetImage( "daui/sleep_kek_v4.png" )]]
+	self.sleepimg:SetImage( "daui/sleep_kek_v4.png" )
 
 	local thirdWyes, thirdHyes = self.scrW * 0.1, self.scrH * 0.0265
 	local thirdXyes, thirdYyes = (self.scrW * 0.075) - (thirdWyes * 0.5), self.scrH * 0.01
@@ -109,7 +109,7 @@ function PANEL:Init()
 			local material = Material("daui/but_pressf.png") 
 			surface.SetDrawColor(color_white) 
 			surface.SetMaterial(material) 
-			surface.DrawTexturedRect(0, 0, w, h) ]]
+			surface.DrawTexturedRect(0, 0, w, h) 
 		if self:IsHovered() then
 			surface.SetDrawColor(Color(105, 105, 105, 100)) 
 			surface.DrawTexturedRect(0, 0, w, h) 
@@ -133,3 +133,4 @@ vgui.Register("sleep", PANEL, "DFrame")
 netstream.Hook("sleep", function()
 	noteRead1 = vgui.Create("sleep")
 end)
+end
