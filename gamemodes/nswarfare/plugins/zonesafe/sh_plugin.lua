@@ -73,14 +73,14 @@ nut.command.add("managerzone", {
 })
 
 local PaintsAreas = {
-	["Бандитов"] = "kek1ch/icons/bandit_info_icon.png",
-	["Чистого Неба"] = "kek1ch/icons/clearsky_info_icon.png",
-	["Долга"] = "kek1ch/icons/duty_info_icon.png",
-	["Свободы"] = "kek1ch/icons/freedom_info_icon.png",
-	["Одиночек"] = "kek1ch/icons/loner_info_icon.png",
-	["Наемников"] = "kek1ch/icons/merc_info_icon.png",
-	["Монолита"] = "kek1ch/icons/monolit_info_icon.png",
-	["Ученых"] = "kek1ch/icons/scientitst_info_icon.png"
+	["Bandits"] = "kek1ch/icons/bandit_info_icon.png",
+	["Clear Sky"] = "kek1ch/icons/clearsky_info_icon.png",
+	["Duty"] = "kek1ch/icons/duty_info_icon.png",
+	["Freedom"] = "kek1ch/icons/freedom_info_icon.png",
+	["Loners"] = "kek1ch/icons/loner_info_icon.png",
+	["Mercenaries"] = "kek1ch/icons/merc_info_icon.png",
+	["Monolith"] = "kek1ch/icons/monolit_info_icon.png",
+	["Ecologists"] = "kek1ch/icons/scientitst_info_icon.png"
 }
 
 function PLUGIN:PostDrawHUD()
