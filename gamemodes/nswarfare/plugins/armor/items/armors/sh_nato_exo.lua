@@ -1,4 +1,4 @@
-﻿ITEM.name = "Exoskeleton «PEACEKEEPERS»"
+﻿ITEM.name = "'Peacekeepers' Exoskeleton"
 ITEM.desc = "A later build of the previously experimental PEACEKEEP suit made for the peacekeepers in the Zone which were wiped out."
 ITEM.price = 255240
 ITEM.ric = 30
@@ -54,9 +54,6 @@ ITEM.ArmorFade[FACTION_RENEGAT] = {Models = {
 ITEM.ArmorFade[FACTION_NATO] = {Models = {
 "models/spenser/kek1ch/nato_exo_vadim.mdl"
 }}
-ITEM.ArmorFade[FACTION_LASTDAY] = {Models = {
-"models/spenser/kek1ch/lastday_stalker_exo_vadim.mdl"
-}}
 
 local DuseArmor = {
 	"plate",
@@ -67,11 +64,11 @@ local DuseArmor = {
 }
 
 ITEM.functions.duse = {
-	name = "разобрать",
+	name = "disassemble",
 	onRun = function(item)
 		if (IsValid(item.player) && item.player:Alive()) then
 			if not item.player:getChar():getInv():hasItem("crowboar") then
-				item.player:notify("У вас нет лома!")
+				item.player:notify("You don't have a crowbar!")
 				return false
 			end
 
