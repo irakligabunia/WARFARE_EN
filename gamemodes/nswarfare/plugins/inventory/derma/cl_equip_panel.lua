@@ -4,7 +4,7 @@ function PANEL:Init(uniqueID)
 
 	self:SetSize(ScrW() * 0.3, ScrH() * 0.682)
 	self:SetTitle("")
-	self:ShowCloseButton(false)
+	self:ShowCloseButton(true)
 	self:SetDraggable(false)
 
 end
