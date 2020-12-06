@@ -145,7 +145,7 @@ else
 				surface.SetDrawColor(Color( 30, 30, 30, 90))
 				surface.DrawOutlinedRect(ScrW() * 0, ScrH() * 0, ScrW() * 0.41, ScrH() * 0.033) --шапка
 
-				draw.DrawText("Инвентарь", "Roh20", ScrW() * 0.005, ScrH() * 0.003, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT )
+				draw.DrawText("Inventory", "Roh20", ScrW() * 0.005, ScrH() * 0.003, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT )
 
 				surface.SetDrawColor(Color( 138, 149, 151, 60))
 				surface.DrawLine(ScrW() * 0.018, ScrH() * 0.0325, ScrW() * 0.29, ScrH() * 0.0325)
@@ -153,7 +153,7 @@ else
 				surface.SetDrawColor(Color(  0, 33, 55, 210))
 				surface.DrawRect(ScrW() * 0.017, ScrH() * 0.059, ScrW() * 0.2715, ScrH() * 0.027) --верхняя панель крафта
 
-				draw.DrawText("Тайник", "Roh20", ScrW() * 0.02, ScrH() * 0.06, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT )
+				draw.DrawText("Stash", "Roh20", ScrW() * 0.02, ScrH() * 0.06, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT )
 
 				surface.SetDrawColor(Color( 0, 0, 0, 255))
 				surface.DrawOutlinedRect(ScrW() * 0.0165, ScrH() * 0.059, ScrW() * 0.273, ScrH() * 0.53) --обводка модели игрока
@@ -231,7 +231,7 @@ else
 		local transfer = nut.gui.inv1:Add("DButton")
 		transfer:SetSize( ScrW() * 0.095, ScrH() * 0.0325)
 		transfer:SetPos(ScrW() * 0.1937, ScrH() * 0.608)
-		transfer:SetText("Положить")
+		transfer:SetText("Put")
 		transfer:SetFont("Roh20")
 		transfer:SetTextColor(Color(211, 211, 211)) 
 		function transfer:Paint( w, h )
@@ -329,7 +329,7 @@ else
 				surface.DrawOutlinedRect(0, 0, w, h)
 			end
 		end
-		transfer1:SetText("Снять")
+		transfer1:SetText("Withdraw")
 		transfer1.DoClick = function()
 			local value = tonumber(entry1:GetValue()) or 0
 			if LocalPlayer():getChar():getReserve() >= value and value > 0 then
@@ -357,7 +357,7 @@ else
 	function ENT:onDrawEntityInfo(alpha)
 		local position = toScreen(self.LocalToWorld(self, self.OBBCenter(self)))
 		local x, y = position.x, position.y
-		local tx, ty = drawText("Сейф", x, y, colorAlpha(Color(211, 211, 211)), 1, 1, "gost10", alpha * 0.65)
+		local tx, ty = drawText("Safe", x, y, colorAlpha(Color(211, 211, 211)), 1, 1, "gost10", alpha * 0.65)
 	end
 end
 
