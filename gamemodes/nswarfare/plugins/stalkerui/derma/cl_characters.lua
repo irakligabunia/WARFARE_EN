@@ -365,12 +365,11 @@ function PANEL:Init()
 		end)
 	end
 
-	local NamesFirst = {"Антон", "Олег", "Олесь", "Рома", "Руслан", "Саша", "Слава", "Толик", "Юра", "Богдан", "Вениамин", "Виталий", "Вова", "Дима", "Иван", "Костя",
-	"Леша", "Санек", "Шурик", "Вадя", "Васян", "Васек"}
+	local NamesFirst = {"Anton", "Oleg", "Oles", "Roma", "Ruslan", "Sasha", "Shamil", "Tolik", "Yuri", "Bogdan", "Zelimkhan", "Vitaly", "Vova", "Dima", "Ivan", "Kostya",
+	"Lesha", "Sanek", "Shurik", "Vadya", "Vasya", "Vasek"}
 
-	local NamesSecond = {"Резкий", "Рвач", "Рваный", "Работяга", "Псих", "Простак", "Праведный", "Покойник", "Подлец", "Плут", "Неуязвимый", "Пижон", "Одноглазый", "Нытик", "Нудный", 
-	"Неумеха", "Неудачник", "Небрежный", "Черный", "Нарцисс", "Мятый", "Мутный", "Мрачный", "Местный", "Мертвый", "Мертвец", "Малыш", "Лютый", "Любимчик", "Косой", "Фантом",
-	"Упырь", "Туз", "Опер"}
+	local NamesSecond = {"Rezki", "Rvach", "Rvani", "Vasiliev", "Hydomovich", "White", "Pakoniev", "Nikitin", "Popova", "Frolova", "Makarov", "Vlasov", "Zakharova", "Kulikov", "Borisov", 
+	"Morozov"}
 
 	local Desc = "A average stalker in the Zone, looking like a newbie with no special features."
 
