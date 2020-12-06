@@ -183,7 +183,7 @@ if (CLIENT) then
 				surface.SetDrawColor(Color( 30, 30, 30, 90))
 				surface.DrawOutlinedRect(ScrW() * 0, ScrH() * 0, ScrW() * 0.41, ScrH() * 0.033) --шапка
 
-				draw.DrawText("Инвентарь", "Roh20", ScrW() * 0.005, ScrH() * 0.003, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT )
+				draw.DrawText("Inventory", "Roh20", ScrW() * 0.005, ScrH() * 0.003, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT )
 
 				surface.SetDrawColor(Color( 138, 149, 151, 60))
 				surface.DrawLine(ScrW() * 0.018, ScrH() * 0.0325, ScrW() * 0.29, ScrH() * 0.0325)
@@ -191,7 +191,7 @@ if (CLIENT) then
 				surface.SetDrawColor(Color(  0, 33, 55, 210))
 				surface.DrawRect(ScrW() * 0.017, ScrH() * 0.059, ScrW() * 0.2715, ScrH() * 0.027) --верхняя панель крафта
 
-				draw.DrawText("Тайник", "Roh20", ScrW() * 0.02, ScrH() * 0.06, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT )
+				draw.DrawText("Stash", "Roh20", ScrW() * 0.02, ScrH() * 0.06, Color(255, 255, 255, 210), TEXT_ALIGN_LEFT )
 
 				surface.SetDrawColor(Color( 0, 0, 0, 255))
 				surface.DrawOutlinedRect(ScrW() * 0.0165, ScrH() * 0.059, ScrW() * 0.273, ScrH() * 0.53) --обводка модели игрока
@@ -363,7 +363,7 @@ if (CLIENT) then
 				surface.DrawOutlinedRect(0, 0, w, h)
 			end
 		end
-		transfer1:SetText("Снять")
+		transfer1:SetText("Withdraw")
 
 		transfer1.DoClick = function()
 			local value = tonumber(entry1:GetValue()) or 0
