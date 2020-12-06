@@ -5,7 +5,7 @@ PLUGIN.desc = "Sample text"
 
 if (CLIENT) then
 	hook.Add("Think", "Act Menu Derma", function() 
-		if not (LocalPlayer().act_delay) or (LocalPlayer().act_delay < CurTime()) then 
+		if not (LocalPlayer().act_delay < CurTime()) then 
 			if input.IsKeyDown( KEY_F2 ) then 
 				if IsValid(ActDerma) then
 					ActDerma:Remove() 
