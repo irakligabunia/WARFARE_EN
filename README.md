@@ -1,5 +1,1 @@
-weewoo im losing my mind
-tell kek1ch to add notes to the code it's like looking at a schizophrenics diary
-## no fuck yur mom
-LOL retard
-## you're the retard
+[![forthebadge](https://forthebadge.com/images/badges/built-with-resentment.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/0-percent-optimized.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/contains-tasty-spaghetti-code.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/not-a-bug-a-feature.svg)](https://forthebadge.com)
