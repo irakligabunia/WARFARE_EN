@@ -1,7 +1,0 @@
-"nsstalkerrp"
-{
-"base" "nutscript"
-"pisundesc" "NS - StalkerRP"
-"vice" "Chessnut"
-"menusystem" "1"
-} 
